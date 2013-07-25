@@ -1,0 +1,551 @@
+EncuestaCabeceraRespuestas:
+  connection: doctrine
+  tableName: encuesta_cabecera_respuestas
+  columns:
+    id_enc_cab_resp:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nro_boleta:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha_compra:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    rut:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    dv:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nombre_completo:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    ciudad:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    telefono:
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    celular:
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    email:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    edad:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sexo:
+      type: string(1)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    compra_para:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    EncuestaRespuestas:
+      local: id_enc_cab_resp
+      foreign: id_enc_cab_resp
+      type: many
+EncuestaPreguntas:
+  connection: doctrine
+  tableName: encuesta_preguntas
+  columns:
+    id_enc_preg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    id_tipo_preg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    valor_defecto:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    desc_pregunta:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    estado:
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ACT
+      notnull: false
+      autoincrement: false
+    id_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Pais:
+      local: id_pais
+      foreign: id_pais
+      type: one
+    TipoPregunta:
+      local: id_tipo_preg
+      foreign: id_tipo_preg
+      type: one
+    EncuestaRespuestas:
+      local: id_enc_preg
+      foreign: id_enc_preg
+      type: many
+EncuestaRespuestas:
+  connection: doctrine
+  tableName: encuesta_respuestas
+  columns:
+    id_enc_resp:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    id_enc_preg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_enc_cab_resp:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    valor_resp:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    EncuestaCabeceraRespuestas:
+      local: id_enc_cab_resp
+      foreign: id_enc_cab_resp
+      type: one
+    EncuestaPreguntas:
+      local: id_enc_preg
+      foreign: id_enc_preg
+      type: one
+Endpoint:
+  connection: doctrine
+  tableName: endpoint
+  columns:
+    id_endpoint:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    desc_endpoint:
+      type: string(40)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    host:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    puerto:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    resto_url:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Pais:
+      local: id_pais
+      foreign: id_pais
+      type: one
+OportunidadCmr:
+  connection: doctrine
+  tableName: oportunidad_cmr
+  columns:
+    id_opor_cmr:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    sku:
+      type: string(7)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    precio_internet:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    precio_cmr:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_vigencia:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Pais:
+  connection: doctrine
+  tableName: pais
+  columns:
+    id_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    desc_pais:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    sigla:
+      type: string(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    EncuestaPreguntas:
+      local: id_pais
+      foreign: id_pais
+      type: many
+    Endpoint:
+      local: id_pais
+      foreign: id_pais
+      type: many
+    Region:
+      local: id_pais
+      foreign: id_pais
+      type: many
+    Tienda:
+      local: id_pais
+      foreign: id_pais
+      type: many
+Region:
+  connection: doctrine
+  tableName: region
+  columns:
+    id_region:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    desc_region:
+      type: string(60)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Pais:
+      local: id_pais
+      foreign: id_pais
+      type: one
+    Tienda:
+      local: id_region
+      foreign: id_region
+      type: many
+ServiciosPorTienda:
+  connection: doctrine
+  tableName: servicios_por_tienda
+  columns:
+    id_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    id_servicio_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+ServiciosTienda:
+  connection: doctrine
+  tableName: servicios_tienda
+  columns:
+    id_servicio_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    desc_servicio:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    estado:
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Tienda:
+  connection: doctrine
+  tableName: tienda
+  columns:
+    id_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    nombre:
+      type: string(70)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    direccion:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    latitud:
+      type: string(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    longitud:
+      type: string(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    telefono:
+      type: string(20)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    horario:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_region:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_tipo_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    id_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gerente:
+      type: string(60)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    busc_producto:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Pais:
+      local: id_pais
+      foreign: id_pais
+      type: one
+    Region:
+      local: id_region
+      foreign: id_region
+      type: one
+    TipoTienda:
+      local: id_tipo_tienda
+      foreign: id_tipo_tienda
+      type: one
+TipoPregunta:
+  connection: doctrine
+  tableName: tipo_pregunta
+  columns:
+    id_tipo_preg:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    desc_tipo_preg:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    EncuestaPreguntas:
+      local: id_tipo_preg
+      foreign: id_tipo_preg
+      type: many
+TipoTienda:
+  connection: doctrine
+  tableName: tipo_tienda
+  columns:
+    id_tipo_tienda:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    desc_tipo_tienda:
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Tienda:
+      local: id_tipo_tienda
+      foreign: id_tipo_tienda
+      type: many

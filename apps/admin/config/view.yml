@@ -6,15 +6,18 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        Mantenedor de Servicios Móviles
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:
+    - bootstrap.min.css 
 
-  javascripts:    []
+  javascripts:
+    - jquery.js
+    - bootstrap.min.js
 
   has_layout:     true
   layout:         layout
