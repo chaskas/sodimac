@@ -1,187 +1,21 @@
-Jul 24 16:36:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
-Jul 24 16:36:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:36:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:36:29 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
-Jul 24 16:36:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/controller/default/templates/indexSuccess.php"
-Jul 24 16:36:29 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Jul 24 16:36:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
-Jul 24 16:36:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 16:36:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:36:29 symfony [info] {sfWebDebugLogger} Configuration 191.45 ms (10)
-Jul 24 16:36:29 symfony [info] {sfWebDebugLogger} Factories 245.41 ms (1)
-Jul 24 16:36:29 symfony [info] {sfWebDebugLogger} Action "default/index" 0.57 ms (1)
-Jul 24 16:36:29 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 27.13 ms (1)
-Jul 24 16:36:29 symfony [info] {sfWebResponse} Send content (28694 o)
-Jul 24 16:36:35 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /ocmr with parameters array (  'module' => 'ocmr',  'action' => 'index',)
-Jul 24 16:36:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:36:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:36:35 symfony [info] {ocmrActions} Call "ocmrActions->executeIndex()"
-Jul 24 16:36:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 16:36:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
-Jul 24 16:36:35 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/indexSuccess.php"
-Jul 24 16:36:35 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:36:35 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:36:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 16:36:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:36:35 symfony [info] {sfWebDebugLogger} Configuration 41.32 ms (10)
-Jul 24 16:36:35 symfony [info] {sfWebDebugLogger} Factories 20.40 ms (1)
-Jul 24 16:36:35 symfony [info] {sfWebDebugLogger} Action "ocmr/index" 130.05 ms (1)
-Jul 24 16:36:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.98 ms (2)
-Jul 24 16:36:35 symfony [info] {sfWebDebugLogger} View "Success" for "ocmr/index" 24.01 ms (1)
-Jul 24 16:36:35 symfony [info] {sfWebResponse} Send content (30322 o)
-Jul 24 16:36:41 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ocmr/new with parameters array (  'module' => 'ocmr',  'action' => 'new',)
-Jul 24 16:36:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:36:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:36:41 symfony [info] {ocmrActions} Call "ocmrActions->executeNew()"
-Jul 24 16:36:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/newSuccess.php"
-Jul 24 16:36:41 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/_form.php"
-Jul 24 16:36:41 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:36:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:36:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 16:36:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:36:41 symfony [info] {sfWebDebugLogger} Configuration 3.49 ms (9)
-Jul 24 16:36:41 symfony [info] {sfWebDebugLogger} Factories 26.71 ms (1)
-Jul 24 16:36:41 symfony [info] {sfWebDebugLogger} Action "ocmr/new" 63.60 ms (1)
-Jul 24 16:36:41 symfony [info] {sfWebDebugLogger} View "Success" for "ocmr/new" 66.20 ms (1)
-Jul 24 16:36:41 symfony [info] {sfWebDebugLogger} Partial "ocmr/_form" 50.00 ms (1)
-Jul 24 16:36:41 symfony [info] {sfWebResponse} Send content (37826 o)
-Jul 24 16:36:55 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ocmr/create with parameters array (  'module' => 'ocmr',  'action' => 'create',)
-Jul 24 16:36:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:36:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:36:55 symfony [info] {ocmrActions} Call "ocmrActions->executeCreate()"
-Jul 24 16:36:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 16:36:55 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o WHERE (o.sku = ?) - (12312)
-Jul 24 16:36:55 symfony [info] {ocmrActions} Change template to "CURRENT/new"
-Jul 24 16:36:55 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/newSuccess.php"
-Jul 24 16:36:55 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/_form.php"
-Jul 24 16:36:55 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:36:55 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:36:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 16:36:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:36:55 symfony [info] {sfWebDebugLogger} Configuration 4.80 ms (9)
-Jul 24 16:36:55 symfony [info] {sfWebDebugLogger} Factories 32.27 ms (1)
-Jul 24 16:36:55 symfony [info] {sfWebDebugLogger} Action "ocmr/create" 73.57 ms (1)
-Jul 24 16:36:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.94 ms (2)
-Jul 24 16:36:55 symfony [info] {sfWebDebugLogger} View "Success" for "ocmr/create" 43.43 ms (1)
-Jul 24 16:36:55 symfony [info] {sfWebDebugLogger} Partial "ocmr/_form" 32.69 ms (1)
-Jul 24 16:36:55 symfony [info] {sfWebResponse} Send content (42506 o)
-Jul 24 16:37:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ocmr/create with parameters array (  'module' => 'ocmr',  'action' => 'create',)
-Jul 24 16:37:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:37:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:37:12 symfony [info] {ocmrActions} Call "ocmrActions->executeCreate()"
-Jul 24 16:37:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 16:37:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o WHERE (o.sku = ?) - (12312)
-Jul 24 16:37:12 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, precio_internet, precio_cmr, fecha_vigencia) VALUES (?, ?, ?, ?) - (12312, 123, 123, 2008-04-02 00:00:00)
-Jul 24 16:37:12 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin_dev.php/ocmr/edit/id_opor_cmr/1"
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin_dev.php/ocmr/edit/id_opor_cmr/1"
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Configuration 3.24 ms (8)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Factories 27.27 ms (1)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Action "ocmr/create" 160.76 ms (1)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.35 ms (3)
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send content (123 o)
-Jul 24 16:37:12 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /ocmr/edit/id_opor_cmr/1 with parameters array (  'module' => 'ocmr',  'action' => 'edit',  'id_opor_cmr' => '1',)
-Jul 24 16:37:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:37:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:37:12 symfony [info] {ocmrActions} Call "ocmrActions->executeEdit()"
-Jul 24 16:37:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 16:37:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
-Jul 24 16:37:12 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/editSuccess.php"
-Jul 24 16:37:12 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/_form.php"
-Jul 24 16:37:12 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:37:12 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Configuration 3.24 ms (9)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Factories 16.07 ms (1)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Action "ocmr/edit" 36.12 ms (1)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.60 ms (2)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} View "Success" for "ocmr/edit" 53.50 ms (1)
-Jul 24 16:37:12 symfony [info] {sfWebDebugLogger} Partial "ocmr/_form" 40.02 ms (1)
-Jul 24 16:37:12 symfony [info] {sfWebResponse} Send content (42091 o)
-Jul 24 16:37:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /ocmr with parameters array (  'module' => 'ocmr',  'action' => 'index',)
-Jul 24 16:37:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 16:37:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 16:37:15 symfony [info] {ocmrActions} Call "ocmrActions->executeIndex()"
-Jul 24 16:37:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 16:37:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
-Jul 24 16:37:15 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/ocmr/templates/indexSuccess.php"
-Jul 24 16:37:15 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:37:15 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 16:37:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 16:37:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 16:37:15 symfony [info] {sfWebDebugLogger} Configuration 3.34 ms (9)
-Jul 24 16:37:15 symfony [info] {sfWebDebugLogger} Factories 17.04 ms (1)
-Jul 24 16:37:15 symfony [info] {sfWebDebugLogger} Action "ocmr/index" 18.14 ms (1)
-Jul 24 16:37:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.48 ms (2)
-Jul 24 16:37:15 symfony [info] {sfWebDebugLogger} View "Success" for "ocmr/index" 12.70 ms (1)
-Jul 24 16:37:15 symfony [info] {sfWebResponse} Send content (30588 o)
-Jul 24 22:51:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /OportunidadCMR with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
-Jul 24 22:51:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 22:51:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 22:51:23 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
-Jul 24 22:51:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 22:51:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
-Jul 24 22:51:24 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
-Jul 24 22:51:24 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:51:24 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:51:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 22:51:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 22:51:24 symfony [info] {sfWebDebugLogger} Configuration 61.15 ms (10)
-Jul 24 22:51:24 symfony [info] {sfWebDebugLogger} Factories 470.70 ms (1)
-Jul 24 22:51:24 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 141.55 ms (1)
-Jul 24 22:51:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.11 ms (2)
-Jul 24 22:51:24 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 60.86 ms (1)
-Jul 24 22:51:24 symfony [info] {sfWebResponse} Send content (30533 o)
-Jul 24 22:52:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /OportunidadCMR with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
-Jul 24 22:52:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 22:52:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 22:52:53 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
-Jul 24 22:52:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 22:52:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
-Jul 24 22:52:53 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
-Jul 24 22:52:53 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:52:53 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:52:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 22:52:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 22:52:53 symfony [info] {sfWebDebugLogger} Configuration 2.37 ms (9)
-Jul 24 22:52:53 symfony [info] {sfWebDebugLogger} Factories 46.61 ms (1)
-Jul 24 22:52:53 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 26.07 ms (1)
-Jul 24 22:52:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.57 ms (2)
-Jul 24 22:52:53 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 11.15 ms (1)
-Jul 24 22:52:53 symfony [info] {sfWebResponse} Send content (30509 o)
-Jul 24 22:52:54 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /OportunidadCMR with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
-Jul 24 22:52:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 22:52:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 22:52:54 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
-Jul 24 22:52:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 22:52:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
-Jul 24 22:52:54 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
-Jul 24 22:52:54 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:52:54 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:52:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 22:52:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 22:52:54 symfony [info] {sfWebDebugLogger} Configuration 2.02 ms (9)
-Jul 24 22:52:54 symfony [info] {sfWebDebugLogger} Factories 9.26 ms (1)
-Jul 24 22:52:54 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 9.47 ms (1)
-Jul 24 22:52:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.78 ms (2)
-Jul 24 22:52:54 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 5.95 ms (1)
-Jul 24 22:52:54 symfony [info] {sfWebResponse} Send content (30538 o)
-Jul 24 22:53:04 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /OportunidadCMR with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
-Jul 24 22:53:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
-Jul 24 22:53:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
-Jul 24 22:53:04 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
-Jul 24 22:53:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
-Jul 24 22:53:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
-Jul 24 22:53:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
-Jul 24 22:53:04 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:53:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
-Jul 24 22:53:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
-Jul 24 22:53:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
-Jul 24 22:53:04 symfony [info] {sfWebDebugLogger} Configuration 2.13 ms (9)
-Jul 24 22:53:04 symfony [info] {sfWebDebugLogger} Factories 10.88 ms (1)
-Jul 24 22:53:04 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 17.76 ms (1)
-Jul 24 22:53:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.60 ms (2)
-Jul 24 22:53:04 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 8.52 ms (1)
-Jul 24 22:53:04 symfony [info] {sfWebResponse} Send content (30508 o)
+Jul 25 13:46:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Jul 25 13:46:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 13:46:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 13:46:01 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Jul 25 13:46:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 13:46:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 13:46:01 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Jul 25 13:46:01 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Jul 25 13:46:01 symfony [info] {main} Set slot "sidebar"
+Jul 25 13:46:01 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 25 13:46:01 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 25 13:46:01 symfony [info] {main} Get slot "sidebar"
+Jul 25 13:46:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 13:46:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Configuration 158.77 ms (9)
+Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Factories 113.58 ms (1)
+Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 18.39 ms (1)
+Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.59 ms (2)
+Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 21.29 ms (1)
+Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.83 ms (1)
+Jul 25 13:46:01 symfony [info] {sfWebResponse} Send content (34901 o)

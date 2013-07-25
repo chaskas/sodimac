@@ -3,14 +3,14 @@
 
 # default rules
 homepage:
-  url:   /admin/
-  param: { module: OportunidadCMR, action: index }
+  url:   /
+  param: { module: default, action: index }
 
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
-  url:   /admin/:module
+  url:   /:module
   param: { action: index }
 
 default:
-  url:   /admin/:module/:action/*
+  url:   /:module/:action/*
