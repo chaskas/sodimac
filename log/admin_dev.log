@@ -19,3 +19,18 @@ Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.59 ms (2
 Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 21.29 ms (1)
 Jul 25 13:46:01 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.83 ms (1)
 Jul 25 13:46:01 symfony [info] {sfWebResponse} Send content (34901 o)
+Jul 25 13:50:41 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/" (/).
+Jul 25 13:50:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 25 13:50:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 25 13:50:41 symfony [info] {sfWebDebugLogger} Configuration 142.27 ms (5)
+Jul 25 13:50:41 symfony [info] {sfWebDebugLogger} Factories 81.51 ms (1)
+Jul 25 13:51:00 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/" (/).
+Jul 25 13:51:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 25 13:51:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 25 13:51:00 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (5)
+Jul 25 13:51:00 symfony [info] {sfWebDebugLogger} Factories 12.65 ms (1)
+Jul 25 13:51:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/" (/).
+Jul 25 13:51:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 25 13:51:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 25 13:51:35 symfony [info] {sfWebDebugLogger} Configuration 156.16 ms (5)
+Jul 25 13:51:35 symfony [info] {sfWebDebugLogger} Factories 83.75 ms (1)

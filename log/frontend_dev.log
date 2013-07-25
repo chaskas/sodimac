@@ -1,0 +1,277 @@
+Jul 25 14:00:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /api with parameters array (  'module' => 'api',  'action' => 'index',)
+Jul 25 14:00:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:00:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:00:07 symfony [info] {apiActions} Call "apiActions->executeIndex()"
+Jul 25 14:00:07 symfony [info] {apiActions} Forward to action "default/module"
+Jul 25 14:00:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:00:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:00:07 symfony [info] {defaultActions} Call "defaultActions->executeModule()"
+Jul 25 14:00:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/controller/default/templates/moduleSuccess.php"
+Jul 25 14:00:07 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 25 14:00:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/controller/default/templates/defaultLayout.php"
+Jul 25 14:00:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:00:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 25 14:00:07 symfony [info] {sfWebDebugLogger} Configuration 253.87 ms (12)
+Jul 25 14:00:07 symfony [info] {sfWebDebugLogger} Factories 159.18 ms (1)
+Jul 25 14:00:07 symfony [info] {sfWebDebugLogger} Action "api/index" 26.40 ms (1)
+Jul 25 14:00:07 symfony [info] {sfWebDebugLogger} Action "default/module" 0.23 ms (1)
+Jul 25 14:00:07 symfony [info] {sfWebDebugLogger} View "Success" for "default/module" 11.54 ms (1)
+Jul 25 14:00:07 symfony [info] {sfWebResponse} Send content (30606 o)
+Jul 25 14:00:12 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'json',)
+Jul 25 14:00:12 symfony [info] {sfFrontWebController} Action "api/list" does not exist
+Jul 25 14:00:12 symfony [err] {sfError404Exception} Action "api/list" does not exist.
+Jul 25 14:00:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 25 14:00:12 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:00:12 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (5)
+Jul 25 14:00:12 symfony [info] {sfWebDebugLogger} Factories 17.22 ms (1)
+Jul 25 14:00:48 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'json',)
+Jul 25 14:00:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:00:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:00:48 symfony [info] {apiActions} Call "apiActions->executeList()"
+Jul 25 14:00:48 symfony [err] {sfRenderException} The template "listSuccess.json.php" does not exist or is unreadable in "".
+Jul 25 14:00:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 25 14:00:48 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:00:48 symfony [info] {sfWebDebugLogger} Configuration 8.01 ms (10)
+Jul 25 14:00:48 symfony [info] {sfWebDebugLogger} Factories 10.29 ms (1)
+Jul 25 14:00:48 symfony [info] {sfWebDebugLogger} Action "api/list" 0.31 ms (1)
+Jul 25 14:00:48 symfony [info] {sfWebDebugLogger} View "Success" for "api/list" 101.56 ms (1)
+Jul 25 14:01:04 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'json',)
+Jul 25 14:01:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:01:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:01:04 symfony [info] {apiActions} Call "apiActions->executeList()"
+Jul 25 14:01:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php"
+Jul 25 14:01:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:01:04 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:01:04 symfony [info] {sfWebDebugLogger} Configuration 1.77 ms (9)
+Jul 25 14:01:04 symfony [info] {sfWebDebugLogger} Factories 10.24 ms (1)
+Jul 25 14:01:04 symfony [info] {sfWebDebugLogger} Action "api/list" 0.38 ms (1)
+Jul 25 14:01:04 symfony [info] {sfWebDebugLogger} View "Success" for "api/list" 4.15 ms (1)
+Jul 25 14:01:04 symfony [info] {sfWebResponse} Send content (0 o)
+Jul 25 14:01:09 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.xml with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'xml',)
+Jul 25 14:01:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:01:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:01:09 symfony [info] {apiActions} Call "apiActions->executeList()"
+Jul 25 14:01:09 symfony [err] {sfRenderException} The template "listSuccess.xml.php" does not exist or is unreadable in "".
+Jul 25 14:01:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 25 14:01:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 25 14:01:09 symfony [info] {sfWebDebugLogger} Configuration 1.88 ms (9)
+Jul 25 14:01:09 symfony [info] {sfWebDebugLogger} Factories 9.34 ms (1)
+Jul 25 14:01:09 symfony [info] {sfWebDebugLogger} Action "api/list" 0.31 ms (1)
+Jul 25 14:01:09 symfony [info] {sfWebDebugLogger} View "Success" for "api/list" 45.84 ms (1)
+Jul 25 14:01:26 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.xml with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'xml',)
+Jul 25 14:01:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:01:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:01:26 symfony [info] {apiActions} Call "apiActions->executeList()"
+Jul 25 14:01:26 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.xml.php"
+Jul 25 14:01:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:01:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 25 14:01:26 symfony [info] {sfWebDebugLogger} Configuration 2.64 ms (9)
+Jul 25 14:01:26 symfony [info] {sfWebDebugLogger} Factories 10.27 ms (1)
+Jul 25 14:01:26 symfony [info] {sfWebDebugLogger} Action "api/list" 0.21 ms (1)
+Jul 25 14:01:26 symfony [info] {sfWebDebugLogger} View "Success" for "api/list" 3.53 ms (1)
+Jul 25 14:01:26 symfony [info] {sfWebResponse} Send content (0 o)
+Jul 25 14:45:04 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.xml with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'xml',)
+Jul 25 14:45:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:45:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:45:04 symfony [info] {apiActions} Call "apiActions->executeList()"
+Jul 25 14:45:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.xml.php"
+Jul 25 14:45:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:45:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 25 14:45:04 symfony [info] {sfWebDebugLogger} Configuration 2.00 ms (9)
+Jul 25 14:45:04 symfony [info] {sfWebDebugLogger} Factories 10.21 ms (1)
+Jul 25 14:45:04 symfony [info] {sfWebDebugLogger} Action "api/list" 0.38 ms (1)
+Jul 25 14:45:04 symfony [info] {sfWebDebugLogger} View "Success" for "api/list" 3.77 ms (1)
+Jul 25 14:45:04 symfony [info] {sfWebResponse} Send content (0 o)
+Jul 25 14:45:15 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'list',  'sf_format' => 'json',)
+Jul 25 14:45:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:45:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:45:15 symfony [info] {apiActions} Call "apiActions->executeList()"
+Jul 25 14:45:15 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php"
+Jul 25 14:45:15 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php on line 3 (Undefined variable: jobs)
+Jul 25 14:45:15 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php on line 3 (Undefined variable: jobs)
+Jul 25 14:45:15 symfony [warning] {sfWebDebugLogger}  Warning at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php on line 3 (Invalid argument supplied for foreach())
+Jul 25 14:45:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:45:15 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:45:15 symfony [info] {sfWebDebugLogger} Configuration 2.04 ms (9)
+Jul 25 14:45:15 symfony [info] {sfWebDebugLogger} Factories 9.44 ms (1)
+Jul 25 14:45:15 symfony [info] {sfWebDebugLogger} Action "api/list" 0.35 ms (1)
+Jul 25 14:45:15 symfony [info] {sfWebDebugLogger} View "Success" for "api/list" 5.39 ms (1)
+Jul 25 14:45:15 symfony [info] {sfWebResponse} Send content (598 o)
+Jul 25 14:48:00 symfony [err] {InvalidArgumentException} The "type" option can only be "object" or "list", "ocmr" given (/api/ocmr.:sf_format).
+Jul 25 14:48:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 25 14:48:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 25 14:48:00 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (5)
+Jul 25 14:48:00 symfony [info] {sfWebDebugLogger} Factories 114.30 ms (1)
+Jul 25 14:48:12 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:48:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:48:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:48:12 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:48:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:48:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:48:12 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:48:12 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php on line 3 (Undefined variable: jobs)
+Jul 25 14:48:12 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php on line 3 (Undefined variable: jobs)
+Jul 25 14:48:12 symfony [warning] {sfWebDebugLogger}  Warning at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/listSuccess.json.php on line 3 (Invalid argument supplied for foreach())
+Jul 25 14:48:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:48:12 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:48:12 symfony [info] {sfWebDebugLogger} Configuration 45.29 ms (10)
+Jul 25 14:48:12 symfony [info] {sfWebDebugLogger} Factories 52.81 ms (1)
+Jul 25 14:48:12 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 9.70 ms (1)
+Jul 25 14:48:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.60 ms (2)
+Jul 25 14:48:12 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 4.67 ms (1)
+Jul 25 14:48:12 symfony [info] {sfWebResponse} Send content (598 o)
+Jul 25 14:53:49 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:53:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:53:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:53:49 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:53:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:53:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:53:49 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:54:01 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:54:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:54:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:54:01 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:54:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:54:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:54:01 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:54:28 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:54:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:54:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:54:28 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:54:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:54:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:54:28 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:55:29 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:55:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:55:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:55:29 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:55:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:55:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:55:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:56:14 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:56:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:56:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:56:14 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:56:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:56:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:56:14 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:56:37 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:56:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:56:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:56:37 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:56:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:56:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:56:37 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:56:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:56:37 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:56:37 symfony [info] {sfWebDebugLogger} Configuration 1.97 ms (9)
+Jul 25 14:56:37 symfony [info] {sfWebDebugLogger} Factories 14.03 ms (1)
+Jul 25 14:56:37 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 11.60 ms (1)
+Jul 25 14:56:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.60 ms (2)
+Jul 25 14:56:37 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 6.71 ms (1)
+Jul 25 14:56:37 symfony [info] {sfWebResponse} Send content (464 o)
+Jul 25 14:56:56 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:56:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:56:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:56:56 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:56:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:56:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:56:56 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:56:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:56:56 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:56:56 symfony [info] {sfWebDebugLogger} Configuration 1.93 ms (9)
+Jul 25 14:56:56 symfony [info] {sfWebDebugLogger} Factories 9.38 ms (1)
+Jul 25 14:56:56 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 18.29 ms (1)
+Jul 25 14:56:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.57 ms (2)
+Jul 25 14:56:56 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 9.54 ms (1)
+Jul 25 14:56:56 symfony [info] {sfWebResponse} Send content (422 o)
+Jul 25 14:57:13 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:57:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:57:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:57:13 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:57:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:57:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:57:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:57:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:57:13 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:57:13 symfony [info] {sfWebDebugLogger} Configuration 1.87 ms (9)
+Jul 25 14:57:13 symfony [info] {sfWebDebugLogger} Factories 10.58 ms (1)
+Jul 25 14:57:13 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 19.20 ms (1)
+Jul 25 14:57:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.70 ms (2)
+Jul 25 14:57:13 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 7.36 ms (1)
+Jul 25 14:57:13 symfony [info] {sfWebResponse} Send content (422 o)
+Jul 25 14:58:01 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:58:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:58:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:58:01 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:58:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:58:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:58:01 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:58:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:58:01 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:58:01 symfony [info] {sfWebDebugLogger} Configuration 1.86 ms (9)
+Jul 25 14:58:01 symfony [info] {sfWebDebugLogger} Factories 10.20 ms (1)
+Jul 25 14:58:01 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 9.92 ms (1)
+Jul 25 14:58:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.56 ms (2)
+Jul 25 14:58:01 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 6.47 ms (1)
+Jul 25 14:58:01 symfony [info] {sfWebResponse} Send content (428 o)
+Jul 25 14:58:19 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:58:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:58:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:58:19 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:58:19 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:58:19 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:58:19 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:58:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:58:19 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:58:19 symfony [info] {sfWebDebugLogger} Configuration 1.99 ms (9)
+Jul 25 14:58:19 symfony [info] {sfWebDebugLogger} Factories 11.03 ms (1)
+Jul 25 14:58:19 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 10.28 ms (1)
+Jul 25 14:58:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.96 ms (2)
+Jul 25 14:58:19 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 6.21 ms (1)
+Jul 25 14:58:19 symfony [info] {sfWebResponse} Send content (422 o)
+Jul 25 14:59:02 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:59:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:59:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:59:02 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:59:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:59:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:59:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:59:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:59:02 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:59:02 symfony [info] {sfWebDebugLogger} Configuration 1.96 ms (9)
+Jul 25 14:59:02 symfony [info] {sfWebDebugLogger} Factories 12.61 ms (1)
+Jul 25 14:59:02 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 11.29 ms (1)
+Jul 25 14:59:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+Jul 25 14:59:02 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 6.64 ms (1)
+Jul 25 14:59:02 symfony [info] {sfWebResponse} Send content (443 o)
+Jul 25 14:59:07 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 14:59:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 14:59:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 14:59:07 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 14:59:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 14:59:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 14:59:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 14:59:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 14:59:07 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 14:59:07 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (9)
+Jul 25 14:59:07 symfony [info] {sfWebDebugLogger} Factories 13.47 ms (1)
+Jul 25 14:59:07 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 11.87 ms (1)
+Jul 25 14:59:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.61 ms (2)
+Jul 25 14:59:07 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 6.47 ms (1)
+Jul 25 14:59:07 symfony [info] {sfWebResponse} Send content (443 o)
+Jul 25 15:01:38 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/ocmr.:sf_format) for /api/ocmr.json with parameters array (  'module' => 'api',  'action' => 'ocmr',  'sf_format' => 'json',)
+Jul 25 15:01:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 25 15:01:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 25 15:01:38 symfony [info] {apiActions} Call "apiActions->executeOcmr()"
+Jul 25 15:01:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 25 15:01:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 25 15:01:38 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/ocmrSuccess.json.php"
+Jul 25 15:01:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 25 15:01:38 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} Configuration 174.85 ms (9)
+Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} Factories 86.02 ms (1)
+Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 9.58 ms (1)
+Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.50 ms (2)
+Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 10.48 ms (1)
+Jul 25 15:01:38 symfony [info] {sfWebResponse} Send content (440 o)

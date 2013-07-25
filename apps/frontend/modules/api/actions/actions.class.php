@@ -15,8 +15,10 @@ class apiActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeIndex(sfWebRequest $request)
+  public function executeOcmr(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
+    $this->ocmrs = Doctrine_Core::getTable('OportunidadCmr')
+      ->createQuery('a')
+      ->execute();
   }
 }
