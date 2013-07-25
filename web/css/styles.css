@@ -1,0 +1,30 @@
+body	{	padding-top: 60px; }
+
+.sidenav > .active > a, .sidenav > .active > a:hover, .sidenav > .active > a:focus {
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	background-color: #0088cc;
+}
+
+.sidenav {
+	margin: 30px 0 0;
+	padding: 0;
+	background-color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+	box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+
+.sidenav .active .icon-chevron-right, .sidenav .active a:hover .icon-chevron-right {
+	background-image: url(../img/glyphicons-halflings-white.png);
+	opacity: 1;
+}
+.sidenav .icon-chevron-right {
+	float: right;
+	margin-top: 2px;
+	margin-right: -6px;
+	opacity: .25;
+}
