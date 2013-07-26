@@ -12,6 +12,7 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @property string $sigla
  * @property Doctrine_Collection $EncuestaPreguntas
  * @property Doctrine_Collection $Endpoint
+ * @property Doctrine_Collection $OportunidadCmr
  * @property Doctrine_Collection $Region
  * @property Doctrine_Collection $Tienda
  * 
@@ -20,6 +21,7 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @method string              getSigla()             Returns the current record's "sigla" value
  * @method Doctrine_Collection getEncuestaPreguntas() Returns the current record's "EncuestaPreguntas" collection
  * @method Doctrine_Collection getEndpoint()          Returns the current record's "Endpoint" collection
+ * @method Doctrine_Collection getOportunidadCmr()    Returns the current record's "OportunidadCmr" collection
  * @method Doctrine_Collection getRegion()            Returns the current record's "Region" collection
  * @method Doctrine_Collection getTienda()            Returns the current record's "Tienda" collection
  * @method Pais                setIdPais()            Sets the current record's "id_pais" value
@@ -27,12 +29,13 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @method Pais                setSigla()             Sets the current record's "sigla" value
  * @method Pais                setEncuestaPreguntas() Sets the current record's "EncuestaPreguntas" collection
  * @method Pais                setEndpoint()          Sets the current record's "Endpoint" collection
+ * @method Pais                setOportunidadCmr()    Sets the current record's "OportunidadCmr" collection
  * @method Pais                setRegion()            Sets the current record's "Region" collection
  * @method Pais                setTienda()            Sets the current record's "Tienda" collection
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BasePais extends sfDoctrineRecord
@@ -76,6 +79,10 @@ abstract class BasePais extends sfDoctrineRecord
              'foreign' => 'id_pais'));
 
         $this->hasMany('Endpoint', array(
+             'local' => 'id_pais',
+             'foreign' => 'id_pais'));
+
+        $this->hasMany('OportunidadCmr', array(
              'local' => 'id_pais',
              'foreign' => 'id_pais'));
 

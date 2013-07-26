@@ -122,14 +122,14 @@ EncuestaPreguntas:
       notnull: false
       autoincrement: false
     valor_defecto:
-      type: string()
+      type: string(300)
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
     desc_pregunta:
-      type: string()
+      type: string(500)
       fixed: false
       unsigned: false
       primary: false
@@ -151,13 +151,13 @@ EncuestaPreguntas:
       notnull: false
       autoincrement: false
   relations:
-    Pais:
-      local: id_pais
-      foreign: id_pais
-      type: one
     TipoPregunta:
       local: id_tipo_preg
       foreign: id_tipo_preg
+      type: one
+    Pais:
+      local: id_pais
+      foreign: id_pais
       type: one
     EncuestaRespuestas:
       local: id_enc_preg
@@ -188,20 +188,20 @@ EncuestaRespuestas:
       notnull: false
       autoincrement: false
     valor_resp:
-      type: string()
+      type: string(300)
       fixed: false
       unsigned: false
       primary: false
       notnull: false
       autoincrement: false
   relations:
-    EncuestaCabeceraRespuestas:
-      local: id_enc_cab_resp
-      foreign: id_enc_cab_resp
-      type: one
     EncuestaPreguntas:
       local: id_enc_preg
       foreign: id_enc_preg
+      type: one
+    EncuestaCabeceraRespuestas:
+      local: id_enc_cab_resp
+      foreign: id_enc_cab_resp
       type: one
 Endpoint:
   connection: doctrine
@@ -258,7 +258,7 @@ OportunidadCmr:
   tableName: oportunidad_cmr
   columns:
     id_opor_cmr:
-      type: integer(8)
+      type: integer(4)
       fixed: false
       unsigned: false
       primary: true
@@ -268,29 +268,41 @@ OportunidadCmr:
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+      notnull: false
       autoincrement: false
     precio_internet:
-      type: integer(8)
+      type: integer(4)
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+      notnull: false
       autoincrement: false
     precio_cmr:
-      type: integer(8)
+      type: integer(4)
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+      notnull: false
       autoincrement: false
     fecha_vigencia:
-      type: timestamp(25)
+      type: date(25)
       fixed: false
       unsigned: false
       primary: false
-      notnull: true
+      notnull: false
       autoincrement: false
+    id_pais:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Pais:
+      local: id_pais
+      foreign: id_pais
+      type: one
 Pais:
   connection: doctrine
   tableName: pais
@@ -321,6 +333,10 @@ Pais:
       foreign: id_pais
       type: many
     Endpoint:
+      local: id_pais
+      foreign: id_pais
+      type: many
+    OportunidadCmr:
       local: id_pais
       foreign: id_pais
       type: many
@@ -381,6 +397,15 @@ ServiciosPorTienda:
       unsigned: false
       primary: true
       autoincrement: false
+  relations:
+    Tienda:
+      local: id_tienda
+      foreign: id_tienda
+      type: one
+    ServiciosTienda:
+      local: id_servicio_tienda
+      foreign: id_servicio_tienda
+      type: one
 ServiciosTienda:
   connection: doctrine
   tableName: servicios_tienda
@@ -405,6 +430,11 @@ ServiciosTienda:
       primary: false
       notnull: false
       autoincrement: false
+  relations:
+    ServiciosPorTienda:
+      local: id_servicio_tienda
+      foreign: id_servicio_tienda
+      type: many
 Tienda:
   connection: doctrine
   tableName: tienda
@@ -493,6 +523,10 @@ Tienda:
       notnull: false
       autoincrement: false
   relations:
+    TipoTienda:
+      local: id_tipo_tienda
+      foreign: id_tipo_tienda
+      type: one
     Pais:
       local: id_pais
       foreign: id_pais
@@ -501,10 +535,10 @@ Tienda:
       local: id_region
       foreign: id_region
       type: one
-    TipoTienda:
-      local: id_tipo_tienda
-      foreign: id_tipo_tienda
-      type: one
+    ServiciosPorTienda:
+      local: id_tienda
+      foreign: id_tienda
+      type: many
 TipoPregunta:
   connection: doctrine
   tableName: tipo_pregunta

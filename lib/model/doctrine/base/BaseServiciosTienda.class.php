@@ -10,17 +10,20 @@ Doctrine_Manager::getInstance()->bindComponent('ServiciosTienda', 'doctrine');
  * @property integer $id_servicio_tienda
  * @property string $desc_servicio
  * @property string $estado
+ * @property Doctrine_Collection $ServiciosPorTienda
  * 
- * @method integer         getIdServicioTienda()   Returns the current record's "id_servicio_tienda" value
- * @method string          getDescServicio()       Returns the current record's "desc_servicio" value
- * @method string          getEstado()             Returns the current record's "estado" value
- * @method ServiciosTienda setIdServicioTienda()   Sets the current record's "id_servicio_tienda" value
- * @method ServiciosTienda setDescServicio()       Sets the current record's "desc_servicio" value
- * @method ServiciosTienda setEstado()             Sets the current record's "estado" value
+ * @method integer             getIdServicioTienda()   Returns the current record's "id_servicio_tienda" value
+ * @method string              getDescServicio()       Returns the current record's "desc_servicio" value
+ * @method string              getEstado()             Returns the current record's "estado" value
+ * @method Doctrine_Collection getServiciosPorTienda() Returns the current record's "ServiciosPorTienda" collection
+ * @method ServiciosTienda     setIdServicioTienda()   Sets the current record's "id_servicio_tienda" value
+ * @method ServiciosTienda     setDescServicio()       Sets the current record's "desc_servicio" value
+ * @method ServiciosTienda     setEstado()             Sets the current record's "estado" value
+ * @method ServiciosTienda     setServiciosPorTienda() Sets the current record's "ServiciosPorTienda" collection
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseServiciosTienda extends sfDoctrineRecord
@@ -59,6 +62,8 @@ abstract class BaseServiciosTienda extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        
+        $this->hasMany('ServiciosPorTienda', array(
+             'local' => 'id_servicio_tienda',
+             'foreign' => 'id_servicio_tienda'));
     }
 }

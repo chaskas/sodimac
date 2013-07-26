@@ -7,7 +7,7 @@
  *
  * @package    sodimac
  * @subpackage form
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
 abstract class BaseOportunidadCmrForm extends BaseFormDoctrine
@@ -19,15 +19,17 @@ abstract class BaseOportunidadCmrForm extends BaseFormDoctrine
       'sku'             => new sfWidgetFormInputText(),
       'precio_internet' => new sfWidgetFormInputText(),
       'precio_cmr'      => new sfWidgetFormInputText(),
-      'fecha_vigencia'  => new sfWidgetFormDateTime(),
+      'fecha_vigencia'  => new sfWidgetFormDate(),
+      'id_pais'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'id_opor_cmr'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_opor_cmr')), 'empty_value' => $this->getObject()->get('id_opor_cmr'), 'required' => false)),
-      'sku'             => new sfValidatorString(array('max_length' => 7)),
-      'precio_internet' => new sfValidatorInteger(),
-      'precio_cmr'      => new sfValidatorInteger(),
-      'fecha_vigencia'  => new sfValidatorDateTime(),
+      'sku'             => new sfValidatorString(array('max_length' => 7, 'required' => false)),
+      'precio_internet' => new sfValidatorInteger(array('required' => false)),
+      'precio_cmr'      => new sfValidatorInteger(array('required' => false)),
+      'fecha_vigencia'  => new sfValidatorDate(array('required' => false)),
+      'id_pais'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('oportunidad_cmr[%s]');

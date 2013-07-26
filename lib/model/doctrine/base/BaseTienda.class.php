@@ -19,44 +19,47 @@ Doctrine_Manager::getInstance()->bindComponent('Tienda', 'doctrine');
  * @property integer $id_pais
  * @property string $gerente
  * @property integer $busc_producto
+ * @property TipoTienda $TipoTienda
  * @property Pais $Pais
  * @property Region $Region
- * @property TipoTienda $TipoTienda
+ * @property Doctrine_Collection $ServiciosPorTienda
  * 
- * @method integer    getIdTienda()       Returns the current record's "id_tienda" value
- * @method string     getNombre()         Returns the current record's "nombre" value
- * @method string     getDireccion()      Returns the current record's "direccion" value
- * @method string     getLatitud()        Returns the current record's "latitud" value
- * @method string     getLongitud()       Returns the current record's "longitud" value
- * @method string     getTelefono()       Returns the current record's "telefono" value
- * @method string     getHorario()        Returns the current record's "horario" value
- * @method integer    getIdRegion()       Returns the current record's "id_region" value
- * @method integer    getIdTipoTienda()   Returns the current record's "id_tipo_tienda" value
- * @method integer    getIdPais()         Returns the current record's "id_pais" value
- * @method string     getGerente()        Returns the current record's "gerente" value
- * @method integer    getBuscProducto()   Returns the current record's "busc_producto" value
- * @method Pais       getPais()           Returns the current record's "Pais" value
- * @method Region     getRegion()         Returns the current record's "Region" value
- * @method TipoTienda getTipoTienda()     Returns the current record's "TipoTienda" value
- * @method Tienda     setIdTienda()       Sets the current record's "id_tienda" value
- * @method Tienda     setNombre()         Sets the current record's "nombre" value
- * @method Tienda     setDireccion()      Sets the current record's "direccion" value
- * @method Tienda     setLatitud()        Sets the current record's "latitud" value
- * @method Tienda     setLongitud()       Sets the current record's "longitud" value
- * @method Tienda     setTelefono()       Sets the current record's "telefono" value
- * @method Tienda     setHorario()        Sets the current record's "horario" value
- * @method Tienda     setIdRegion()       Sets the current record's "id_region" value
- * @method Tienda     setIdTipoTienda()   Sets the current record's "id_tipo_tienda" value
- * @method Tienda     setIdPais()         Sets the current record's "id_pais" value
- * @method Tienda     setGerente()        Sets the current record's "gerente" value
- * @method Tienda     setBuscProducto()   Sets the current record's "busc_producto" value
- * @method Tienda     setPais()           Sets the current record's "Pais" value
- * @method Tienda     setRegion()         Sets the current record's "Region" value
- * @method Tienda     setTipoTienda()     Sets the current record's "TipoTienda" value
+ * @method integer             getIdTienda()           Returns the current record's "id_tienda" value
+ * @method string              getNombre()             Returns the current record's "nombre" value
+ * @method string              getDireccion()          Returns the current record's "direccion" value
+ * @method string              getLatitud()            Returns the current record's "latitud" value
+ * @method string              getLongitud()           Returns the current record's "longitud" value
+ * @method string              getTelefono()           Returns the current record's "telefono" value
+ * @method string              getHorario()            Returns the current record's "horario" value
+ * @method integer             getIdRegion()           Returns the current record's "id_region" value
+ * @method integer             getIdTipoTienda()       Returns the current record's "id_tipo_tienda" value
+ * @method integer             getIdPais()             Returns the current record's "id_pais" value
+ * @method string              getGerente()            Returns the current record's "gerente" value
+ * @method integer             getBuscProducto()       Returns the current record's "busc_producto" value
+ * @method TipoTienda          getTipoTienda()         Returns the current record's "TipoTienda" value
+ * @method Pais                getPais()               Returns the current record's "Pais" value
+ * @method Region              getRegion()             Returns the current record's "Region" value
+ * @method Doctrine_Collection getServiciosPorTienda() Returns the current record's "ServiciosPorTienda" collection
+ * @method Tienda              setIdTienda()           Sets the current record's "id_tienda" value
+ * @method Tienda              setNombre()             Sets the current record's "nombre" value
+ * @method Tienda              setDireccion()          Sets the current record's "direccion" value
+ * @method Tienda              setLatitud()            Sets the current record's "latitud" value
+ * @method Tienda              setLongitud()           Sets the current record's "longitud" value
+ * @method Tienda              setTelefono()           Sets the current record's "telefono" value
+ * @method Tienda              setHorario()            Sets the current record's "horario" value
+ * @method Tienda              setIdRegion()           Sets the current record's "id_region" value
+ * @method Tienda              setIdTipoTienda()       Sets the current record's "id_tipo_tienda" value
+ * @method Tienda              setIdPais()             Sets the current record's "id_pais" value
+ * @method Tienda              setGerente()            Sets the current record's "gerente" value
+ * @method Tienda              setBuscProducto()       Sets the current record's "busc_producto" value
+ * @method Tienda              setTipoTienda()         Sets the current record's "TipoTienda" value
+ * @method Tienda              setPais()               Sets the current record's "Pais" value
+ * @method Tienda              setRegion()             Sets the current record's "Region" value
+ * @method Tienda              setServiciosPorTienda() Sets the current record's "ServiciosPorTienda" collection
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseTienda extends sfDoctrineRecord
@@ -176,6 +179,10 @@ abstract class BaseTienda extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('TipoTienda', array(
+             'local' => 'id_tipo_tienda',
+             'foreign' => 'id_tipo_tienda'));
+
         $this->hasOne('Pais', array(
              'local' => 'id_pais',
              'foreign' => 'id_pais'));
@@ -184,8 +191,8 @@ abstract class BaseTienda extends sfDoctrineRecord
              'local' => 'id_region',
              'foreign' => 'id_region'));
 
-        $this->hasOne('TipoTienda', array(
-             'local' => 'id_tipo_tienda',
-             'foreign' => 'id_tipo_tienda'));
+        $this->hasMany('ServiciosPorTienda', array(
+             'local' => 'id_tienda',
+             'foreign' => 'id_tienda'));
     }
 }

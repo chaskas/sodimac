@@ -11,25 +11,25 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaRespuestas', 'doctrine')
  * @property integer $id_enc_preg
  * @property integer $id_enc_cab_resp
  * @property string $valor_resp
- * @property EncuestaCabeceraRespuestas $EncuestaCabeceraRespuestas
  * @property EncuestaPreguntas $EncuestaPreguntas
+ * @property EncuestaCabeceraRespuestas $EncuestaCabeceraRespuestas
  * 
  * @method integer                    getIdEncResp()                  Returns the current record's "id_enc_resp" value
  * @method integer                    getIdEncPreg()                  Returns the current record's "id_enc_preg" value
  * @method integer                    getIdEncCabResp()               Returns the current record's "id_enc_cab_resp" value
  * @method string                     getValorResp()                  Returns the current record's "valor_resp" value
- * @method EncuestaCabeceraRespuestas getEncuestaCabeceraRespuestas() Returns the current record's "EncuestaCabeceraRespuestas" value
  * @method EncuestaPreguntas          getEncuestaPreguntas()          Returns the current record's "EncuestaPreguntas" value
+ * @method EncuestaCabeceraRespuestas getEncuestaCabeceraRespuestas() Returns the current record's "EncuestaCabeceraRespuestas" value
  * @method EncuestaRespuestas         setIdEncResp()                  Sets the current record's "id_enc_resp" value
  * @method EncuestaRespuestas         setIdEncPreg()                  Sets the current record's "id_enc_preg" value
  * @method EncuestaRespuestas         setIdEncCabResp()               Sets the current record's "id_enc_cab_resp" value
  * @method EncuestaRespuestas         setValorResp()                  Sets the current record's "valor_resp" value
- * @method EncuestaRespuestas         setEncuestaCabeceraRespuestas() Sets the current record's "EncuestaCabeceraRespuestas" value
  * @method EncuestaRespuestas         setEncuestaPreguntas()          Sets the current record's "EncuestaPreguntas" value
+ * @method EncuestaRespuestas         setEncuestaCabeceraRespuestas() Sets the current record's "EncuestaCabeceraRespuestas" value
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseEncuestaRespuestas extends sfDoctrineRecord
@@ -63,26 +63,26 @@ abstract class BaseEncuestaRespuestas extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('valor_resp', 'string', null, array(
+        $this->hasColumn('valor_resp', 'string', 300, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => '',
+             'length' => 300,
              ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('EncuestaCabeceraRespuestas', array(
-             'local' => 'id_enc_cab_resp',
-             'foreign' => 'id_enc_cab_resp'));
-
         $this->hasOne('EncuestaPreguntas', array(
              'local' => 'id_enc_preg',
              'foreign' => 'id_enc_preg'));
+
+        $this->hasOne('EncuestaCabeceraRespuestas', array(
+             'local' => 'id_enc_cab_resp',
+             'foreign' => 'id_enc_cab_resp'));
     }
 }

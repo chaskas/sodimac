@@ -13,8 +13,8 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaPreguntas', 'doctrine');
  * @property string $desc_pregunta
  * @property string $estado
  * @property integer $id_pais
- * @property Pais $Pais
  * @property TipoPregunta $TipoPregunta
+ * @property Pais $Pais
  * @property Doctrine_Collection $EncuestaRespuestas
  * 
  * @method integer             getIdEncPreg()          Returns the current record's "id_enc_preg" value
@@ -23,8 +23,8 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaPreguntas', 'doctrine');
  * @method string              getDescPregunta()       Returns the current record's "desc_pregunta" value
  * @method string              getEstado()             Returns the current record's "estado" value
  * @method integer             getIdPais()             Returns the current record's "id_pais" value
- * @method Pais                getPais()               Returns the current record's "Pais" value
  * @method TipoPregunta        getTipoPregunta()       Returns the current record's "TipoPregunta" value
+ * @method Pais                getPais()               Returns the current record's "Pais" value
  * @method Doctrine_Collection getEncuestaRespuestas() Returns the current record's "EncuestaRespuestas" collection
  * @method EncuestaPreguntas   setIdEncPreg()          Sets the current record's "id_enc_preg" value
  * @method EncuestaPreguntas   setIdTipoPreg()         Sets the current record's "id_tipo_preg" value
@@ -32,13 +32,13 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaPreguntas', 'doctrine');
  * @method EncuestaPreguntas   setDescPregunta()       Sets the current record's "desc_pregunta" value
  * @method EncuestaPreguntas   setEstado()             Sets the current record's "estado" value
  * @method EncuestaPreguntas   setIdPais()             Sets the current record's "id_pais" value
- * @method EncuestaPreguntas   setPais()               Sets the current record's "Pais" value
  * @method EncuestaPreguntas   setTipoPregunta()       Sets the current record's "TipoPregunta" value
+ * @method EncuestaPreguntas   setPais()               Sets the current record's "Pais" value
  * @method EncuestaPreguntas   setEncuestaRespuestas() Sets the current record's "EncuestaRespuestas" collection
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseEncuestaPreguntas extends sfDoctrineRecord
@@ -63,23 +63,23 @@ abstract class BaseEncuestaPreguntas extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('valor_defecto', 'string', null, array(
+        $this->hasColumn('valor_defecto', 'string', 300, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => '',
+             'length' => 300,
              ));
-        $this->hasColumn('desc_pregunta', 'string', null, array(
+        $this->hasColumn('desc_pregunta', 'string', 500, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => '',
+             'length' => 500,
              ));
         $this->hasColumn('estado', 'string', 3, array(
              'type' => 'string',
@@ -105,13 +105,13 @@ abstract class BaseEncuestaPreguntas extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('Pais', array(
-             'local' => 'id_pais',
-             'foreign' => 'id_pais'));
-
         $this->hasOne('TipoPregunta', array(
              'local' => 'id_tipo_preg',
              'foreign' => 'id_tipo_preg'));
+
+        $this->hasOne('Pais', array(
+             'local' => 'id_pais',
+             'foreign' => 'id_pais'));
 
         $this->hasMany('EncuestaRespuestas', array(
              'local' => 'id_enc_preg',

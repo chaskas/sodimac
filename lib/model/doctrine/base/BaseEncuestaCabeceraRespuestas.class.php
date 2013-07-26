@@ -56,7 +56,7 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaCabeceraRespuestas', 'do
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseEncuestaCabeceraRespuestas extends sfDoctrineRecord

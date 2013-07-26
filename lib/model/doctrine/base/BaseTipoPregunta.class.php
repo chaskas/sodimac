@@ -20,7 +20,7 @@ Doctrine_Manager::getInstance()->bindComponent('TipoPregunta', 'doctrine');
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseTipoPregunta extends sfDoctrineRecord

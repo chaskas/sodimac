@@ -11,22 +11,28 @@ Doctrine_Manager::getInstance()->bindComponent('OportunidadCmr', 'doctrine');
  * @property string $sku
  * @property integer $precio_internet
  * @property integer $precio_cmr
- * @property timestamp $fecha_vigencia
+ * @property date $fecha_vigencia
+ * @property integer $id_pais
+ * @property Pais $Pais
  * 
  * @method integer        getIdOporCmr()       Returns the current record's "id_opor_cmr" value
  * @method string         getSku()             Returns the current record's "sku" value
  * @method integer        getPrecioInternet()  Returns the current record's "precio_internet" value
  * @method integer        getPrecioCmr()       Returns the current record's "precio_cmr" value
- * @method timestamp      getFechaVigencia()   Returns the current record's "fecha_vigencia" value
+ * @method date           getFechaVigencia()   Returns the current record's "fecha_vigencia" value
+ * @method integer        getIdPais()          Returns the current record's "id_pais" value
+ * @method Pais           getPais()            Returns the current record's "Pais" value
  * @method OportunidadCmr setIdOporCmr()       Sets the current record's "id_opor_cmr" value
  * @method OportunidadCmr setSku()             Sets the current record's "sku" value
  * @method OportunidadCmr setPrecioInternet()  Sets the current record's "precio_internet" value
  * @method OportunidadCmr setPrecioCmr()       Sets the current record's "precio_cmr" value
  * @method OportunidadCmr setFechaVigencia()   Sets the current record's "fecha_vigencia" value
+ * @method OportunidadCmr setIdPais()          Sets the current record's "id_pais" value
+ * @method OportunidadCmr setPais()            Sets the current record's "Pais" value
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseOportunidadCmr extends sfDoctrineRecord
@@ -34,55 +40,66 @@ abstract class BaseOportunidadCmr extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('oportunidad_cmr');
-        $this->hasColumn('id_opor_cmr', 'integer', 8, array(
+        $this->hasColumn('id_opor_cmr', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => true,
              'autoincrement' => true,
-             'length' => 8,
+             'length' => 4,
              ));
         $this->hasColumn('sku', 'string', 7, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'notnull' => true,
+             'notnull' => false,
              'autoincrement' => false,
              'length' => 7,
              ));
-        $this->hasColumn('precio_internet', 'integer', 8, array(
+        $this->hasColumn('precio_internet', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'notnull' => true,
+             'notnull' => false,
              'autoincrement' => false,
-             'length' => 8,
+             'length' => 4,
              ));
-        $this->hasColumn('precio_cmr', 'integer', 8, array(
+        $this->hasColumn('precio_cmr', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'notnull' => true,
+             'notnull' => false,
              'autoincrement' => false,
-             'length' => 8,
+             'length' => 4,
              ));
-        $this->hasColumn('fecha_vigencia', 'timestamp', 25, array(
-             'type' => 'timestamp',
+        $this->hasColumn('fecha_vigencia', 'date', 25, array(
+             'type' => 'date',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'notnull' => true,
+             'notnull' => false,
              'autoincrement' => false,
              'length' => 25,
+             ));
+        $this->hasColumn('id_pais', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 4,
              ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        
+        $this->hasOne('Pais', array(
+             'local' => 'id_pais',
+             'foreign' => 'id_pais'));
     }
 }

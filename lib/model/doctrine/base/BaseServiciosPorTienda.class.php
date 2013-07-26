@@ -9,15 +9,21 @@ Doctrine_Manager::getInstance()->bindComponent('ServiciosPorTienda', 'doctrine')
  * 
  * @property integer $id_tienda
  * @property integer $id_servicio_tienda
+ * @property Tienda $Tienda
+ * @property ServiciosTienda $ServiciosTienda
  * 
  * @method integer            getIdTienda()           Returns the current record's "id_tienda" value
  * @method integer            getIdServicioTienda()   Returns the current record's "id_servicio_tienda" value
+ * @method Tienda             getTienda()             Returns the current record's "Tienda" value
+ * @method ServiciosTienda    getServiciosTienda()    Returns the current record's "ServiciosTienda" value
  * @method ServiciosPorTienda setIdTienda()           Sets the current record's "id_tienda" value
  * @method ServiciosPorTienda setIdServicioTienda()   Sets the current record's "id_servicio_tienda" value
+ * @method ServiciosPorTienda setTienda()             Sets the current record's "Tienda" value
+ * @method ServiciosPorTienda setServiciosTienda()    Sets the current record's "ServiciosTienda" value
  * 
  * @package    sodimac
  * @subpackage model
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 abstract class BaseServiciosPorTienda extends sfDoctrineRecord
@@ -46,6 +52,12 @@ abstract class BaseServiciosPorTienda extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        
+        $this->hasOne('Tienda', array(
+             'local' => 'id_tienda',
+             'foreign' => 'id_tienda'));
+
+        $this->hasOne('ServiciosTienda', array(
+             'local' => 'id_servicio_tienda',
+             'foreign' => 'id_servicio_tienda'));
     }
 }

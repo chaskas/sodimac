@@ -7,7 +7,7 @@
  *
  * @package    sodimac
  * @subpackage form
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
 abstract class BaseEncuestaRespuestasForm extends BaseFormDoctrine
@@ -25,7 +25,7 @@ abstract class BaseEncuestaRespuestasForm extends BaseFormDoctrine
       'id_enc_resp'     => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_enc_resp')), 'empty_value' => $this->getObject()->get('id_enc_resp'), 'required' => false)),
       'id_enc_preg'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('EncuestaPreguntas'), 'required' => false)),
       'id_enc_cab_resp' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('EncuestaCabeceraRespuestas'), 'required' => false)),
-      'valor_resp'      => new sfValidatorString(array('required' => false)),
+      'valor_resp'      => new sfValidatorString(array('max_length' => 300, 'required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('encuesta_respuestas[%s]');

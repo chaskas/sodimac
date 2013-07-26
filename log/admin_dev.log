@@ -368,3 +368,39 @@ Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.58 ms (2
 Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} View "Success" for "Preguntas/index" 22.37 ms (1)
 Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Partial "Preguntas/_sidebar" 1.99 ms (1)
 Jul 26 10:10:34 symfony [info] {sfWebResponse} Send content (34316 o)
+Jul 26 13:19:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/" (/).
+Jul 26 13:19:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 26 13:19:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 13:19:28 symfony [info] {sfWebDebugLogger} Configuration 78.12 ms (5)
+Jul 26 13:19:28 symfony [info] {sfWebDebugLogger} Factories 139.60 ms (1)
+Jul 26 13:19:34 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Pais with parameters array (  'module' => 'Pais',  'action' => 'index',)
+Jul 26 13:19:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 13:19:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 13:19:34 symfony [info] {PaisActions} Call "PaisActions->executeIndex()"
+Jul 26 13:19:34 symfony [err] {Doctrine_Connection_Exception} PDO Connection Error: SQLSTATE[42000] [1049] Unknown database 'testsodimac'
+Jul 26 13:19:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 13:19:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 13:19:34 symfony [info] {sfWebDebugLogger} Configuration 8.50 ms (9)
+Jul 26 13:19:34 symfony [info] {sfWebDebugLogger} Factories 6.39 ms (1)
+Jul 26 13:19:34 symfony [info] {sfWebDebugLogger} Action "Pais/index" 62.11 ms (1)
+Jul 26 13:20:04 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Pais with parameters array (  'module' => 'Pais',  'action' => 'index',)
+Jul 26 13:20:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 13:20:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 13:20:04 symfony [info] {PaisActions} Call "PaisActions->executeIndex()"
+Jul 26 13:20:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 13:20:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Jul 26 13:20:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Pais/templates/indexSuccess.php"
+Jul 26 13:20:04 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Pais/templates/_sidebar.php"
+Jul 26 13:20:04 symfony [info] {main} Set slot "sidebar"
+Jul 26 13:20:04 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 13:20:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 13:20:04 symfony [info] {main} Get slot "sidebar"
+Jul 26 13:20:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 13:20:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Configuration 88.25 ms (9)
+Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Factories 43.89 ms (1)
+Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Action "Pais/index" 9.90 ms (1)
+Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.88 ms (2)
+Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} View "Success" for "Pais/index" 16.70 ms (1)
+Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Partial "Pais/_sidebar" 0.69 ms (1)
+Jul 26 13:20:04 symfony [info] {sfWebResponse} Send content (34373 o)

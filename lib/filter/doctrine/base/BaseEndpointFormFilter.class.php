@@ -5,7 +5,7 @@
  *
  * @package    sodimac
  * @subpackage filter
- * @author     Your name here
+ * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
  */
 abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
