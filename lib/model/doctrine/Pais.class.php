@@ -14,6 +14,6 @@ class Pais extends BasePais
 {
 	public function __toString()
 	{
-		return $this->getSigla();
+		return $this->getDescPais();
 	}
 }

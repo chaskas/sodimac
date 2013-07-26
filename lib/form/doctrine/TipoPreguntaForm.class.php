@@ -10,7 +10,8 @@
  */
 class TipoPreguntaForm extends BaseTipoPreguntaForm
 {
-  public function configure()
+	public function configure()
   {
+  	$this->widgetSchema['desc_tipo_preg']->setLabel('Descripción');
   }
 }

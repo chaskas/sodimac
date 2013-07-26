@@ -347,3 +347,24 @@ Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2
 Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} View "Success" for "Preguntas/index" 13.82 ms (1)
 Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Partial "Preguntas/_sidebar" 1.84 ms (1)
 Jul 26 09:45:57 symfony [info] {sfWebResponse} Send content (34591 o)
+Jul 26 10:10:34 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Preguntas with parameters array (  'module' => 'Preguntas',  'action' => 'index',)
+Jul 26 10:10:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 10:10:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 10:10:34 symfony [info] {PreguntasActions} Call "PreguntasActions->executeIndex()"
+Jul 26 10:10:34 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 10:10:34 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 10:10:34 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php"
+Jul 26 10:10:34 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/_sidebar.php"
+Jul 26 10:10:34 symfony [info] {main} Set slot "sidebar"
+Jul 26 10:10:34 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 10:10:34 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 10:10:34 symfony [info] {main} Get slot "sidebar"
+Jul 26 10:10:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 10:10:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Configuration 206.75 ms (9)
+Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Factories 121.38 ms (1)
+Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Action "Preguntas/index" 23.08 ms (1)
+Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.58 ms (2)
+Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} View "Success" for "Preguntas/index" 22.37 ms (1)
+Jul 26 10:10:34 symfony [info] {sfWebDebugLogger} Partial "Preguntas/_sidebar" 1.99 ms (1)
+Jul 26 10:10:34 symfony [info] {sfWebResponse} Send content (34316 o)

@@ -9,6 +9,14 @@ api_oportunidad_cmr:
   requirements:
     sf_format: (?:xml|json)
 
+api_get_preguntas:
+  url:     /api/getPreguntas.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getPreguntas }
+  options: { model: EncuestaPreguntas, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+
 # default rules
 homepage:
   url:   /

@@ -275,3 +275,33 @@ Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} Action "api/ocmr" 9.58 ms (1)
 Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.50 ms (2)
 Jul 25 15:01:38 symfony [info] {sfWebDebugLogger} View "Success" for "api/ocmr" 10.48 ms (1)
 Jul 25 15:01:38 symfony [info] {sfWebResponse} Send content (440 o)
+Jul 26 11:00:47 symfony [info] {sfPatternRouting} Match route "api_get_preguntas" (/api/getPreguntas.:sf_format) for /api/getPreguntas.json with parameters array (  'module' => 'api',  'action' => 'getPreguntas',  'sf_format' => 'json',)
+Jul 26 11:00:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 11:00:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 11:00:47 symfony [info] {apiActions} Call "apiActions->executeGetPreguntas()"
+Jul 26 11:00:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 11:00:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 11:00:47 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getPreguntasSuccess.json.php"
+Jul 26 11:00:47 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "desc_preg" on "EncuestaPreguntas"
+Jul 26 11:00:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 11:00:47 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 26 11:00:47 symfony [info] {sfWebDebugLogger} Configuration 160.76 ms (9)
+Jul 26 11:00:47 symfony [info] {sfWebDebugLogger} Factories 107.85 ms (1)
+Jul 26 11:00:47 symfony [info] {sfWebDebugLogger} Action "api/getPreguntas" 10.57 ms (1)
+Jul 26 11:00:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.50 ms (2)
+Jul 26 11:00:47 symfony [info] {sfWebDebugLogger} View "Success" for "api/getPreguntas" 160.02 ms (1)
+Jul 26 11:01:10 symfony [info] {sfPatternRouting} Match route "api_get_preguntas" (/api/getPreguntas.:sf_format) for /api/getPreguntas.json with parameters array (  'module' => 'api',  'action' => 'getPreguntas',  'sf_format' => 'json',)
+Jul 26 11:01:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 11:01:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 11:01:10 symfony [info] {apiActions} Call "apiActions->executeGetPreguntas()"
+Jul 26 11:01:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 11:01:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 11:01:10 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getPreguntasSuccess.json.php"
+Jul 26 11:01:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 11:01:10 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 26 11:01:10 symfony [info] {sfWebDebugLogger} Configuration 3.10 ms (9)
+Jul 26 11:01:10 symfony [info] {sfWebDebugLogger} Factories 13.30 ms (1)
+Jul 26 11:01:10 symfony [info] {sfWebDebugLogger} Action "api/getPreguntas" 10.76 ms (1)
+Jul 26 11:01:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.59 ms (2)
+Jul 26 11:01:10 symfony [info] {sfWebDebugLogger} View "Success" for "api/getPreguntas" 6.03 ms (1)
+Jul 26 11:01:10 symfony [info] {sfWebResponse} Send content (152 o)

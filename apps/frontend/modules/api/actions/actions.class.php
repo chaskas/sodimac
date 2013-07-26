@@ -11,13 +11,20 @@
 class apiActions extends sfActions
 {
  /**
-  * Executes index action
+  * Executes Ocmr action
   *
   * @param sfRequest $request A request object
   */
   public function executeOcmr(sfWebRequest $request)
   {
     $this->ocmrs = Doctrine_Core::getTable('OportunidadCmr')
+      ->createQuery('a')
+      ->execute();
+  }
+
+  public function executeGetPreguntas(sfWebRequest $request)
+  {
+    $this->preguntas = Doctrine_Core::getTable('EncuestaPreguntas')
       ->createQuery('a')
       ->execute();
   }
