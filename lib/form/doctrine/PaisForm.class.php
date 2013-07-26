@@ -12,5 +12,6 @@ class PaisForm extends BasePaisForm
 {
   public function configure()
   {
+  	$this->widgetSchema['desc_pais']->setLabel('País');
   }
 }
