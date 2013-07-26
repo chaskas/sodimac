@@ -254,3 +254,96 @@ Jul 26 08:58:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.77 ms (2
 Jul 26 08:58:03 symfony [info] {sfWebDebugLogger} View "Success" for "Pais/index" 13.56 ms (1)
 Jul 26 08:58:03 symfony [info] {sfWebDebugLogger} Partial "Pais/_sidebar" 1.52 ms (1)
 Jul 26 08:58:03 symfony [info] {sfWebResponse} Send content (34318 o)
+Jul 26 09:44:02 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Preguntas with parameters array (  'module' => 'Preguntas',  'action' => 'index',)
+Jul 26 09:44:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 09:44:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 09:44:02 symfony [info] {PreguntasActions} Call "PreguntasActions->executeIndex()"
+Jul 26 09:44:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 09:44:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 09:44:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php"
+Jul 26 09:44:02 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/_sidebar.php"
+Jul 26 09:44:02 symfony [info] {main} Set slot "sidebar"
+Jul 26 09:44:02 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php on line 27 (Undefined variable: tipo)
+Jul 26 09:44:18 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Preguntas/index with parameters array (  'module' => 'Preguntas',  'action' => 'index',)
+Jul 26 09:44:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 09:44:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 09:44:18 symfony [info] {PreguntasActions} Call "PreguntasActions->executeIndex()"
+Jul 26 09:44:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 09:44:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 09:44:18 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php"
+Jul 26 09:44:18 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/_sidebar.php"
+Jul 26 09:44:18 symfony [info] {main} Set slot "sidebar"
+Jul 26 09:44:18 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php on line 27 (Undefined variable: tipo)
+Jul 26 09:44:29 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/OportunidadCMR with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Jul 26 09:44:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 09:44:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 09:44:29 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Jul 26 09:44:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 09:44:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia FROM oportunidad_cmr o - ()
+Jul 26 09:44:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Jul 26 09:44:29 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Jul 26 09:44:29 symfony [info] {main} Set slot "sidebar"
+Jul 26 09:44:29 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 09:44:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 09:44:29 symfony [info] {main} Get slot "sidebar"
+Jul 26 09:44:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 09:44:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 09:44:29 symfony [info] {sfWebDebugLogger} Configuration 1.69 ms (9)
+Jul 26 09:44:29 symfony [info] {sfWebDebugLogger} Factories 10.43 ms (1)
+Jul 26 09:44:29 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 10.89 ms (1)
+Jul 26 09:44:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2)
+Jul 26 09:44:29 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 14.65 ms (1)
+Jul 26 09:44:29 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.49 ms (1)
+Jul 26 09:44:29 symfony [info] {sfWebResponse} Send content (35021 o)
+Jul 26 09:44:36 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Preguntas with parameters array (  'module' => 'Preguntas',  'action' => 'index',)
+Jul 26 09:44:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 09:44:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 09:44:36 symfony [info] {PreguntasActions} Call "PreguntasActions->executeIndex()"
+Jul 26 09:44:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 09:44:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 09:44:36 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php"
+Jul 26 09:44:36 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/_sidebar.php"
+Jul 26 09:44:36 symfony [info] {main} Set slot "sidebar"
+Jul 26 09:44:36 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php on line 27 (Undefined variable: tipo)
+Jul 26 09:45:37 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Preguntas with parameters array (  'module' => 'Preguntas',  'action' => 'index',)
+Jul 26 09:45:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 09:45:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 09:45:37 symfony [info] {PreguntasActions} Call "PreguntasActions->executeIndex()"
+Jul 26 09:45:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 09:45:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 09:45:37 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php"
+Jul 26 09:45:37 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/_sidebar.php"
+Jul 26 09:45:37 symfony [info] {main} Set slot "sidebar"
+Jul 26 09:45:37 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 09:45:37 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 09:45:37 symfony [info] {main} Get slot "sidebar"
+Jul 26 09:45:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 09:45:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 09:45:37 symfony [info] {sfWebDebugLogger} Configuration 1.79 ms (9)
+Jul 26 09:45:37 symfony [info] {sfWebDebugLogger} Factories 8.58 ms (1)
+Jul 26 09:45:37 symfony [info] {sfWebDebugLogger} Action "Preguntas/index" 9.80 ms (1)
+Jul 26 09:45:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.49 ms (2)
+Jul 26 09:45:37 symfony [info] {sfWebDebugLogger} View "Success" for "Preguntas/index" 11.07 ms (1)
+Jul 26 09:45:37 symfony [info] {sfWebDebugLogger} Partial "Preguntas/_sidebar" 1.84 ms (1)
+Jul 26 09:45:37 symfony [info] {sfWebResponse} Send content (34622 o)
+Jul 26 09:45:57 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Preguntas with parameters array (  'module' => 'Preguntas',  'action' => 'index',)
+Jul 26 09:45:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 09:45:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 09:45:57 symfony [info] {PreguntasActions} Call "PreguntasActions->executeIndex()"
+Jul 26 09:45:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 09:45:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 09:45:57 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/indexSuccess.php"
+Jul 26 09:45:57 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Preguntas/templates/_sidebar.php"
+Jul 26 09:45:57 symfony [info] {main} Set slot "sidebar"
+Jul 26 09:45:57 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 09:45:57 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 09:45:57 symfony [info] {main} Get slot "sidebar"
+Jul 26 09:45:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 09:45:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Configuration 2.28 ms (9)
+Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Factories 8.66 ms (1)
+Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Action "Preguntas/index" 11.46 ms (1)
+Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.45 ms (2)
+Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} View "Success" for "Preguntas/index" 13.82 ms (1)
+Jul 26 09:45:57 symfony [info] {sfWebDebugLogger} Partial "Preguntas/_sidebar" 1.84 ms (1)
+Jul 26 09:45:57 symfony [info] {sfWebResponse} Send content (34591 o)
