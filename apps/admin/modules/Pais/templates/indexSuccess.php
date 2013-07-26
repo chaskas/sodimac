@@ -12,7 +12,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Id</th>
+      <th>Código</th>
       <th>Nombre</th>
       <th>Sigla</th>
       <th>Opciones</th>
