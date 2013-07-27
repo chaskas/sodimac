@@ -12,4 +12,8 @@
  */
 class EncuestaPreguntas extends BaseEncuestaPreguntas
 {
+	public function __toString()
+	{
+		return $this->getDescPregunta();
+	}
 }

@@ -12,5 +12,13 @@ class EncuestaRespuestasForm extends BaseEncuestaRespuestasForm
 {
   public function configure()
   {
+  	$this->embedRelation('EncuestaCabeceraRespuestas');
+
+  	$this->widgetSchema['id_enc_preg']->setLabel('Pregunta');
+  	$this->widgetSchema['valor_resp']->setLabel('Respuesta');
+
+  	unset(
+            $this['id_enc_cab_resp']
+    );
   }
 }

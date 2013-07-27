@@ -404,3 +404,185 @@ Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.88 ms (2
 Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} View "Success" for "Pais/index" 16.70 ms (1)
 Jul 26 13:20:04 symfony [info] {sfWebDebugLogger} Partial "Pais/_sidebar" 0.69 ms (1)
 Jul 26 13:20:04 symfony [info] {sfWebResponse} Send content (34373 o)
+Jul 26 18:51:10 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Respuestas/new with parameters array (  'module' => 'Respuestas',  'action' => 'new',)
+Jul 26 18:51:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 18:51:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 18:51:10 symfony [info] {RespuestasActions} Call "RespuestasActions->executeNew()"
+Jul 26 18:51:10 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/newSuccess.php"
+Jul 26 18:51:10 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/_sidebar.php"
+Jul 26 18:51:10 symfony [info] {main} Set slot "sidebar"
+Jul 26 18:51:10 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/_form.php"
+Jul 26 18:51:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 18:51:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 18:51:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_cab_resp AS e__id_enc_cab_resp, e.nro_boleta AS e__nro_boleta, e.fecha_compra AS e__fecha_compra, e.id_tienda AS e__id_tienda, e.rut AS e__rut, e.dv AS e__dv, e.nombre_completo AS e__nombre_completo, e.ciudad AS e__ciudad, e.telefono AS e__telefono, e.celular AS e__celular, e.email AS e__email, e.edad AS e__edad, e.sexo AS e__sexo, e.compra_para AS e__compra_para FROM encuesta_cabecera_respuestas e - ()
+Jul 26 18:51:10 symfony [err] {InvalidArgumentException} Widget "CabeceraRespuestas" does not exist.
+Jul 26 18:51:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 18:51:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} Configuration 166.57 ms (9)
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} Factories 83.07 ms (1)
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} Action "Respuestas/new" 13.29 ms (1)
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} View "Success" for "Respuestas/new" 89.38 ms (1)
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_sidebar" 2.06 ms (1)
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_form" 77.28 ms (1)
+Jul 26 18:51:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.76 ms (3)
+Jul 26 18:53:08 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 18:53:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 18:53:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 18:53:09 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 18:53:09 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 18:53:09 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 18:53:09 symfony [err] {InvalidArgumentException} Widget "valor_resp" does not exist.
+Jul 26 18:53:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 18:53:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 18:53:09 symfony [info] {sfWebDebugLogger} Configuration 20.53 ms (10)
+Jul 26 18:53:09 symfony [info] {sfWebDebugLogger} Factories 11.29 ms (1)
+Jul 26 18:53:09 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 18.05 ms (1)
+Jul 26 18:53:09 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 78.46 ms (1)
+Jul 26 18:53:09 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 68.24 ms (1)
+Jul 26 18:53:37 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 18:53:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 18:53:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 18:53:37 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 18:53:37 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 18:53:37 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 18:53:37 symfony [err] {InvalidArgumentException} Widget "valor_resp" does not exist.
+Jul 26 18:53:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 18:53:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 18:53:37 symfony [info] {sfWebDebugLogger} Configuration 158.63 ms (9)
+Jul 26 18:53:37 symfony [info] {sfWebDebugLogger} Factories 81.60 ms (1)
+Jul 26 18:53:37 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 16.20 ms (1)
+Jul 26 18:53:37 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 74.16 ms (1)
+Jul 26 18:53:37 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 64.40 ms (1)
+Jul 26 21:39:26 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 21:39:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:39:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:39:27 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 21:39:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 21:39:29 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 21:39:29 symfony [err] {InvalidArgumentException} Widget "valor_resp" does not exist.
+Jul 26 21:39:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 21:39:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:39:29 symfony [info] {sfWebDebugLogger} Configuration 4.25 ms (9)
+Jul 26 21:39:29 symfony [info] {sfWebDebugLogger} Factories 1989.76 ms (1)
+Jul 26 21:39:29 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 1108.18 ms (1)
+Jul 26 21:39:29 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 584.56 ms (1)
+Jul 26 21:39:29 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 258.79 ms (1)
+Jul 26 21:44:42 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 21:44:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:44:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:44:42 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 21:44:42 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 21:44:42 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 21:44:42 symfony [err] {InvalidArgumentException} Widget "valor_resp" does not exist.
+Jul 26 21:44:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 21:44:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:44:42 symfony [info] {sfWebDebugLogger} Configuration 0.90 ms (9)
+Jul 26 21:44:42 symfony [info] {sfWebDebugLogger} Factories 7.37 ms (1)
+Jul 26 21:44:42 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 10.32 ms (1)
+Jul 26 21:44:42 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 35.68 ms (1)
+Jul 26 21:44:42 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 32.83 ms (1)
+Jul 26 21:46:03 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 21:46:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:46:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:46:03 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 21:46:03 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 21:46:03 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 21:46:03 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 21:46:03 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 21:46:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 21:46:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:46:03 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (9)
+Jul 26 21:46:03 symfony [info] {sfWebDebugLogger} Factories 7.05 ms (1)
+Jul 26 21:46:03 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 10.04 ms (1)
+Jul 26 21:46:03 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 48.40 ms (1)
+Jul 26 21:46:03 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 7.10 ms (1)
+Jul 26 21:46:03 symfony [info] {sfWebResponse} Send content (42911 o)
+Jul 26 21:49:52 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 21:49:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:49:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:49:52 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 21:49:52 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 21:49:52 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 21:49:52 symfony [err] {InvalidArgumentException} Widget "valor_resp" does not exist.
+Jul 26 21:49:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 21:49:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:49:52 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (9)
+Jul 26 21:49:52 symfony [info] {sfWebDebugLogger} Factories 9.31 ms (1)
+Jul 26 21:49:52 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 10.15 ms (1)
+Jul 26 21:49:52 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 35.38 ms (1)
+Jul 26 21:49:52 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 33.00 ms (1)
+Jul 26 21:56:37 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 21:56:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:56:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:56:37 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 21:56:37 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 21:56:37 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 21:56:37 symfony [err] {InvalidArgumentException} Widget "valor_resp" does not exist.
+Jul 26 21:56:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 21:56:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:56:37 symfony [info] {sfWebDebugLogger} Configuration 185.04 ms (9)
+Jul 26 21:56:37 symfony [info] {sfWebDebugLogger} Factories 71.30 ms (1)
+Jul 26 21:56:37 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 12.05 ms (1)
+Jul 26 21:56:37 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 65.42 ms (1)
+Jul 26 21:56:37 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 32.30 ms (1)
+Jul 26 21:58:01 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/CabeceraRespuestas/new with parameters array (  'module' => 'CabeceraRespuestas',  'action' => 'new',)
+Jul 26 21:58:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:58:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:58:01 symfony [info] {CabeceraRespuestasActions} Call "CabeceraRespuestasActions->executeNew()"
+Jul 26 21:58:01 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/newSuccess.php"
+Jul 26 21:58:01 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/CabeceraRespuestas/templates/_form.php"
+Jul 26 21:58:01 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 21:58:01 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 21:58:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 21:58:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:58:01 symfony [info] {sfWebDebugLogger} Configuration 81.36 ms (9)
+Jul 26 21:58:01 symfony [info] {sfWebDebugLogger} Factories 45.38 ms (1)
+Jul 26 21:58:01 symfony [info] {sfWebDebugLogger} Action "CabeceraRespuestas/new" 7.28 ms (1)
+Jul 26 21:58:01 symfony [info] {sfWebDebugLogger} View "Success" for "CabeceraRespuestas/new" 14.39 ms (1)
+Jul 26 21:58:01 symfony [info] {sfWebDebugLogger} Partial "CabeceraRespuestas/_form" 7.32 ms (1)
+Jul 26 21:58:01 symfony [info] {sfWebResponse} Send content (42892 o)
+Jul 26 21:58:16 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Respuestas/new with parameters array (  'module' => 'Respuestas',  'action' => 'new',)
+Jul 26 21:58:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:58:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:58:16 symfony [info] {RespuestasActions} Call "RespuestasActions->executeNew()"
+Jul 26 21:58:16 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/newSuccess.php"
+Jul 26 21:58:16 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/_sidebar.php"
+Jul 26 21:58:16 symfony [info] {main} Set slot "sidebar"
+Jul 26 21:58:16 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/_form.php"
+Jul 26 21:58:16 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 21:58:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 21:58:16 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_cab_resp AS e__id_enc_cab_resp, e.nro_boleta AS e__nro_boleta, e.fecha_compra AS e__fecha_compra, e.id_tienda AS e__id_tienda, e.rut AS e__rut, e.dv AS e__dv, e.nombre_completo AS e__nombre_completo, e.ciudad AS e__ciudad, e.telefono AS e__telefono, e.celular AS e__celular, e.email AS e__email, e.edad AS e__edad, e.sexo AS e__sexo, e.compra_para AS e__compra_para FROM encuesta_cabecera_respuestas e - ()
+Jul 26 21:58:16 symfony [err] {InvalidArgumentException} Widget "CabeceraRespuestas" does not exist.
+Jul 26 21:58:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 26 21:58:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} Configuration 10.93 ms (10)
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} Factories 9.96 ms (1)
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} Action "Respuestas/new" 13.71 ms (1)
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} View "Success" for "Respuestas/new" 64.37 ms (1)
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_sidebar" 1.13 ms (1)
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_form" 56.81 ms (1)
+Jul 26 21:58:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.29 ms (3)
+Jul 26 21:58:41 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Respuestas/new with parameters array (  'module' => 'Respuestas',  'action' => 'new',)
+Jul 26 21:58:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 26 21:58:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 26 21:58:41 symfony [info] {RespuestasActions} Call "RespuestasActions->executeNew()"
+Jul 26 21:58:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/newSuccess.php"
+Jul 26 21:58:41 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/_sidebar.php"
+Jul 26 21:58:41 symfony [info] {main} Set slot "sidebar"
+Jul 26 21:58:41 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Respuestas/templates/_form.php"
+Jul 26 21:58:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 26 21:58:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_preg AS e__id_enc_preg, e.id_tipo_preg AS e__id_tipo_preg, e.valor_defecto AS e__valor_defecto, e.desc_pregunta AS e__desc_pregunta, e.estado AS e__estado, e.id_pais AS e__id_pais FROM encuesta_preguntas e - ()
+Jul 26 21:58:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_enc_cab_resp AS e__id_enc_cab_resp, e.nro_boleta AS e__nro_boleta, e.fecha_compra AS e__fecha_compra, e.id_tienda AS e__id_tienda, e.rut AS e__rut, e.dv AS e__dv, e.nombre_completo AS e__nombre_completo, e.ciudad AS e__ciudad, e.telefono AS e__telefono, e.celular AS e__celular, e.email AS e__email, e.edad AS e__edad, e.sexo AS e__sexo, e.compra_para AS e__compra_para FROM encuesta_cabecera_respuestas e - ()
+Jul 26 21:58:41 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 21:58:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 26 21:58:41 symfony [info] {main} Get slot "sidebar"
+Jul 26 21:58:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 26 21:58:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Configuration 1.53 ms (9)
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Factories 4.47 ms (1)
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Action "Respuestas/new" 11.36 ms (1)
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} View "Success" for "Respuestas/new" 18.84 ms (1)
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_sidebar" 1.13 ms (1)
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_form" 11.97 ms (1)
+Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.46 ms (3)
+Jul 26 21:58:41 symfony [info] {sfWebResponse} Send content (48783 o)
