@@ -2,7 +2,7 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 api_oportunidad_cmr:
-  url:     /api/ocmr.:sf_format
+  url:     /api/getOcmr.:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: ocmr }
   options: { model: OportunidadCMR, type: list }
@@ -16,6 +16,12 @@ api_get_preguntas:
   options: { model: EncuestaPreguntas, type: list }
   requirements:
     sf_format: (?:xml|json)
+
+api_set_respuesta:
+  url: /api/setRespuesta.:sf_format
+  param: { module: api, action: setRespuesta, sf_format: json }
+  class: sfRequestRoute
+  requirements: { sf_method: POST, sf_format: (xml|json) }
 
 # default rules
 homepage:
