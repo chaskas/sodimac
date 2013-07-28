@@ -19,6 +19,6 @@ class PaisForm extends BasePaisForm
   	$this->validatorSchema['id_pais'] = new sfValidatorString(array('max_length' => 4, 'required' => true));
 
   	$this->widgetSchema['id_pais']->setLabel('Código');
-  	$this->widgetSchema['desc_pais']->setLabel('País');
+  	$this->widgetSchema['desc_pais']->setLabel('Nombre');
   }
 }

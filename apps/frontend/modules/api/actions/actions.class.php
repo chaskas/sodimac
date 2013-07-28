@@ -15,7 +15,7 @@ class apiActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
-  public function executeOcmr(sfWebRequest $request)
+  public function executeGetOCMR(sfWebRequest $request)
   {
     $this->ocmrs = Doctrine_Core::getTable('OportunidadCmr')
       ->createQuery('a')
@@ -89,7 +89,7 @@ class apiActions extends sfActions
       }
       else
       {
-        throw new sfException("This format of pony isn't supported yet.");
+        throw new sfException("This format isn't supported yet.");
       }
     }
 

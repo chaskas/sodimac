@@ -22,11 +22,21 @@
           </a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li <?php if(in_array($sf_context->getModuleName(),array('Preguntas','TipoPregunta'))) echo "class='active'" ?>><a href="<?php echo url_for('Preguntas/index'); ?>">Encuestas</a></li>
-              <li <?php if(in_array($sf_context->getModuleName(),array('OportunidadCMR'))) echo "class='active'" ?>><a href="<?php echo url_for('OportunidadCMR/index'); ?>">Oportunidad CMR</a></li>
-              <li><a href="#">Tiendas</a></li>
-              <li><a href="#">End Point</a></li>
-              <li <?php if(in_array($sf_context->getModuleName(),array('Pais'))) echo "class='active'" ?>><a href="<?php echo url_for('Pais/index'); ?>">Configuración</a></li>
+              <li <?php if(in_array($sf_context->getModuleName(),array('Preguntas','TipoPregunta','Respuestas'))) echo "class='active'" ?>>
+                <a href="<?php echo url_for('Preguntas/index'); ?>">Encuestas</a>
+              </li>
+              <li <?php if(in_array($sf_context->getModuleName(),array('OportunidadCMR'))) echo "class='active'" ?>>
+                <a href="<?php echo url_for('OportunidadCMR/index'); ?>">Oportunidad CMR</a>
+              </li>
+              <li <?php if(in_array($sf_context->getModuleName(),array('Tiendas','TipoTienda','Servicios'))) echo "class='active'" ?>>
+                <a href="<?php echo url_for('Tiendas/index'); ?>">Tiendas</a>
+              </li>
+              <li <?php if(in_array($sf_context->getModuleName(),array('EndPoint'))) echo "class='active'" ?>>
+                <a href="#">End Point</a>
+              </li>
+              <li <?php if(in_array($sf_context->getModuleName(),array('Pais','Region'))) echo "class='active'" ?>>
+                <a href="<?php echo url_for('Pais/index'); ?>">Configuración</a>
+              </li>
             </ul>
           </div>
         </div>
