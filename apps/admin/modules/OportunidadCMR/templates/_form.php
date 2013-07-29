@@ -1,6 +1,10 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 
+<?php //use_javascript('jquery-ui.js'); ?>
+<?php use_javascript('jquery.ui.datepicker-es.js'); ?>
+<?php use_stylesheet('redmond/jquery-ui.css'); ?>
+
 <form action="<?php echo url_for('OportunidadCMR/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id_opor_cmr='.$form->getObject()->getIdOporCmr() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?> class="form-horizontal">
 <?php if (!$form->getObject()->isNew()): ?>
 <input type="hidden" name="sf_method" value="put" />
