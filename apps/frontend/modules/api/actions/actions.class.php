@@ -37,7 +37,9 @@ class apiActions extends sfActions
 
     if (!empty($data))
     {
-      $form = new EncuestaRespuestasForm();
+      $nRespuestas = count($data['Respuestas']);
+      $form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => $nRespuestas));
+      //$form = new EncuestaCabeceraRespuestasForm();
 
       // Disable this protection
       $form->disableLocalCSRFProtection();

@@ -12,6 +12,14 @@ class EncuestaCabeceraRespuestasForm extends BaseEncuestaCabeceraRespuestasForm
 {
   public function configure()
   {
+
+    $form = new EncuestaRespuestasCollectionForm(null, array(
+      'cabecera' => $this->getObject(),
+      'size'    => $this->getOption('nRespuestas'),
+    ));
+   
+    $this->embedForm('Respuestas', $form);
+
   	$this->widgetSchema['nro_boleta']->setLabel('N° Boleta');
   	$this->widgetSchema['fecha_compra']->setLabel('Fecha Compra');
   	$this->widgetSchema['id_tienda']->setLabel('Tienda');

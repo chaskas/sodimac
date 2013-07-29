@@ -13,7 +13,7 @@ CREATE TABLE tipo_tienda (id_tipo_tienda INT UNSIGNED AUTO_INCREMENT, desc_tipo_
 ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_tipo_preg_tipo_pregunta_id_tipo_preg FOREIGN KEY (id_tipo_preg) REFERENCES tipo_pregunta(id_tipo_preg);
 ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
 ALTER TABLE encuesta_respuestas ADD CONSTRAINT encuesta_respuestas_id_enc_preg_encuesta_preguntas_id_enc_preg FOREIGN KEY (id_enc_preg) REFERENCES encuesta_preguntas(id_enc_preg);
-ALTER TABLE encuesta_respuestas ADD CONSTRAINT eiei_1 FOREIGN KEY (id_enc_cab_resp) REFERENCES encuesta_cabecera_respuestas(id_enc_cab_resp);
+ALTER TABLE encuesta_respuestas ADD CONSTRAINT eiei_1 FOREIGN KEY (id_enc_cab_resp) REFERENCES encuesta_cabecera_respuestas(id_enc_cab_resp) ON DELETE CASCADE;
 ALTER TABLE endpoint ADD CONSTRAINT endpoint_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
 ALTER TABLE oportunidad_cmr ADD CONSTRAINT oportunidad_cmr_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
 ALTER TABLE region ADD CONSTRAINT region_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);

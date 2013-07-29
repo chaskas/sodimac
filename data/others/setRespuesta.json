@@ -1,0 +1,20 @@
+{
+	"nro_boleta": 1234567890,
+	"fecha_compra": "2013-07-29 17:50:00",
+	"id_tienda": 1,
+	"rut": 16020757,
+	"dv": "4",
+	"nombre_completo": "Rodrigo Campos",
+	"ciudad": "Valparaíso",
+	"telefono": "+56413182144",
+	"celular": "+56956835629",
+	"email": "rodrigocampos@gmail.com",
+	"edad": 27,
+	"sexo": "M",
+	"compra_para": "Lorem Ipsum...",
+  "Respuestas" :
+  [
+  	{"valor_resp": "VALOR_RESP1", "id_enc_preg": 1},
+  	{"valor_resp": "VALOR_RESP_2", "id_enc_preg": 1}
+  ]
+}

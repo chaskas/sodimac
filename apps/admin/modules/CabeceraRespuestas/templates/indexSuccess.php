@@ -1,44 +1,38 @@
-<h1>Encuesta cabecera respuestass List</h1>
-
-<table>
+<?php include_partial('sidebar'); ?>
+<div class="page-header">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Cabeceras</a>
+      <div class="pull-right">
+        <a href="<?php echo url_for('CabeceraRespuestas/new') ?>" class="btn btn-primary">Nueva</a>
+      </div>
+    </div>
+  </div>
+</div>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Id enc cab resp</th>
-      <th>Nro boleta</th>
-      <th>Fecha compra</th>
-      <th>Id tienda</th>
-      <th>Rut</th>
-      <th>Dv</th>
-      <th>Nombre completo</th>
-      <th>Ciudad</th>
-      <th>Telefono</th>
-      <th>Celular</th>
-      <th>Email</th>
-      <th>Edad</th>
-      <th>Sexo</th>
-      <th>Compra para</th>
+      <th>Id</th>
+      <th>Nro Boleta</th>
+      <th>Fecha Compra</th>
+      <th>Tienda</th>
+      <th>Opciones</th>
     </tr>
   </thead>
   <tbody>
-    <?php foreach ($encuesta_cabecera_respuestass as $encuesta_cabecera_respuestas): ?>
-    <tr>
-      <td><a href="<?php echo url_for('CabeceraRespuestas/edit?id_enc_cab_resp='.$encuesta_cabecera_respuestas->getIdEncCabResp()) ?>"><?php echo $encuesta_cabecera_respuestas->getIdEncCabResp() ?></a></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getNroBoleta() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getFechaCompra() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getIdTienda() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getRut() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getDv() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getNombreCompleto() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getCiudad() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getTelefono() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getCelular() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getEmail() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getEdad() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getSexo() ?></td>
-      <td><?php echo $encuesta_cabecera_respuestas->getCompraPara() ?></td>
-    </tr>
+    <?php foreach ($cabeceras as $cabecera): ?>
+      <tr>
+        <td><a href="<?php echo url_for('CabeceraRespuestas/edit?id_enc_cab_resp='.$cabecera->getIdEncCabResp()) ?>"><?php echo $cabecera->getIdEncCabResp() ?></a></td>
+        <td><?php echo $cabecera->getNroBoleta() ?></td>
+        <td><?php echo $cabecera->getFechaCompra() ?></td>
+        <td><?php echo $cabecera->getIdTienda() ?></td>
+        <td>
+          <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
+          <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
+          <?php //link_to t('.edit', :default => t("helpers.links.edit")),edit_station_path(station), :class => 'btn btn-mini' ?>
+          <?php //link_to t('.destroy', :default => t("helpers.links.destroy")), station_path(station), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger' ?>
+        </td>
+      </tr>
     <?php endforeach; ?>
   </tbody>
 </table>
-
-  <a href="<?php echo url_for('CabeceraRespuestas/new') ?>">New</a>

@@ -203,6 +203,7 @@ EncuestaRespuestas:
       local: id_enc_cab_resp
       foreign: id_enc_cab_resp
       type: one
+      onDelete: CASCADE
 Endpoint:
   connection: doctrine
   tableName: endpoint

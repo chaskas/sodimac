@@ -25,111 +25,111 @@
       <?php echo $form['valor_resp']->renderError() ?>
     </div>
   </div>
-
+<!-- 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['nro_boleta']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['nro_boleta']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['nro_boleta'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['nro_boleta']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['nro_boleta'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['nro_boleta']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['fecha_compra']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['fecha_compra']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['fecha_compra'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['fecha_compra']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['fecha_compra'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['fecha_compra']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['id_tienda']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['id_tienda']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['id_tienda'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['id_tienda']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['id_tienda'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['id_tienda']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['rut']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['rut']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['rut'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['rut']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['rut'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['rut']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['dv']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['dv']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['dv'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['dv']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['dv'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['dv']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['nombre_completo']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['nombre_completo']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['nombre_completo'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['nombre_completo']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['nombre_completo'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['nombre_completo']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['ciudad']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['ciudad']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['ciudad'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['ciudad']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['ciudad'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['ciudad']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['telefono']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['telefono']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['telefono'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['telefono']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['telefono'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['telefono']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['celular']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['celular']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['celular'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['celular']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['celular'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['celular']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['email']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['email']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['email'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['email']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['email'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['email']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['edad']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['edad']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['edad'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['edad']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['edad'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['edad']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['sexo']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['sexo']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['sexo'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['sexo']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['sexo'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['sexo']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $form['EncuestaCabeceraRespuestas']['compra_para']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $form['EncuestaCabeceraRespuestas']['compra_para']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['EncuestaCabeceraRespuestas']['compra_para'] ?>
-      <?php echo $form['EncuestaCabeceraRespuestas']['compra_para']->renderError() ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['compra_para'] ?>
+      <?php //echo $form['EncuestaCabeceraRespuestas']['compra_para']->renderError() ?>
     </div>
   </div>
-
+ -->
   <div class="form-actions">
     <input type="submit" value="Guardar" class="btn btn-primary"/>
     

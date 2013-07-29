@@ -1231,3 +1231,164 @@ Jul 27 11:32:56 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 61.5
 Jul 27 11:32:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.04 ms (3)
 Jul 27 11:32:56 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.02 ms (1)
 Jul 27 11:32:56 symfony [info] {sfWebResponse} Send content (19481 o)
+Jul 29 17:40:49 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:40:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:40:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:40:49 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:40:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 29 17:40:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:40:49 symfony [info] {sfWebDebugLogger} Configuration 84.54 ms (8)
+Jul 29 17:40:49 symfony [info] {sfWebDebugLogger} Factories 144.68 ms (1)
+Jul 29 17:40:49 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 0.20 ms (1)
+Jul 29 17:40:49 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:40:49 symfony [info] {sfWebResponse} Send content (15717 o)
+Jul 29 17:43:11 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:43:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:43:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:43:11 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:43:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 29 17:43:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:43:11 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (8)
+Jul 29 17:43:11 symfony [info] {sfWebDebugLogger} Factories 6.56 ms (1)
+Jul 29 17:43:11 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 0.18 ms (1)
+Jul 29 17:43:11 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:43:11 symfony [info] {sfWebResponse} Send content (15712 o)
+Jul 29 17:44:40 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:44:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:44:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:44:40 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:44:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 29 17:44:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:44:40 symfony [info] {sfWebDebugLogger} Configuration 0.87 ms (8)
+Jul 29 17:44:40 symfony [info] {sfWebDebugLogger} Factories 5.55 ms (1)
+Jul 29 17:44:40 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 0.18 ms (1)
+Jul 29 17:44:40 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:44:40 symfony [info] {sfWebResponse} Send content (15712 o)
+Jul 29 17:44:46 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:44:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:44:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:44:46 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:44:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 29 17:44:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:44:46 symfony [info] {sfWebDebugLogger} Configuration 0.92 ms (8)
+Jul 29 17:44:46 symfony [info] {sfWebDebugLogger} Factories 8.09 ms (1)
+Jul 29 17:44:46 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 0.18 ms (1)
+Jul 29 17:44:46 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:44:46 symfony [info] {sfWebResponse} Send content (15712 o)
+Jul 29 17:44:56 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:44:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:44:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:44:56 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:44:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 406 Not Acceptable"
+Jul 29 17:44:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:44:56 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (8)
+Jul 29 17:44:56 symfony [info] {sfWebDebugLogger} Factories 4.93 ms (1)
+Jul 29 17:44:56 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 12.91 ms (1)
+Jul 29 17:44:56 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:44:56 symfony [info] {sfWebResponse} Send content (15720 o)
+Jul 29 17:45:05 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:45:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:45:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:45:05 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:45:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 17:45:05 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:45:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_cabecera_respuestas (nro_boleta, dv, nombre_completo, ciudad, telefono, celular, email, sexo, compra_para) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (777, , , , , , , , )
+Jul 29 17:45:05 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (3, VALOR_RESP1, 1)
+Jul 29 17:45:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 201 Created"
+Jul 29 17:45:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:45:05 symfony [info] {sfWebDebugLogger} Configuration 0.77 ms (8)
+Jul 29 17:45:05 symfony [info] {sfWebDebugLogger} Factories 5.91 ms (1)
+Jul 29 17:45:05 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 77.36 ms (1)
+Jul 29 17:45:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.12 ms (4)
+Jul 29 17:45:05 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.03 ms (1)
+Jul 29 17:45:05 symfony [info] {sfWebResponse} Send content (20567 o)
+Jul 29 17:45:32 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:45:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:45:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:45:32 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:45:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 17:45:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:45:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 406 Not Acceptable"
+Jul 29 17:45:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:45:32 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (8)
+Jul 29 17:45:32 symfony [info] {sfWebDebugLogger} Factories 4.97 ms (1)
+Jul 29 17:45:32 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 17.09 ms (1)
+Jul 29 17:45:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.30 ms (2)
+Jul 29 17:45:32 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:45:32 symfony [info] {sfWebResponse} Send content (18421 o)
+Jul 29 17:45:47 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:45:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:45:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:45:47 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:45:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 17:45:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:45:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:45:48 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_cabecera_respuestas (nro_boleta, dv, nombre_completo, ciudad, telefono, celular, email, sexo, compra_para) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) - (777, , , , , , , , )
+Jul 29 17:45:48 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (4, VALOR_RESP1, 1)
+Jul 29 17:45:48 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (4, VALOR_RESP_2, 1)
+Jul 29 17:45:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 201 Created"
+Jul 29 17:45:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:45:48 symfony [info] {sfWebDebugLogger} Configuration 1.14 ms (8)
+Jul 29 17:45:48 symfony [info] {sfWebDebugLogger} Factories 5.04 ms (1)
+Jul 29 17:45:48 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 85.93 ms (1)
+Jul 29 17:45:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.54 ms (6)
+Jul 29 17:45:48 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:45:48 symfony [info] {sfWebResponse} Send content (22708 o)
+Jul 29 17:53:04 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:53:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:53:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:53:04 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:53:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 29 17:53:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:53:04 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (8)
+Jul 29 17:53:04 symfony [info] {sfWebDebugLogger} Factories 4.84 ms (1)
+Jul 29 17:53:04 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 0.16 ms (1)
+Jul 29 17:53:04 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:53:04 symfony [info] {sfWebResponse} Send content (15713 o)
+Jul 29 17:53:21 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:53:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:53:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:53:21 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:53:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 29 17:53:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:53:21 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (8)
+Jul 29 17:53:21 symfony [info] {sfWebDebugLogger} Factories 6.13 ms (1)
+Jul 29 17:53:21 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 0.22 ms (1)
+Jul 29 17:53:21 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:53:21 symfony [info] {sfWebResponse} Send content (15713 o)
+Jul 29 17:54:09 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:54:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:54:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:54:09 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:54:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 17:54:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:54:09 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:54:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_cabecera_respuestas (nro_boleta, fecha_compra, id_tienda, rut, dv, nombre_completo, ciudad, telefono, celular, email, edad, sexo, compra_para) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (1234567890, 2013-07-29, 1, 16020757, 4, Rodrigo Campos, Valparaíso, +56413182144, +56956835629, rodrigocampos@gmail.com, 27, M, Lorem Ipsum...)
+Jul 29 17:54:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (5, VALOR_RESP1, 1)
+Jul 29 17:54:09 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (5, VALOR_RESP_2, 1)
+Jul 29 17:54:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 201 Created"
+Jul 29 17:54:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:54:09 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (8)
+Jul 29 17:54:09 symfony [info] {sfWebDebugLogger} Factories 6.39 ms (1)
+Jul 29 17:54:09 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 90.23 ms (1)
+Jul 29 17:54:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.68 ms (6)
+Jul 29 17:54:09 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.01 ms (1)
+Jul 29 17:54:09 symfony [info] {sfWebResponse} Send content (23048 o)
+Jul 29 17:54:45 symfony [info] {sfPatternRouting} Match route "api_set_respuesta" (/api/setRespuesta.:sf_format) for /api/setRespuesta with parameters array (  'module' => 'api',  'action' => 'setRespuesta',  'sf_format' => 'json',)
+Jul 29 17:54:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 17:54:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 17:54:45 symfony [info] {apiActions} Call "apiActions->executeSetRespuesta()"
+Jul 29 17:54:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 17:54:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:54:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM encuesta_preguntas e WHERE e.id_enc_preg = ? - (1)
+Jul 29 17:54:45 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_cabecera_respuestas (nro_boleta, fecha_compra, id_tienda, rut, dv, nombre_completo, ciudad, telefono, celular, email, edad, sexo, compra_para) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (1234567890, 2013-07-29, 1, 16020757, 4, Rodrigo Campos, Valparaíso, +56413182144, +56956835629, rodrigocampos@gmail.com, 27, M, Lorem Ipsum...)
+Jul 29 17:54:45 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (6, Te amo Preciosa!, 1)
+Jul 29 17:54:45 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO encuesta_respuestas (id_enc_cab_resp, valor_resp, id_enc_preg) VALUES (?, ?, ?) - (6, VALOR_RESP_2, 1)
+Jul 29 17:54:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 201 Created"
+Jul 29 17:54:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (8)
+Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} Factories 8.39 ms (1)
+Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 98.16 ms (1)
+Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.77 ms (6)
+Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.03 ms (1)
+Jul 29 17:54:45 symfony [info] {sfWebResponse} Send content (23058 o)

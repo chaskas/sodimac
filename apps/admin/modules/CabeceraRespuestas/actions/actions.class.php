@@ -12,21 +12,21 @@ class CabeceraRespuestasActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->encuesta_cabecera_respuestass = Doctrine_Core::getTable('EncuestaCabeceraRespuestas')
+    $this->cabeceras = Doctrine_Core::getTable('EncuestaCabeceraRespuestas')
       ->createQuery('a')
       ->execute();
   }
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new EncuestaCabeceraRespuestasForm();
+    $this->form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => 1));
   }
 
   public function executeCreate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST));
 
-    $this->form = new EncuestaCabeceraRespuestasForm();
+    $this->form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => 1));
 
     $this->processForm($request, $this->form);
 

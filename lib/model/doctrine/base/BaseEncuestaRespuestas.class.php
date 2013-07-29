@@ -83,6 +83,7 @@ abstract class BaseEncuestaRespuestas extends sfDoctrineRecord
 
         $this->hasOne('EncuestaCabeceraRespuestas', array(
              'local' => 'id_enc_cab_resp',
-             'foreign' => 'id_enc_cab_resp'));
+             'foreign' => 'id_enc_cab_resp',
+             'onDelete' => 'CASCADE'));
     }
 }
