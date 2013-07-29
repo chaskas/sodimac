@@ -2,9 +2,9 @@
 <div class="page-header">
   <div class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#">Editar Oportunidad CMR</a>
+      <a class="brand" href="#">Nuevo End Point</a>
       <div class="pull-right">
-        <a href="<?php echo url_for('OportunidadCMR/index') ?>" class="btn btn-primary">Atrás</a>
+        <a href="<?php echo url_for('EndPoint/index') ?>" class="btn btn-primary">Atrás</a>
       </div>
     </div>
   </div>
