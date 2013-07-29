@@ -12,5 +12,10 @@ class TiendaForm extends BaseTiendaForm
 {
   public function configure()
   {
+  	$this->widgetSchema['id_pais']->setLabel('País');
+  	$this->widgetSchema['id_tipo_tienda']->setLabel('Tipo');
+  	$this->widgetSchema['id_region']->setLabel('Región');
+  	$this->widgetSchema['id_region']->setLabel('Región');
+  	$this->widgetSchema['busc_producto']->setLabel('Busca Producto???????');
   }
 }

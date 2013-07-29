@@ -388,7 +388,7 @@ ServiciosPorTienda:
     id_tienda:
       type: integer(4)
       fixed: false
-      unsigned: false
+      unsigned: true
       primary: true
       autoincrement: false
     id_servicio_tienda:
@@ -442,9 +442,9 @@ Tienda:
     id_tienda:
       type: integer(4)
       fixed: false
-      unsigned: false
+      unsigned: true
       primary: true
-      autoincrement: false
+      autoincrement: true
     nombre:
       type: string(70)
       fixed: false
@@ -497,7 +497,7 @@ Tienda:
     id_tipo_tienda:
       type: integer(4)
       fixed: false
-      unsigned: false
+      unsigned: true
       primary: false
       notnull: false
       autoincrement: false
@@ -568,9 +568,9 @@ TipoTienda:
     id_tipo_tienda:
       type: integer(4)
       fixed: false
-      unsigned: false
+      unsigned: true
       primary: true
-      autoincrement: false
+      autoincrement: true
     desc_tipo_tienda:
       type: string(30)
       fixed: false

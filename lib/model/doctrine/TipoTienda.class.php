@@ -12,4 +12,8 @@
  */
 class TipoTienda extends BaseTipoTienda
 {
+	public function __toString()
+	{
+		return $this->getDescTipoTienda();
+	}
 }

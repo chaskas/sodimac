@@ -5,11 +5,11 @@ CREATE TABLE endpoint (id_endpoint INT AUTO_INCREMENT, desc_endpoint VARCHAR(40)
 CREATE TABLE oportunidad_cmr (id_opor_cmr INT AUTO_INCREMENT, sku VARCHAR(7), precio_internet INT, precio_cmr INT, fecha_vigencia DATE, id_pais INT, INDEX id_pais_idx (id_pais), PRIMARY KEY(id_opor_cmr)) ENGINE = INNODB;
 CREATE TABLE pais (id_pais INT, desc_pais VARCHAR(20), sigla VARCHAR(4), PRIMARY KEY(id_pais)) ENGINE = INNODB;
 CREATE TABLE region (id_region INT, desc_region VARCHAR(60), id_pais INT, INDEX id_pais_idx (id_pais), PRIMARY KEY(id_region)) ENGINE = INNODB;
-CREATE TABLE servicios_por_tienda (id_tienda INT, id_servicio_tienda INT, PRIMARY KEY(id_tienda, id_servicio_tienda)) ENGINE = INNODB;
+CREATE TABLE servicios_por_tienda (id_tienda INT UNSIGNED, id_servicio_tienda INT, PRIMARY KEY(id_tienda, id_servicio_tienda)) ENGINE = INNODB;
 CREATE TABLE servicios_tienda (id_servicio_tienda INT AUTO_INCREMENT, desc_servicio VARCHAR(100), estado VARCHAR(3), PRIMARY KEY(id_servicio_tienda)) ENGINE = INNODB;
-CREATE TABLE tienda (id_tienda INT, nombre VARCHAR(70), direccion VARCHAR(100), latitud VARCHAR(25), longitud VARCHAR(25), telefono VARCHAR(20), horario VARCHAR(100), id_region INT, id_tipo_tienda INT, id_pais INT, gerente VARCHAR(60), busc_producto INT, INDEX id_tipo_tienda_idx (id_tipo_tienda), INDEX id_pais_idx (id_pais), INDEX id_region_idx (id_region), PRIMARY KEY(id_tienda)) ENGINE = INNODB;
+CREATE TABLE tienda (id_tienda INT UNSIGNED AUTO_INCREMENT, nombre VARCHAR(70), direccion VARCHAR(100), latitud VARCHAR(25), longitud VARCHAR(25), telefono VARCHAR(20), horario VARCHAR(100), id_region INT, id_tipo_tienda INT UNSIGNED, id_pais INT, gerente VARCHAR(60), busc_producto INT, INDEX id_tipo_tienda_idx (id_tipo_tienda), INDEX id_pais_idx (id_pais), INDEX id_region_idx (id_region), PRIMARY KEY(id_tienda)) ENGINE = INNODB;
 CREATE TABLE tipo_pregunta (id_tipo_preg INT AUTO_INCREMENT, desc_tipo_preg VARCHAR(30), PRIMARY KEY(id_tipo_preg)) ENGINE = INNODB;
-CREATE TABLE tipo_tienda (id_tipo_tienda INT, desc_tipo_tienda VARCHAR(30), PRIMARY KEY(id_tipo_tienda)) ENGINE = INNODB;
+CREATE TABLE tipo_tienda (id_tipo_tienda INT UNSIGNED AUTO_INCREMENT, desc_tipo_tienda VARCHAR(30), PRIMARY KEY(id_tipo_tienda)) ENGINE = INNODB;
 ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_tipo_preg_tipo_pregunta_id_tipo_preg FOREIGN KEY (id_tipo_preg) REFERENCES tipo_pregunta(id_tipo_preg);
 ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
 ALTER TABLE encuesta_respuestas ADD CONSTRAINT encuesta_respuestas_id_enc_preg_encuesta_preguntas_id_enc_preg FOREIGN KEY (id_enc_preg) REFERENCES encuesta_preguntas(id_enc_preg);

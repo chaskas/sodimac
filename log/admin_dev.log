@@ -586,3 +586,34 @@ Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_sidebar" 
 Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Partial "Respuestas/_form" 11.97 ms (1)
 Jul 26 21:58:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.46 ms (3)
 Jul 26 21:58:41 symfony [info] {sfWebResponse} Send content (48783 o)
+Jul 28 20:51:02 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/TipoTienda with parameters array (  'module' => 'TipoTienda',  'action' => 'index',)
+Jul 28 20:51:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 28 20:51:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 28 20:51:02 symfony [info] {TipoTiendaActions} Call "TipoTiendaActions->executeIndex()"
+Jul 28 20:51:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 28 20:51:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Jul 28 20:51:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/indexSuccess.php"
+Jul 28 20:51:02 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/_sidebar.php"
+Jul 28 20:51:02 symfony [info] {main} Set slot "sidebar"
+Jul 28 20:51:02 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/indexSuccess.php on line 24 (Undefined variable: tipo_tienda)
+Jul 28 20:51:17 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/TipoTienda with parameters array (  'module' => 'TipoTienda',  'action' => 'index',)
+Jul 28 20:51:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 28 20:51:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 28 20:51:17 symfony [info] {TipoTiendaActions} Call "TipoTiendaActions->executeIndex()"
+Jul 28 20:51:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 28 20:51:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Jul 28 20:51:17 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/indexSuccess.php"
+Jul 28 20:51:17 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/_sidebar.php"
+Jul 28 20:51:17 symfony [info] {main} Set slot "sidebar"
+Jul 28 20:51:17 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 28 20:51:17 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 28 20:51:17 symfony [info] {main} Get slot "sidebar"
+Jul 28 20:51:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 28 20:51:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 28 20:51:17 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (9)
+Jul 28 20:51:17 symfony [info] {sfWebDebugLogger} Factories 6.20 ms (1)
+Jul 28 20:51:17 symfony [info] {sfWebDebugLogger} Action "TipoTienda/index" 5.02 ms (1)
+Jul 28 20:51:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.25 ms (2)
+Jul 28 20:51:17 symfony [info] {sfWebDebugLogger} View "Success" for "TipoTienda/index" 18.97 ms (1)
+Jul 28 20:51:17 symfony [info] {sfWebDebugLogger} Partial "TipoTienda/_sidebar" 1.04 ms (1)
+Jul 28 20:51:17 symfony [info] {sfWebResponse} Send content (34403 o)

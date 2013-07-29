@@ -34,7 +34,7 @@ abstract class BaseServiciosPorTienda extends sfDoctrineRecord
         $this->hasColumn('id_tienda', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
-             'unsigned' => false,
+             'unsigned' => true,
              'primary' => true,
              'autoincrement' => false,
              'length' => 4,

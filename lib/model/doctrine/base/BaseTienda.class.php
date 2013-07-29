@@ -70,9 +70,9 @@ abstract class BaseTienda extends sfDoctrineRecord
         $this->hasColumn('id_tienda', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
-             'unsigned' => false,
+             'unsigned' => true,
              'primary' => true,
-             'autoincrement' => false,
+             'autoincrement' => true,
              'length' => 4,
              ));
         $this->hasColumn('nombre', 'string', 70, array(
@@ -141,7 +141,7 @@ abstract class BaseTienda extends sfDoctrineRecord
         $this->hasColumn('id_tipo_tienda', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,
-             'unsigned' => false,
+             'unsigned' => true,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
