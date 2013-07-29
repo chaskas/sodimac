@@ -12,5 +12,6 @@ class ServiciosTiendaForm extends BaseServiciosTiendaForm
 {
   public function configure()
   {
+  	$this->widgetSchema['desc_servicio']->setLabel('Nombre');
   }
 }
