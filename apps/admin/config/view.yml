@@ -19,7 +19,6 @@ default:
   javascripts:
     - jquery.js
     - bootstrap.min.js
-    - jquery-ui.js
 
   has_layout:     true
   layout:         layout

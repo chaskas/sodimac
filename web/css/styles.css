@@ -28,3 +28,7 @@ body	{	padding-top: 60px; }
 	margin-right: -6px;
 	opacity: .25;
 }
+
+.input-date {
+width: 73px;
+}

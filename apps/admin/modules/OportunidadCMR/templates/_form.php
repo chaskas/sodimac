@@ -1,7 +1,7 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 
-<?php //use_javascript('jquery-ui.js'); ?>
+<?php use_javascript('jquery-ui.js'); ?>
 <?php use_javascript('jquery.ui.datepicker-es.js'); ?>
 <?php use_stylesheet('redmond/jquery-ui.css'); ?>
 
@@ -41,7 +41,7 @@
   <div class="control-group">
     <?php echo $form['fecha_vigencia']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['fecha_vigencia'] ?>
+      <?php echo $form['fecha_vigencia']->render(array('class' => 'input-date')) ?>
       <?php echo $form['fecha_vigencia']->renderError() ?>
     </div>
   </div>

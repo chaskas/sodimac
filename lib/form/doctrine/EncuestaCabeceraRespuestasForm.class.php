@@ -20,6 +20,12 @@ class EncuestaCabeceraRespuestasForm extends BaseEncuestaCabeceraRespuestasForm
    
     $this->embedForm('Respuestas', $form);
 
+    $years = range(1900,date('Y'));
+    $this->widgetSchema['fecha_compra'] = new sfWidgetFormJQueryDate(array('config' => '{showOn: "button",buttonImage: "/img/calendar.png",buttonImageOnly: true,changeMonth: true,changeYear: true}', 'culture' => 'es'));
+    $this->widgetSchema['fecha_compra']->getOption('date_widget')->setOption('format', '%day%%month%%year%');
+    $this->widgetSchema['fecha_compra']->getOption('date_widget')->setOption('years', array_combine($years, $years));
+
+
   	$this->widgetSchema['nro_boleta']->setLabel('N° Boleta');
   	$this->widgetSchema['fecha_compra']->setLabel('Fecha Compra');
   	$this->widgetSchema['id_tienda']->setLabel('Tienda');

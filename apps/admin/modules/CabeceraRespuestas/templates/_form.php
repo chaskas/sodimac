@@ -1,6 +1,10 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 
+<?php use_javascript('jquery-ui.js'); ?>
+<?php use_javascript('jquery.ui.datepicker-es.js'); ?>
+<?php use_stylesheet('redmond/jquery-ui.css'); ?>
+
 <form action="<?php echo url_for('CabeceraRespuestas/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id_enc_cab_resp='.$form->getObject()->getIdEncCabResp() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?> class="form-horizontal">
 <?php if (!$form->getObject()->isNew()): ?>
 <input type="hidden" name="sf_method" value="put" />
@@ -21,7 +25,7 @@
   <div class="control-group">
     <?php echo $form['fecha_compra']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['fecha_compra'] ?>
+      <?php echo $form['fecha_compra']->render(array('class'=>'input-date')) ?>
       <?php echo $form['fecha_compra']->renderError() ?>
     </div>
   </div>
