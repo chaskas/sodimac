@@ -12,5 +12,6 @@ class TipoTiendaForm extends BaseTipoTiendaForm
 {
   public function configure()
   {
+  	$this->widgetSchema['desc_tipo_tienda']->setLabel('Descripción');
   }
 }

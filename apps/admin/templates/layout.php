@@ -23,7 +23,7 @@
           </a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li <?php if(in_array($sf_context->getModuleName(),array('Preguntas','TipoPregunta','Respuestas'))) echo "class='active'" ?>>
+              <li <?php if(in_array($sf_context->getModuleName(),array('Preguntas','TipoPregunta','Respuestas','CabeceraRespuestas'))) echo "class='active'" ?>>
                 <a href="<?php echo url_for('Preguntas/index'); ?>">Encuestas</a>
               </li>
               <li <?php if(in_array($sf_context->getModuleName(),array('OportunidadCMR'))) echo "class='active'" ?>>

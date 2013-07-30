@@ -2,7 +2,7 @@
 <div class="page-header">
   <div class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#">Nueva Tipo</a>
+      <a class="brand" href="#">Nuevo Tipo</a>
       <div class="pull-right">
         <a href="<?php echo url_for('TipoTienda/index') ?>" class="btn btn-primary">Atrás</a>
       </div>
