@@ -99,6 +99,21 @@
     </div>
   </div>
 
+  <?php foreach ($form['servicios'] as $key => $respuesta): ?>
+  <div class="page-header">
+    <h5>Agregar Servicio:</h5>
+  </div>
+
+  <div class="control-group">
+    <?php echo $respuesta['id_servicio_tienda']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $respuesta['id_servicio_tienda'] ?>
+      <?php echo $respuesta['id_servicio_tienda']->renderError() ?>
+    </div>
+  </div>
+
+  <?php endforeach; ?>
+
   <div class="form-actions">
     <input type="submit" value="Guardar" class="btn btn-primary"/>
     

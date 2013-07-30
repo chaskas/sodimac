@@ -11,3 +11,23 @@
 </div>
 
 <?php include_partial('form', array('form' => $form)) ?>
+
+<div class="page-header">
+    <h5>Servicios actuales:</h5>
+  </div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Servicio</th>
+      <th>Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+		<?php foreach($servicios as $servicio) : ?>
+		<tr>
+			<td><?php echo $servicio->getIdServicioTienda() ?></td>
+			<td>Eliminar</td>
+		</tr>
+		<?php endforeach; ?>
+	</tbody>
+</table>

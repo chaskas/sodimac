@@ -24,6 +24,10 @@ abstract class BaseServiciosPorTiendaForm extends BaseFormDoctrine
       'id_servicio_tienda' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_servicio_tienda')), 'empty_value' => $this->getObject()->get('id_servicio_tienda'), 'required' => false)),
     ));
 
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'ServiciosPorTienda', 'column' => array('id_tienda', 'id_servicio_tienda')))
+    );
+
     $this->widgetSchema->setNameFormat('servicios_por_tienda[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);

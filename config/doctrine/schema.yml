@@ -392,21 +392,30 @@ ServiciosPorTienda:
       unsigned: true
       primary: true
       autoincrement: false
+      notnull: true
     id_servicio_tienda:
       type: integer(4)
       fixed: false
       unsigned: false
       primary: true
       autoincrement: false
+      notnull: true
   relations:
     Tienda:
+      alias: tienda
       local: id_tienda
       foreign: id_tienda
-      type: one
+      onDelete: CASCADE
     ServiciosTienda:
+      alias: servicios
       local: id_servicio_tienda
       foreign: id_servicio_tienda
-      type: one
+      onDelete: CASCADE
+  indexes:
+    servicios_por_tienda_index:
+      fields: [id_tienda,id_servicio_tienda]
+      type: unique
+
 ServiciosTienda:
   connection: doctrine
   tableName: servicios_tienda

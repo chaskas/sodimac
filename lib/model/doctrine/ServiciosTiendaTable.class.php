@@ -16,4 +16,5 @@ class ServiciosTiendaTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('ServiciosTienda');
     }
+
 }

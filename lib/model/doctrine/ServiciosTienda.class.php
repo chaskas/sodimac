@@ -12,4 +12,8 @@
  */
 class ServiciosTienda extends BaseServiciosTienda
 {
+	public function __toString()
+	{
+		return $this->getDescServicio();
+	}
 }

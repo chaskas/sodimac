@@ -37,6 +37,11 @@ class TiendasActions extends sfActions
   {
     $this->forward404Unless($tienda = Doctrine_Core::getTable('Tienda')->find(array($request->getParameter('id_tienda'))), sprintf('Object tienda does not exist (%s).', $request->getParameter('id_tienda')));
     $this->form = new TiendaForm($tienda);
+
+    $this->servicios = Doctrine_Core::getTable('ServiciosPorTienda')
+      ->createQuery('a')
+      ->where('id_tienda = ?', $tienda->getIdTienda())
+      ->execute();
   }
 
   public function executeUpdate(sfWebRequest $request)
