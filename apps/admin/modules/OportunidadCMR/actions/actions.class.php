@@ -66,8 +66,9 @@ class OportunidadCMRActions extends sfActions
     if ($form->isValid())
     {
       $oportunidad_cmr = $form->save();
-
-      $this->redirect('OportunidadCMR/edit?id_opor_cmr='.$oportunidad_cmr->getIdOporCmr());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('OportunidadCMR/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

@@ -66,8 +66,9 @@ class TipoPreguntaActions extends sfActions
     if ($form->isValid())
     {
       $tipo_pregunta = $form->save();
-
-      $this->redirect('TipoPregunta/edit?id_tipo_preg='.$tipo_pregunta->getIdTipoPreg());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('TipoPregunta/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

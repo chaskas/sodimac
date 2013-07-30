@@ -51,6 +51,18 @@
           <?php endif; ?>
         </div>
         <div class="span9">
+          <?php if ($sf_user->hasFlash('success')): ?>
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Éxito,</strong> <?php echo $sf_user->getFlash('success') ?>
+            </div>
+          <?php endif ?>
+          <?php if ($sf_user->hasFlash('error')): ?>
+            <div class="alert alert-error">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Error,</strong> <?php echo $sf_user->getFlash('error') ?>
+            </div>
+          <?php endif ?>
           <?php echo $sf_content ?>
         </div>
       </div>

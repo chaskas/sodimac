@@ -66,8 +66,9 @@ class CabeceraRespuestasActions extends sfActions
     if ($form->isValid())
     {
       $encuesta_cabecera_respuestas = $form->save();
-
-      $this->redirect('CabeceraRespuestas/edit?id_enc_cab_resp='.$encuesta_cabecera_respuestas->getIdEncCabResp());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('CabeceraRespuestas/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

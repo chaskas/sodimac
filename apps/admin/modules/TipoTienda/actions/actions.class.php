@@ -66,8 +66,9 @@ class TipoTiendaActions extends sfActions
     if ($form->isValid())
     {
       $tipo_tienda = $form->save();
-
-      $this->redirect('TipoTienda/edit?id_tipo_tienda='.$tipo_tienda->getIdTipoTienda());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('TipoTienda/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

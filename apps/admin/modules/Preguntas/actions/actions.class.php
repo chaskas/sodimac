@@ -66,8 +66,9 @@ class PreguntasActions extends sfActions
     if ($form->isValid())
     {
       $encuesta_preguntas = $form->save();
-
-      $this->redirect('Preguntas/edit?id_enc_preg='.$encuesta_preguntas->getIdEncPreg());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('Preguntas/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

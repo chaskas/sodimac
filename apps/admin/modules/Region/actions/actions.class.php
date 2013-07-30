@@ -66,8 +66,9 @@ class RegionActions extends sfActions
     if ($form->isValid())
     {
       $region = $form->save();
-
-      $this->redirect('Region/edit?id_region='.$region->getIdRegion());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('Region/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

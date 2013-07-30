@@ -66,8 +66,9 @@ class ServiciosActions extends sfActions
     if ($form->isValid())
     {
       $servicios_tienda = $form->save();
-
-      $this->redirect('Servicios/edit?id_servicio_tienda='.$servicios_tienda->getIdServicioTienda());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('Servicios/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

@@ -66,8 +66,9 @@ class EndPointActions extends sfActions
     if ($form->isValid())
     {
       $endpoint = $form->save();
-
-      $this->redirect('EndPoint/edit?id_endpoint='.$endpoint->getIdEndpoint());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('EndPoint/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

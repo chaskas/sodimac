@@ -66,8 +66,9 @@ class PaisActions extends sfActions
     if ($form->isValid())
     {
       $pais = $form->save();
-
-      $this->redirect('Pais/edit?id_pais='.$pais->getIdPais());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('Pais/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

@@ -66,8 +66,9 @@ class RespuestasActions extends sfActions
     if ($form->isValid())
     {
       $encuesta_respuestas = $form->save();
-
-      $this->redirect('Respuestas/edit?id_enc_resp='.$encuesta_respuestas->getIdEncResp());
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('Respuestas/index');
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }
