@@ -25,8 +25,8 @@
   <tbody>
 		<?php foreach($servicios as $servicio) : ?>
 		<tr>
-			<td><?php echo $servicio->getIdServicioTienda() ?></td>
-			<td>Eliminar</td>
+			<td><?php echo $servicio->getServicios() ?></td>
+			<td></td>
 		</tr>
 		<?php endforeach; ?>
 	</tbody>

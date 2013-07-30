@@ -11230,3 +11230,115 @@ Jul 30 13:29:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/h
 Jul 30 13:29:35 symfony [info] {sfWebDebugLogger} Configuration 54.64 ms (10)
 Jul 30 13:29:35 symfony [info] {sfWebDebugLogger} Factories 280.31 ms (1)
 Jul 30 13:29:35 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 401.48 ms (1)
+Jul 30 20:43:32 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '1',)
+Jul 30 20:43:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 30 20:43:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 30 20:43:33 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:43:33 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Jul 30 20:43:33 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Jul 30 20:43:33 symfony [info] {main} Set slot "sidebar"
+Jul 30 20:43:33 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Jul 30 20:43:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda NOT IN (?, ?)) - (1, 2)
+Jul 30 20:43:33 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "servicio" on "ServiciosPorTienda"
+Jul 30 20:43:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 30 20:43:33 symfony [warning] {sfWebDebugLogger}  Warning at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Jul 30 20:43:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} Configuration 1.65 ms (9)
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} Factories 150.52 ms (1)
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 127.87 ms (1)
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.30 ms (8)
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 182.48 ms (1)
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 1.42 ms (1)
+Jul 30 20:43:33 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 22.76 ms (1)
+Jul 30 20:44:14 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '1',)
+Jul 30 20:44:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 30 20:44:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 30 20:44:14 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:44:14 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Jul 30 20:44:14 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Jul 30 20:44:14 symfony [info] {main} Set slot "sidebar"
+Jul 30 20:44:14 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Jul 30 20:44:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda NOT IN (?, ?)) - (1, 2)
+Jul 30 20:44:14 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "servicio" on "ServiciosPorTienda"
+Jul 30 20:44:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 30 20:44:14 symfony [warning] {sfWebDebugLogger}  Warning at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Jul 30 20:44:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} Factories 57.46 ms (1)
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 111.71 ms (1)
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.60 ms (8)
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 106.58 ms (1)
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 1.47 ms (1)
+Jul 30 20:44:14 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 22.85 ms (1)
+Jul 30 20:45:13 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '1',)
+Jul 30 20:45:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 30 20:45:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 30 20:45:13 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:45:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Jul 30 20:45:13 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Jul 30 20:45:13 symfony [info] {main} Set slot "sidebar"
+Jul 30 20:45:13 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Jul 30 20:45:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda NOT IN (?, ?)) - (1, 2)
+Jul 30 20:45:13 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "servicios_tienda" on "ServiciosPorTienda"
+Jul 30 20:45:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 30 20:45:13 symfony [warning] {sfWebDebugLogger}  Warning at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Jul 30 20:45:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} Configuration 1.24 ms (9)
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} Factories 58.57 ms (1)
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 115.52 ms (1)
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.58 ms (8)
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 106.41 ms (1)
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 1.49 ms (1)
+Jul 30 20:45:13 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 22.91 ms (1)
+Jul 30 20:45:58 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '1',)
+Jul 30 20:45:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 30 20:45:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 30 20:45:58 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Jul 30 20:45:58 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Jul 30 20:45:58 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Jul 30 20:45:58 symfony [info] {main} Set slot "sidebar"
+Jul 30 20:45:58 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda NOT IN (?, ?)) - (1, 2)
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda = ?) - (1)
+Jul 30 20:45:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda = ?) - (2)
+Jul 30 20:45:58 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 30 20:45:58 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Jul 30 20:45:58 symfony [info] {main} Get slot "sidebar"
+Jul 30 20:45:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 30 20:45:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Configuration 1.26 ms (9)
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Factories 60.12 ms (1)
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 124.16 ms (1)
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.65 ms (10)
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 49.64 ms (1)
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 1.48 ms (1)
+Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 22.69 ms (1)
+Jul 30 20:45:58 symfony [info] {sfWebResponse} Send content (60606 o)
