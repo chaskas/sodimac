@@ -12,4 +12,8 @@
  */
 class EncuestaCabeceraRespuestas extends BaseEncuestaCabeceraRespuestas
 {
+	public function getFechaCompraFormatted()
+	{
+		return date_format(date_create($this->getFechaCompra()),'d/m/Y');
+	}
 }

@@ -27,7 +27,7 @@
         <td><?php echo $oportunidad_cmr->getSku() ?></td>
         <td><?php echo $oportunidad_cmr->getPrecioInternet() ?></td>
         <td><?php echo $oportunidad_cmr->getPrecioCmr() ?></td>
-        <td><?php echo $oportunidad_cmr->getFechaVigencia() ?></td>
+        <td><?php echo $oportunidad_cmr->getFechaVigenciaFormatted() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
