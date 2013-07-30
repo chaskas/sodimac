@@ -97,4 +97,11 @@ class apiActions extends sfActions
 
     return $data;
   }
+
+  public function executeGetEndPoints(sfWebRequest $request)
+  {
+    $this->endpoints = Doctrine_Core::getTable('Endpoint')
+      ->createQuery('a')
+      ->execute();
+  }
 }

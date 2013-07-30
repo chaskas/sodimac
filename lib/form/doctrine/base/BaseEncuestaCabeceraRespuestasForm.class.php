@@ -17,7 +17,7 @@ abstract class BaseEncuestaCabeceraRespuestasForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id_enc_cab_resp' => new sfWidgetFormInputHidden(),
       'nro_boleta'      => new sfWidgetFormInputText(),
-      'fecha_compra'    => new sfWidgetFormDate(),
+      'fecha_compra'    => new sfWidgetFormDateTime(),
       'id_tienda'       => new sfWidgetFormInputText(),
       'rut'             => new sfWidgetFormInputText(),
       'dv'              => new sfWidgetFormInputText(),
@@ -34,7 +34,7 @@ abstract class BaseEncuestaCabeceraRespuestasForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id_enc_cab_resp' => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_enc_cab_resp')), 'empty_value' => $this->getObject()->get('id_enc_cab_resp'), 'required' => false)),
       'nro_boleta'      => new sfValidatorString(array('max_length' => 100, 'required' => false)),
-      'fecha_compra'    => new sfValidatorDate(array('required' => false)),
+      'fecha_compra'    => new sfValidatorDateTime(array('required' => false)),
       'id_tienda'       => new sfValidatorInteger(array('required' => false)),
       'rut'             => new sfValidatorInteger(array('required' => false)),
       'dv'              => new sfValidatorString(array('max_length' => 1, 'required' => false)),

@@ -1392,3 +1392,353 @@ Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} Action "api/setRespuesta" 98.1
 Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.77 ms (6)
 Jul 29 17:54:45 symfony [info] {sfWebDebugLogger} View "None" for "api/setRespuesta" 0.03 ms (1)
 Jul 29 17:54:45 symfony [info] {sfWebResponse} Send content (23058 o)
+Jul 29 21:06:47 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:06:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:06:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:06:47 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:06:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:06:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:06:47 symfony [err] {sfRenderException} The template "getEndPointsSuccess.json.php" does not exist or is unreadable in "".
+Jul 29 21:06:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 29 21:06:47 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:06:47 symfony [info] {sfWebDebugLogger} Configuration 51.09 ms (10)
+Jul 29 21:06:47 symfony [info] {sfWebDebugLogger} Factories 48.30 ms (1)
+Jul 29 21:06:47 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 6.37 ms (1)
+Jul 29 21:06:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.67 ms (2)
+Jul 29 21:06:47 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 88.74 ms (1)
+Jul 29 21:07:41 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:07:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:07:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:07:41 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:07:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:07:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:07:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:07:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:07:41 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:07:41 symfony [info] {sfWebDebugLogger} Configuration 1.63 ms (9)
+Jul 29 21:07:41 symfony [info] {sfWebDebugLogger} Factories 6.86 ms (1)
+Jul 29 21:07:41 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 12.64 ms (1)
+Jul 29 21:07:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.46 ms (2)
+Jul 29 21:07:41 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.56 ms (1)
+Jul 29 21:07:41 symfony [info] {sfWebResponse} Send content (3 o)
+Jul 29 21:08:56 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:08:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:08:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:08:56 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:08:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:08:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:08:56 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:08:56 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "id_pait" on "Endpoint"
+Jul 29 21:08:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 29 21:08:56 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:08:56 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Jul 29 21:08:56 symfony [info] {sfWebDebugLogger} Factories 5.56 ms (1)
+Jul 29 21:08:56 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.30 ms (1)
+Jul 29 21:08:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:08:56 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 78.81 ms (1)
+Jul 29 21:09:10 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:09:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:09:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:09:10 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:09:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:09:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:09:10 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:09:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:09:10 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:09:10 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Jul 29 21:09:10 symfony [info] {sfWebDebugLogger} Factories 5.32 ms (1)
+Jul 29 21:09:10 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.37 ms (1)
+Jul 29 21:09:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:09:10 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 3.21 ms (1)
+Jul 29 21:09:10 symfony [info] {sfWebResponse} Send content (111 o)
+Jul 29 21:09:42 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:09:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:09:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:09:42 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:09:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:09:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:09:42 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:09:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:09:42 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:09:42 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Jul 29 21:09:42 symfony [info] {sfWebDebugLogger} Factories 5.01 ms (1)
+Jul 29 21:09:42 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.22 ms (1)
+Jul 29 21:09:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Jul 29 21:09:42 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.72 ms (1)
+Jul 29 21:09:42 symfony [info] {sfWebResponse} Send content (111 o)
+Jul 29 21:13:37 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:13:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:13:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:13:37 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:13:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:13:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:13:37 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:13:45 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:13:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:13:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:13:45 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:13:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:13:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:13:45 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:13:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:13:45 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:13:45 symfony [info] {sfWebDebugLogger} Configuration 1.03 ms (9)
+Jul 29 21:13:45 symfony [info] {sfWebDebugLogger} Factories 5.90 ms (1)
+Jul 29 21:13:45 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 7.36 ms (1)
+Jul 29 21:13:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.29 ms (2)
+Jul 29 21:13:45 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.89 ms (1)
+Jul 29 21:13:45 symfony [info] {sfWebResponse} Send content (125 o)
+Jul 29 21:14:36 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:14:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:14:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:14:36 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:14:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:14:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:14:36 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:14:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:14:36 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:14:36 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Jul 29 21:14:36 symfony [info] {sfWebDebugLogger} Factories 5.82 ms (1)
+Jul 29 21:14:36 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.27 ms (1)
+Jul 29 21:14:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:14:36 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 19.45 ms (1)
+Jul 29 21:14:36 symfony [info] {sfWebResponse} Send content (111 o)
+Jul 29 21:14:53 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:14:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:14:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:14:53 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:14:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:14:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:14:53 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:14:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:14:53 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:14:53 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Jul 29 21:14:53 symfony [info] {sfWebDebugLogger} Factories 5.66 ms (1)
+Jul 29 21:14:53 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.29 ms (1)
+Jul 29 21:14:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Jul 29 21:14:53 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.87 ms (1)
+Jul 29 21:14:53 symfony [info] {sfWebResponse} Send content (124 o)
+Jul 29 21:15:13 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:15:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:15:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:15:13 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:15:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:15:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:15:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:15:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:15:13 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:15:13 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
+Jul 29 21:15:13 symfony [info] {sfWebDebugLogger} Factories 5.83 ms (1)
+Jul 29 21:15:13 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.33 ms (1)
+Jul 29 21:15:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.39 ms (2)
+Jul 29 21:15:13 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.83 ms (1)
+Jul 29 21:15:13 symfony [info] {sfWebResponse} Send content (113 o)
+Jul 29 21:15:45 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.json with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'json',)
+Jul 29 21:15:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:15:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:15:45 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:15:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:15:45 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:15:45 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.json.php"
+Jul 29 21:15:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:15:45 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:15:45 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Jul 29 21:15:45 symfony [info] {sfWebDebugLogger} Factories 4.92 ms (1)
+Jul 29 21:15:45 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.25 ms (1)
+Jul 29 21:15:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Jul 29 21:15:45 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.94 ms (1)
+Jul 29 21:15:45 symfony [info] {sfWebResponse} Send content (166 o)
+Jul 29 21:16:48 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/getOCMR.:sf_format) for /api/getOCMR.json with parameters array (  'module' => 'api',  'action' => 'getOCMR',  'sf_format' => 'json',)
+Jul 29 21:16:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:16:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:16:48 symfony [info] {apiActions} Call "apiActions->executeGetOCMR()"
+Jul 29 21:16:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:16:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Jul 29 21:16:48 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getOCMRSuccess.json.php"
+Jul 29 21:17:06 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/getOCMR.:sf_format) for /api/getOCMR.json with parameters array (  'module' => 'api',  'action' => 'getOCMR',  'sf_format' => 'json',)
+Jul 29 21:17:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:17:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:17:06 symfony [info] {apiActions} Call "apiActions->executeGetOCMR()"
+Jul 29 21:17:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:17:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Jul 29 21:17:06 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getOCMRSuccess.json.php"
+Jul 29 21:17:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:17:06 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:17:06 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Jul 29 21:17:06 symfony [info] {sfWebDebugLogger} Factories 5.48 ms (1)
+Jul 29 21:17:06 symfony [info] {sfWebDebugLogger} Action "api/getOCMR" 7.33 ms (1)
+Jul 29 21:17:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.33 ms (2)
+Jul 29 21:17:06 symfony [info] {sfWebDebugLogger} View "Success" for "api/getOCMR" 2.18 ms (1)
+Jul 29 21:17:06 symfony [info] {sfWebResponse} Send content (3 o)
+Jul 29 21:24:20 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:24:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:24:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:24:20 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:24:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:24:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:24:20 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:24:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:24:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:24:20 symfony [info] {sfWebDebugLogger} Configuration 1.02 ms (9)
+Jul 29 21:24:20 symfony [info] {sfWebDebugLogger} Factories 5.87 ms (1)
+Jul 29 21:24:20 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.17 ms (1)
+Jul 29 21:24:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:24:20 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 3.05 ms (1)
+Jul 29 21:24:20 symfony [info] {sfWebResponse} Send content (284 o)
+Jul 29 21:24:59 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:24:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:24:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:24:59 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:24:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:24:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:24:59 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:24:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:24:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:24:59 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (9)
+Jul 29 21:24:59 symfony [info] {sfWebDebugLogger} Factories 6.00 ms (1)
+Jul 29 21:24:59 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.30 ms (1)
+Jul 29 21:24:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.25 ms (2)
+Jul 29 21:24:59 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 3.07 ms (1)
+Jul 29 21:24:59 symfony [info] {sfWebResponse} Send content (288 o)
+Jul 29 21:25:00 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:25:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:25:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:25:00 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:25:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:25:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:25:00 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:25:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:25:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (9)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Factories 4.98 ms (1)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.01 ms (1)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.47 ms (1)
+Jul 29 21:25:00 symfony [info] {sfWebResponse} Send content (288 o)
+Jul 29 21:25:00 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:25:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:25:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:25:00 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:25:00 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:25:00 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:25:00 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:25:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:25:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Factories 5.39 ms (1)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.23 ms (1)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:25:00 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 3.39 ms (1)
+Jul 29 21:25:00 symfony [info] {sfWebResponse} Send content (288 o)
+Jul 29 21:26:36 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:26:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:26:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:26:36 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:26:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:26:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:26:36 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:26:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:26:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:26:36 symfony [info] {sfWebDebugLogger} Configuration 0.98 ms (9)
+Jul 29 21:26:36 symfony [info] {sfWebDebugLogger} Factories 4.86 ms (1)
+Jul 29 21:26:36 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.57 ms (1)
+Jul 29 21:26:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.29 ms (2)
+Jul 29 21:26:36 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.93 ms (1)
+Jul 29 21:26:36 symfony [info] {sfWebResponse} Send content (288 o)
+Jul 29 21:26:38 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:26:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:26:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:26:38 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:26:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:26:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:26:38 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:26:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:26:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:26:38 symfony [info] {sfWebDebugLogger} Configuration 0.97 ms (9)
+Jul 29 21:26:38 symfony [info] {sfWebDebugLogger} Factories 6.08 ms (1)
+Jul 29 21:26:38 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.22 ms (1)
+Jul 29 21:26:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Jul 29 21:26:38 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.65 ms (1)
+Jul 29 21:26:38 symfony [info] {sfWebResponse} Send content (288 o)
+Jul 29 21:26:58 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:26:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:26:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:26:58 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:26:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:26:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:26:58 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:26:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:26:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:26:58 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+Jul 29 21:26:58 symfony [info] {sfWebDebugLogger} Factories 5.32 ms (1)
+Jul 29 21:26:58 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.39 ms (1)
+Jul 29 21:26:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:26:58 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.79 ms (1)
+Jul 29 21:26:58 symfony [info] {sfWebResponse} Send content (260 o)
+Jul 29 21:27:13 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:27:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:27:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:27:13 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:27:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:27:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:27:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:27:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:27:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:27:13 symfony [info] {sfWebDebugLogger} Configuration 0.95 ms (9)
+Jul 29 21:27:13 symfony [info] {sfWebDebugLogger} Factories 5.56 ms (1)
+Jul 29 21:27:13 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.12 ms (1)
+Jul 29 21:27:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.33 ms (2)
+Jul 29 21:27:13 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 3.98 ms (1)
+Jul 29 21:27:13 symfony [info] {sfWebResponse} Send content (288 o)
+Jul 29 21:27:39 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:27:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:27:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:27:39 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:27:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:27:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:27:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:27:52 symfony [info] {sfPatternRouting} Match route "api_endpoints" (/api/getEndPoints.:sf_format) for /api/getEndPoints.xml with parameters array (  'module' => 'api',  'action' => 'getEndPoints',  'sf_format' => 'xml',)
+Jul 29 21:27:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:27:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:27:52 symfony [info] {apiActions} Call "apiActions->executeGetEndPoints()"
+Jul 29 21:27:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:27:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT e.id_endpoint AS e__id_endpoint, e.desc_endpoint AS e__desc_endpoint, e.host AS e__host, e.puerto AS e__puerto, e.resto_url AS e__resto_url, e.id_pais AS e__id_pais FROM endpoint e - ()
+Jul 29 21:27:52 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getEndPointsSuccess.xml.php"
+Jul 29 21:27:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:27:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:27:52 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Jul 29 21:27:52 symfony [info] {sfWebDebugLogger} Factories 5.36 ms (1)
+Jul 29 21:27:52 symfony [info] {sfWebDebugLogger} Action "api/getEndPoints" 5.31 ms (1)
+Jul 29 21:27:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Jul 29 21:27:52 symfony [info] {sfWebDebugLogger} View "Success" for "api/getEndPoints" 2.87 ms (1)
+Jul 29 21:27:52 symfony [info] {sfWebResponse} Send content (289 o)
+Jul 29 21:28:25 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/getOCMR.:sf_format) for /api/getOCMR.xml with parameters array (  'module' => 'api',  'action' => 'getOCMR',  'sf_format' => 'xml',)
+Jul 29 21:28:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:28:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:28:25 symfony [info] {apiActions} Call "apiActions->executeGetOCMR()"
+Jul 29 21:28:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:28:25 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Jul 29 21:28:25 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getOCMRSuccess.xml.php"
+Jul 29 21:28:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:28:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 29 21:28:25 symfony [info] {sfWebDebugLogger} Configuration 0.99 ms (9)
+Jul 29 21:28:25 symfony [info] {sfWebDebugLogger} Factories 4.93 ms (1)
+Jul 29 21:28:25 symfony [info] {sfWebDebugLogger} Action "api/getOCMR" 6.17 ms (1)
+Jul 29 21:28:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.34 ms (2)
+Jul 29 21:28:25 symfony [info] {sfWebDebugLogger} View "Success" for "api/getOCMR" 2.40 ms (1)
+Jul 29 21:28:25 symfony [info] {sfWebResponse} Send content (55 o)
+Jul 29 21:41:54 symfony [info] {sfPatternRouting} Match route "api_oportunidad_cmr" (/api/getOCMR.:sf_format) for /api/getOCMR.json with parameters array (  'module' => 'api',  'action' => 'getOCMR',  'sf_format' => 'json',)
+Jul 29 21:41:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 21:41:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 21:41:54 symfony [info] {apiActions} Call "apiActions->executeGetOCMR()"
+Jul 29 21:41:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 29 21:41:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.precio_internet AS o__precio_internet, o.precio_cmr AS o__precio_cmr, o.fecha_vigencia AS o__fecha_vigencia, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Jul 29 21:41:54 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getOCMRSuccess.json.php"
+Jul 29 21:41:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 21:41:54 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} Configuration 0.94 ms (9)
+Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} Factories 5.86 ms (1)
+Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} Action "api/getOCMR" 5.91 ms (1)
+Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.29 ms (2)
+Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} View "Success" for "api/getOCMR" 2.52 ms (1)
+Jul 29 21:41:54 symfony [info] {sfWebResponse} Send content (154 o)

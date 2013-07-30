@@ -19,7 +19,7 @@ abstract class BaseOportunidadCmrForm extends BaseFormDoctrine
       'sku'             => new sfWidgetFormInputText(),
       'precio_internet' => new sfWidgetFormInputText(),
       'precio_cmr'      => new sfWidgetFormInputText(),
-      'fecha_vigencia'  => new sfWidgetFormDate(),
+      'fecha_vigencia'  => new sfWidgetFormDateTime(),
       'id_pais'         => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
     ));
 
@@ -28,7 +28,7 @@ abstract class BaseOportunidadCmrForm extends BaseFormDoctrine
       'sku'             => new sfValidatorString(array('max_length' => 7, 'required' => false)),
       'precio_internet' => new sfValidatorInteger(array('required' => false)),
       'precio_cmr'      => new sfValidatorInteger(array('required' => false)),
-      'fecha_vigencia'  => new sfValidatorDate(array('required' => false)),
+      'fecha_vigencia'  => new sfValidatorDateTime(array('required' => false)),
       'id_pais'         => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'required' => false)),
     ));
 

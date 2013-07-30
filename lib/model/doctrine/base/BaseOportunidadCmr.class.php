@@ -11,7 +11,7 @@ Doctrine_Manager::getInstance()->bindComponent('OportunidadCmr', 'doctrine');
  * @property string $sku
  * @property integer $precio_internet
  * @property integer $precio_cmr
- * @property date $fecha_vigencia
+ * @property timestamp $fecha_vigencia
  * @property integer $id_pais
  * @property Pais $Pais
  * 
@@ -19,7 +19,7 @@ Doctrine_Manager::getInstance()->bindComponent('OportunidadCmr', 'doctrine');
  * @method string         getSku()             Returns the current record's "sku" value
  * @method integer        getPrecioInternet()  Returns the current record's "precio_internet" value
  * @method integer        getPrecioCmr()       Returns the current record's "precio_cmr" value
- * @method date           getFechaVigencia()   Returns the current record's "fecha_vigencia" value
+ * @method timestamp      getFechaVigencia()   Returns the current record's "fecha_vigencia" value
  * @method integer        getIdPais()          Returns the current record's "id_pais" value
  * @method Pais           getPais()            Returns the current record's "Pais" value
  * @method OportunidadCmr setIdOporCmr()       Sets the current record's "id_opor_cmr" value
@@ -75,14 +75,13 @@ abstract class BaseOportunidadCmr extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('fecha_vigencia', 'date', 25, array(
-             'type' => 'date',
+        $this->hasColumn('fecha_vigencia', 'timestamp', null, array(
+             'type' => 'timestamp',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 25,
              ));
         $this->hasColumn('id_pais', 'integer', 4, array(
              'type' => 'integer',

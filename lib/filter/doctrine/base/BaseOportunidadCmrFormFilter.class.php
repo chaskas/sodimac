@@ -24,7 +24,7 @@ abstract class BaseOportunidadCmrFormFilter extends BaseFormFilterDoctrine
       'sku'             => new sfValidatorPass(array('required' => false)),
       'precio_internet' => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'precio_cmr'      => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'fecha_vigencia'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'fecha_vigencia'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'id_pais'         => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Pais'), 'column' => 'id_pais')),
     ));
 

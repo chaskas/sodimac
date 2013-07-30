@@ -9,7 +9,7 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaCabeceraRespuestas', 'do
  * 
  * @property integer $id_enc_cab_resp
  * @property string $nro_boleta
- * @property date $fecha_compra
+ * @property timestamp $fecha_compra
  * @property integer $id_tienda
  * @property integer $rut
  * @property string $dv
@@ -25,7 +25,7 @@ Doctrine_Manager::getInstance()->bindComponent('EncuestaCabeceraRespuestas', 'do
  * 
  * @method integer                    getIdEncCabResp()       Returns the current record's "id_enc_cab_resp" value
  * @method string                     getNroBoleta()          Returns the current record's "nro_boleta" value
- * @method date                       getFechaCompra()        Returns the current record's "fecha_compra" value
+ * @method timestamp                  getFechaCompra()        Returns the current record's "fecha_compra" value
  * @method integer                    getIdTienda()           Returns the current record's "id_tienda" value
  * @method integer                    getRut()                Returns the current record's "rut" value
  * @method string                     getDv()                 Returns the current record's "dv" value
@@ -81,14 +81,13 @@ abstract class BaseEncuestaCabeceraRespuestas extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 100,
              ));
-        $this->hasColumn('fecha_compra', 'date', 25, array(
-             'type' => 'date',
+        $this->hasColumn('fecha_compra', 'timestamp', null, array(
+             'type' => 'timestamp',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 25,
              ));
         $this->hasColumn('id_tienda', 'integer', 4, array(
              'type' => 'integer',

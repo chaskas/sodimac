@@ -16,7 +16,7 @@ EncuestaCabeceraRespuestas:
       notnull: false
       autoincrement: false
     fecha_compra:
-      type: date(25)
+      type: timestamp
       fixed: false
       unsigned: false
       primary: false
@@ -286,7 +286,7 @@ OportunidadCmr:
       notnull: false
       autoincrement: false
     fecha_vigencia:
-      type: date(25)
+      type: timestamp
       fixed: false
       unsigned: false
       primary: false
