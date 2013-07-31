@@ -13,5 +13,9 @@ class ServiciosTiendaForm extends BaseServiciosTiendaForm
   public function configure()
   {
   	$this->widgetSchema['desc_servicio']->setLabel('Nombre');
+
+  	$this->widgetSchema['estado'] = new sfWidgetFormChoice(array(
+  		'choices' => array('ACT'=>'Activo','INA'=>'Inactivo')
+  		));
   }
 }

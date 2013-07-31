@@ -30,7 +30,8 @@ class ServiciosPorTiendaForm extends BaseServiciosPorTiendaForm
 
       $servicios = Doctrine_Core::getTable('ServiciosTienda')
         ->createQuery('b')
-        ->whereNotIn('b.id_servicio_tienda', $ArIdServAct);
+        ->whereNotIn('b.id_servicio_tienda', $ArIdServAct)
+        ->andWhere('b.estado = ?','ACT');
 
     } else {
       $servicios = Doctrine_Core::getTable('ServiciosTienda')
