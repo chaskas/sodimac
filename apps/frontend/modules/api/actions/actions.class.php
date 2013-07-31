@@ -104,4 +104,11 @@ class apiActions extends sfActions
       ->createQuery('a')
       ->execute();
   }
+
+  public function executeGetTiendas(sfWebRequest $request)
+  {
+    $this->tiendas = Doctrine_Core::getTable('Tienda')
+      ->createQuery('a')
+      ->execute();
+  }
 }

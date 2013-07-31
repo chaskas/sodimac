@@ -23,7 +23,15 @@ api_set_respuesta:
   class: sfRequestRoute
   requirements: { sf_method: POST, sf_format: (xml|json) }
 
-api_endpoints:
+api_get_tiendas:
+  url:     /api/getTiendas.:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getTiendas }
+  options: { model: Tienda, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_get_endpoints:
   url:     /api/getEndPoints.:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getEndPoints }
