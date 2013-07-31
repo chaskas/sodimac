@@ -17,5 +17,9 @@ class EncuestaPreguntasForm extends BaseEncuestaPreguntasForm
   	$this->widgetSchema['desc_pregunta']->setLabel('Descripción');
   	$this->widgetSchema['estado']->setLabel('Estado');
   	$this->widgetSchema['id_pais']->setLabel('País');
+
+  	$this->widgetSchema['estado'] = new sfWidgetFormChoice(array(
+  		'choices' => array('ACT'=>'Activo','INA'=>'Inactivo')
+  		));
   }
 }

@@ -27,6 +27,7 @@ class apiActions extends sfActions
   {
     $this->preguntas = Doctrine_Core::getTable('EncuestaPreguntas')
       ->createQuery('a')
+      ->where('a.estado = ?','ACT')
       ->execute();
   }
 
@@ -110,12 +111,25 @@ class apiActions extends sfActions
     $this->tienda = Doctrine_Core::getTable('Tienda')->find(array($request->getParameter('id')));
     $response = $this->getResponse();
 
-
     if($this->tienda != null){
+      $servicios_inactivos = Doctrine_Core::getTable('ServiciosTienda')
+        ->createQuery('a')
+        ->where('a.estado = ?','INA')
+        ->execute();
+
+      $arr_id_servicios_inactivos = [];
+      foreach ($servicios_inactivos as $s) {
+        array_push($arr_id_servicios_inactivos,$s->getIdServicioTienda());
+      }
+
+      //var_dump($arr_id_servicios_inactivos);
+
       $this->servicios = Doctrine_Core::getTable('ServiciosPorTienda')
       ->createQuery('a')
       ->where('id_tienda = ?', $this->tienda->getIdTienda())
+      ->andWhereNotIn('id_servicio_tienda', $arr_id_servicios_inactivos)
       ->execute();
+
     } else {
       $response->setStatusCode(400);
       return sfView::NONE;
