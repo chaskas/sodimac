@@ -16,4 +16,14 @@ class EncuestaPreguntas extends BaseEncuestaPreguntas
 	{
 		return $this->getDescPregunta();
 	}
+
+	public function getEstadoImg()
+	{
+		if($this->getEstado() == 'ACT')
+		{
+			return "green.png";
+		} elseif ($this->getEstado() == 'INA') {
+			return "red.png";
+		}
+	}
 }

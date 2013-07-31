@@ -32,3 +32,7 @@ body	{	padding-top: 60px; }
 .input-date {
 width: 73px;
 }
+
+.table .center {
+   text-align: center;   
+}

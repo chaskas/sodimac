@@ -16,4 +16,14 @@ class ServiciosTienda extends BaseServiciosTienda
 	{
 		return $this->getDescServicio();
 	}
+
+	public function getEstadoImg()
+	{
+		if($this->getEstado() == 'ACT')
+		{
+			return "green.png";
+		} elseif ($this->getEstado() == 'INA') {
+			return "red.png";
+		}
+	}
 }

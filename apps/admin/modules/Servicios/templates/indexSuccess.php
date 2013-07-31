@@ -12,18 +12,18 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Nombre</th>
-      <th>Estado</th>
-      <th>Opciones</th>
+      <th class="center">Id</th>
+      <th class="center">Nombre</th>
+      <th class="center">Estado</th>
+      <th class="center">Opciones</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($servicios as $servicio): ?>
       <tr>
-        <td><a href="<?php echo url_for('Servicios/edit?id_servicio_tienda='.$servicio->getIdServicioTienda()) ?>"><?php echo $servicio->getIdServicioTienda() ?></a></td>
+        <td class="center"><a href="<?php echo url_for('Servicios/edit?id_servicio_tienda='.$servicio->getIdServicioTienda()) ?>"><?php echo $servicio->getIdServicioTienda() ?></a></td>
         <td><?php echo $servicio->getDescServicio() ?></td>
-        <td><?php echo $servicio->getEstado() ?></td>
+        <td class="center"><?php echo image_tag($servicio->getEstadoImg()) ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
