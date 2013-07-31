@@ -1742,3 +1742,56 @@ Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} Action "api/getOCMR" 5.91 ms (
 Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.29 ms (2)
 Jul 29 21:41:54 symfony [info] {sfWebDebugLogger} View "Success" for "api/getOCMR" 2.52 ms (1)
 Jul 29 21:41:54 symfony [info] {sfWebResponse} Send content (154 o)
+Jul 31 01:01:47 symfony [info] {sfPatternRouting} Match route "api_get_tienda" (/api/getTienda.:sf_format/:id) for /api/getTienda.xml/1 with parameters array (  'module' => 'api',  'action' => 'getTienda',  'sf_format' => 'xml',  'id' => '1',)
+Jul 31 01:01:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 31 01:01:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 31 01:01:47 symfony [info] {apiActions} Call "apiActions->executeGetTienda()"
+Jul 31 01:01:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 31 01:01:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 31 01:01:47 symfony [err] {sfRenderException} The template "getTiendaSuccess.xml.php" does not exist or is unreadable in "".
+Jul 31 01:01:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 31 01:01:47 symfony [warning] {sfWebDebugLogger}  Warning at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/response/sfWebResponse.class.php:409))
+Jul 31 01:01:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/xml; charset=utf-8"
+Jul 31 01:01:47 symfony [info] {sfWebDebugLogger} Configuration 186.01 ms (9)
+Jul 31 01:01:47 symfony [info] {sfWebDebugLogger} Factories 244.07 ms (1)
+Jul 31 01:01:47 symfony [info] {sfWebDebugLogger} Action "api/getTienda" 135.79 ms (1)
+Jul 31 01:01:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.81 ms (2)
+Jul 31 01:01:47 symfony [info] {sfWebDebugLogger} View "Success" for "api/getTienda" 65.10 ms (1)
+Jul 31 01:01:58 symfony [info] {sfPatternRouting} Match route "api_get_tienda" (/api/getTienda.:sf_format/:id) for /api/getTienda.json/1 with parameters array (  'module' => 'api',  'action' => 'getTienda',  'sf_format' => 'json',  'id' => '1',)
+Jul 31 01:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 31 01:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 31 01:01:58 symfony [info] {apiActions} Call "apiActions->executeGetTienda()"
+Jul 31 01:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 31 01:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 31 01:01:58 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getTiendaSuccess.json.php"
+Jul 31 01:01:58 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getTiendaSuccess.json.php on line 2 (Undefined variable: tienda)
+Jul 31 01:02:40 symfony [info] {sfPatternRouting} Match route "api_get_tienda" (/api/getTienda.:sf_format/:id) for /api/getTienda.json/1 with parameters array (  'module' => 'api',  'action' => 'getTienda',  'sf_format' => 'json',  'id' => '1',)
+Jul 31 01:02:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 31 01:02:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 31 01:02:40 symfony [info] {apiActions} Call "apiActions->executeGetTienda()"
+Jul 31 01:02:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 31 01:02:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Jul 31 01:02:40 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getTiendaSuccess.json.php"
+Jul 31 01:02:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 31 01:02:40 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Jul 31 01:02:40 symfony [info] {sfWebDebugLogger} Configuration 2.43 ms (9)
+Jul 31 01:02:40 symfony [info] {sfWebDebugLogger} Factories 116.25 ms (1)
+Jul 31 01:02:40 symfony [info] {sfWebDebugLogger} Action "api/getTienda" 120.32 ms (1)
+Jul 31 01:02:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.74 ms (2)
+Jul 31 01:02:40 symfony [info] {sfWebDebugLogger} View "Success" for "api/getTienda" 38.19 ms (1)
+Jul 31 01:02:40 symfony [info] {sfWebResponse} Send content (187 o)
+Jul 31 15:17:33 symfony [info] {sfPatternRouting} Match route "api_get_tienda" (/api/getTienda.:sf_format/:id) for /api/getTienda.json/10 with parameters array (  'module' => 'api',  'action' => 'getTienda',  'sf_format' => 'json',  'id' => '10',)
+Jul 31 15:17:44 symfony [info] {sfPatternRouting} Match route "api_get_tienda" (/api/getTienda.:sf_format/:id) for /api/getTienda.json/10 with parameters array (  'module' => 'api',  'action' => 'getTienda',  'sf_format' => 'json',  'id' => '10',)
+Jul 31 15:17:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 31 15:17:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 31 15:17:44 symfony [info] {apiActions} Call "apiActions->executeGetTienda()"
+Jul 31 15:17:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jul 31 15:17:44 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (10)
+Jul 31 15:17:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 400 Bad Request"
+Jul 31 15:17:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 31 15:17:44 symfony [info] {sfWebDebugLogger} Configuration 1.13 ms (8)
+Jul 31 15:17:44 symfony [info] {sfWebDebugLogger} Factories 61.21 ms (1)
+Jul 31 15:17:44 symfony [info] {sfWebDebugLogger} Action "api/getTienda" 74.59 ms (1)
+Jul 31 15:17:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+Jul 31 15:17:44 symfony [info] {sfWebDebugLogger} View "None" for "api/getTienda" 0.01 ms (1)
+Jul 31 15:17:44 symfony [info] {sfWebResponse} Send content (20420 o)

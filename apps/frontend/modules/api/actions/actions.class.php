@@ -39,7 +39,6 @@ class apiActions extends sfActions
     {
       $nRespuestas = count($data['Respuestas']);
       $form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => $nRespuestas));
-      //$form = new EncuestaCabeceraRespuestasForm();
 
       // Disable this protection
       $form->disableLocalCSRFProtection();
@@ -110,5 +109,15 @@ class apiActions extends sfActions
     $this->tiendas = Doctrine_Core::getTable('Tienda')
       ->createQuery('a')
       ->execute();
+  }
+
+  public function executeGetTienda(sfWebRequest $request)
+  {
+    $this->tienda = Doctrine_Core::getTable('Tienda')->find(array($request->getParameter('id')));
+    $response = $this->getResponse();
+    if($this->tienda == null){
+      $response->setStatusCode(400);
+      return sfView::NONE;
+    } 
   }
 }

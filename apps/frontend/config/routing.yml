@@ -31,6 +31,15 @@ api_get_tiendas:
   requirements:
     sf_format: (?:xml|json)
 
+api_get_tienda:
+  url:     /api/getTienda.:sf_format/:id
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getTienda }
+  options: { model: Tienda, type: object }
+  requirements:
+    sf_format: (?:xml|json)
+    id: \d+
+
 api_get_endpoints:
   url:     /api/getEndPoints.:sf_format
   class:   sfDoctrineRoute
