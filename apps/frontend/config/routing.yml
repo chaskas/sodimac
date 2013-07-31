@@ -2,8 +2,8 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 api_oportunidad_cmr:
-  url:     /api/getOCMR.:sf_format
-  #url:     /api/get/ocmr/:sf_format
+  #url:     /api/getOCMR.:sf_format
+  url:     /api/get/ocmr/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getOCMR }
   options: { model: OportunidadCMR, type: list }
@@ -11,8 +11,8 @@ api_oportunidad_cmr:
     sf_format: (?:xml|json)
 
 api_get_preguntas:
-  url:     /api/getPreguntas.:sf_format
-  #url:     /api/get/preguntas/:sf_format
+  #url:     /api/getPreguntas.:sf_format
+  url:     /api/get/pregunta/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getPreguntas }
   options: { model: EncuestaPreguntas, type: list }
@@ -20,15 +20,15 @@ api_get_preguntas:
     sf_format: (?:xml|json)
 
 api_set_respuesta:
-  url: /api/setRespuesta.:sf_format
-  #url: /api/set/respuesta/:sf_format
+  #url: /api/setRespuesta.:sf_format
+  url: /api/set/respuesta/:sf_format
   param: { module: api, action: setRespuesta, sf_format: json }
   class: sfRequestRoute
   requirements: { sf_method: POST, sf_format: (xml|json) }
 
 api_get_tienda:
-  url:     /api/getTienda.:sf_format/:id
-  #url:     /api/get/tienda/:id/:sf_format
+  #url:     /api/getTienda.:sf_format/:id
+  url:     /api/get/tienda/:id/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getTienda }
   options: { model: Tienda, type: object }
@@ -37,8 +37,8 @@ api_get_tienda:
     id: \d+
 
 api_get_endpoints:
-  url:     /api/getEndPoints.:sf_format
-  #url:     /api/get/endpoints/:sf_format
+  #url:     /api/getEndPoints.:sf_format
+  url:     /api/get/endpoint/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getEndPoints }
   options: { model: Endpoint, type: list }
