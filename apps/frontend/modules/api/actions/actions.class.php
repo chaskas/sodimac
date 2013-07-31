@@ -19,6 +19,7 @@ class apiActions extends sfActions
   {
     $this->ocmrs = Doctrine_Core::getTable('OportunidadCmr')
       ->createQuery('a')
+      ->where('fecha_vigencia >= ?', date("Y-m-d"))
       ->execute();
   }
 
@@ -104,20 +105,20 @@ class apiActions extends sfActions
       ->execute();
   }
 
-  public function executeGetTiendas(sfWebRequest $request)
-  {
-    $this->tiendas = Doctrine_Core::getTable('Tienda')
-      ->createQuery('a')
-      ->execute();
-  }
-
   public function executeGetTienda(sfWebRequest $request)
   {
     $this->tienda = Doctrine_Core::getTable('Tienda')->find(array($request->getParameter('id')));
     $response = $this->getResponse();
-    if($this->tienda == null){
+
+
+    if($this->tienda != null){
+      $this->servicios = Doctrine_Core::getTable('ServiciosPorTienda')
+      ->createQuery('a')
+      ->where('id_tienda = ?', $this->tienda->getIdTienda())
+      ->execute();
+    } else {
       $response->setStatusCode(400);
       return sfView::NONE;
-    } 
+    }
   }
 }

@@ -14,6 +14,6 @@ class OportunidadCmr extends BaseOportunidadCmr
 {
 	public function getFechaVigenciaFormatted()
 	{
-		return date_format(date_create($this->getFechaVigencia()),'d/m/Y');
+		return date_format(date_create($this->getFechaVigencia()),'d-m-Y');
 	}
 }

@@ -3,6 +3,7 @@
 
 api_oportunidad_cmr:
   url:     /api/getOCMR.:sf_format
+  #url:     /api/get/ocmr/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getOCMR }
   options: { model: OportunidadCMR, type: list }
@@ -11,6 +12,7 @@ api_oportunidad_cmr:
 
 api_get_preguntas:
   url:     /api/getPreguntas.:sf_format
+  #url:     /api/get/preguntas/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getPreguntas }
   options: { model: EncuestaPreguntas, type: list }
@@ -19,20 +21,14 @@ api_get_preguntas:
 
 api_set_respuesta:
   url: /api/setRespuesta.:sf_format
+  #url: /api/set/respuesta/:sf_format
   param: { module: api, action: setRespuesta, sf_format: json }
   class: sfRequestRoute
   requirements: { sf_method: POST, sf_format: (xml|json) }
 
-api_get_tiendas:
-  url:     /api/getTiendas.:sf_format
-  class:   sfDoctrineRoute
-  param:   { module: api, action: getTiendas }
-  options: { model: Tienda, type: list }
-  requirements:
-    sf_format: (?:xml|json)
-
 api_get_tienda:
   url:     /api/getTienda.:sf_format/:id
+  #url:     /api/get/tienda/:id/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getTienda }
   options: { model: Tienda, type: object }
@@ -42,6 +38,7 @@ api_get_tienda:
 
 api_get_endpoints:
   url:     /api/getEndPoints.:sf_format
+  #url:     /api/get/endpoints/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getEndPoints }
   options: { model: Endpoint, type: list }

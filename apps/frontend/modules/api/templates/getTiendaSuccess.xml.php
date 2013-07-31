@@ -8,5 +8,15 @@
 	<telefono><?php echo $tienda->getTelefono(); ?></telefono>
 	<horario><?php echo $tienda->getHorario(); ?></horario>
 	<id_region><?php echo $tienda->getIdRegion(); ?></id_region>
-	<id_tipo_tienda><?php echo $tienda->getIdTipoTienda(); ?></id_tipo_tienda>
+  <id_tipo_tienda><?php echo $tienda->getIdTipoTienda(); ?></id_tipo_tienda>
+  <id_pais><?php echo $tienda->getIdPais(); ?></id_pais>
+  <gerente><?php echo $tienda->getGerente(); ?></gerente>
+	<busc_producto><?php echo $tienda->getBuscProducto(); ?></busc_producto>
+  <servicios>
+    <?php foreach ($servicios as $servicio) : ?>
+    <servicio>
+      <desc_servicio><?php echo $servicio->getServicios(); ?></desc_servicio>
+    </servicio>
+    <?php endforeach; ?>
+  </servicios>
 </tienda>
