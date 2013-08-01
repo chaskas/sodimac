@@ -19,7 +19,8 @@ class apiActions extends sfActions
   {
     $this->ocmrs = Doctrine_Core::getTable('OportunidadCmr')
       ->createQuery('a')
-      ->where('fecha_vigencia >= ?', date("Y-m-d"))
+      ->where('fecha_vig_des <= ?', date("Y-m-d"))
+      ->andWhere('fecha_vig_has >= ?', date("Y-m-d"))
       ->execute();
   }
 
