@@ -271,12 +271,24 @@ OportunidadCmr:
       primary: false
       notnull: false
       autoincrement: false
+    nombre_producto:
+      type: string(200)
+      unsigned: false
+      primary: false
+      notnull: false 
+      autoincrement: false
     precio_internet:
-      type: integer(4)
+      type: integer
       fixed: false
       unsigned: false
       primary: false
       notnull: false
+      autoincrement: false
+    unidad_med_int:
+      type: string(10)
+      unsigned: false
+      primary: false
+      notnull: false 
       autoincrement: false
     precio_cmr:
       type: integer(4)
@@ -285,7 +297,20 @@ OportunidadCmr:
       primary: false
       notnull: false
       autoincrement: false
-    fecha_vigencia:
+    unidad_med_cmr:
+      type: string(10)
+      unsigned: false
+      primary: false
+      notnull: false 
+      autoincrement: false
+    fecha_vig_des:
+      type: timestamp
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    fecha_vig_has:
       type: timestamp
       fixed: false
       unsigned: false

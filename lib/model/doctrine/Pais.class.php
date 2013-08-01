@@ -14,6 +14,6 @@ class Pais extends BasePais
 {
 	public function __toString()
 	{
-		return $this->getDescPais();
+		return $this->getDescPais() != null ? $this->getDescPais() : '';
 	}
 }

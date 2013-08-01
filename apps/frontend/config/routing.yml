@@ -30,8 +30,27 @@ api_get_tienda:
   #url:     /api/getTienda.:sf_format/:id
   url:     /api/get/tienda/:id/:sf_format
   class:   sfDoctrineRoute
-  param:   { module: api, action: getTienda }
+  param:   { module: api, action: getTiendaById }
   options: { model: Tienda, type: object }
+  requirements:
+    sf_format: (?:xml|json)
+    id: \d+
+
+api_get_tiendas:
+  #url:     /api/getPreguntas.:sf_format
+  url:     /api/get/tienda/:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getTiendas }
+  options: { model: Tiendas, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_get_servicios_tienda:
+  #url:     /api/getTienda.:sf_format/:id
+  url:     /api/get/tienda/:id/servicio/:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getServiciosTiendaById }
+  options: { model: ServiciosPorTienda, type: list }
   requirements:
     sf_format: (?:xml|json)
     id: \d+

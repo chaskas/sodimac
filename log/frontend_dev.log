@@ -2000,3 +2000,22 @@ Jul 31 17:05:25 symfony [info] {sfWebDebugLogger} Action "api/getTienda" 96.40 m
 Jul 31 17:05:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.53 ms (6)
 Jul 31 17:05:25 symfony [info] {sfWebDebugLogger} View "Success" for "api/getTienda" 22.32 ms (1)
 Jul 31 17:05:25 symfony [info] {sfWebResponse} Send content (390 o)
+Aug 01 05:39:51 symfony [info] {sfPatternRouting} Match route "api_get_servicios_tienda" (/api/get/tienda/:id/servicio/:sf_format) for /api/get/tienda/1/servicio/json with parameters array (  'module' => 'api',  'action' => 'getServiciosTiendaById',  'id' => '1',  'sf_format' => 'json',)
+Aug 01 05:39:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:39:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:39:51 symfony [info] {apiActions} Call "apiActions->executeGetServiciosTiendaById()"
+Aug 01 05:39:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:39:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Aug 01 05:39:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.estado = ?) - (INA)
+Aug 01 05:39:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:39:51 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/frontend/modules/api/templates/getServiciosTiendaByIdSuccess.json.php"
+Aug 01 05:39:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda = ?) - (18)
+Aug 01 05:39:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda = ?) - (19)
+Aug 01 05:39:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:39:52 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Aug 01 05:39:52 symfony [info] {sfWebDebugLogger} Configuration 191.16 ms (9)
+Aug 01 05:39:52 symfony [info] {sfWebDebugLogger} Factories 201.85 ms (1)
+Aug 01 05:39:52 symfony [info] {sfWebDebugLogger} Action "api/getServiciosTiendaById" 146.82 ms (1)
+Aug 01 05:39:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.55 ms (6)
+Aug 01 05:39:52 symfony [info] {sfWebDebugLogger} View "Success" for "api/getServiciosTiendaById" 51.01 ms (1)
+Aug 01 05:39:52 symfony [info] {sfWebResponse} Send content (103 o)

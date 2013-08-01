@@ -9,24 +9,36 @@ Doctrine_Manager::getInstance()->bindComponent('OportunidadCmr', 'doctrine');
  * 
  * @property integer $id_opor_cmr
  * @property string $sku
+ * @property string $nombre_producto
  * @property integer $precio_internet
+ * @property string $unidad_med_int
  * @property integer $precio_cmr
- * @property timestamp $fecha_vigencia
+ * @property string $unidad_med_cmr
+ * @property timestamp $fecha_vig_des
+ * @property timestamp $fecha_vig_has
  * @property integer $id_pais
  * @property Pais $Pais
  * 
  * @method integer        getIdOporCmr()       Returns the current record's "id_opor_cmr" value
  * @method string         getSku()             Returns the current record's "sku" value
+ * @method string         getNombreProducto()  Returns the current record's "nombre_producto" value
  * @method integer        getPrecioInternet()  Returns the current record's "precio_internet" value
+ * @method string         getUnidadMedInt()    Returns the current record's "unidad_med_int" value
  * @method integer        getPrecioCmr()       Returns the current record's "precio_cmr" value
- * @method timestamp      getFechaVigencia()   Returns the current record's "fecha_vigencia" value
+ * @method string         getUnidadMedCmr()    Returns the current record's "unidad_med_cmr" value
+ * @method timestamp      getFechaVigDes()     Returns the current record's "fecha_vig_des" value
+ * @method timestamp      getFechaVigHas()     Returns the current record's "fecha_vig_has" value
  * @method integer        getIdPais()          Returns the current record's "id_pais" value
  * @method Pais           getPais()            Returns the current record's "Pais" value
  * @method OportunidadCmr setIdOporCmr()       Sets the current record's "id_opor_cmr" value
  * @method OportunidadCmr setSku()             Sets the current record's "sku" value
+ * @method OportunidadCmr setNombreProducto()  Sets the current record's "nombre_producto" value
  * @method OportunidadCmr setPrecioInternet()  Sets the current record's "precio_internet" value
+ * @method OportunidadCmr setUnidadMedInt()    Sets the current record's "unidad_med_int" value
  * @method OportunidadCmr setPrecioCmr()       Sets the current record's "precio_cmr" value
- * @method OportunidadCmr setFechaVigencia()   Sets the current record's "fecha_vigencia" value
+ * @method OportunidadCmr setUnidadMedCmr()    Sets the current record's "unidad_med_cmr" value
+ * @method OportunidadCmr setFechaVigDes()     Sets the current record's "fecha_vig_des" value
+ * @method OportunidadCmr setFechaVigHas()     Sets the current record's "fecha_vig_has" value
  * @method OportunidadCmr setIdPais()          Sets the current record's "id_pais" value
  * @method OportunidadCmr setPais()            Sets the current record's "Pais" value
  * 
@@ -57,14 +69,29 @@ abstract class BaseOportunidadCmr extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 7,
              ));
-        $this->hasColumn('precio_internet', 'integer', 4, array(
+        $this->hasColumn('nombre_producto', 'string', 200, array(
+             'type' => 'string',
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 200,
+             ));
+        $this->hasColumn('precio_internet', 'integer', null, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 4,
+             ));
+        $this->hasColumn('unidad_med_int', 'string', 10, array(
+             'type' => 'string',
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 10,
              ));
         $this->hasColumn('precio_cmr', 'integer', 4, array(
              'type' => 'integer',
@@ -75,7 +102,23 @@ abstract class BaseOportunidadCmr extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 4,
              ));
-        $this->hasColumn('fecha_vigencia', 'timestamp', null, array(
+        $this->hasColumn('unidad_med_cmr', 'string', 10, array(
+             'type' => 'string',
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 10,
+             ));
+        $this->hasColumn('fecha_vig_des', 'timestamp', null, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             ));
+        $this->hasColumn('fecha_vig_has', 'timestamp', null, array(
              'type' => 'timestamp',
              'fixed' => 0,
              'unsigned' => false,

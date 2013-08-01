@@ -11342,3 +11342,794 @@ Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/ed
 Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 1.48 ms (1)
 Jul 30 20:45:58 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 22.69 ms (1)
 Jul 30 20:45:58 symfony [info] {sfWebResponse} Send content (60606 o)
+Aug 01 04:22:44 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 04:22:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 04:22:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 04:22:44 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 04:22:44 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 04:22:44 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 04:22:44 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 04:22:44 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 04:22:44 symfony [info] {main} Set slot "sidebar"
+Aug 01 04:22:44 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "fecha_vigencia" on "OportunidadCmr"
+Aug 01 04:22:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 01 04:22:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 04:22:44 symfony [info] {sfWebDebugLogger} Configuration 176.59 ms (9)
+Aug 01 04:22:44 symfony [info] {sfWebDebugLogger} Factories 184.18 ms (1)
+Aug 01 04:22:44 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 112.95 ms (1)
+Aug 01 04:22:44 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.07 ms (2)
+Aug 01 04:22:44 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 176.95 ms (1)
+Aug 01 04:22:44 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.09 ms (1)
+Aug 01 04:24:30 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 04:24:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 04:24:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 04:24:30 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 04:24:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 04:24:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 04:24:30 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 04:24:30 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 04:24:30 symfony [info] {main} Set slot "sidebar"
+Aug 01 04:24:30 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 04:24:30 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 04:24:30 symfony [info] {main} Get slot "sidebar"
+Aug 01 04:24:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 04:24:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 04:24:30 symfony [info] {sfWebDebugLogger} Configuration 2.74 ms (9)
+Aug 01 04:24:30 symfony [info] {sfWebDebugLogger} Factories 111.26 ms (1)
+Aug 01 04:24:30 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 102.34 ms (1)
+Aug 01 04:24:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.59 ms (2)
+Aug 01 04:24:30 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 96.09 ms (1)
+Aug 01 04:24:30 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.72 ms (1)
+Aug 01 04:24:31 symfony [info] {sfWebResponse} Send content (35941 o)
+Aug 01 04:24:45 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/edit/id_opor_cmr/1 with parameters array (  'module' => 'OportunidadCMR',  'action' => 'edit',  'id_opor_cmr' => '1',)
+Aug 01 04:24:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 04:24:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 04:24:45 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeEdit()"
+Aug 01 04:24:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 04:24:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
+Aug 01 04:24:45 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/editSuccess.php"
+Aug 01 04:24:45 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 04:24:45 symfony [info] {main} Set slot "sidebar"
+Aug 01 04:24:45 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_form.php"
+Aug 01 04:24:45 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 04:24:45 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 04:24:45 symfony [info] {main} Get slot "sidebar"
+Aug 01 04:24:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 04:24:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} Configuration 2.55 ms (9)
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} Factories 111.59 ms (1)
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/edit" 178.19 ms (1)
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.45 ms (2)
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/edit" 123.33 ms (1)
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 3.92 ms (1)
+Aug 01 04:24:45 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_form" 41.95 ms (1)
+Aug 01 04:24:45 symfony [info] {sfWebResponse} Send content (61844 o)
+Aug 01 04:24:58 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/update/id_opor_cmr/1 with parameters array (  'module' => 'OportunidadCMR',  'action' => 'update',  'id_opor_cmr' => '1',)
+Aug 01 04:24:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 04:24:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 04:24:59 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeUpdate()"
+Aug 01 04:24:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 04:24:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
+Aug 01 04:24:59 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/"
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/"
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Configuration 2.26 ms (8)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Factories 110.97 ms (1)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/update" 206.83 ms (1)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.21 ms (2)
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send content (92 o)
+Aug 01 04:24:59 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 04:24:59 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 04:24:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 04:24:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 04:24:59 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 04:24:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 04:24:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 04:24:59 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 04:24:59 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 04:24:59 symfony [info] {main} Set slot "sidebar"
+Aug 01 04:24:59 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 04:24:59 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 04:24:59 symfony [info] {main} Get slot "sidebar"
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Configuration 2.70 ms (9)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Factories 109.78 ms (1)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 106.08 ms (1)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.69 ms (2)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 46.48 ms (1)
+Aug 01 04:24:59 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.17 ms (1)
+Aug 01 04:24:59 symfony [info] {sfWebResponse} Send content (36741 o)
+Aug 01 04:24:59 symfony [info] {myUser} Remove old flash messages ("success")
+Aug 01 05:01:09 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:01:09 symfony [info] {myUser} Automatic user logout due to timeout
+Aug 01 05:01:09 symfony [info] {myUser} User is not authenticated
+Aug 01 05:01:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:01:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:01:09 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:01:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:01:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:01:09 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:01:09 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:01:09 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:01:09 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "getFechaVigDes" on "OportunidadCmr"
+Aug 01 05:01:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 01 05:01:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:01:10 symfony [info] {sfWebDebugLogger} Configuration 2.48 ms (9)
+Aug 01 05:01:10 symfony [info] {sfWebDebugLogger} Factories 113.59 ms (1)
+Aug 01 05:01:10 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 110.95 ms (1)
+Aug 01 05:01:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.63 ms (2)
+Aug 01 05:01:10 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 170.46 ms (1)
+Aug 01 05:01:10 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.01 ms (1)
+Aug 01 05:02:48 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:02:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:02:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:02:48 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:02:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:02:48 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:02:48 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:02:48 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:02:48 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:02:48 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "getFechaVigDes" on "OportunidadCmr"
+Aug 01 05:02:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 01 05:02:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:02:49 symfony [info] {sfWebDebugLogger} Configuration 2.35 ms (9)
+Aug 01 05:02:49 symfony [info] {sfWebDebugLogger} Factories 109.47 ms (1)
+Aug 01 05:02:49 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 102.42 ms (1)
+Aug 01 05:02:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.91 ms (2)
+Aug 01 05:02:49 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 165.49 ms (1)
+Aug 01 05:02:49 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.09 ms (1)
+Aug 01 05:03:06 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:03:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:03:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:03:06 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:03:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:03:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:03:06 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:03:06 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:03:06 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:03:06 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "getFechaVigDes" on "OportunidadCmr"
+Aug 01 05:03:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 01 05:03:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:03:06 symfony [info] {sfWebDebugLogger} Configuration 171.32 ms (9)
+Aug 01 05:03:06 symfony [info] {sfWebDebugLogger} Factories 174.52 ms (1)
+Aug 01 05:03:06 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 109.43 ms (1)
+Aug 01 05:03:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.60 ms (2)
+Aug 01 05:03:06 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 164.13 ms (1)
+Aug 01 05:03:06 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.00 ms (1)
+Aug 01 05:04:05 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:04:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:04:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:04:05 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:04:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:04:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:04:05 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:04:05 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:04:05 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:04:05 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:05 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:05 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:04:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:04:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:04:05 symfony [info] {sfWebDebugLogger} Configuration 2.49 ms (9)
+Aug 01 05:04:05 symfony [info] {sfWebDebugLogger} Factories 111.89 ms (1)
+Aug 01 05:04:05 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 102.40 ms (1)
+Aug 01 05:04:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.51 ms (2)
+Aug 01 05:04:05 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 50.17 ms (1)
+Aug 01 05:04:05 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.02 ms (1)
+Aug 01 05:04:06 symfony [info] {sfWebResponse} Send content (35936 o)
+Aug 01 05:04:14 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/edit/id_opor_cmr/1 with parameters array (  'module' => 'OportunidadCMR',  'action' => 'edit',  'id_opor_cmr' => '1',)
+Aug 01 05:04:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:04:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:04:14 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeEdit()"
+Aug 01 05:04:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:04:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
+Aug 01 05:04:14 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/editSuccess.php"
+Aug 01 05:04:14 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:04:14 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:04:14 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_form.php"
+Aug 01 05:04:14 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:14 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:14 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:04:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:04:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} Configuration 2.30 ms (9)
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} Factories 112.46 ms (1)
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/edit" 185.18 ms (1)
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.24 ms (2)
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/edit" 77.00 ms (1)
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.03 ms (1)
+Aug 01 05:04:14 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_form" 38.99 ms (1)
+Aug 01 05:04:15 symfony [info] {sfWebResponse} Send content (61842 o)
+Aug 01 05:04:23 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/update/id_opor_cmr/1 with parameters array (  'module' => 'OportunidadCMR',  'action' => 'update',  'id_opor_cmr' => '1',)
+Aug 01 05:04:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:04:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:04:23 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeUpdate()"
+Aug 01 05:04:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:04:23 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
+Aug 01 05:04:23 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE oportunidad_cmr SET fecha_vig_des = ? WHERE id_opor_cmr = ? - (2013-08-01 00:00:00, 1)
+Aug 01 05:04:23 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/"
+Aug 01 05:04:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 05:04:23 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/"
+Aug 01 05:04:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:04:23 symfony [info] {sfWebDebugLogger} Configuration 2.05 ms (8)
+Aug 01 05:04:23 symfony [info] {sfWebDebugLogger} Factories 112.79 ms (1)
+Aug 01 05:04:23 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/update" 264.66 ms (1)
+Aug 01 05:04:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.66 ms (3)
+Aug 01 05:04:23 symfony [info] {sfWebResponse} Send content (92 o)
+Aug 01 05:04:23 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:04:23 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 05:04:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:04:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:04:23 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:04:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:04:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:04:23 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:04:23 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:04:23 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:04:23 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:23 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:23 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:04:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:04:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:04:24 symfony [info] {sfWebDebugLogger} Configuration 2.40 ms (9)
+Aug 01 05:04:24 symfony [info] {sfWebDebugLogger} Factories 109.32 ms (1)
+Aug 01 05:04:24 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 106.24 ms (1)
+Aug 01 05:04:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.71 ms (2)
+Aug 01 05:04:24 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 47.59 ms (1)
+Aug 01 05:04:24 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.97 ms (1)
+Aug 01 05:04:24 symfony [info] {sfWebResponse} Send content (36731 o)
+Aug 01 05:04:24 symfony [info] {myUser} Remove old flash messages ("success")
+Aug 01 05:04:28 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/edit/id_opor_cmr/1 with parameters array (  'module' => 'OportunidadCMR',  'action' => 'edit',  'id_opor_cmr' => '1',)
+Aug 01 05:04:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:04:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:04:28 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeEdit()"
+Aug 01 05:04:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:04:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
+Aug 01 05:04:28 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/editSuccess.php"
+Aug 01 05:04:28 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:04:28 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:04:28 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_form.php"
+Aug 01 05:04:28 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:28 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:04:28 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:04:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:04:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} Configuration 2.24 ms (9)
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} Factories 110.08 ms (1)
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/edit" 175.91 ms (1)
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.18 ms (2)
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/edit" 76.81 ms (1)
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.45 ms (1)
+Aug 01 05:04:28 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_form" 39.41 ms (1)
+Aug 01 05:04:28 symfony [info] {sfWebResponse} Send content (61843 o)
+Aug 01 05:05:06 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:05:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:05:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:05:07 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:05:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:05:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:05:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:05:07 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:05:07 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:05:07 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:05:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:05:07 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:05:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:05:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:05:07 symfony [info] {sfWebDebugLogger} Configuration 4.42 ms (9)
+Aug 01 05:05:07 symfony [info] {sfWebDebugLogger} Factories 109.88 ms (1)
+Aug 01 05:05:07 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 100.76 ms (1)
+Aug 01 05:05:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.52 ms (2)
+Aug 01 05:05:07 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 47.22 ms (1)
+Aug 01 05:05:07 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.44 ms (1)
+Aug 01 05:05:07 symfony [info] {sfWebResponse} Send content (35944 o)
+Aug 01 05:05:12 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/edit/id_opor_cmr/1 with parameters array (  'module' => 'OportunidadCMR',  'action' => 'edit',  'id_opor_cmr' => '1',)
+Aug 01 05:05:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:05:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:05:12 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeEdit()"
+Aug 01 05:05:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:05:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o WHERE (o.id_opor_cmr = ?) LIMIT 1 - (1)
+Aug 01 05:05:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/editSuccess.php"
+Aug 01 05:05:13 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:05:13 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:05:13 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_form.php"
+Aug 01 05:05:13 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:05:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:05:13 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:05:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:05:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} Configuration 2.39 ms (9)
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} Factories 110.86 ms (1)
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/edit" 194.72 ms (1)
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.76 ms (2)
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/edit" 78.14 ms (1)
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.12 ms (1)
+Aug 01 05:05:13 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_form" 39.51 ms (1)
+Aug 01 05:05:13 symfony [info] {sfWebResponse} Send content (61842 o)
+Aug 01 05:05:17 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 01 05:05:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:05:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:05:17 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 01 05:05:17 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:05:17 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 01 05:05:17 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 01 05:05:17 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 01 05:05:17 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:05:17 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:05:17 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:05:17 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:05:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:05:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:05:17 symfony [info] {sfWebDebugLogger} Configuration 2.55 ms (9)
+Aug 01 05:05:17 symfony [info] {sfWebDebugLogger} Factories 111.18 ms (1)
+Aug 01 05:05:17 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 102.94 ms (1)
+Aug 01 05:05:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.67 ms (2)
+Aug 01 05:05:17 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 49.51 ms (1)
+Aug 01 05:05:17 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 2.51 ms (1)
+Aug 01 05:05:17 symfony [info] {sfWebResponse} Send content (35943 o)
+Aug 01 05:17:56 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:17:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:17:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:17:57 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:17:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:17:57 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:17:57 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:17:57 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:17:57 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:17:57 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:17:57 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:17:57 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:17:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:17:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:17:57 symfony [info] {sfWebDebugLogger} Configuration 49.24 ms (10)
+Aug 01 05:17:57 symfony [info] {sfWebDebugLogger} Factories 109.92 ms (1)
+Aug 01 05:17:57 symfony [info] {sfWebDebugLogger} Action "Tiendas/index" 114.05 ms (1)
+Aug 01 05:17:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.22 ms (2)
+Aug 01 05:17:57 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/index" 44.03 ms (1)
+Aug 01 05:17:57 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.60 ms (1)
+Aug 01 05:17:57 symfony [info] {sfWebResponse} Send content (35792 o)
+Aug 01 05:18:06 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/new with parameters array (  'module' => 'Tiendas',  'action' => 'new',)
+Aug 01 05:18:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:18:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:18:06 symfony [info] {TiendasActions} Call "TiendasActions->executeNew()"
+Aug 01 05:18:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:18:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (No description for object of class "Tienda")
+Aug 01 05:18:06 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/newSuccess.php"
+Aug 01 05:18:06 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:18:06 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:18:06 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Aug 01 05:18:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Aug 01 05:18:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:18:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 01 05:18:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.estado = ?) - (ACT)
+Aug 01 05:18:06 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:18:06 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:18:06 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:18:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:18:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} Configuration 2.53 ms (9)
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} Factories 108.89 ms (1)
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} Action "Tiendas/new" 215.29 ms (1)
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 7.70 ms (6)
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/new" 124.76 ms (1)
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 5.02 ms (1)
+Aug 01 05:18:06 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 50.33 ms (1)
+Aug 01 05:18:06 symfony [info] {sfWebResponse} Send content (52784 o)
+Aug 01 05:18:56 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/create with parameters array (  'module' => 'Tiendas',  'action' => 'create',)
+Aug 01 05:18:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:18:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:18:56 symfony [info] {TiendasActions} Call "TiendasActions->executeCreate()"
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (No description for object of class "Tienda")
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM region r WHERE r.id_region = ? - (1)
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM tipo_tienda t WHERE t.id_tipo_tienda = ? - (1)
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (56)
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ? AND s.id_servicio_tienda = ?) - (No description for object of class "Tienda", )
+Aug 01 05:18:56 symfony [info] {TiendasActions} Change template to "CURRENT/new"
+Aug 01 05:18:56 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/newSuccess.php"
+Aug 01 05:18:56 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:18:56 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:18:56 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 01 05:18:56 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.estado = ?) - (ACT)
+Aug 01 05:18:56 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:18:56 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:18:56 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:18:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:18:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} Configuration 2.43 ms (9)
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} Factories 108.88 ms (1)
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} Action "Tiendas/create" 246.10 ms (1)
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 12.84 ms (10)
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/create" 86.31 ms (1)
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.56 ms (1)
+Aug 01 05:18:56 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 41.93 ms (1)
+Aug 01 05:18:56 symfony [info] {sfWebResponse} Send content (59650 o)
+Aug 01 05:19:06 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/create with parameters array (  'module' => 'Tiendas',  'action' => 'create',)
+Aug 01 05:19:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:19:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:19:06 symfony [info] {TiendasActions} Call "TiendasActions->executeCreate()"
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (No description for object of class "Tienda")
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM region r WHERE r.id_region = ? - (1)
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM tipo_tienda t WHERE t.id_tipo_tienda = ? - (1)
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (56)
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ? AND s.id_servicio_tienda = ?) - (No description for object of class "Tienda", )
+Aug 01 05:19:06 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO tienda (nombre, direccion, latitud, longitud, telefono, horario, id_region, id_tipo_tienda, id_pais, gerente, busc_producto) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) - (Nombre, Pemuco 9359, 123, 321, +56413182144, 09:00 a 18:00, 1, 1, 56, Gerente, 0)
+Aug 01 05:19:06 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/Tiendas"
+Aug 01 05:19:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 05:19:06 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/Tiendas"
+Aug 01 05:19:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:19:06 symfony [info] {sfWebDebugLogger} Configuration 2.09 ms (8)
+Aug 01 05:19:06 symfony [info] {sfWebDebugLogger} Factories 110.50 ms (1)
+Aug 01 05:19:06 symfony [info] {sfWebDebugLogger} Action "Tiendas/create" 344.29 ms (1)
+Aug 01 05:19:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 10.75 ms (7)
+Aug 01 05:19:06 symfony [info] {sfWebResponse} Send content (99 o)
+Aug 01 05:19:06 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:19:06 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 05:19:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:19:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:19:07 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:19:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:19:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:19:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:19:07 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:19:07 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:19:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:19:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:19:07 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:19:07 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:19:07 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:19:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:19:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:19:07 symfony [info] {sfWebDebugLogger} Configuration 2.41 ms (9)
+Aug 01 05:19:07 symfony [info] {sfWebDebugLogger} Factories 111.47 ms (1)
+Aug 01 05:19:07 symfony [info] {sfWebDebugLogger} Action "Tiendas/index" 108.69 ms (1)
+Aug 01 05:19:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.25 ms (4)
+Aug 01 05:19:07 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/index" 81.84 ms (1)
+Aug 01 05:19:07 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.90 ms (1)
+Aug 01 05:19:07 symfony [info] {sfWebResponse} Send content (39522 o)
+Aug 01 05:19:07 symfony [info] {myUser} Remove old flash messages ("success")
+Aug 01 05:19:54 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/new with parameters array (  'module' => 'Tiendas',  'action' => 'new',)
+Aug 01 05:19:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:19:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:19:54 symfony [info] {TiendasActions} Call "TiendasActions->executeNew()"
+Aug 01 05:19:54 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (No description for object of class "Tienda")
+Aug 01 05:19:54 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/newSuccess.php"
+Aug 01 05:19:54 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:19:54 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:19:54 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Aug 01 05:19:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Aug 01 05:19:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:19:54 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 01 05:19:54 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.estado = ?) - (ACT)
+Aug 01 05:19:54 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:19:54 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:19:54 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:19:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:19:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} Configuration 181.69 ms (9)
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} Factories 178.80 ms (1)
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} Action "Tiendas/new" 223.81 ms (1)
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.94 ms (6)
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/new" 89.76 ms (1)
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 3.38 ms (1)
+Aug 01 05:19:54 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 43.73 ms (1)
+Aug 01 05:19:54 symfony [info] {sfWebResponse} Send content (52786 o)
+Aug 01 05:20:02 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/create with parameters array (  'module' => 'Tiendas',  'action' => 'create',)
+Aug 01 05:20:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:20:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:20:02 symfony [info] {TiendasActions} Call "TiendasActions->executeCreate()"
+Aug 01 05:20:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:20:02 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (No description for object of class "Tienda")
+Aug 01 05:20:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ? AND s.id_servicio_tienda = ?) - (No description for object of class "Tienda", )
+Aug 01 05:20:03 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO tienda (nombre, direccion, latitud, longitud, telefono, horario, gerente) VALUES (?, ?, ?, ?, ?, ?, ?) - (Tienda2, , , , , , )
+Aug 01 05:20:03 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/Tiendas"
+Aug 01 05:20:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 05:20:03 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/Tiendas"
+Aug 01 05:20:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:20:03 symfony [info] {sfWebDebugLogger} Configuration 2.02 ms (8)
+Aug 01 05:20:03 symfony [info] {sfWebDebugLogger} Factories 111.19 ms (1)
+Aug 01 05:20:03 symfony [info] {sfWebDebugLogger} Action "Tiendas/create" 952.99 ms (1)
+Aug 01 05:20:03 symfony [info] {sfWebDebugLogger} Database (Doctrine) 9.85 ms (4)
+Aug 01 05:20:03 symfony [info] {sfWebResponse} Send content (99 o)
+Aug 01 05:20:03 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:20:03 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 05:20:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:20:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:20:03 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:20:03 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:20:03 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:20:03 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:20:03 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:20:03 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:20:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:20:03 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:20:03 symfony [err] {sfWebDebugLogger}  Error at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/escaper/sfOutputEscaperObjectDecorator.class.php on line 98 (Method TipoTienda::__toString() must return a string value)
+Aug 01 05:20:03 symfony [info] {myUser} Remove old flash messages ("success")
+Aug 01 05:20:32 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/2 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '2',)
+Aug 01 05:20:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:20:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:20:32 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (2)
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (2)
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (2)
+Aug 01 05:20:32 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Aug 01 05:20:32 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:20:32 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:20:32 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 01 05:20:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.estado = ?) - (ACT)
+Aug 01 05:20:32 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:20:32 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:20:32 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:20:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:20:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} Configuration 2.19 ms (9)
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} Factories 112.18 ms (1)
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 209.57 ms (1)
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 3.93 ms (8)
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 81.86 ms (1)
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.62 ms (1)
+Aug 01 05:20:32 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 43.22 ms (1)
+Aug 01 05:20:32 symfony [info] {sfWebResponse} Send content (57811 o)
+Aug 01 05:20:41 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/update/id_tienda/2 with parameters array (  'module' => 'Tiendas',  'action' => 'update',  'id_tienda' => '2',)
+Aug 01 05:20:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:20:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:20:41 symfony [info] {TiendasActions} Call "TiendasActions->executeUpdate()"
+Aug 01 05:20:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:20:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (2)
+Aug 01 05:20:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (2)
+Aug 01 05:20:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ? AND s.id_servicio_tienda = ?) - (2, )
+Aug 01 05:20:41 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/Tiendas"
+Aug 01 05:20:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 05:20:41 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/Tiendas"
+Aug 01 05:20:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:20:41 symfony [info] {sfWebDebugLogger} Configuration 2.08 ms (8)
+Aug 01 05:20:41 symfony [info] {sfWebDebugLogger} Factories 110.24 ms (1)
+Aug 01 05:20:41 symfony [info] {sfWebDebugLogger} Action "Tiendas/update" 251.32 ms (1)
+Aug 01 05:20:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 2.24 ms (4)
+Aug 01 05:20:41 symfony [info] {sfWebResponse} Send content (99 o)
+Aug 01 05:20:42 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:20:42 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 05:20:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:20:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:20:42 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:20:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:20:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:20:42 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:20:42 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:20:42 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:20:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:20:42 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:20:42 symfony [err] {sfWebDebugLogger}  Error at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/escaper/sfOutputEscaperObjectDecorator.class.php on line 98 (Method TipoTienda::__toString() must return a string value)
+Aug 01 05:20:42 symfony [info] {myUser} Remove old flash messages ("success")
+Aug 01 05:23:01 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/TipoTienda with parameters array (  'module' => 'TipoTienda',  'action' => 'index',)
+Aug 01 05:23:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:23:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:23:02 symfony [info] {TipoTiendaActions} Call "TipoTiendaActions->executeIndex()"
+Aug 01 05:23:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:23:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:23:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/indexSuccess.php"
+Aug 01 05:23:02 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/TipoTienda/templates/_sidebar.php"
+Aug 01 05:23:02 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:23:02 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:23:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:23:02 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:23:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:23:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:23:02 symfony [info] {sfWebDebugLogger} Configuration 48.66 ms (10)
+Aug 01 05:23:02 symfony [info] {sfWebDebugLogger} Factories 114.04 ms (1)
+Aug 01 05:23:02 symfony [info] {sfWebDebugLogger} Action "TipoTienda/index" 101.36 ms (1)
+Aug 01 05:23:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.89 ms (2)
+Aug 01 05:23:02 symfony [info] {sfWebDebugLogger} View "Success" for "TipoTienda/index" 54.09 ms (1)
+Aug 01 05:23:02 symfony [info] {sfWebDebugLogger} Partial "TipoTienda/_sidebar" 2.75 ms (1)
+Aug 01 05:23:02 symfony [info] {sfWebResponse} Send content (34853 o)
+Aug 01 05:23:52 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:23:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:23:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:23:52 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:23:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:23:52 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:23:52 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:23:53 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:23:53 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:23:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:23:53 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:23:53 symfony [err] {sfWebDebugLogger}  Error at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/escaper/sfOutputEscaperObjectDecorator.class.php on line 98 (Method Pais::__toString() must return a string value)
+Aug 01 05:24:04 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:24:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:24:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:24:04 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:24:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:24:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:24:04 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:24:04 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:24:04 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:24:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:24:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:24:04 symfony [err] {sfWebDebugLogger}  Error at /home/chaskas/Escritorio/sodimac/lib/vendor/symfony/lib/escaper/sfOutputEscaperObjectDecorator.class.php on line 98 (Method Pais::__toString() must return a string value)
+Aug 01 05:24:39 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:24:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:24:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:24:39 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:24:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:24:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:24:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:24:39 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:24:39 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:24:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:24:39 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:24:39 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:24:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:24:39 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:24:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:24:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:24:39 symfony [info] {sfWebDebugLogger} Configuration 2.30 ms (9)
+Aug 01 05:24:39 symfony [info] {sfWebDebugLogger} Factories 110.32 ms (1)
+Aug 01 05:24:39 symfony [info] {sfWebDebugLogger} Action "Tiendas/index" 110.50 ms (1)
+Aug 01 05:24:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.54 ms (4)
+Aug 01 05:24:39 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/index" 83.21 ms (1)
+Aug 01 05:24:39 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.93 ms (1)
+Aug 01 05:24:39 symfony [info] {sfWebResponse} Send content (38985 o)
+Aug 01 05:36:22 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '1',)
+Aug 01 05:36:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:36:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:36:22 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:36:22 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Aug 01 05:36:22 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:36:22 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:36:22 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 01 05:36:22 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.estado = ?) - (ACT)
+Aug 01 05:36:22 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:22 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:22 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:36:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:36:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} Configuration 2.37 ms (9)
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} Factories 109.54 ms (1)
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 212.16 ms (1)
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.01 ms (8)
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 83.32 ms (1)
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.68 ms (1)
+Aug 01 05:36:22 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 43.60 ms (1)
+Aug 01 05:36:22 symfony [info] {sfWebResponse} Send content (57869 o)
+Aug 01 05:36:28 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/update/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'update',  'id_tienda' => '1',)
+Aug 01 05:36:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:36:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:36:28 symfony [info] {TiendasActions} Call "TiendasActions->executeUpdate()"
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM region r WHERE r.id_region = ? - (1)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM tipo_tienda t WHERE t.id_tipo_tienda = ? - (1)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (56)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM servicios_tienda s WHERE s.id_servicio_tienda = ? - (18)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ? AND s.id_servicio_tienda = ?) - (1, 18)
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO servicios_por_tienda (id_tienda, id_servicio_tienda) VALUES (?, ?) - (1, 18)
+Aug 01 05:36:28 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/Tiendas"
+Aug 01 05:36:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 05:36:28 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/Tiendas"
+Aug 01 05:36:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:36:28 symfony [info] {sfWebDebugLogger} Configuration 2.13 ms (8)
+Aug 01 05:36:28 symfony [info] {sfWebDebugLogger} Factories 110.97 ms (1)
+Aug 01 05:36:28 symfony [info] {sfWebDebugLogger} Action "Tiendas/update" 324.07 ms (1)
+Aug 01 05:36:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 4.30 ms (9)
+Aug 01 05:36:28 symfony [info] {sfWebResponse} Send content (99 o)
+Aug 01 05:36:28 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:36:28 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 05:36:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:36:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:36:28 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:36:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:36:28 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:36:28 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:36:28 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:36:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:36:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:36:29 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:29 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:29 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:36:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:36:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:36:29 symfony [info] {sfWebDebugLogger} Configuration 2.73 ms (9)
+Aug 01 05:36:29 symfony [info] {sfWebDebugLogger} Factories 111.32 ms (1)
+Aug 01 05:36:29 symfony [info] {sfWebDebugLogger} Action "Tiendas/index" 103.55 ms (1)
+Aug 01 05:36:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.40 ms (4)
+Aug 01 05:36:29 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/index" 85.79 ms (1)
+Aug 01 05:36:29 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.55 ms (1)
+Aug 01 05:36:29 symfony [info] {sfWebResponse} Send content (39770 o)
+Aug 01 05:36:29 symfony [info] {myUser} Remove old flash messages ("success")
+Aug 01 05:36:31 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/edit/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'edit',  'id_tienda' => '1',)
+Aug 01 05:36:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:36:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:36:32 symfony [info] {TiendasActions} Call "TiendasActions->executeEdit()"
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:36:32 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/editSuccess.php"
+Aug 01 05:36:32 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:36:32 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:36:32 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_form.php"
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT r.id_region AS r__id_region, r.desc_region AS r__desc_region, r.id_pais AS r__id_pais FROM region r - ()
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t - ()
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda NOT IN (?) AND s.estado = ?) - (18, ACT)
+Aug 01 05:36:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_servicio_tienda AS s__id_servicio_tienda, s.desc_servicio AS s__desc_servicio, s.estado AS s__estado FROM servicios_tienda s WHERE (s.id_servicio_tienda = ?) - (18)
+Aug 01 05:36:32 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:32 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:32 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:36:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:36:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} Configuration 2.43 ms (9)
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} Factories 111.78 ms (1)
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} Action "Tiendas/edit" 220.61 ms (1)
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.06 ms (9)
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/edit" 93.15 ms (1)
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.97 ms (1)
+Aug 01 05:36:32 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_form" 47.04 ms (1)
+Aug 01 05:36:32 symfony [info] {sfWebResponse} Send content (59419 o)
+Aug 01 05:36:37 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/Tiendas/update/id_tienda/1 with parameters array (  'module' => 'Tiendas',  'action' => 'update',  'id_tienda' => '1',)
+Aug 01 05:36:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:36:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:36:37 symfony [info] {TiendasActions} Call "TiendasActions->executeUpdate()"
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t WHERE (t.id_tienda = ?) LIMIT 1 - (1)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ?) - (1)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM region r WHERE r.id_region = ? - (1)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM tipo_tienda t WHERE t.id_tipo_tienda = ? - (1)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (56)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM servicios_tienda s WHERE s.id_servicio_tienda = ? - (19)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id_tienda AS s__id_tienda, s.id_servicio_tienda AS s__id_servicio_tienda FROM servicios_por_tienda s WHERE (s.id_tienda = ? AND s.id_servicio_tienda = ?) - (1, 19)
+Aug 01 05:36:37 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO servicios_por_tienda (id_tienda, id_servicio_tienda) VALUES (?, ?) - (1, 19)
+Aug 01 05:36:38 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/Tiendas"
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/Tiendas"
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Configuration 2.25 ms (8)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Factories 112.44 ms (1)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Action "Tiendas/update" 351.23 ms (1)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 5.47 ms (9)
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send content (99 o)
+Aug 01 05:36:38 symfony [info] {sfPatternRouting} Match route "default_index" (/admin/:module) for /admin/Tiendas with parameters array (  'module' => 'Tiendas',  'action' => 'index',)
+Aug 01 05:36:38 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 01 05:36:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 01 05:36:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 01 05:36:38 symfony [info] {TiendasActions} Call "TiendasActions->executeIndex()"
+Aug 01 05:36:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 01 05:36:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT t.id_tienda AS t__id_tienda, t.nombre AS t__nombre, t.direccion AS t__direccion, t.latitud AS t__latitud, t.longitud AS t__longitud, t.telefono AS t__telefono, t.horario AS t__horario, t.id_region AS t__id_region, t.id_tipo_tienda AS t__id_tipo_tienda, t.id_pais AS t__id_pais, t.gerente AS t__gerente, t.busc_producto AS t__busc_producto FROM tienda t - ()
+Aug 01 05:36:38 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/indexSuccess.php"
+Aug 01 05:36:38 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/Tiendas/templates/_sidebar.php"
+Aug 01 05:36:38 symfony [info] {main} Set slot "sidebar"
+Aug 01 05:36:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id_tipo_tienda AS t__id_tipo_tienda, t.desc_tipo_tienda AS t__desc_tipo_tienda FROM tipo_tienda t WHERE (t.id_tipo_tienda = ?) - (1)
+Aug 01 05:36:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p WHERE (p.id_pais = ?) - (56)
+Aug 01 05:36:38 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:38 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 01 05:36:38 symfony [info] {main} Get slot "sidebar"
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Configuration 2.47 ms (9)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Factories 112.82 ms (1)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Action "Tiendas/index" 102.07 ms (1)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 1.33 ms (4)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/index" 83.57 ms (1)
+Aug 01 05:36:38 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 2.59 ms (1)
+Aug 01 05:36:38 symfony [info] {sfWebResponse} Send content (39769 o)
+Aug 01 05:36:38 symfony [info] {myUser} Remove old flash messages ("success")

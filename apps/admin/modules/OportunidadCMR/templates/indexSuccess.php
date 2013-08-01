@@ -16,7 +16,8 @@
       <th>SKU</th>
       <th>Precio Internet</th>
       <th>Precio CMR</th>
-      <th>Fecha Vigencia</th>
+      <th>Desde</th>
+      <th>Hasta</th>
       <th>Opciones</th>
     </tr>
   </thead>
@@ -27,7 +28,8 @@
         <td><?php echo $oportunidad_cmr->getSku() ?></td>
         <td><?php echo $oportunidad_cmr->getPrecioInternet() ?></td>
         <td><?php echo $oportunidad_cmr->getPrecioCmr() ?></td>
-        <td><?php echo $oportunidad_cmr->getFechaVigenciaFormatted() ?></td>
+        <td class="center"><?php echo $oportunidad_cmr->getFechaVigDesFormatted() ?></td>
+        <td class="center"><?php echo $oportunidad_cmr->getFechaVigHasFormatted() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>

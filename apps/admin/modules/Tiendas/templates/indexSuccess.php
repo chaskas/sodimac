@@ -26,8 +26,8 @@
         <td><a href="<?php echo url_for('Tiendas/edit?id_tienda='.$tienda->getIdTienda()) ?>"><?php echo $tienda->getIdTienda() ?></a></td>
         <td><?php echo $tienda->getNombre() ?></td>
         <td><?php echo $tienda->getTelefono() ?></td>
-        <td><?php echo $tienda->getIdTipoTienda() ?></td>
-        <td><?php echo $tienda->getIdPais() ?></td>
+        <td><?php echo $tienda->getTipoTienda() ?></td>
+        <td><?php echo $tienda->getPais() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>

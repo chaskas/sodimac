@@ -14,6 +14,6 @@ class TipoTienda extends BaseTipoTienda
 {
 	public function __toString()
 	{
-		return $this->getDescTipoTienda();
+		return $this->getDescTipoTienda() != null ? $this->getDescTipoTienda() : '';
 	}
 }

@@ -23,10 +23,26 @@
   </div>
 
   <div class="control-group">
+    <?php echo $form['nombre_producto']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['nombre_producto'] ?>
+      <?php echo $form['nombre_producto']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
     <?php echo $form['precio_internet']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form['precio_internet'] ?>
       <?php echo $form['precio_internet']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <?php echo $form['unidad_med_int']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['unidad_med_int'] ?>
+      <?php echo $form['unidad_med_int']->renderError() ?>
     </div>
   </div>
 
@@ -39,10 +55,26 @@
   </div>
 
   <div class="control-group">
-    <?php echo $form['fecha_vigencia']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php echo $form['unidad_med_cmr']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $form['fecha_vigencia']->render(array('class' => 'input-date')) ?>
-      <?php echo $form['fecha_vigencia']->renderError() ?>
+      <?php echo $form['unidad_med_cmr'] ?>
+      <?php echo $form['unidad_med_cmr']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <?php echo $form['fecha_vig_des']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['fecha_vig_des']->render(array('class' => 'input-date')) ?>
+      <?php echo $form['fecha_vig_des']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <?php echo $form['fecha_vig_has']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['fecha_vig_has']->render(array('class' => 'input-date')) ?>
+      <?php echo $form['fecha_vig_has']->renderError() ?>
     </div>
   </div>
 

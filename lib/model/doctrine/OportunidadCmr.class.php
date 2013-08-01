@@ -12,8 +12,13 @@
  */
 class OportunidadCmr extends BaseOportunidadCmr
 {
-	public function getFechaVigenciaFormatted()
+	public function getFechaVigDesFormatted()
 	{
-		return date_format(date_create($this->getFechaVigencia()),'d-m-Y');
+		return $this->getFechaVigDes() != null ? date_format(date_create($this->getFechaVigDes()),'d-m-Y') : '';
+		//return date_format(date_create($this->getFechaVigDes()),'d-m-Y');
+	}
+	public function getFechaVigHasFormatted()
+	{
+		return $this->getFechaVigHas() != null ? date_format(date_create($this->getFechaVigHas()),'d-m-Y') : '';
 	}
 }

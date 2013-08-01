@@ -106,7 +106,44 @@ class apiActions extends sfActions
       ->execute();
   }
 
-  public function executeGetTienda(sfWebRequest $request)
+  public function executeGetTiendas(sfWebRequest $request)
+  {
+    $this->tiendas = Doctrine_Core::getTable('Tienda')
+      ->createQuery('a')
+      ->execute();
+  }
+
+  public function executeGetServiciosTiendaById(sfWebRequest $request)
+  {
+    $tienda = Doctrine_Core::getTable('Tienda')->find(array($request->getParameter('id')));
+    $response = $this->getResponse();
+
+    if($tienda != null){
+      $servicios_inactivos = Doctrine_Core::getTable('ServiciosTienda')
+        ->createQuery('a')
+        ->where('a.estado = ?','INA')
+        ->execute();
+
+      $arr_id_servicios_inactivos = [];
+      foreach ($servicios_inactivos as $s) {
+        array_push($arr_id_servicios_inactivos,$s->getIdServicioTienda());
+      }
+
+      //var_dump($arr_id_servicios_inactivos);
+
+      $this->servicios = Doctrine_Core::getTable('ServiciosPorTienda')
+      ->createQuery('a')
+      ->where('id_tienda = ?', $tienda->getIdTienda())
+      ->andWhereNotIn('id_servicio_tienda', $arr_id_servicios_inactivos)
+      ->execute();
+
+    } else {
+      $response->setStatusCode(400);
+      return sfView::NONE;
+    }
+  }
+
+  public function executeGetTiendaById(sfWebRequest $request)
   {
     $this->tienda = Doctrine_Core::getTable('Tienda')->find(array($request->getParameter('id')));
     $response = $this->getResponse();
