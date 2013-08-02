@@ -29,6 +29,7 @@ class OportunidadCmrForm extends BaseOportunidadCmrForm
     $this->widgetSchema['unidad_med_int']->setLabel('Unidad Med Int');
     $this->widgetSchema['unidad_med_cmr']->setLabel('Unidad Med CMR');
     $this->widgetSchema['nombre_producto']->setLabel('Nombre producto');
+    $this->widgetSchema['id_pais']->setLabel('País');
 
   }
 }

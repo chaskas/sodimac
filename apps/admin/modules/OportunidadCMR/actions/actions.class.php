@@ -35,8 +35,8 @@ class OportunidadCMRActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($oportunidad_cmr = Doctrine_Core::getTable('OportunidadCmr')->find(array($request->getParameter('id_opor_cmr'))), sprintf('Object oportunidad_cmr does not exist (%s).', $request->getParameter('id_opor_cmr')));
-    $this->form = new OportunidadCmrForm($oportunidad_cmr);
+    $this->forward404Unless($this->oportunidad_cmr = Doctrine_Core::getTable('OportunidadCmr')->find(array($request->getParameter('id_opor_cmr'))), sprintf('Object oportunidad_cmr does not exist (%s).', $request->getParameter('id_opor_cmr')));
+    $this->form = new OportunidadCmrForm($this->oportunidad_cmr);
   }
 
   public function executeUpdate(sfWebRequest $request)
@@ -71,4 +71,41 @@ class OportunidadCMRActions extends sfActions
     }
     $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
+
+  public function executeGetData(sfWebRequest $request)
+  {
+    $data = new Sodimac($request->getParameter('sku'));
+
+    $this->forward404Unless($oportunidad_cmr = Doctrine_Core::getTable('OportunidadCmr')->findOneBySku(array($request->getParameter('sku'))), sprintf('Object oportunidad_cmr does not exist (%s).', $request->getParameter('sku')));
+
+    if($data->isValid())
+    {
+
+      $oportunidad_cmr->setNombreProducto($data->getNombreProducto());
+      $oportunidad_cmr->setPrecioInternet($data->getPrecioInternet());
+      $oportunidad_cmr->setPrecioCMR($data->getPrecioCMR());
+      $oportunidad_cmr->setUnidadMedInt($data->getUnidadMedInt());
+      $oportunidad_cmr->setUnidadMedCMR($data->getUnidadMedCMR());
+
+      $oportunidad_cmr->save();
+      $this->getUser()->setFlash('success', 'Datos obtenidos!.');
+
+    } else {
+
+      $this->getUser()->setFlash('error', 'SKU no encontrado.');
+
+    }
+    
+    $this->redirect('OportunidadCMR/edit?id_opor_cmr='.$oportunidad_cmr->getIdOporCmr());
+
+  }
+
+  public function executeTest()
+  {
+    $this->test = new Sodimac(1575953);
+
+    $this->valid = $this->test->isValid(1575953);
+  }
+
+
 }

@@ -21,4 +21,9 @@ class OportunidadCmr extends BaseOportunidadCmr
 	{
 		return $this->getFechaVigHas() != null ? date_format(date_create($this->getFechaVigHas()),'d-m-Y') : '';
 	}
+
+// 	public function getNombreProductoFromSodimacCL()
+// 	{
+// 		$sodimac = new Sodimac(123456);
+// 	}
 }

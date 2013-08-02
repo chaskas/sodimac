@@ -291,7 +291,7 @@ OportunidadCmr:
       notnull: false 
       autoincrement: false
     precio_cmr:
-      type: integer(4)
+      type: integer
       fixed: false
       unsigned: false
       primary: false

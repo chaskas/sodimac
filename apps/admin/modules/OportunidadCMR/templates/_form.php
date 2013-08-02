@@ -78,6 +78,14 @@
     </div>
   </div>
 
+  <div class="control-group">
+    <?php echo $form['id_pais']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['id_pais']->render() ?>
+      <?php echo $form['id_pais']->renderError() ?>
+    </div>
+  </div>
+
 
   <div class="form-actions">
     <input type="submit" value="Guardar" class="btn btn-primary"/>
