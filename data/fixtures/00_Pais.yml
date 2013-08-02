@@ -1,0 +1,17 @@
+Pais:
+  Pais_51:
+    id_pais: 51
+    desc_pais: Perú
+    sigla: PE
+  Pais_54:
+    id_pais: 54
+    desc_pais: Argentina
+    sigla: AR
+  Pais_56:
+    id_pais: 56
+    desc_pais: Chile
+    sigla: CL
+  Pais_57:
+    id_pais: 57
+    desc_pais: Colombia
+    sigla: CO

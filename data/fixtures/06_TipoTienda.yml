@@ -1,0 +1,5 @@
+TipoTienda:
+  TipoTienda_1:
+    desc_tipo_tienda: HomeCenter
+  TipoTienda_2:
+    desc_tipo_tienda: Constructor

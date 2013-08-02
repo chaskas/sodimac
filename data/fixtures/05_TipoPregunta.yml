@@ -1,0 +1,9 @@
+TipoPregunta:
+  TipoPregunta_1:
+    desc_tipo_preg: Combo
+  TipoPregunta_2:
+    desc_tipo_preg: 'Completado Simple'
+  TipoPregunta_3:
+    desc_tipo_preg: 'Completado Multiple'
+  TipoPregunta_4:
+    desc_tipo_preg: Numérico

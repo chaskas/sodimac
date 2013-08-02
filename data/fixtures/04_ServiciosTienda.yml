@@ -1,0 +1,64 @@
+ServiciosTienda:
+  ServiciosTienda_1:
+    desc_servicio: 'Arriendo de herramientas y maquinaria'
+    estado: ACT
+  ServiciosTienda_2:
+    desc_servicio: 'Aseo domiciliario'
+    estado: ACT
+  ServiciosTienda_3:
+    desc_servicio: Bodegaje
+    estado: ACT
+  ServiciosTienda_4:
+    desc_servicio: Cafetería
+    estado: ACT
+  ServiciosTienda_5:
+    desc_servicio: Cajeros
+    estado: ACT
+  ServiciosTienda_6:
+    desc_servicio: 'Centro de proyectos'
+    estado: ACT
+  ServiciosTienda_7:
+    desc_servicio: Cerrajería
+    estado: ACT
+  ServiciosTienda_8:
+    desc_servicio: 'Garantía extendida'
+    estado: ACT
+  ServiciosTienda_9:
+    desc_servicio: 'KINO (juego de azar)'
+    estado: ACT
+  ServiciosTienda_10:
+    desc_servicio: 'Lavado de pisos duros'
+    estado: ACT
+  ServiciosTienda_11:
+    desc_servicio: 'Mant. de calefactor a leña'
+    estado: ACT
+  ServiciosTienda_12:
+    desc_servicio: 'Mant. de calefón'
+    estado: ACT
+  ServiciosTienda_13:
+    desc_servicio: 'Mant. de jardín'
+    estado: ACT
+  ServiciosTienda_14:
+    desc_servicio: 'Mant. de piscina'
+    estado: ACT
+  ServiciosTienda_15:
+    desc_servicio: Mudanza
+    estado: ACT
+  ServiciosTienda_16:
+    desc_servicio: 'Pulido de pisos de madera'
+    estado: ACT
+  ServiciosTienda_17:
+    desc_servicio: 'Reparaciones hogar'
+    estado: ACT
+  ServiciosTienda_18:
+    desc_servicio: 'Seguros Falabella'
+    estado: ACT
+  ServiciosTienda_19:
+    desc_servicio: 'Servicios especiales'
+    estado: ACT
+  ServiciosTienda_20:
+    desc_servicio: 'Servicios tarjeta CMR'
+    estado: ACT
+  ServiciosTienda_21:
+    desc_servicio: Tabaquería
+    estado: ACT

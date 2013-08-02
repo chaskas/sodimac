@@ -1,0 +1,61 @@
+Region:
+  Region_1:
+    id_region: 1
+    desc_region: Tarapacá
+    Pais: Pais_56
+  Region_2:
+    id_region: 2
+    desc_region: Antofagasta
+    Pais: Pais_56
+  Region_3:
+    id_region: 3
+    desc_region: Atacama
+    Pais: Pais_56
+  Region_4:
+    id_region: 4
+    desc_region: Coquimbo
+    Pais: Pais_56
+  Region_5:
+    id_region: 5
+    desc_region: Valparaíso
+    Pais: Pais_56
+  Region_6:
+    id_region: 6
+    desc_region: 'O''Higgins'
+    Pais: Pais_56
+  Region_7:
+    id_region: 7
+    desc_region: Maule
+    Pais: Pais_56
+  Region_8:
+    id_region: 8
+    desc_region: Biobío
+    Pais: Pais_56
+  Region_9:
+    id_region: 9
+    desc_region: 'La Araucanía'
+    Pais: Pais_56
+  Region_10:
+    id_region: 10
+    desc_region: 'Los Lagos'
+    Pais: Pais_56
+  Region_11:
+    id_region: 11
+    desc_region: Aysén
+    Pais: Pais_56
+  Region_12:
+    id_region: 12
+    desc_region: Magallanes
+    Pais: Pais_56
+  Region_13:
+    id_region: 13
+    desc_region: 'Metropolitana de Santiago'
+    Pais: Pais_56
+  Region_14:
+    id_region: 14
+    desc_region: 'Los Ríos'
+    Pais: Pais_56
+  Region_15:
+    id_region: 15
+    desc_region: 'Arica y Parinacota'
+    Pais: Pais_56

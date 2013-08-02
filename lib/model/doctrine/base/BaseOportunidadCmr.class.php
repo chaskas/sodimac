@@ -93,14 +93,13 @@ abstract class BaseOportunidadCmr extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 10,
              ));
-        $this->hasColumn('precio_cmr', 'integer', 4, array(
+        $this->hasColumn('precio_cmr', 'integer', null, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 4,
              ));
         $this->hasColumn('unidad_med_cmr', 'string', 10, array(
              'type' => 'string',

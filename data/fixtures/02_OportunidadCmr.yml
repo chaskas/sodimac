@@ -1,0 +1,46 @@
+OportunidadCmr:
+  OportunidadCmr_1:
+    sku: '1666029'
+    nombre_producto: 'Vigaflow Purificador de agua osmosis inversa'
+    precio_internet: '129990'
+    unidad_med_int: c/u
+    precio_cmr: '79990'
+    unidad_med_cmr: c/u
+    fecha_vig_des: '2013-07-01 00:00:00'
+    fecha_vig_has: '2013-08-31 00:00:00'
+  OportunidadCmr_2:
+    sku: '1575953'
+    nombre_producto: 'Toyotomi Estufa a parafina Láser LC-42 Dark'
+    precio_internet: '349900'
+    unidad_med_int: c/u
+    precio_cmr: '269990'
+    unidad_med_cmr: c/u
+    fecha_vig_des: '2013-07-01 00:00:00'
+    fecha_vig_has: '2013-08-18 00:00:00'
+  OportunidadCmr_3:
+    sku: '1951513'
+    nombre_producto: 'Sensi Dacqua Tina Hidromasaje 150 x 150 x 60 cm 8 jets'
+    precio_internet: '529990'
+    unidad_med_int: caj
+    precio_cmr: '399990'
+    unidad_med_cmr: caj
+    fecha_vig_des: '2013-06-01 00:00:00'
+    fecha_vig_has: '2013-07-31 00:00:00'
+  OportunidadCmr_4:
+    sku: '1379542'
+    nombre_producto: 'Tvilum Estación de trabajo 230x200 cm. negro'
+    precio_internet: '249990'
+    unidad_med_int: caj
+    precio_cmr: '169990'
+    unidad_med_cmr: caj
+    fecha_vig_des: '2013-08-01 00:00:00'
+    fecha_vig_has: '2013-09-30 00:00:00'
+  OportunidadCmr_5:
+    sku: '1692429'
+    nombre_producto: 'Klimber Toldo cocina Ranco'
+    precio_internet: '39990'
+    unidad_med_int: c/u
+    precio_cmr: '29990'
+    unidad_med_cmr: c/u
+    fecha_vig_des: '2013-08-03 00:00:00'
+    fecha_vig_has: '2013-08-23 00:00:00'

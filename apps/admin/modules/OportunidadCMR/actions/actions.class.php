@@ -100,12 +100,4 @@ class OportunidadCMRActions extends sfActions
 
   }
 
-  public function executeTest()
-  {
-    $this->test = new Sodimac(1575953);
-
-    $this->valid = $this->test->isValid(1575953);
-  }
-
-
 }

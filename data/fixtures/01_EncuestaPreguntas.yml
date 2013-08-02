@@ -1,0 +1,13 @@
+EncuestaPreguntas:
+  EncuestaPreguntas_1:
+    TipoPregunta: TipoPregunta_1
+    valor_defecto: 0@1@2@3@4@5@6@7@8@9@10
+    desc_pregunta: "En una escala donde: 0 es definitivamente NO Recomendaría y 10 definitivamente SI Recomendaría. \r\n¿Qué tanto recomendaría Ud la tienda a sus\r\nfamiliares o amigos para comprar algún\r\nproducto/servicio:"
+    estado: ACT
+    Pais: Pais_56
+  EncuestaPreguntas_2:
+    TipoPregunta: TipoPregunta_3
+    valor_defecto: ''
+    desc_pregunta: "Por favor, describa brevemente las razones\r\nque justifican su nota equivalente a"
+    estado: ACT
+    Pais: Pais_56
