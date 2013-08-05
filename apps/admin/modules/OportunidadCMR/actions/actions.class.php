@@ -100,4 +100,40 @@ class OportunidadCMRActions extends sfActions
 
   }
 
+  public function executeNewFromFile(sfWebRequest $request)
+  {
+    $this->form_file = new OportunidadFileForm();
+  }
+
+  public function executeCreateFromFile(sfWebRequest $request)
+  {
+    $this->forward404Unless($request->isMethod(sfRequest::POST));
+
+    $this->form_file = new OportunidadFileForm();
+
+    $this->processFileForm($request, $this->form_file);
+
+    $this->setTemplate('newFromFile');
+  }
+
+  protected function processFileForm(sfWebRequest $request, sfForm $form_file)
+  {
+    $form_file->bind($request->getParameter($form_file->getName()), $request->getFiles($form_file->getName()));
+    if ($form_file->isValid())
+    {
+
+      $file = $form_file->getValue('file');
+ 
+      $filename = sha1($file->getOriginalName());
+      $extension = $file->getExtension($file->getOriginalExtension());
+      $file->save(sfConfig::get('sf_upload_dir').'/excel/'.$filename.$extension);
+
+      //Leer excel y procesar archivo
+
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
+      $this->redirect('OportunidadCMR/index');
+    }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
+  }
+
 }

@@ -4,6 +4,7 @@
     <div class="navbar-inner">
       <a class="brand" href="#">Oportunidad CMR</a>
       <div class="pull-right">
+        <a href="<?php echo url_for('OportunidadCMR/newFromFile') ?>" class="btn btn-success">Cargar Excel</a>
         <a href="<?php echo url_for('OportunidadCMR/new') ?>" class="btn btn-primary">Nuevo</a>
       </div>
     </div>
