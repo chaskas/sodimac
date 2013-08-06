@@ -161,9 +161,9 @@ class OportunidadCMRActions extends sfActions
               }
               if($key == 1)$ocmr->setFechaVigDes(PHPExcel_Style_NumberFormat::toFormattedString($cell->getCalculatedValue(), "YYYY-MM-DD"));
               if($key == 2)$ocmr->setFechaVigHas(PHPExcel_Style_NumberFormat::toFormattedString($cell->getCalculatedValue(), "YYYY-MM-DD"));
-              if($key == 3)$ocmr->setIdPais((int)$cell->getCalculatedValue());
             }
           }
+          $ocmr->setIdPais($form_file->getValue('id_pais'));
           $ocmr->save();
         }
       }
@@ -171,7 +171,7 @@ class OportunidadCMRActions extends sfActions
       $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
       $this->redirect('OportunidadCMR/index');
     }
-    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
+    $this->getUser()->setFlash('error', 'se ha producido algo extrañoooooo.');
   }
 
 }

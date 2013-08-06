@@ -10,6 +10,14 @@
   </div>
 
   <div class="control-group">
+    <?php echo $form_file['id_pais']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form_file['id_pais'] ?>
+      <?php echo $form_file['id_pais']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
     <?php echo $form_file['file']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form_file['file'] ?>

@@ -36,6 +36,19 @@ class OportunidadFileForm extends sfForm
             'required' => true,
         ));
 
+    $this->widgetSchema['id_pais'] = new sfWidgetFormDoctrineChoice(array(
+        'model'=>'Pais',
+        'expanded' => false, 
+        'multiple' => false
+    ));
+
+    $this->validatorSchema['id_pais'] = new sfValidatorDoctrineChoice(array(
+        'model'  => 'Pais',
+        'column' => 'id_pais'
+    ));
+    
+    $this->widgetSchema['id_pais']->setLabel('País');
+
     $this->widgetSchema->setNameFormat('file[%s]');
   }
 }

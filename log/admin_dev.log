@@ -22497,3 +22497,500 @@ Aug 06 03:40:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 27.12 ms (
 Aug 06 03:40:35 symfony [info] {sfWebDebugLogger} View "Success" for "Tiendas/index" 360.51 ms (1)
 Aug 06 03:40:35 symfony [info] {sfWebDebugLogger} Partial "Tiendas/_sidebar" 1.50 ms (1)
 Aug 06 03:40:35 symfony [info] {sfWebResponse} Send content (194152 o)
+Aug 06 20:12:55 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:12:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:12:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:12:55 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:13:34 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:13:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:13:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:13:34 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:13:52 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:13:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:13:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:13:52 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:13:52 symfony [err] {InvalidArgumentException} sfWidgetFormDoctrineChoice does not support the following options: 'column'.
+Aug 06 20:13:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 06 20:13:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:13:52 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (9)
+Aug 06 20:13:52 symfony [info] {sfWebDebugLogger} Factories 58.13 ms (1)
+Aug 06 20:13:52 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 132.58 ms (1)
+Aug 06 20:15:22 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:15:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:15:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:15:22 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:15:22 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:15:22 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:15:22 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:15:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:15:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:15:22 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:15:22 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:15:22 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:15:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:15:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:15:22 symfony [info] {sfWebDebugLogger} Configuration 19.44 ms (11)
+Aug 06 20:15:22 symfony [info] {sfWebDebugLogger} Factories 61.63 ms (1)
+Aug 06 20:15:22 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 43.49 ms (1)
+Aug 06 20:15:22 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 185.90 ms (1)
+Aug 06 20:15:22 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 4.55 ms (1)
+Aug 06 20:15:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.87 ms (2)
+Aug 06 20:15:22 symfony [info] {sfWebResponse} Send content (35963 o)
+Aug 06 20:19:58 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:19:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:19:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:19:58 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:19:59 symfony [info] {OportunidadCMRActions} Change template to "CURRENT/newFromFile"
+Aug 06 20:19:59 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:19:59 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:19:59 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:19:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:19:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:19:59 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:19:59 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:19:59 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:19:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:19:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:19:59 symfony [info] {sfWebDebugLogger} Configuration 1.55 ms (10)
+Aug 06 20:19:59 symfony [info] {sfWebDebugLogger} Factories 60.43 ms (1)
+Aug 06 20:19:59 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 55.33 ms (1)
+Aug 06 20:19:59 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/createFromFile" 94.41 ms (1)
+Aug 06 20:19:59 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.85 ms (1)
+Aug 06 20:19:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.39 ms (2)
+Aug 06 20:19:59 symfony [info] {sfWebResponse} Send content (37626 o)
+Aug 06 20:23:05 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:23:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:23:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:23:05 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:23:05 symfony [info] {OportunidadCMRActions} Change template to "CURRENT/newFromFile"
+Aug 06 20:23:05 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:23:05 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:23:05 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:23:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:23:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:23:05 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:23:05 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:23:05 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:23:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:23:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:23:05 symfony [info] {sfWebDebugLogger} Configuration 269.75 ms (10)
+Aug 06 20:23:05 symfony [info] {sfWebDebugLogger} Factories 109.17 ms (1)
+Aug 06 20:23:05 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 25.66 ms (1)
+Aug 06 20:23:05 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/createFromFile" 104.42 ms (1)
+Aug 06 20:23:05 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.98 ms (1)
+Aug 06 20:23:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.55 ms (2)
+Aug 06 20:23:05 symfony [info] {sfWebResponse} Send content (37745 o)
+Aug 06 20:26:27 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 06 20:26:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:26:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:26:27 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 06 20:26:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:26:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 06 20:26:27 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 06 20:26:27 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:26:27 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:26:27 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:26:27 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:26:27 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:26:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:26:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:26:27 symfony [info] {sfWebDebugLogger} Configuration 1.42 ms (10)
+Aug 06 20:26:27 symfony [info] {sfWebDebugLogger} Factories 59.07 ms (1)
+Aug 06 20:26:27 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 58.19 ms (1)
+Aug 06 20:26:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.29 ms (2)
+Aug 06 20:26:27 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 36.54 ms (1)
+Aug 06 20:26:27 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.44 ms (1)
+Aug 06 20:26:27 symfony [info] {sfWebResponse} Send content (37498 o)
+Aug 06 20:26:28 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:26:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:26:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:26:28 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:26:28 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:26:28 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:26:28 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:26:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:26:28 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:26:28 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:26:28 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:26:28 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:26:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:26:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:26:28 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (10)
+Aug 06 20:26:28 symfony [info] {sfWebDebugLogger} Factories 74.10 ms (1)
+Aug 06 20:26:28 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 15.49 ms (1)
+Aug 06 20:26:28 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 86.67 ms (1)
+Aug 06 20:26:28 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.46 ms (1)
+Aug 06 20:26:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.27 ms (2)
+Aug 06 20:26:28 symfony [info] {sfWebResponse} Send content (36064 o)
+Aug 06 20:26:33 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:26:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:26:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:26:33 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:26:33 symfony [info] {OportunidadCMRActions} Change template to "CURRENT/newFromFile"
+Aug 06 20:26:33 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:26:33 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:26:33 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:26:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:26:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:26:33 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:26:33 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:26:33 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:26:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:26:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:26:33 symfony [info] {sfWebDebugLogger} Configuration 1.46 ms (10)
+Aug 06 20:26:33 symfony [info] {sfWebDebugLogger} Factories 60.55 ms (1)
+Aug 06 20:26:33 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 17.81 ms (1)
+Aug 06 20:26:33 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/createFromFile" 95.64 ms (1)
+Aug 06 20:26:33 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.43 ms (1)
+Aug 06 20:26:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.28 ms (2)
+Aug 06 20:26:33 symfony [info] {sfWebResponse} Send content (37729 o)
+Aug 06 20:29:21 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:29:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:29:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:29:21 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:29:21 symfony [info] {OportunidadCMRActions} Change template to "CURRENT/newFromFile"
+Aug 06 20:29:21 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:29:21 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:29:21 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:29:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:29:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:29:21 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:29:21 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:29:21 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:29:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:29:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:29:21 symfony [info] {sfWebDebugLogger} Configuration 1.60 ms (10)
+Aug 06 20:29:21 symfony [info] {sfWebDebugLogger} Factories 57.37 ms (1)
+Aug 06 20:29:21 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 17.76 ms (1)
+Aug 06 20:29:21 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/createFromFile" 97.29 ms (1)
+Aug 06 20:29:21 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.46 ms (1)
+Aug 06 20:29:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.66 ms (2)
+Aug 06 20:29:21 symfony [info] {sfWebResponse} Send content (37742 o)
+Aug 06 20:38:02 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 06 20:38:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:38:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:38:02 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 06 20:38:02 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:38:02 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 06 20:38:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 06 20:38:02 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:38:02 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:38:02 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:38:02 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:38:02 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:38:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:38:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:38:02 symfony [info] {sfWebDebugLogger} Configuration 247.99 ms (10)
+Aug 06 20:38:02 symfony [info] {sfWebDebugLogger} Factories 71.75 ms (1)
+Aug 06 20:38:02 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 59.63 ms (1)
+Aug 06 20:38:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.35 ms (2)
+Aug 06 20:38:02 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 21.90 ms (1)
+Aug 06 20:38:02 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.39 ms (1)
+Aug 06 20:38:02 symfony [info] {sfWebResponse} Send content (37260 o)
+Aug 06 20:38:09 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:38:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:38:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:38:09 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:38:09 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:38:09 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:38:09 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:38:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:38:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:38:09 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:38:09 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:38:09 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:38:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:38:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:38:09 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (10)
+Aug 06 20:38:09 symfony [info] {sfWebDebugLogger} Factories 6.76 ms (1)
+Aug 06 20:38:09 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 13.82 ms (1)
+Aug 06 20:38:09 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 33.46 ms (1)
+Aug 06 20:38:09 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.02 ms (1)
+Aug 06 20:38:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.54 ms (2)
+Aug 06 20:38:09 symfony [info] {sfWebResponse} Send content (35930 o)
+Aug 06 20:38:13 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:38:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:38:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:38:13 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:38:13 symfony [info] {OportunidadCMRActions} Change template to "CURRENT/newFromFile"
+Aug 06 20:38:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:38:13 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:38:13 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:38:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:38:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:38:13 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:38:13 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:38:13 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:38:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:38:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:38:13 symfony [info] {sfWebDebugLogger} Configuration 1.09 ms (10)
+Aug 06 20:38:13 symfony [info] {sfWebDebugLogger} Factories 5.89 ms (1)
+Aug 06 20:38:13 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 6.11 ms (1)
+Aug 06 20:38:13 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/createFromFile" 13.25 ms (1)
+Aug 06 20:38:13 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.89 ms (1)
+Aug 06 20:38:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.41 ms (2)
+Aug 06 20:38:13 symfony [info] {sfWebResponse} Send content (37605 o)
+Aug 06 20:40:39 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:40:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:40:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:40:39 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:40:39 symfony [info] {OportunidadCMRActions} Change template to "CURRENT/newFromFile"
+Aug 06 20:40:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:40:39 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:40:39 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:40:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:40:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:40:39 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:40:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:40:39 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:40:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:40:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:40:39 symfony [info] {sfWebDebugLogger} Configuration 1.10 ms (10)
+Aug 06 20:40:39 symfony [info] {sfWebDebugLogger} Factories 6.89 ms (1)
+Aug 06 20:40:39 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 4.19 ms (1)
+Aug 06 20:40:39 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/createFromFile" 19.42 ms (1)
+Aug 06 20:40:39 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.99 ms (1)
+Aug 06 20:40:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.30 ms (2)
+Aug 06 20:40:39 symfony [info] {sfWebResponse} Send content (37607 o)
+Aug 06 20:45:21 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:45:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:45:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:45:21 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:45:32 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:45:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:45:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:45:32 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:45:32 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:45:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (0, Propuesta - Plantilla envío de Uportunidades Únicas CMR.xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, /tmp/phpWnu17T, 9923)
+Aug 06 20:45:32 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 06 20:45:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 06 20:45:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:45:32 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (9)
+Aug 06 20:45:32 symfony [info] {sfWebDebugLogger} Factories 7.14 ms (1)
+Aug 06 20:45:32 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 195.70 ms (1)
+Aug 06 20:45:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.50 ms (1)
+Aug 06 20:45:39 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:45:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:45:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:45:39 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:45:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:45:39 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:45:39 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:45:39 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:45:39 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:45:39 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:45:39 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:45:39 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:45:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:45:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:45:39 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (10)
+Aug 06 20:45:39 symfony [info] {sfWebDebugLogger} Factories 4.35 ms (1)
+Aug 06 20:45:39 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 1.73 ms (1)
+Aug 06 20:45:39 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 12.33 ms (1)
+Aug 06 20:45:39 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.97 ms (1)
+Aug 06 20:45:39 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.25 ms (2)
+Aug 06 20:45:39 symfony [info] {sfWebResponse} Send content (35929 o)
+Aug 06 20:45:41 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 06 20:45:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:45:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:45:41 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 06 20:45:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:45:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 06 20:45:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 06 20:45:41 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:45:41 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:45:41 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:45:41 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:45:41 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:45:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:45:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:45:41 symfony [info] {sfWebDebugLogger} Configuration 1.54 ms (10)
+Aug 06 20:45:41 symfony [info] {sfWebDebugLogger} Factories 3.59 ms (1)
+Aug 06 20:45:41 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 5.99 ms (1)
+Aug 06 20:45:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.30 ms (2)
+Aug 06 20:45:41 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 7.77 ms (1)
+Aug 06 20:45:41 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.99 ms (1)
+Aug 06 20:45:41 symfony [info] {sfWebResponse} Send content (37253 o)
+Aug 06 20:45:42 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:45:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:45:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:45:42 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:45:42 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:45:42 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:45:42 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:45:42 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:45:42 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:45:42 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:45:42 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:45:42 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:45:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:45:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:45:42 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (10)
+Aug 06 20:45:42 symfony [info] {sfWebDebugLogger} Factories 4.42 ms (1)
+Aug 06 20:45:42 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 1.64 ms (1)
+Aug 06 20:45:42 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 11.94 ms (1)
+Aug 06 20:45:42 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.81 ms (1)
+Aug 06 20:45:42 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.38 ms (2)
+Aug 06 20:45:42 symfony [info] {sfWebResponse} Send content (35929 o)
+Aug 06 20:45:48 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:45:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:45:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:45:48 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:45:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:45:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (0, Propuesta - Plantilla envío de Uportunidades Únicas CMR.xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, /tmp/phpQT9bVc, 9923)
+Aug 06 20:45:48 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 06 20:45:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 06 20:45:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:45:48 symfony [info] {sfWebDebugLogger} Configuration 0.88 ms (9)
+Aug 06 20:45:48 symfony [info] {sfWebDebugLogger} Factories 4.38 ms (1)
+Aug 06 20:45:48 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 98.99 ms (1)
+Aug 06 20:45:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.36 ms (1)
+Aug 06 20:48:33 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:48:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:48:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:48:33 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:48:33 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:48:33 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:48:33 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:48:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:48:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:48:33 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:48:33 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:48:33 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:48:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:48:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:48:33 symfony [info] {sfWebDebugLogger} Configuration 1.06 ms (10)
+Aug 06 20:48:33 symfony [info] {sfWebDebugLogger} Factories 5.19 ms (1)
+Aug 06 20:48:33 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 1.70 ms (1)
+Aug 06 20:48:33 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 12.99 ms (1)
+Aug 06 20:48:33 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 1.12 ms (1)
+Aug 06 20:48:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.26 ms (2)
+Aug 06 20:48:33 symfony [info] {sfWebResponse} Send content (35929 o)
+Aug 06 20:48:35 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:48:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:48:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:48:35 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:48:35 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:48:35 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:48:35 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:48:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:48:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:48:35 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:48:35 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:48:35 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:48:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:48:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:48:35 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (10)
+Aug 06 20:48:35 symfony [info] {sfWebDebugLogger} Factories 5.17 ms (1)
+Aug 06 20:48:35 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 1.25 ms (1)
+Aug 06 20:48:35 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 10.39 ms (1)
+Aug 06 20:48:35 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.73 ms (1)
+Aug 06 20:48:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.30 ms (2)
+Aug 06 20:48:35 symfony [info] {sfWebResponse} Send content (35955 o)
+Aug 06 20:48:40 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:48:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:48:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:48:40 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:48:40 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:48:40 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (0, Propuesta - Plantilla envío de Uportunidades Únicas CMR.xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, /tmp/php9klvUb, 9923)
+Aug 06 20:48:40 symfony [err] {Doctrine_Connection_Mysql_Exception} SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+Aug 06 20:48:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Aug 06 20:48:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:48:40 symfony [info] {sfWebDebugLogger} Configuration 0.89 ms (9)
+Aug 06 20:48:40 symfony [info] {sfWebDebugLogger} Factories 5.41 ms (1)
+Aug 06 20:48:40 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 94.25 ms (1)
+Aug 06 20:48:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.15 ms (1)
+Aug 06 20:49:30 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:49:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:49:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:49:30 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:49:30 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:49:30 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:49:30 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:49:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:49:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:49:30 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:49:30 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:49:30 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:49:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:49:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:49:30 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (10)
+Aug 06 20:49:30 symfony [info] {sfWebDebugLogger} Factories 7.16 ms (1)
+Aug 06 20:49:30 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 2.93 ms (1)
+Aug 06 20:49:30 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 18.47 ms (1)
+Aug 06 20:49:30 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.98 ms (1)
+Aug 06 20:49:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.30 ms (2)
+Aug 06 20:49:30 symfony [info] {sfWebResponse} Send content (35955 o)
+Aug 06 20:49:31 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/newFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'newFromFile',)
+Aug 06 20:49:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:49:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:49:31 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeNewFromFile()"
+Aug 06 20:49:31 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/newFromFileSuccess.php"
+Aug 06 20:49:31 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:49:31 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:49:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:49:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id_pais AS p__id_pais, p.desc_pais AS p__desc_pais, p.sigla AS p__sigla FROM pais p - ()
+Aug 06 20:49:31 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:49:31 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:49:31 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:49:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:49:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:49:31 symfony [info] {sfWebDebugLogger} Configuration 1.01 ms (10)
+Aug 06 20:49:31 symfony [info] {sfWebDebugLogger} Factories 4.24 ms (1)
+Aug 06 20:49:31 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/newFromFile" 1.61 ms (1)
+Aug 06 20:49:31 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/newFromFile" 11.37 ms (1)
+Aug 06 20:49:31 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.76 ms (1)
+Aug 06 20:49:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.36 ms (2)
+Aug 06 20:49:31 symfony [info] {sfWebResponse} Send content (35955 o)
+Aug 06 20:49:35 symfony [info] {sfPatternRouting} Match route "default" (/admin/:module/:action/*) for /admin/OportunidadCMR/createFromFile with parameters array (  'module' => 'OportunidadCMR',  'action' => 'createFromFile',)
+Aug 06 20:49:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:49:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:49:35 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeCreateFromFile()"
+Aug 06 20:49:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:49:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM pais p WHERE p.id_pais = ? - (51)
+ago 06 20:49:36 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:36 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:39 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:39 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:41 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:41 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:44 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:44 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:46 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:46 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:48 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:48 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:49 symfony [notice] {sfWebDebugLogger}  Notice at /home/chaskas/Escritorio/sodimac/lib/Sodimac.class.php on line 32 (Undefined offset: 0)
+ago 06 20:49:49 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO oportunidad_cmr (sku, fecha_vig_des, fecha_vig_has, id_pais) VALUES (?, ?, ?, ?) - (123456, 2013-07-14, 2013-07-27, 51)
+ago 06 20:49:49 symfony [info] {sfFrontWebController} Redirect to "http://sodimac/admin/"
+ago 06 20:49:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+ago 06 20:49:49 symfony [info] {sfWebResponse} Send header "Location: http://sodimac/admin/"
+ago 06 20:49:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+ago 06 20:49:49 symfony [info] {sfWebDebugLogger} Configuration 0,91 ms (9)
+ago 06 20:49:49 symfony [info] {sfWebDebugLogger} Factories 4,73 ms (1)
+ago 06 20:49:49 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/createFromFile" 14132,65 ms (1)
+ago 06 20:49:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 117,89 ms (9)
+ago 06 20:49:49 symfony [info] {sfWebResponse} Send content (92 o)
+Aug 06 20:49:49 symfony [info] {sfPatternRouting} Match route "homepage" (/admin/) for /admin/ with parameters array (  'module' => 'OportunidadCMR',  'action' => 'index',)
+Aug 06 20:49:49 symfony [info] {myUser} Flag old flash messages ("success")
+Aug 06 20:49:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 06 20:49:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 06 20:49:49 symfony [info] {OportunidadCMRActions} Call "OportunidadCMRActions->executeIndex()"
+Aug 06 20:49:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Aug 06 20:49:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT o.id_opor_cmr AS o__id_opor_cmr, o.sku AS o__sku, o.nombre_producto AS o__nombre_producto, o.precio_internet AS o__precio_internet, o.unidad_med_int AS o__unidad_med_int, o.precio_cmr AS o__precio_cmr, o.unidad_med_cmr AS o__unidad_med_cmr, o.fecha_vig_des AS o__fecha_vig_des, o.fecha_vig_has AS o__fecha_vig_has, o.id_pais AS o__id_pais FROM oportunidad_cmr o - ()
+Aug 06 20:49:49 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/indexSuccess.php"
+Aug 06 20:49:49 symfony [info] {sfPartialView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/modules/OportunidadCMR/templates/_sidebar.php"
+Aug 06 20:49:49 symfony [info] {main} Set slot "sidebar"
+Aug 06 20:49:49 symfony [info] {sfPHPView} Decorate content with "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:49:49 symfony [info] {sfPHPView} Render "/home/chaskas/Escritorio/sodimac/apps/admin/templates/layout.php"
+Aug 06 20:49:49 symfony [info] {main} Get slot "sidebar"
+Aug 06 20:49:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 06 20:49:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Aug 06 20:49:49 symfony [info] {sfWebDebugLogger} Configuration 1.07 ms (10)
+Aug 06 20:49:49 symfony [info] {sfWebDebugLogger} Factories 4.20 ms (1)
+Aug 06 20:49:49 symfony [info] {sfWebDebugLogger} Action "OportunidadCMR/index" 6.59 ms (1)
+Aug 06 20:49:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.53 ms (2)
+Aug 06 20:49:49 symfony [info] {sfWebDebugLogger} View "Success" for "OportunidadCMR/index" 12.59 ms (1)
+Aug 06 20:49:49 symfony [info] {sfWebDebugLogger} Partial "OportunidadCMR/_sidebar" 0.76 ms (1)
+Aug 06 20:49:49 symfony [info] {sfWebResponse} Send content (40352 o)
+Aug 06 20:49:49 symfony [info] {myUser} Remove old flash messages ("success")
