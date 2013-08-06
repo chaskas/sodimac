@@ -118,27 +118,28 @@
     </div>
   </div>
 
-  <?php foreach ($form['Respuestas'] as $key => $respuesta): ?>
+  <?php //foreach ($form['Respuestas'] as $key => $respuesta): ?>
+<!--   
   <div class="page-header">
-    <h4>Pregunta <?php echo $key+1 ?>:</h4>
+    <h4>Pregunta <?php //echo $key+1 ?>:</h4>
   </div>
   <div class="control-group">
-    <?php echo $respuesta['id_enc_preg']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $respuesta['id_enc_preg']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $respuesta['id_enc_preg'] ?>
-      <?php echo $respuesta['id_enc_preg']->renderError() ?>
+      <?php //echo $respuesta['id_enc_preg'] ?>
+      <?php //echo $respuesta['id_enc_preg']->renderError() ?>
     </div>
   </div>
 
   <div class="control-group">
-    <?php echo $respuesta['valor_resp']->renderLabel(null, array('class'=>'control-label')) ?>
+    <?php //echo $respuesta['valor_resp']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
-      <?php echo $respuesta['valor_resp'] ?>
-      <?php echo $respuesta['valor_resp']->renderError() ?>
+      <?php //echo $respuesta['valor_resp'] ?>
+      <?php //echo $respuesta['valor_resp']->renderError() ?>
     </div>
   </div>
-
-  <?php endforeach; ?>
+ -->
+  <?php //endforeach; ?>
  
   <div class="form-actions">
     <input type="submit" value="Guardar" class="btn btn-primary"/>

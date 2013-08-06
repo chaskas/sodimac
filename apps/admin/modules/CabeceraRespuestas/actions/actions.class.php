@@ -19,14 +19,14 @@ class CabeceraRespuestasActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => 1));
+    $this->form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => 0));
   }
 
   public function executeCreate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST));
 
-    $this->form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => 1));
+    $this->form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => 0));
 
     $this->processForm($request, $this->form);
 

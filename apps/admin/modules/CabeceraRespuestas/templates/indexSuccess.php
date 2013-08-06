@@ -22,9 +22,9 @@
   <tbody>
     <?php foreach ($cabeceras as $cabecera): ?>
       <tr>
-        <td><a href="<?php echo url_for('CabeceraRespuestas/edit?id_enc_cab_resp='.$cabecera->getIdEncCabResp()) ?>"><?php echo $cabecera->getIdEncCabResp() ?></a></td>
+        <td class="center"><a href="<?php echo url_for('CabeceraRespuestas/edit?id_enc_cab_resp='.$cabecera->getIdEncCabResp()) ?>"><?php echo $cabecera->getIdEncCabResp() ?></a></td>
         <td><?php echo $cabecera->getNroBoleta() ?></td>
-        <td><?php echo $cabecera->getFechaCompraFormatted() ?></td>
+        <td class="center"><?php echo $cabecera->getFechaCompraFormatted() ?></td>
         <td><?php echo $cabecera->getIdTienda() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
