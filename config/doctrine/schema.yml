@@ -23,9 +23,7 @@ EncuestaCabeceraRespuestas:
       notnull: false
       autoincrement: false
     id_tienda:
-      type: integer(4)
-      fixed: false
-      unsigned: false
+      type: integer
       primary: false
       notnull: false
       autoincrement: false
@@ -412,11 +410,8 @@ ServiciosPorTienda:
   tableName: servicios_por_tienda
   columns:
     id_tienda:
-      type: integer(4)
-      fixed: false
-      unsigned: true
+      type: integer
       primary: true
-      autoincrement: false
       notnull: true
     id_servicio_tienda:
       type: integer(4)
@@ -475,11 +470,10 @@ Tienda:
   tableName: tienda
   columns:
     id_tienda:
-      type: integer(4)
-      fixed: false
-      unsigned: true
+      type: integer
       primary: true
-      autoincrement: true
+      unique: true
+      notnull: true
     nombre:
       type: string(70)
       fixed: false

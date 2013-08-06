@@ -1,0 +1,154 @@
+ServiciosPorTienda:
+  ServiciosPorTienda_2_1:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_1
+  ServiciosPorTienda_5_1:
+    tienda: Tienda_5
+    servicios: ServiciosTienda_1
+  ServiciosPorTienda_63_1:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_1
+  ServiciosPorTienda_66_1:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_1
+  ServiciosPorTienda_63_2:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_2
+  ServiciosPorTienda_66_2:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_2
+  ServiciosPorTienda_63_3:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_3
+  ServiciosPorTienda_66_3:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_3
+  ServiciosPorTienda_4_4:
+    tienda: Tienda_4
+    servicios: ServiciosTienda_4
+  ServiciosPorTienda_66_4:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_4
+  ServiciosPorTienda_2_5:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_5
+  ServiciosPorTienda_3_5:
+    tienda: Tienda_3
+    servicios: ServiciosTienda_5
+  ServiciosPorTienda_4_5:
+    tienda: Tienda_4
+    servicios: ServiciosTienda_5
+  ServiciosPorTienda_63_5:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_5
+  ServiciosPorTienda_66_5:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_5
+  ServiciosPorTienda_63_6:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_6
+  ServiciosPorTienda_66_6:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_6
+  ServiciosPorTienda_2_7:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_7
+  ServiciosPorTienda_63_7:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_7
+  ServiciosPorTienda_66_7:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_7
+  ServiciosPorTienda_2_8:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_8
+  ServiciosPorTienda_63_8:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_8
+  ServiciosPorTienda_66_8:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_8
+  ServiciosPorTienda_2_9:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_9
+  ServiciosPorTienda_63_9:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_9
+  ServiciosPorTienda_66_9:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_9
+  ServiciosPorTienda_66_10:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_10
+  ServiciosPorTienda_63_11:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_11
+  ServiciosPorTienda_66_11:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_11
+  ServiciosPorTienda_2_12:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_12
+  ServiciosPorTienda_63_12:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_12
+  ServiciosPorTienda_66_12:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_12
+  ServiciosPorTienda_63_13:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_13
+  ServiciosPorTienda_66_13:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_13
+  ServiciosPorTienda_63_14:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_14
+  ServiciosPorTienda_66_14:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_14
+  ServiciosPorTienda_2_15:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_15
+  ServiciosPorTienda_5_15:
+    tienda: Tienda_5
+    servicios: ServiciosTienda_15
+  ServiciosPorTienda_63_15:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_15
+  ServiciosPorTienda_66_15:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_15
+  ServiciosPorTienda_66_16:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_16
+  ServiciosPorTienda_63_17:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_17
+  ServiciosPorTienda_66_17:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_17
+  ServiciosPorTienda_63_18:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_18
+  ServiciosPorTienda_2_20:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_20
+  ServiciosPorTienda_3_20:
+    tienda: Tienda_3
+    servicios: ServiciosTienda_20
+  ServiciosPorTienda_63_20:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_20
+  ServiciosPorTienda_66_20:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_20
+  ServiciosPorTienda_2_21:
+    tienda: Tienda_2
+    servicios: ServiciosTienda_21
+  ServiciosPorTienda_63_21:
+    tienda: Tienda_63
+    servicios: ServiciosTienda_21
+  ServiciosPorTienda_66_21:
+    tienda: Tienda_66
+    servicios: ServiciosTienda_21

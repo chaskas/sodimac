@@ -1,0 +1,742 @@
+Tienda:
+  Tienda_2:
+    id_tienda: 2
+    nombre: 'HOMECENTER LOS CARRERAS'
+    direccion: 'Av. Los Carrera 1175'
+    latitud: '-36.820751'
+    longitud: '-73.045945'
+    telefono: '412225923'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_8
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Rodrigo Muñoz'
+    busc_producto: '0'
+  Tienda_3:
+    id_tienda: 3
+    nombre: 'CONSTRUCTOR VIÑA'
+    direccion: 'Limache 3119'
+    latitud: '-33.055755'
+    longitud: '-71.495998'
+    telefono: '32671537'
+    horario: 'Lun-Vier 08:00 - 19:00hrs ;Sab 08:30 - 19:00hrs ;Dom 09:00 - 15:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Andres Godoy'
+    busc_producto: '0'
+  Tienda_4:
+    id_tienda: 4
+    nombre: 'HOMECENTER CALERA'
+    direccion: 'Prolongación J. J. Pérez 12010'
+    latitud: '-32.790508'
+    longitud: '-71.191538'
+    telefono: '33335000'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Eriko Sepúlveda'
+    busc_producto: '0'
+  Tienda_5:
+    id_tienda: 5
+    nombre: 'HOMECENTER ANTOFAGASTA'
+    direccion: 'Av. Balmaceda 2355'
+    latitud: '-23.647492'
+    longitud: '-68.920085'
+    telefono: '55251630'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_2
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Francisco Ordenes'
+    busc_producto: '0'
+  Tienda_7:
+    id_tienda: 7
+    nombre: 'HOMECENTER OSORNO'
+    direccion: 'Av. René Soriano 2619'
+    latitud: '-40.586411'
+    longitud: '-73.104787'
+    telefono: '64330200'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_10
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Javier Rival'
+    busc_producto: '0'
+  Tienda_9:
+    id_tienda: 9
+    nombre: 'HOMECENTER IQUIQUE'
+    direccion: 'Héroes de la Concepción 2311'
+    latitud: '-20.229943'
+    longitud: '-70.141152'
+    telefono: '57480707'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_1
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Alicia Ramos'
+    busc_producto: '0'
+  Tienda_11:
+    id_tienda: 11
+    nombre: 'HOMECENTER IQUIQUE'
+    direccion: 'Héroes de la Concepción 2311'
+    latitud: '-20.229943'
+    longitud: '-70.141152'
+    telefono: '57480707'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_1
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Alicia Ramos'
+    busc_producto: '0'
+  Tienda_12:
+    id_tienda: 12
+    nombre: 'HOMECENTER SAN MIGUEL'
+    direccion: 'Gran Avda. José M. Carrera 5508'
+    latitud: '-33.503768'
+    longitud: '-70.654884'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Carolina Ojeda V-L'
+    busc_producto: '0'
+  Tienda_13:
+    id_tienda: 13
+    nombre: 'CONSTRUCTOR CASTRO'
+    direccion: 'Av. B. O''Higgins 681, Castro'
+    latitud: '-42.478103'
+    longitud: '-73.765475'
+    telefono: '65633097'
+    horario: 'Lun-Vier 08:30 - 20:00 ;Sáb 09:00 - 19:00 ;Dom 09:00 - 15:00'
+    Region: Region_10
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Rodrigo Soto M.'
+    busc_producto: '0'
+  Tienda_16:
+    id_tienda: 16
+    nombre: 'HOMECENTER SAN FELIPE'
+    direccion: 'Tocornal 2810'
+    latitud: '-32.757419'
+    longitud: '-70.704253'
+    telefono: '34537178'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 09:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Gabriel Salinas'
+    busc_producto: '0'
+  Tienda_19:
+    id_tienda: 19
+    nombre: 'HOMECENTER VALDIVIA'
+    direccion: 'Av. Ramón Picarte 3349'
+    latitud: '-39.840414'
+    longitud: '-73.207183'
+    telefono: '63262470'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_14
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Jorge Leal'
+    busc_producto: '0'
+  Tienda_20:
+    id_tienda: 20
+    nombre: 'HOMECENTER VIÑA'
+    direccion: 'Av. Quince Norte 961'
+    latitud: '-33.008353'
+    longitud: '-71.546335'
+    telefono: '32684066'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 09:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Guillermo Suazo'
+    busc_producto: '0'
+  Tienda_21:
+    id_tienda: 21
+    nombre: 'CONSTRUCTOR CANTAGALLO'
+    direccion: 'Av. Las Condes 12422'
+    latitud: '-33.372255'
+    longitud: '-70.516777'
+    telefono: '222173131'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 08:00 - 19:00hrs ;Dom 09:00 - 15:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Mariela Vidal'
+    busc_producto: '0'
+  Tienda_23:
+    id_tienda: 23
+    nombre: 'HOMECENTER SAN BERNARDO'
+    direccion: 'Jorge Alessandri Rodríguez 2040'
+    latitud: '-33.609631'
+    longitud: '-70.717074'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Jessica Sepúlveda'
+    busc_producto: '0'
+  Tienda_24:
+    id_tienda: 24
+    nombre: 'HOMECENTER PUNTA ARENAS'
+    direccion: 'Av. Pdte. Eduardo Frei Montalva 01400'
+    latitud: '-53.124384'
+    longitud: '-70.918143'
+    telefono: '61208400'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_12
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Oscar Mansilla'
+    busc_producto: '0'
+  Tienda_25:
+    id_tienda: 25
+    nombre: 'CONSTRUCTOR ÑUÑOA'
+    direccion: 'Av. Vicuña Mackenna 680'
+    latitud: '-33.450759'
+    longitud: '-70.631023'
+    telefono: '226351005'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 08:00 - 19:00hrs ;Dom 09:00 - 15:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Gustavo Valdés'
+    busc_producto: '0'
+  Tienda_26:
+    id_tienda: 26
+    nombre: 'CONSTRUCTOR RANCAGUA'
+    direccion: 'Koke 011'
+    latitud: '-34.163807'
+    longitud: '-70.751621'
+    telefono: '72241147'
+    horario: 'Lun-Vier 08:30 - 19:00hrs ;Sab 08:30 - 19:00hrs ;Dom 09:00 - 18:00hrs'
+    Region: Region_6
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Juan Pablo Oyarzún'
+    busc_producto: '0'
+  Tienda_27:
+    id_tienda: 27
+    nombre: 'HOMECENTER CALAMA'
+    direccion: 'Av. Balmaceda 3398'
+    latitud: '-22.447345'
+    longitud: '-68.920085'
+    telefono: '55367600'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_2
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Luis Vera'
+    busc_producto: '0'
+  Tienda_29:
+    id_tienda: 29
+    nombre: 'CONSTRUCTOR VALPARAÍSO'
+    direccion: 'Av. Yungay 2516'
+    latitud: '-33.045746'
+    longitud: '-71.609622'
+    telefono: '32256125'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 09:00 - 19:00hrs ;Dom 09:00 - 16:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Alex Méndez'
+    busc_producto: '0'
+  Tienda_30:
+    id_tienda: 30
+    nombre: 'CONSTRUCTOR TALCAHUANO'
+    direccion: 'Colón 1891'
+    latitud: '-36.728699'
+    longitud: '-73.110449'
+    telefono: '412546105'
+    horario: 'Lun-Vier 08:30 - 19:00hrs ;Sab 08:30 - 19:00hrs ;Dom 09:00 - 14:00hrs'
+    Region: Region_8
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Hugo Saravia M.'
+    busc_producto: '0'
+  Tienda_32:
+    id_tienda: 32
+    nombre: 'HOMECENTER ARICA'
+    direccion: 'Av. Santa María 2985'
+    latitud: '-18.461155'
+    longitud: '-70.295892'
+    telefono: '582201700'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_15
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Yery Jiménez'
+    busc_producto: '0'
+  Tienda_33:
+    id_tienda: 33
+    nombre: 'HOMECENTER ÑUÑOA'
+    direccion: 'Av. Américo Vespucio Sur 925'
+    latitud: '-33.498613'
+    longitud: '-70.584122'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Ricardo Sáez'
+    busc_producto: '0'
+  Tienda_34:
+    id_tienda: 34
+    nombre: 'HOMECENTER LAS CONDES'
+    direccion: 'Av. Las Condes 11049'
+    latitud: '-33.380202'
+    longitud: '-70.53021'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Juan Ignacio Rojas'
+    busc_producto: '0'
+  Tienda_35:
+    id_tienda: 35
+    nombre: 'HOMECENTER CURICÓ'
+    direccion: 'Av. Carlos Condell 1192'
+    latitud: '-34.976133'
+    longitud: '-71.223158'
+    telefono: '75204000'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 09:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_7
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Claudio Rodríguez V.'
+    busc_producto: '0'
+  Tienda_37:
+    id_tienda: 37
+    nombre: 'HOMECENTER COYHAIQUE'
+    direccion: 'Av. Ogana 869'
+    latitud: '-45.5783'
+    longitud: '-72.073574'
+    telefono: '61672100'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 10:00 - 21:00hrs'
+    Region: Region_11
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Adolfo Quintana S.'
+    busc_producto: '0'
+  Tienda_39:
+    id_tienda: 39
+    nombre: 'HOMECENTER LA SERENA'
+    direccion: 'Av. Francisco de Aguirre 02'
+    latitud: '-29.905293'
+    longitud: '-71.258944'
+    telefono: '51204600'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_4
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Hernán Cordero'
+    busc_producto: '0'
+  Tienda_40:
+    id_tienda: 40
+    nombre: 'CONSTRUCTOR ANTOFAGASTA'
+    direccion: 'Av. Antonio Rendic 6852'
+    latitud: '-23.609163'
+    longitud: '-70.384769'
+    telefono: '55238788'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 08:00 - 19:00hrs ;Dom 09:00 - 19:00hrs'
+    Region: Region_2
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Luis Hernán Quezada'
+    busc_producto: '0'
+  Tienda_41:
+    id_tienda: 41
+    nombre: 'HOMECENTER PUERTO MONTT'
+    direccion: 'Presidente Ibáñez 650'
+    latitud: '-41.461557'
+    longitud: '-72.946609'
+    telefono: '65208400'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_10
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Luis Lillo C.'
+    busc_producto: '0'
+  Tienda_43:
+    id_tienda: 43
+    nombre: 'HOMECENTER TALCA'
+    direccion: 'Av. 2 Norte 3344'
+    latitud: '-35.418048'
+    longitud: '-71.637179'
+    telefono: '71207000'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_7
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Vinicio González'
+    busc_producto: '0'
+  Tienda_44:
+    id_tienda: 44
+    nombre: 'HOMECENTER TEMUCO CAUTÍN'
+    direccion: 'Av. Caupolicán 457'
+    latitud: '-38.735875'
+    longitud: '-72.594781'
+    telefono: '45207000'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_9
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Luis Herrero P.'
+    busc_producto: '0'
+  Tienda_48:
+    id_tienda: 48
+    nombre: 'CONSTRUCTOR MAIPÚ'
+    direccion: 'Av. Pajaritos 2418'
+    latitud: '-33.505376'
+    longitud: '-70.757441'
+    telefono: '225312411'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 08:00 - 19:00hrs ;Dom 09:00 - 15:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: ''
+    busc_producto: '0'
+  Tienda_51:
+    id_tienda: 51
+    nombre: 'HOMECENTER CHILLÁN'
+    direccion: 'Av. Ecuador 599'
+    latitud: '-36.599735'
+    longitud: '-72.100303'
+    telefono: '42434900'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_8
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Gonzalo León'
+    busc_producto: '0'
+  Tienda_54:
+    id_tienda: 54
+    nombre: 'HOMECENTER NUEVA LA FLORIDA'
+    direccion: 'Av. José Pedro Alessandri 6402.'
+    latitud: '-33.509283'
+    longitud: '-70.588814'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Ramón Murias'
+    busc_producto: '0'
+  Tienda_55:
+    id_tienda: 55
+    nombre: 'HOMECENTER LINARES'
+    direccion: 'Av. Aníbal León Bustos 0376'
+    latitud: '-35.842952'
+    longitud: '-71.612298'
+    telefono: '73561500'
+    horario: 'Lun-Vier 09:00 - 21:00hrs ;Sab 09:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_7
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Luis Cisternas'
+    busc_producto: '0'
+  Tienda_57:
+    id_tienda: 57
+    nombre: 'HOMECENTER COPIAPÓ'
+    direccion: 'Panamericana Sur 140'
+    latitud: '-27.381457'
+    longitud: '-70.335717'
+    telefono: '52530000'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_3
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Juan Barraza'
+    busc_producto: '0'
+  Tienda_58:
+    id_tienda: 58
+    nombre: 'HOMECENTER ANGOL'
+    direccion: 'Av. Bernardo O''Higgins 1744'
+    latitud: '-37.811911'
+    longitud: '-72.683209'
+    telefono: '45200700'
+    horario: 'Lun-Vier 09:00 - 21:00hrs ;Sab 09:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_9
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Oscar Guzmán N.'
+    busc_producto: '0'
+  Tienda_59:
+    id_tienda: 59
+    nombre: 'HOMECENTER VILLARICA'
+    direccion: 'Av. Saturnino Epulef 1580'
+    latitud: '-39.292158'
+    longitud: '-72.220319'
+    telefono: '45296000'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_9
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Miguel Angel Echeverría'
+    busc_producto: '0'
+  Tienda_60:
+    id_tienda: 60
+    nombre: 'CONSTRUCTOR VALLENAR'
+    direccion: 'Merced 501'
+    latitud: '-28.572639'
+    longitud: '-70.762154'
+    telefono: '51611898'
+    horario: 'Lun-Vier 08:30 - 20:00hrs ;Sab 08:30 - 20:00hrs ;Dom 09:00 - 19:00hrs'
+    Region: Region_3
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Oscar Vergara'
+    busc_producto: '0'
+  Tienda_63:
+    id_tienda: 63
+    nombre: 'HOMECENTER HUECHURABA'
+    direccion: 'Av. Américo Vespucio 1737'
+    latitud: '-33.366597'
+    longitud: '-70.680862'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Osvaldo Vilches'
+    busc_producto: '0'
+  Tienda_65:
+    id_tienda: 65
+    nombre: 'CONSTRUCTOR LA FLORIDA'
+    direccion: 'Av. Vicuña Mackenna 9101'
+    latitud: '-33.54'
+    longitud: '-70.591107'
+    telefono: '222620150'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 08:00 - 19:00hrs ;Dom 09:00 - 15:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Héctor Bocaz'
+    busc_producto: '0'
+  Tienda_66:
+    id_tienda: 66
+    nombre: 'HOMECENTER ÑUBLE'
+    direccion: 'Av. Vicuña Mackenna 1700'
+    latitud: '-33.466009'
+    longitud: '-70.626778'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Ramón Cádiz'
+    busc_producto: '0'
+  Tienda_67:
+    id_tienda: 67
+    nombre: 'HOMECENTER LA REINA'
+    direccion: 'Av. Jorge Alessandri 1347'
+    latitud: '-33.462306'
+    longitud: '-70.547229'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Christian Villalobos'
+    busc_producto: '0'
+  Tienda_68:
+    id_tienda: 68
+    nombre: 'RECONSTRUCTOR CAUQUENES'
+    direccion: 'Errázuriz 700'
+    latitud: '-35.963427'
+    longitud: '-72.321882'
+    telefono: '73515170'
+    horario: 'Lun-Vier 09:00 - 20:00hrs ;Sab 09:00 - 14:00hrs ;Dom   CERRADO'
+    Region: Region_7
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Macarena Garrido'
+    busc_producto: '0'
+  Tienda_70:
+    id_tienda: 70
+    nombre: 'HOMECENTER PASEO ESTACIÓN'
+    direccion: 'San Francisco de Borja 402'
+    latitud: '-33.453004'
+    longitud: '-70.680234'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Angel Gajardo'
+    busc_producto: '0'
+  Tienda_74:
+    id_tienda: 74
+    nombre: 'HOMECENTER EL BOSQUE'
+    direccion: 'Gran Avenida José Miguel Carrera 10375'
+    latitud: '-33.554217'
+    longitud: '-70.675301'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Ricardo Molinari'
+    busc_producto: '0'
+  Tienda_75:
+    id_tienda: 75
+    nombre: 'HOMECENTER PUENTE ALTO'
+    direccion: 'Av. Concha y Toro 1315'
+    latitud: '-33.601109'
+    longitud: '-70.577302'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Rubén Piña'
+    busc_producto: '0'
+  Tienda_79:
+    id_tienda: 79
+    nombre: 'HOMECENTER PARQUE ARAUCO'
+    direccion: 'Av. Pdte. Kennedy 5601'
+    latitud: '-33.399954'
+    longitud: '-70.575555'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Fabián López'
+    busc_producto: '0'
+  Tienda_81:
+    id_tienda: 81
+    nombre: 'HOMECENTER PLAZA CONCEPCIÓN'
+    direccion: 'Av. Pdte. Jorge Alessandri 3177'
+    latitud: '-36.789944'
+    longitud: '-73.066062'
+    telefono: '41638452'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_8
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Gabriel Urtubia'
+    busc_producto: '0'
+  Tienda_83:
+    id_tienda: 83
+    nombre: 'HOMECENTER RANCAGUA'
+    direccion: 'Av. Albert Einstein 297'
+    latitud: '-34.173509'
+    longitud: '-70.717391'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_6
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Fernando Sepúlveda'
+    busc_producto: '0'
+  Tienda_87:
+    id_tienda: 87
+    nombre: 'CONSTRUCTOR HUECHURABA'
+    direccion: 'Pedro Fontova 5810'
+    latitud: '-33.35868'
+    longitud: '-70.670757'
+    telefono: '226249957'
+    horario: 'Lun-Vier 08:00 - 20:00hrs ;Sab 08:00 - 20:00hrs ;Dom 09:00 - 19:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_2
+    Pais: Pais_56
+    gerente: 'Rodolfo Piña J.'
+    busc_producto: '0'
+  Tienda_88:
+    id_tienda: 88
+    nombre: 'HOMECENTER MAIPÚ'
+    direccion: 'Av. Ramón Freire 4444'
+    latitud: '-33.481304'
+    longitud: '-70.746852'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Hugo Calderón'
+    busc_producto: '0'
+  Tienda_90:
+    id_tienda: 90
+    nombre: 'HOMECENTER EL BELLOTO'
+    direccion: 'Av. Freire 1351'
+    latitud: '-33.044941'
+    longitud: '-71.417243'
+    telefono: '32326100'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Remigio Muñoz'
+    busc_producto: '0'
+  Tienda_93:
+    id_tienda: 93
+    nombre: 'HOMECENTER EL TREBOL'
+    direccion: 'Autopista Concepción 9200'
+    latitud: '-36.796536'
+    longitud: '-73.068545'
+    telefono: '41404500'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_8
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Ramón Sanhueza S.'
+    busc_producto: '0'
+  Tienda_95:
+    id_tienda: 95
+    nombre: 'HOMECENTER PLAZA VESPUCIO'
+    direccion: 'Av. Américo Vespucio 7310'
+    latitud: '-33.519376'
+    longitud: '-70.594371'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Rafael Villanueva'
+    busc_producto: '0'
+  Tienda_96:
+    id_tienda: 96
+    nombre: 'HOMECENTER PLAZA OESTE'
+    direccion: 'Av. Américo Vespucio 1501'
+    latitud: '-33.51909'
+    longitud: '-70.715153'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Marcela Torres T.'
+    busc_producto: '0'
+  Tienda_97:
+    id_tienda: 97
+    nombre: 'HOMECENTER REÑACA ALTO'
+    direccion: 'Alessandri 4085, Reñaca Alto, Viña del Mar'
+    latitud: '-32.997673'
+    longitud: '-71.513062'
+    telefono: '32874001'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Hugo Vilaboa H.'
+    busc_producto: '0'
+  Tienda_98:
+    id_tienda: 98
+    nombre: 'HOMECENTER COQUIMBO'
+    direccion: 'Ruta 5 Norte 849'
+    latitud: '-29.966354'
+    longitud: '-71.322294'
+    telefono: '51558500'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_4
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Claudio Aranda'
+    busc_producto: '0'

@@ -12,6 +12,14 @@
   </div>
 
   <div class="control-group">
+    <?php echo $form['id_tienda']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['id_tienda'] ?>
+      <?php echo $form['id_tienda']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
     <?php echo $form['nombre']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form['nombre'] ?>

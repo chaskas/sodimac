@@ -67,13 +67,10 @@ abstract class BaseTienda extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('tienda');
-        $this->hasColumn('id_tienda', 'integer', 4, array(
+        $this->hasColumn('id_tienda', 'integer', null, array(
              'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
              'primary' => true,
-             'autoincrement' => true,
-             'length' => 4,
+             'unique' => true,
              ));
         $this->hasColumn('nombre', 'string', 70, array(
              'type' => 'string',

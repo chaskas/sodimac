@@ -12,7 +12,6 @@ class PaisForm extends BasePaisForm
 {
   public function configure()
   {
-  	
 
   	$this->widgetSchema['id_pais'] = new sfWidgetFormInput();
 

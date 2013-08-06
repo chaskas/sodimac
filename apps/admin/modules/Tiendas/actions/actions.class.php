@@ -72,7 +72,7 @@ class TiendasActions extends sfActions
     {
       $tienda = $form->save();
       $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
-      $this->redirect('Tiendas/index');
+      $this->redirect('Tiendas/edit?id_tienda='.$tienda->getIdTienda());
     }
     $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }

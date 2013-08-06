@@ -89,14 +89,11 @@ abstract class BaseEncuestaCabeceraRespuestas extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              ));
-        $this->hasColumn('id_tienda', 'integer', 4, array(
+        $this->hasColumn('id_tienda', 'integer', null, array(
              'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 4,
              ));
         $this->hasColumn('rut', 'integer', 4, array(
              'type' => 'integer',

@@ -19,11 +19,19 @@ class TiendaForm extends BaseTiendaForm
    
     $this->embedForm('servicios', $form);
 
-  	$this->widgetSchema['id_pais']->setLabel('País');
-  	$this->widgetSchema['id_tipo_tienda']->setLabel('Tipo');
-  	$this->widgetSchema['id_region']->setLabel('Región');
-  	$this->widgetSchema['id_region']->setLabel('Región');
-  	$this->widgetSchema['busc_producto']->setLabel('Busca Producto???????');
+    $this->widgetSchema['id_tienda'] = new sfWidgetFormInput();
+
+    $this->widgetSchema['busc_producto'] = new sfWidgetFormChoice(array(
+      'choices' => array('0'=>'No','1'=>'Si')
+      ));
+
+    $this->widgetSchema['id_tienda']->setLabel('ID');
+    $this->widgetSchema['id_pais']->setLabel('País');
+    $this->widgetSchema['id_tipo_tienda']->setLabel('Tipo');
+    $this->widgetSchema['id_region']->setLabel('Región');
+    $this->widgetSchema['id_region']->setLabel('Región');
+    $this->widgetSchema['busc_producto']->setLabel('Buscador de Producto');
+
   }
 
   public function saveEmbeddedForms($con = null, $forms = null)

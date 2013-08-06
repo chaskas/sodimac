@@ -31,13 +31,9 @@ abstract class BaseServiciosPorTienda extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('servicios_por_tienda');
-        $this->hasColumn('id_tienda', 'integer', 4, array(
+        $this->hasColumn('id_tienda', 'integer', null, array(
              'type' => 'integer',
-             'fixed' => 0,
-             'unsigned' => true,
              'primary' => true,
-             'autoincrement' => false,
-             'length' => 4,
              ));
         $this->hasColumn('id_servicio_tienda', 'integer', 4, array(
              'type' => 'integer',

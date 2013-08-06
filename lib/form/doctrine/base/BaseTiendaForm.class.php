@@ -44,6 +44,10 @@ abstract class BaseTiendaForm extends BaseFormDoctrine
       'busc_producto'  => new sfValidatorInteger(array('required' => false)),
     ));
 
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Tienda', 'column' => array('id_tienda')))
+    );
+
     $this->widgetSchema->setNameFormat('tienda[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);

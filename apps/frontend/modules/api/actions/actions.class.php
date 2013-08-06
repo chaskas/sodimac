@@ -38,12 +38,13 @@ class apiActions extends sfActions
     $format   = $request->getRequestFormat();
     $response = $this->getResponse();
 
+    $codes = array(0 => 'Ingreso Exitoso', 1 => 'Error Inserción en Base de Datos', 2 => 'Error en Comunicación con Base de Datos', 3 => 'Error Desconocido');
+
     if (!empty($data))
     {
       $nRespuestas = count($data['Respuestas']);
       $form = new EncuestaCabeceraRespuestasForm(null, array('nRespuestas' => $nRespuestas));
 
-      // Disable this protection
       $form->disableLocalCSRFProtection();
       unset($form[$form->getCSRFFieldName()]);
 
@@ -51,27 +52,27 @@ class apiActions extends sfActions
 
       if ($form->isValid())
       {
-        $form->save(); // Persist a new Pony
-        $response->setStatusCode(201); // 201 = Created
-        // It's a good practice that to add the new ressource location in headers
-        //$response->addHttpMeta('Location', $this->generateUrl('pony_show', array('slug' => $form->getObject()->slug, 'sf_format' => $format), true));
+        $form->save(); 
+        $response->setStatusCode(201);
+        
+        $this->key = 0;
+        $this->code = $codes[0];
+
       }
       else
       {
-        // var_dump($data);
-        // foreach($form['EncuestaCabeceraRespuestas'] as $key=>$field) {
-        //   echo $key."<br/>";
-        // }
-
-        $response->setStatusCode(406); // Invalid. We should provide debug info in the response body here.
+        $response->setStatusCode(406); 
+        $this->key = 1;
+        $this->code = $codes[1];
       }
     }
     else
     {
       $response->setStatusCode(400); // No payload, bad request
+      $this->key = 3;
+      $this->code = $codes[3];
     }
 
-    return sfView::NONE;
   }
 
   protected function getPayload($request)
