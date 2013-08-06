@@ -128,7 +128,33 @@ class OportunidadCMRActions extends sfActions
       $extension = $file->getExtension($file->getOriginalExtension());
       $file->save(sfConfig::get('sf_upload_dir').'/excel/'.$filename.$extension);
 
-      //Leer excel y procesar archivo
+      $excel = new sfPhpExcel();
+      $objReader = PHPExcel_IOFactory::createReader('Excel2007');
+      $objPHPExcel = $objReader->load(sfConfig::get('sf_upload_dir').'/excel/'.$filename.$extension);
+
+      foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {
+
+        
+        foreach ($worksheet->getRowIterator() as $row) {
+
+          if(1 == $row->getRowIndex ()) continue;
+          $cellIterator = $row->getCellIterator();
+          $cellIterator->setIterateOnlyExistingCells(false);
+
+          $ocmr = new OportunidadCMR();
+
+          foreach ($cellIterator as $key => $cell) {
+            if (!is_null($cell)) {    
+
+              if($key == 0)$ocmr->setSku(str_replace('-', '', $cell->getCalculatedValue()));
+              if($key == 1)$ocmr->setFechaVigDes(PHPExcel_Style_NumberFormat::toFormattedString($cell->getCalculatedValue(), "YYYY-MM-DD"));
+              if($key == 2)$ocmr->setFechaVigHas(PHPExcel_Style_NumberFormat::toFormattedString($cell->getCalculatedValue(), "YYYY-MM-DD"));
+              if($key == 3)$ocmr->setIdPais((int)$cell->getCalculatedValue());
+            }
+          }
+          $ocmr->save();
+        }
+      }
 
       $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
       $this->redirect('OportunidadCMR/index');
