@@ -133,8 +133,23 @@ class OportunidadCMRActions extends sfActions
       $objPHPExcel = $objReader->load(sfConfig::get('sf_upload_dir').'/excel/'.$filename.$extension);
 
       foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {
+        foreach ($worksheet->getRowIterator() as $row) {
+          if(1 == $row->getRowIndex ()) continue;
+          $cellIterator = $row->getCellIterator();
+          $cellIterator->setIterateOnlyExistingCells(true);
 
-        
+          foreach ($cellIterator as $key => $cell) {
+            if (!is_null($cell)) {    
+              if($cell->getCalculatedValue() == ''){
+                $this->getUser()->setFlash('error', 'Por favor revise el archivo, todos los campos deben existir.');
+                $this->redirect('OportunidadCMR/newFromFile');
+              }
+            }
+          }
+        }
+      }
+
+      foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {        
         foreach ($worksheet->getRowIterator() as $row) {
 
           if(1 == $row->getRowIndex ()) continue;
@@ -159,8 +174,8 @@ class OportunidadCMRActions extends sfActions
                   $ocmr->setUnidadMedCMR($data->getUnidadMedCMR());
                 }
               }
-              if($key == 1){$ocmr->setFechaVigDes(gmdate ( 'Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())));}
-              if($key == 2){$ocmr->setFechaVigHas(gmdate ( 'Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())));}
+              if($key == 1){$ocmr->setFechaVigDes(gmdate ('Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())));}
+              if($key == 2){$ocmr->setFechaVigHas(gmdate ('Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())));}
             }
           }
           $ocmr->setIdPais($form_file->getValue('id_pais'));
