@@ -32,6 +32,8 @@ class TiendaForm extends BaseTiendaForm
     $this->widgetSchema['id_region']->setLabel('Región');
     $this->widgetSchema['busc_producto']->setLabel('Buscador de Producto');
 
+    $this->validatorSchema['id_tienda'] = new sfValidatorInteger(array('min' => 1),array('min'=>'Debe ser mayor que %min%'));
+
   }
 
   public function saveEmbeddedForms($con = null, $forms = null)
