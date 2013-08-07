@@ -149,18 +149,18 @@ class OportunidadCMRActions extends sfActions
               if($key == 0)
               {
                 $ocmr->setSku(str_replace('-', '', $cell->getCalculatedValue()));
-                $data = new Sodimac($ocmr->getSku());
+                // $data = new Sodimac($ocmr->getSku());
 
-                if ($data->isValid()) {
-                  $ocmr->setNombreProducto($data->getNombreProducto());
-                  $ocmr->setPrecioInternet($data->getPrecioInternet());
-                  $ocmr->setPrecioCMR($data->getPrecioCMR());
-                  $ocmr->setUnidadMedInt($data->getUnidadMedInt());
-                  $ocmr->setUnidadMedCMR($data->getUnidadMedCMR());
-                }
+                // if ($data->isValid()) {
+                //   $ocmr->setNombreProducto($data->getNombreProducto());
+                //   $ocmr->setPrecioInternet($data->getPrecioInternet());
+                //   $ocmr->setPrecioCMR($data->getPrecioCMR());
+                //   $ocmr->setUnidadMedInt($data->getUnidadMedInt());
+                //   $ocmr->setUnidadMedCMR($data->getUnidadMedCMR());
+                // }
               }
-              if($key == 1)$ocmr->setFechaVigDes(PHPExcel_Style_NumberFormat::toFormattedString($cell->getCalculatedValue(), "YYYY-MM-DD"));
-              if($key == 2)$ocmr->setFechaVigHas(PHPExcel_Style_NumberFormat::toFormattedString($cell->getCalculatedValue(), "YYYY-MM-DD"));
+              if($key == 1){$ocmr->setFechaVigDes(gmdate ( 'Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())));}
+              if($key == 2){$ocmr->setFechaVigHas(gmdate ( 'Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())));}
             }
           }
           $ocmr->setIdPais($form_file->getValue('id_pais'));
