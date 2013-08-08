@@ -4,3 +4,5 @@ cache/
 log/
 web/uploads/*
 config/databases.yml
+web/frontend_dev.php
+web/admin_dev.php

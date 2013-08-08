@@ -10,5 +10,8 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfDoctrinePlugin');
     $this->enablePlugins('sfFormExtraPlugin');
     $this->enablePlugins('sfPhpExcelPlugin');
+
+    //$this->setWebDir( $this->getRootDir().'/public_html/sodimac' );
+
   }
 }
