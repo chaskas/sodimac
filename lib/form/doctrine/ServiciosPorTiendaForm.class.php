@@ -23,7 +23,7 @@ class ServiciosPorTiendaForm extends BaseServiciosPorTiendaForm
         ->where('a.id_tienda = ?', $id_tienda)
         ->execute();
 
-      $ArIdServAct = [];
+      $ArIdServAct = array();
       foreach ($servicios_actuales as $s) {
         array_push($ArIdServAct,$s->getIdServicioTienda());
       }

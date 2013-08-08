@@ -126,7 +126,7 @@ class apiActions extends sfActions
         ->where('a.estado = ?','INA')
         ->execute();
 
-      $arr_id_servicios_inactivos = [];
+      $arr_id_servicios_inactivos = array();
       foreach ($servicios_inactivos as $s) {
         array_push($arr_id_servicios_inactivos,$s->getIdServicioTienda());
       }
@@ -156,7 +156,7 @@ class apiActions extends sfActions
         ->where('a.estado = ?','INA')
         ->execute();
 
-      $arr_id_servicios_inactivos = [];
+      $arr_id_servicios_inactivos = array();
       foreach ($servicios_inactivos as $s) {
         array_push($arr_id_servicios_inactivos,$s->getIdServicioTienda());
       }
