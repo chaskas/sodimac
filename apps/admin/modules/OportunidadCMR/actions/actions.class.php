@@ -143,6 +143,13 @@ class OportunidadCMRActions extends sfActions
               if($cell->getCalculatedValue() == ''){
                 $this->getUser()->setFlash('error', 'Por favor revise el archivo, todos los campos deben existir.');
                 $this->redirect('OportunidadCMR/newFromFile');
+              } else {
+                if($key == 1 || $key == 2){
+                  if(gmdate ('Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($cell->getCalculatedValue())) == false){
+                    $this->getUser()->setFlash('error', 'Por favor revise el archivo, existen fechas inválidas.');
+                    $this->redirect('OportunidadCMR/newFromFile');
+                  }
+                }
               }
             }
           }
