@@ -11,6 +11,14 @@
   </div>
 
   <div class="control-group">
+    <?php echo $form['cod_endpoint']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['cod_endpoint'] ?>
+      <?php echo $form['cod_endpoint']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
     <?php echo $form['desc_endpoint']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form['desc_endpoint'] ?>

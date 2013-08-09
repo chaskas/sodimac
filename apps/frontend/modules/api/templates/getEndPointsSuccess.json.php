@@ -3,6 +3,7 @@
 <?php foreach ($endpoints as $endpoint): ++$i ?>
 	{
 		"id_endpoint": "<?php echo utf8_decode($endpoint->getIdEndpoint()); ?>",
+		"cod_endpoint": "<?php echo utf8_decode($endpoint->getCodEndpoint()); ?>",
 		"desc_endpoint": "<?php echo utf8_decode($endpoint->getDescEndpoint()); ?>",
 		"host": "<?php echo utf8_decode($endpoint->getHost()); ?>",
 		"puerto": "<?php echo utf8_decode($endpoint->getPuerto()); ?>",

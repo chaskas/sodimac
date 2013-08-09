@@ -15,5 +15,6 @@ class EndpointForm extends BaseEndpointForm
   	$this->widgetSchema['desc_endpoint']->setLabel('Descripción');
   	$this->widgetSchema['resto_url']->setLabel('Resto URL');
   	$this->widgetSchema['id_pais']->setLabel('País');
+  	$this->widgetSchema['cod_endpoint']->setLabel('Código');
   }
 }

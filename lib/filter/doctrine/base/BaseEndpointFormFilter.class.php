@@ -13,6 +13,7 @@ abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
+      'cod_endpoint'  => new sfWidgetFormFilterInput(),
       'desc_endpoint' => new sfWidgetFormFilterInput(),
       'host'          => new sfWidgetFormFilterInput(),
       'puerto'        => new sfWidgetFormFilterInput(),
@@ -21,6 +22,7 @@ abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
+      'cod_endpoint'  => new sfValidatorPass(array('required' => false)),
       'desc_endpoint' => new sfValidatorPass(array('required' => false)),
       'host'          => new sfValidatorPass(array('required' => false)),
       'puerto'        => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
@@ -46,6 +48,7 @@ abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id_endpoint'   => 'Number',
+      'cod_endpoint'  => 'Text',
       'desc_endpoint' => 'Text',
       'host'          => 'Text',
       'puerto'        => 'Number',

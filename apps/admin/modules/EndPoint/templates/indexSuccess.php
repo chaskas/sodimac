@@ -22,10 +22,10 @@
   <tbody>
     <?php foreach ($endpoints as $endpoint): ?>
       <tr>
-        <td><a href="<?php echo url_for('EndPoint/edit?id_endpoint='.$endpoint->getIdEndpoint()) ?>"><?php echo $endpoint->getIdEndpoint() ?></a></td>
+        <td class="center"><a href="<?php echo url_for('EndPoint/edit?id_endpoint='.$endpoint->getIdEndpoint()) ?>"><?php echo $endpoint->getIdEndpoint() ?></a></td>
         <td><?php echo $endpoint->getDescEndpoint() ?></td>
         <td><?php echo $endpoint->getHost() ?></td>
-        <td><?php echo $endpoint->getIdPais() ?></td>
+        <td class="center"><?php echo $endpoint->getPais() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>

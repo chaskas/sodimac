@@ -212,6 +212,13 @@ Endpoint:
       unsigned: false
       primary: true
       autoincrement: true
+    cod_endpoint:
+      type: string(6)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
     desc_endpoint:
       type: string(40)
       fixed: false
