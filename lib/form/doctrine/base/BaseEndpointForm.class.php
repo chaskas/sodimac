@@ -26,7 +26,7 @@ abstract class BaseEndpointForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id_endpoint'   => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_endpoint')), 'empty_value' => $this->getObject()->get('id_endpoint'), 'required' => false)),
-      'cod_endpoint'  => new sfValidatorString(array('max_length' => 6, 'required' => false)),
+      'cod_endpoint'  => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'desc_endpoint' => new sfValidatorString(array('max_length' => 40, 'required' => false)),
       'host'          => new sfValidatorString(array('max_length' => 30, 'required' => false)),
       'puerto'        => new sfValidatorInteger(array('required' => false)),

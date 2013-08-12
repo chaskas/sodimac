@@ -213,7 +213,7 @@ Endpoint:
       primary: true
       autoincrement: true
     cod_endpoint:
-      type: string(6)
+      type: string(10)
       fixed: false
       unsigned: false
       primary: false

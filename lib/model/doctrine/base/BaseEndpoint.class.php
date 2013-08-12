@@ -51,14 +51,14 @@ abstract class BaseEndpoint extends sfDoctrineRecord
              'autoincrement' => true,
              'length' => 4,
              ));
-        $this->hasColumn('cod_endpoint', 'string', 6, array(
+        $this->hasColumn('cod_endpoint', 'string', 10, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 6,
+             'length' => 10,
              ));
         $this->hasColumn('desc_endpoint', 'string', 40, array(
              'type' => 'string',
