@@ -1,6 +1,56 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#tienda_id_region').prop('disabled', 'disabled');
+    $('#tienda_id_pais').change(function(){
+      var idPais = $(this).val();
+      if(idPais != '')
+      {
+        var regiones = new Array();
+        $('#tienda_id_region').prop('disabled', 'disabled');
+        $.ajax({
+            type: "GET",
+            url: 'http://<?php echo $_SERVER['SERVER_NAME']; ?>/api/get/pais/'+idPais+'/region/json',
+            contentType: "application/json; charset=UTF-8",
+            dataType: "json",
+            success: function(json) {
+              $.each(json,function(key,val){
+                var region = new Array();
+                $.each(val,function(key,val){
+                  if(key=='id')
+                  {
+                    id = val;
+                    region[0] = val;
+                  }
+                  if(key=='desc_region')
+                  {
+                    region[1] = val;
+                  }
+                });
+                regiones.push(region);
+              });
+              $('#tienda_id_region').empty();
+              if(regiones.length > 0)$("#tienda_id_region").removeAttr("disabled");
+              $.each(regiones,function(key,val){
+                $('#tienda_id_region').append(new Option($('<div/>').html(val[1]).text(),val[0]));
+              });
+            },
+            error: function (xhr, textStatus, errorThrown) {
+              console.log(errorThrown);
+            }
+        });
+      } else {
+        $('#tienda_id_region').empty();
+        $('#tienda_id_region').prop('disabled', 'disabled');
+      }
+    });
+  });
+</script>
+
+<div id="results"></div>
+
 <form action="<?php echo url_for('Tiendas/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id_tienda='.$form->getObject()->getIdTienda() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?> class="form-horizontal">
 
 <?php if (!$form->getObject()->isNew()): ?>
@@ -68,14 +118,6 @@
   </div>
 
   <div class="control-group">
-    <?php echo $form['id_region']->renderLabel(null, array('class'=>'control-label')) ?>
-    <div class="controls">
-      <?php echo $form['id_region'] ?>
-      <?php echo $form['id_region']->renderError() ?>
-    </div>
-  </div>
-
-  <div class="control-group">
     <?php echo $form['id_tipo_tienda']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form['id_tipo_tienda'] ?>
@@ -88,6 +130,14 @@
     <div class="controls">
       <?php echo $form['id_pais'] ?>
       <?php echo $form['id_pais']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <?php echo $form['id_region']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['id_region'] ?>
+      <?php echo $form['id_region']->renderError() ?>
     </div>
   </div>
 

@@ -126,14 +126,13 @@ abstract class BaseTienda extends sfDoctrineRecord
              'autoincrement' => false,
              'length' => 100,
              ));
-        $this->hasColumn('id_region', 'integer', 4, array(
+        $this->hasColumn('id_region', 'integer', null, array(
              'type' => 'integer',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 4,
              ));
         $this->hasColumn('id_tipo_tienda', 'integer', 4, array(
              'type' => 'integer',
@@ -186,7 +185,8 @@ abstract class BaseTienda extends sfDoctrineRecord
 
         $this->hasOne('Region', array(
              'local' => 'id_region',
-             'foreign' => 'id_region'));
+             'foreign' => 'id',
+             'onDelete' => 'SET NULL'));
 
         $this->hasMany('ServiciosPorTienda', array(
              'local' => 'id_tienda',

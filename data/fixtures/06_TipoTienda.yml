@@ -3,3 +3,5 @@ TipoTienda:
     desc_tipo_tienda: HomeCenter
   TipoTienda_2:
     desc_tipo_tienda: Constructor
+  TipoTienda_4:
+    desc_tipo_tienda: Reconstructor

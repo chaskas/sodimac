@@ -383,12 +383,19 @@ Region:
   connection: doctrine
   tableName: region
   columns:
+    id:
+      type: integer
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
     id_region:
       type: integer(4)
       fixed: false
       unsigned: false
-      primary: true
+      primary: false
       autoincrement: false
+      notnull: true
     desc_region:
       type: string(60)
       fixed: false
@@ -401,17 +408,19 @@ Region:
       fixed: false
       unsigned: false
       primary: false
-      notnull: false
+      notnull: true
       autoincrement: false
   relations:
     Pais:
       local: id_pais
       foreign: id_pais
       type: one
-    Tienda:
-      local: id_region
-      foreign: id_region
-      type: many
+  indexes:
+    region_index:
+      fields: [id_region,id_pais]
+      primary: true
+      type: unique
+
 ServiciosPorTienda:
   connection: doctrine
   tableName: servicios_por_tienda
@@ -524,7 +533,7 @@ Tienda:
       notnull: false
       autoincrement: false
     id_region:
-      type: integer(4)
+      type: integer
       fixed: false
       unsigned: false
       primary: false
@@ -569,8 +578,8 @@ Tienda:
       type: one
     Region:
       local: id_region
-      foreign: id_region
-      type: one
+      foreign: id
+      onDelete: SET NULL
     ServiciosPorTienda:
       local: id_tienda
       foreign: id_tienda

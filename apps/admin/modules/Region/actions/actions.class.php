@@ -35,14 +35,14 @@ class RegionActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($region = Doctrine_Core::getTable('Region')->find(array($request->getParameter('id_region'))), sprintf('Object region does not exist (%s).', $request->getParameter('id_region')));
+    $this->forward404Unless($region = Doctrine_Core::getTable('Region')->find(array($request->getParameter('id'))), sprintf('Object region does not exist (%s).', $request->getParameter('id')));
     $this->form = new RegionForm($region);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($region = Doctrine_Core::getTable('Region')->find(array($request->getParameter('id_region'))), sprintf('Object region does not exist (%s).', $request->getParameter('id_region')));
+    $this->forward404Unless($region = Doctrine_Core::getTable('Region')->find(array($request->getParameter('id'))), sprintf('Object region does not exist (%s).', $request->getParameter('id')));
     $this->form = new RegionForm($region);
 
     $this->processForm($request, $this->form);
@@ -54,7 +54,7 @@ class RegionActions extends sfActions
   {
     $request->checkCSRFProtection();
 
-    $this->forward404Unless($region = Doctrine_Core::getTable('Region')->find(array($request->getParameter('id_region'))), sprintf('Object region does not exist (%s).', $request->getParameter('id_region')));
+    $this->forward404Unless($region = Doctrine_Core::getTable('Region')->find(array($request->getParameter('id'))), sprintf('Object region does not exist (%s).', $request->getParameter('id')));
     $region->delete();
 
     $this->redirect('Region/index');

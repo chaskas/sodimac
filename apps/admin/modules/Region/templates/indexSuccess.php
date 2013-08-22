@@ -2,7 +2,7 @@
 <div class="page-header">
   <div class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#">Regiones</a>
+      <a class="brand" href="#">Zonas</a>
       <div class="pull-right">
         <a href="<?php echo url_for('Region/new') ?>" class="btn btn-primary">Nueva</a>
       </div>
@@ -21,9 +21,9 @@
   <tbody>
     <?php foreach ($regiones as $region): ?>
       <tr>
-        <td><a href="<?php echo url_for('Region/edit?id_region='.$region->getIdRegion()) ?>"><?php echo $region->getIdRegion() ?></a></td>
+        <td class="center"><a href="<?php echo url_for('Region/edit?id='.$region->getId()) ?>"><?php echo $region->getIdRegion() ?></a></td>
         <td><?php echo $region->getDescRegion() ?></td>
-        <td><?php echo $region->getIdPais() ?></td>
+        <td class="center"><?php echo $region->getPais() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>

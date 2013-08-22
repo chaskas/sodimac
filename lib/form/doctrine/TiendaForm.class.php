@@ -28,8 +28,7 @@ class TiendaForm extends BaseTiendaForm
     $this->widgetSchema['id_tienda']->setLabel('ID');
     $this->widgetSchema['id_pais']->setLabel('País');
     $this->widgetSchema['id_tipo_tienda']->setLabel('Tipo');
-    $this->widgetSchema['id_region']->setLabel('Región');
-    $this->widgetSchema['id_region']->setLabel('Región');
+    $this->widgetSchema['id_region']->setLabel('Zona');
     $this->widgetSchema['busc_producto']->setLabel('Buscador de Producto');
 
     $this->validatorSchema['id_tienda'] = new sfValidatorInteger(array('min' => 1),array('min'=>'Debe ser mayor que %min%'));

@@ -12,10 +12,6 @@ class RegionForm extends BaseRegionForm
 {
   public function configure()
   {
-  	$this->widgetSchema['id_region'] = new sfWidgetFormInput();
-
-  	$this->validatorSchema['id_region'] = new sfValidatorString(array('max_length' => 4, 'required' => true));
-
   	$this->widgetSchema['id_region']->setLabel('Código');
   	$this->widgetSchema['desc_region']->setLabel('Nombre');
   	$this->widgetSchema['id_pais']->setLabel('País');

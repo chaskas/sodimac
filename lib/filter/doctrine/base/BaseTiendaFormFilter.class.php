@@ -33,7 +33,7 @@ abstract class BaseTiendaFormFilter extends BaseFormFilterDoctrine
       'longitud'       => new sfValidatorPass(array('required' => false)),
       'telefono'       => new sfValidatorPass(array('required' => false)),
       'horario'        => new sfValidatorPass(array('required' => false)),
-      'id_region'      => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Region'), 'column' => 'id_region')),
+      'id_region'      => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Region'), 'column' => 'id')),
       'id_tipo_tienda' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('TipoTienda'), 'column' => 'id_tipo_tienda')),
       'id_pais'        => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Pais'), 'column' => 'id_pais')),
       'gerente'        => new sfValidatorPass(array('required' => false)),

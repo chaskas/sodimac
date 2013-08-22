@@ -15,16 +15,22 @@ abstract class BaseRegionForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id_region'   => new sfWidgetFormInputHidden(),
+      'id'          => new sfWidgetFormInputHidden(),
+      'id_region'   => new sfWidgetFormInputText(),
       'desc_region' => new sfWidgetFormInputText(),
-      'id_pais'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
+      'id_pais'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'id_region'   => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_region')), 'empty_value' => $this->getObject()->get('id_region'), 'required' => false)),
+      'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'id_region'   => new sfValidatorInteger(),
       'desc_region' => new sfValidatorString(array('max_length' => 60, 'required' => false)),
-      'id_pais'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'required' => false)),
+      'id_pais'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'))),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Region', 'column' => array('id_region', 'id_pais')))
+    );
 
     $this->widgetSchema->setNameFormat('region[%s]');
 

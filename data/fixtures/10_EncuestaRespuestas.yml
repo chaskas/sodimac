@@ -1,0 +1,9 @@
+EncuestaRespuestas:
+  EncuestaRespuestas_1:
+    EncuestaPreguntas: EncuestaPreguntas_1
+    EncuestaCabeceraRespuestas: EncuestaCabeceraRespuestas_1
+    valor_resp: (null)
+  EncuestaRespuestas_2:
+    EncuestaPreguntas: EncuestaPreguntas_2
+    EncuestaCabeceraRespuestas: EncuestaCabeceraRespuestas_1
+    valor_resp: (null)

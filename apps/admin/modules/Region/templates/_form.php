@@ -40,6 +40,6 @@
     
     <a href="<?php echo url_for('Region/index') ?>" class="btn">Cancelar</a>
     <?php if (!$form->getObject()->isNew()): ?>
-      &nbsp;<?php echo link_to('Eliminar', 'Region/delete?id_region='.$form->getObject()->getIdRegion(), array('method' => 'delete', 'confirm' => '¿Estás seguro?')) ?>
+      &nbsp;<?php echo link_to('Eliminar', 'Region/delete?id='.$form->getObject()->getId(), array('method' => 'delete', 'confirm' => '¿Estás seguro?')) ?>
     <?php endif; ?>
   </div>

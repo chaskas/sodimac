@@ -4,7 +4,7 @@
   	<a href="<?php echo url_for('Pais/index') ?>"><i class="icon-chevron-right"></i>País</a>
   </li>
   <li <?php if($sf_context->getModuleName() == 'Region') echo "class='active'" ?>>
-  	<a href="<?php echo url_for('Region/index') ?>"><i class="icon-chevron-right"></i>Región</a>
+  	<a href="<?php echo url_for('Region/index') ?>"><i class="icon-chevron-right"></i>Zona</a>
   </li>
 </ul>
 <?php end_slot(); ?>

@@ -1,0 +1,15 @@
+EncuestaCabeceraRespuestas:
+  EncuestaCabeceraRespuestas_1:
+    nro_boleta: '111111'
+    fecha_compra: '2013-08-19 00:00:00'
+    id_tienda: '25'
+    rut: '13055356'
+    dv: '7'
+    nombre_completo: Fernando
+    ciudad: Santiago
+    telefono: '66480646'
+    celular: '66480646'
+    email: fgonpala@gmail.com
+    edad: '37'
+    sexo: M
+    compra_para: ''

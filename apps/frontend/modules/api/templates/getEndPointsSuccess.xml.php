@@ -12,5 +12,3 @@
   </endpoint>
 <?php endforeach ?>
 </endpoints>
-
-

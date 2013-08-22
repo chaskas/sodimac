@@ -554,7 +554,7 @@ Tienda:
     telefono: '73515170'
     horario: 'Lun-Vier 09:00 - 20:00hrs ;Sab 09:00 - 14:00hrs ;Dom   CERRADO'
     Region: Region_7
-    TipoTienda: TipoTienda_2
+    TipoTienda: TipoTienda_4
     Pais: Pais_56
     gerente: 'Macarena Garrido'
     busc_producto: '0'
@@ -739,4 +739,95 @@ Tienda:
     TipoTienda: TipoTienda_1
     Pais: Pais_56
     gerente: 'Claudio Aranda'
+    busc_producto: '0'
+  Tienda_713:
+    id_tienda: 713
+    nombre: 'RECONSTRUCTOR SAN ANTONIO'
+    direccion: 'Barros Luco 1501'
+    latitud: '-33.592965'
+    longitud: '-71.613208'
+    telefono: '35233659'
+    horario: 'Lun-Vier 09:00 - 19:30hrs ;Sab 09:00 - 17:00hrs ;Dom   CERRADO'
+    Region: Region_5
+    TipoTienda: TipoTienda_4
+    Pais: Pais_56
+    gerente: 'Fernando Pérez'
+    busc_producto: '0'
+  Tienda_714:
+    id_tienda: 714
+    nombre: 'RECONSTRUCTOR MELIPILLA'
+    direccion: 'Ugalde 429'
+    latitud: '-33.683939'
+    longitud: '-71.212778'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 09:00 - 19:00hrs ;Sab 09:00 - 14:00hrs ;Dom   CERRADO'
+    Region: Region_13
+    TipoTienda: TipoTienda_4
+    Pais: Pais_56
+    gerente: 'Raúl Mosqueira'
+    busc_producto: '0'
+  Tienda_716:
+    id_tienda: 716
+    nombre: 'RECONSTRUCTOR SANTA CRUZ'
+    direccion: 'Rafael Casanova 460'
+    latitud: '-34.640764'
+    longitud: '-71.374269'
+    telefono: '72822047'
+    horario: 'Lun-Vier 09:00 - 19:00hrs ;Sab 09:00 - 19:00hrs ;Dom   CERRADO'
+    Region: Region_6
+    TipoTienda: TipoTienda_4
+    Pais: Pais_56
+    gerente: 'Luis Aliaga'
+    busc_producto: '0'
+  Tienda_723:
+    id_tienda: 723
+    nombre: 'HOMECENTER QUILICURA'
+    direccion: 'Av. Manuel Antonio Matta 581'
+    latitud: '-33.365683'
+    longitud: '-70.728688'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Marco Negrete'
+    busc_producto: '0'
+  Tienda_724:
+    id_tienda: 724
+    nombre: 'HOMECENTER MALL BÍO BÍO'
+    direccion: 'Av. Los Carreras Poniente 301, Concepción'
+    latitud: '-36.825003 '
+    longitud: '-73.056625'
+    telefono: '41638100'
+    horario: 'Lun-Vier 08:30 - 21:00hrs ;Sab 08:30 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_8
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Boris Abos-Padilla'
+    busc_producto: '0'
+  Tienda_725:
+    id_tienda: 725
+    nombre: 'HOMECENTER QUINTA VERGARA'
+    direccion: 'Av. Valparaíso 1070'
+    latitud: '-33.025671'
+    longitud: '-71.54704'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_5
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Pedro Salazar C.'
+    busc_producto: '0'
+  Tienda_726:
+    id_tienda: 726
+    nombre: 'HOMECENTER TOBALABA'
+    direccion: 'Av. Camilo Henríquez 3692'
+    latitud: '-33.569719'
+    longitud: '-70.558164'
+    telefono: '6006004020'
+    horario: 'Lun-Vier 08:00 - 21:00hrs ;Sab 08:00 - 21:00hrs ;Dom 09:00 - 21:00hrs'
+    Region: Region_13
+    TipoTienda: TipoTienda_1
+    Pais: Pais_56
+    gerente: 'Javier Cortés'
     busc_producto: '0'

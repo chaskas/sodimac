@@ -174,4 +174,10 @@ class apiActions extends sfActions
       return sfView::NONE;
     }
   }
+
+  public function executeGetRegionesByPais(sfWebRequest $request)
+  {
+    $this->getResponse()->setContentType('application/json');
+    $this->regiones = Doctrine_Core::getTable('Region')->findByIdPais($request->getParameter('id'));
+  }
 }

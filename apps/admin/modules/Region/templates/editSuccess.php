@@ -2,7 +2,7 @@
 <div class="page-header">
   <div class="navbar">
     <div class="navbar-inner">
-      <a class="brand" href="#">Editar Región</a>
+      <a class="brand" href="#">Editar Zona</a>
       <div class="pull-right">
         <a href="<?php echo url_for('Region/index') ?>" class="btn btn-primary">Atrás</a>
       </div>

@@ -64,6 +64,15 @@ api_get_endpoints:
   requirements:
     sf_format: (?:xml|json)
 
+api_get_regiones_pais:
+  url:     /api/get/pais/:id/region/:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getRegionesByPais }
+  options: { model: Region, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+    id: \d+
+
 # default rules
 homepage:
   url:   /

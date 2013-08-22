@@ -1,0 +1,64 @@
+Endpoint:
+  Endpoint_2:
+    cod_endpoint: CONPRE
+    desc_endpoint: 'Consulta de Precio'
+    host: importaciones.sodimac.cl
+    puerto: '80'
+    resto_url: /Mobilidad/ConvertidorWebService.php
+    Pais: Pais_56
+  Endpoint_3:
+    cod_endpoint: FICHPRO
+    desc_endpoint: 'Ficha de Producto'
+    host: sod.cl
+    puerto: '80'
+    resto_url: /movilidad/fichaProducto/consulta_ficha_productos.php
+    Pais: Pais_56
+  Endpoint_4:
+    cod_endpoint: PREENC
+    desc_endpoint: 'Preguntas de Encuesta'
+    host: sodimac.webdevel.cl
+    puerto: '80'
+    resto_url: /api/get/pregunta/xml
+    Pais: Pais_56
+  Endpoint_5:
+    cod_endpoint: RESPENC
+    desc_endpoint: 'Respuesta Encuesta'
+    host: sodimac.webdevel.cl
+    puerto: '80'
+    resto_url: /api/set/respuesta
+    Pais: Pais_56
+  Endpoint_6:
+    cod_endpoint: OPOCMR
+    desc_endpoint: 'Oportunidad Única CMR'
+    host: sodimac.webdevel.cl
+    puerto: '80'
+    resto_url: /api/get/ocmr/xml
+    Pais: Pais_56
+  Endpoint_7:
+    cod_endpoint: TIENDAS
+    desc_endpoint: Tiendas
+    host: sodimac.webdevel.cl
+    puerto: '80'
+    resto_url: /api/get/tienda/xml
+    Pais: Pais_56
+  Endpoint_8:
+    cod_endpoint: SERVTIE
+    desc_endpoint: 'Servicios de una Tienda'
+    host: sodimac.webdevel.cl
+    puerto: '80'
+    resto_url: /api/get/tienda/ID/servicio/xml
+    Pais: Pais_56
+  Endpoint_9:
+    cod_endpoint: PRECIOZONA
+    desc_endpoint: 'Precio de un SKU por Zona'
+    host: guiamaestra.cloudapp.net
+    puerto: '80'
+    resto_url: /zone/XXXX/skus/
+    Pais: Pais_56
+  Endpoint_10:
+    cod_endpoint: PRECSUBCAT
+    desc_endpoint: 'Precios de Productos por Sub Categoría'
+    host: 110.1.35.67
+    puerto: '8090'
+    resto_url: '/GuiaMaestraWS/GuiaMaestraWSPort?wsdl'
+    Pais: Pais_56

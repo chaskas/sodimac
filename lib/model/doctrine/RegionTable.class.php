@@ -16,4 +16,9 @@ class RegionTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('Region');
     }
+
+    public function getRegionesByPais($idPais)
+    {
+    	return Doctrine_Core::getTable('Region')->findByIdPais($idPais);
+    }
 }

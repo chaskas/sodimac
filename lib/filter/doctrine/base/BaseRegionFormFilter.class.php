@@ -13,11 +13,13 @@ abstract class BaseRegionFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
+      'id_region'   => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'desc_region' => new sfWidgetFormFilterInput(),
       'id_pais'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
+      'id_region'   => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'desc_region' => new sfValidatorPass(array('required' => false)),
       'id_pais'     => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Pais'), 'column' => 'id_pais')),
     ));
@@ -39,6 +41,7 @@ abstract class BaseRegionFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
+      'id'          => 'Number',
       'id_region'   => 'Number',
       'desc_region' => 'Text',
       'id_pais'     => 'ForeignKey',

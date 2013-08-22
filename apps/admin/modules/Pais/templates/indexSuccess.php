@@ -21,9 +21,9 @@
   <tbody>
     <?php foreach ($paises as $pais): ?>
       <tr>
-        <td><a href="<?php echo url_for('Pais/edit?id_pais='.$pais->getIdPais()) ?>"><?php echo $pais->getIdPais() ?></a></td>
-        <td><?php echo $pais->getDescPais() ?></td>
-        <td><?php echo $pais->getSigla() ?></td>
+        <td class="center"><a href="<?php echo url_for('Pais/edit?id_pais='.$pais->getIdPais()) ?>"><?php echo $pais->getIdPais() ?></a></td>
+        <td class="center"><?php echo $pais->getDescPais() ?></td>
+        <td class="center"><?php echo $pais->getSigla() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
           <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
