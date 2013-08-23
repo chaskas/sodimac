@@ -198,38 +198,12 @@ Region:
   connection: doctrine
   tableName: region
   columns:
-    id:
-      type: integer
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    id_region:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      autoincrement: false
-      notnull: true
-    desc_region:
-      type: string(60)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    id_pais:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: true
-      autoincrement: false
+    id:           { type: integer,    fixed: false, unsigned: false, primary: true,  autoincrement: true }
+    id_region:    { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
+    desc_region:  { type: string(60), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    id_pais:      { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
   relations:
-    Pais:
-      local: id_pais
-      foreign: id_pais
-      type: one
+    Pais:         { local: id_pais, foreign: id_pais, type: one }
   indexes:
     region_index:
       fields: [id_region,id_pais]

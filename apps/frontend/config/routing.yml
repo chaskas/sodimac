@@ -2,7 +2,6 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 api_oportunidad_cmr:
-  #url:     /api/getOCMR.:sf_format
   url:     /api/get/ocmr/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getOCMR }
@@ -11,7 +10,6 @@ api_oportunidad_cmr:
     sf_format: (?:xml|json)
 
 api_get_preguntas:
-  #url:     /api/getPreguntas.:sf_format
   url:     /api/get/pregunta/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getPreguntas }
@@ -20,14 +18,12 @@ api_get_preguntas:
     sf_format: (?:xml|json)
 
 api_set_respuesta:
-  #url: /api/setRespuesta.:sf_format
   url: /api/set/respuesta/:sf_format
   param: { module: api, action: setRespuesta, sf_format: json }
   class: sfRequestRoute
   requirements: { sf_method: POST, sf_format: (xml|json) }
 
 api_get_tienda:
-  #url:     /api/getTienda.:sf_format/:id
   url:     /api/get/tienda/:id/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getTiendaById }
@@ -37,7 +33,6 @@ api_get_tienda:
     id: \d+
 
 api_get_tiendas:
-  #url:     /api/getPreguntas.:sf_format
   url:     /api/get/tienda/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getTiendas }
@@ -46,7 +41,6 @@ api_get_tiendas:
     sf_format: (?:xml|json)
 
 api_get_servicios_tienda:
-  #url:     /api/getTienda.:sf_format/:id
   url:     /api/get/tienda/:id/servicio/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getServiciosTiendaById }
@@ -56,11 +50,18 @@ api_get_servicios_tienda:
     id: \d+
 
 api_get_endpoints:
-  #url:     /api/getEndPoints.:sf_format
   url:     /api/get/endpoint/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getEndPoints }
   options: { model: Endpoint, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+
+api_get_regiones:
+  url:     /api/get/zona/:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getRegiones }
+  options: { model: Region, type: list }
   requirements:
     sf_format: (?:xml|json)
 
@@ -72,6 +73,26 @@ api_get_regiones_pais:
   requirements:
     sf_format: (?:xml|json)
     id: \d+
+
+api_get_paises_aplicacion:
+  url:     /api/get/aplicacion/:id/pais/:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getPaisesByAplicacion }
+  options: { model: AplicacionPais, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+    id: \d+
+
+api_get_funciones_aplicacion_pais:
+  url:     /api/get/aplicacion/:id/pais/:idPais/funcion/:sf_format
+  class:   sfDoctrineRoute
+  param:   { module: api, action: getFuncionesByAplicacionAndPais }
+  options: { model: Funcion, type: list }
+  requirements:
+    sf_format: (?:xml|json)
+    id: \d+
+    idPais: \d+
+
 
 # default rules
 homepage:

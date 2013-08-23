@@ -180,4 +180,23 @@ class apiActions extends sfActions
     $this->getResponse()->setContentType('application/json');
     $this->regiones = Doctrine_Core::getTable('Region')->findByIdPais($request->getParameter('id'));
   }
+
+  public function executeGetPaisesByAplicacion(sfWebRequest $request)
+  {
+    $this->paises = Doctrine_Core::getTable('AplicacionPais')->findByIdAplicacion($request->getParameter('id'));
+  }
+  public function executeGetRegiones(sfWebRequest $request)
+  {
+    $this->regiones = Doctrine_Core::getTable('Region')->findAll();
+  }
+  public function executeGetFuncionesByAplicacionAndPais(sfWebRequest $request)
+  {
+    $this->funciones = Doctrine_Query::create()
+                              ->select('f.id, f.descripcion')
+                              ->from('Funcion f')
+                              ->leftJoin('f.FuncionPais p ON p.id_funcion = f.id')
+                              ->where('f.id_aplicacion = ?', $request->getParameter('id'))
+                              ->andWhere('p.id_pais = ?',$request->getParameter('idPais'))
+                              ->execute();
+  }
 }
