@@ -2,206 +2,50 @@ EncuestaCabeceraRespuestas:
   connection: doctrine
   tableName: encuesta_cabecera_respuestas
   columns:
-    id_enc_cab_resp:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    nro_boleta:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    fecha_compra:
-      type: timestamp
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    id_tienda:
-      type: integer
-      primary: false
-      notnull: false
-      autoincrement: false
-    rut:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    dv:
-      type: string(1)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    nombre_completo:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    ciudad:
-      type: string(50)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    telefono:
-      type: string(12)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    celular:
-      type: string(12)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    email:
-      type: string(50)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    edad:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    sexo:
-      type: string(1)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    compra_para:
-      type: string(100)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
+    id_enc_cab_resp:  { type: integer(4),   fixed: false, unsigned: false, primary: true,  notnull: false, autoincrement: true }
+    nro_boleta:       { type: string(100),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    fecha_compra:     { type: timestamp,    fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    id_tienda:        { type: integer,      fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    rut:              { type: integer(4),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    dv:               { type: string(1),    fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    nombre_completo:  { type: string(100),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    ciudad:           { type: string(50),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    telefono:         { type: string(12),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    celular:          { type: string(12),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    email:            { type: string(50),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    edad:             { type: integer(4),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    sexo:             { type: string(1),    fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    compra_para:      { type: string(100),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    EncuestaRespuestas:
-      local: id_enc_cab_resp
-      foreign: id_enc_cab_resp
-      type: many
+    EncuestaRespuestas: { local: id_enc_cab_resp, foreign: id_enc_cab_resp, type: many }
+
 EncuestaPreguntas:
   connection: doctrine
   tableName: encuesta_preguntas
   columns:
-    id_enc_preg:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    id_tipo_preg:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    valor_defecto:
-      type: string(300)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    desc_pregunta:
-      type: string(500)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    estado:
-      type: string(3)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ACT
-      notnull: false
-      autoincrement: false
-    id_pais:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
+    id_enc_preg:        { type: integer(4),   fixed: false, unsigned: false, primary: true,  notnull: false, autoincrement: true }
+    id_tipo_preg:       { type: integer(4),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    valor_defecto:      { type: string(300),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    desc_pregunta:      { type: string(500),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    estado:             { type: string(3),    fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false, default: ACT }
+    id_pais:            { type: integer(4),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    TipoPregunta:
-      local: id_tipo_preg
-      foreign: id_tipo_preg
-      type: one
-    Pais:
-      local: id_pais
-      foreign: id_pais
-      type: one
-    EncuestaRespuestas:
-      local: id_enc_preg
-      foreign: id_enc_preg
-      type: many
+    TipoPregunta:       { local: id_tipo_preg,  foreign: id_tipo_preg,  type: one }
+    Pais:               { local: id_pais,       foreign: id_pais,       type: one }
+    EncuestaRespuestas: { local: id_enc_preg,   foreign: id_enc_preg,   type: many }
+
 EncuestaRespuestas:
   connection: doctrine
   tableName: encuesta_respuestas
   columns:
-    id_enc_resp:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    id_enc_preg:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    id_enc_cab_resp:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    valor_resp:
-      type: string(300)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
+    id_enc_resp:      { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    id_enc_preg:      { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    id_enc_cab_resp:  { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    valor_resp:       { type: string(300), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    EncuestaPreguntas:
-      local: id_enc_preg
-      foreign: id_enc_preg
-      type: one
-    EncuestaCabeceraRespuestas:
-      local: id_enc_cab_resp
-      foreign: id_enc_cab_resp
-      type: one
-      onDelete: CASCADE
+    EncuestaPreguntas:          { local: id_enc_preg,     foreign: id_enc_preg,     type: one }
+    EncuestaCabeceraRespuestas: { local: id_enc_cab_resp, foreign: id_enc_cab_resp, type: one, onDelete: CASCADE }
+
 Endpoint:
   connection: doctrine
   tableName: endpoint
@@ -379,6 +223,7 @@ Pais:
       local: id_pais
       foreign: id_pais
       type: many
+
 Region:
   connection: doctrine
   tableName: region
@@ -425,28 +270,11 @@ ServiciosPorTienda:
   connection: doctrine
   tableName: servicios_por_tienda
   columns:
-    id_tienda:
-      type: integer
-      primary: true
-      notnull: true
-    id_servicio_tienda:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: false
-      notnull: true
+    id_tienda: { type: integer, primary: true, notnull: true }
+    id_servicio_tienda: { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: false, notnull: true }
   relations:
-    Tienda:
-      alias: tienda
-      local: id_tienda
-      foreign: id_tienda
-      onDelete: CASCADE
-    ServiciosTienda:
-      alias: servicios
-      local: id_servicio_tienda
-      foreign: id_servicio_tienda
-      onDelete: CASCADE
+    Tienda: { alias: tienda, local: id_tienda, foreign: id_tienda, onDelete: CASCADE }
+    ServiciosTienda: { alias: servicios, local: id_servicio_tienda, foreign: id_servicio_tienda, onDelete: CASCADE }
   indexes:
     servicios_por_tienda_index:
       fields: [id_tienda,id_servicio_tienda]
@@ -606,6 +434,7 @@ TipoPregunta:
       local: id_tipo_preg
       foreign: id_tipo_preg
       type: many
+
 TipoTienda:
   connection: doctrine
   tableName: tipo_tienda
@@ -628,3 +457,48 @@ TipoTienda:
       local: id_tipo_tienda
       foreign: id_tipo_tienda
       type: many
+
+Aplicacion:
+  connection: doctrine
+  tableName: aplicacion
+  columns:
+    id:           { type: integer,    fixed: false, unsigned: false, primary: true,  notnull: true, autoincrement: true }
+    descripcion:  { type: string(50), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+
+AppPais:
+  connection: doctrine
+  tableName: app_pais
+  columns:
+    id_aplicacion:  { type: integer, primary: true, notnull: true }
+    id_pais:        { type: integer(4), primary: true, notnull: true }
+  relations:
+    Aplicacion:     { alias: aplicacion, local: id_aplicacion, foreign: id, onDelete: CASCADE }
+    Pais:           { alias: pais, local: id_pais, foreign: id_pais, onDelete: CASCADE }
+  indexes:
+    app_pais_index:
+      fields: [id_aplicacion,id_pais]
+      type: unique
+
+Funcion:
+  connection: doctrine
+  tableName: funcion
+  columns:
+    id:             { type: integer, primary: true, notnull: true, autoincrement: true }
+    id_aplicacion:  { type: integer, primary: false, notnull: true }
+    descripcion:    { type: string(50), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+  relations:
+    Aplicacion:     { local: id_aplicacion, foreign: id, type: one }
+
+FuncionPais:
+  connection: doctrine
+  tableName: funcion_pais
+  columns:
+    id_funcion:   { type: integer, primary: true, notnull: true }
+    id_pais:      { type: integer(4), primary: true, notnull: true }
+  relations:
+    Funcion:      { alias: funcion, local: id_funcion, foreign: id, onDelete: CASCADE }
+    Pais:         { alias: pais, local: id_pais, foreign: id_pais, onDelete: CASCADE }
+  indexes:
+    funcion_pais_index:
+      fields: [id_funcion,id_pais]
+      type: unique

@@ -35,6 +35,9 @@
               <li <?php if(in_array($sf_context->getModuleName(),array('EndPoint'))) echo "class='active'" ?>>
                 <a href="<?php echo url_for('EndPoint/index'); ?>">End Point</a>
               </li>
+              <li <?php if(in_array($sf_context->getModuleName(),array('Aplicacion','Funcion'))) echo "class='active'" ?>>
+                <a href="<?php echo url_for('Aplicacion/index'); ?>">Aplicaciones</a>
+              </li>
               <li <?php if(in_array($sf_context->getModuleName(),array('Pais','Region'))) echo "class='active'" ?>>
                 <a href="<?php echo url_for('Pais/index'); ?>">Configuración</a>
               </li>
