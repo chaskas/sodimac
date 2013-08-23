@@ -15,7 +15,7 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @property Doctrine_Collection $OportunidadCmr
  * @property Doctrine_Collection $Region
  * @property Doctrine_Collection $Tienda
- * @property Doctrine_Collection $AppPais
+ * @property Doctrine_Collection $AplicacionPais
  * @property Doctrine_Collection $FuncionPais
  * 
  * @method integer             getIdPais()            Returns the current record's "id_pais" value
@@ -26,7 +26,7 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @method Doctrine_Collection getOportunidadCmr()    Returns the current record's "OportunidadCmr" collection
  * @method Doctrine_Collection getRegion()            Returns the current record's "Region" collection
  * @method Doctrine_Collection getTienda()            Returns the current record's "Tienda" collection
- * @method Doctrine_Collection getAppPais()           Returns the current record's "AppPais" collection
+ * @method Doctrine_Collection getAplicacionPais()    Returns the current record's "AplicacionPais" collection
  * @method Doctrine_Collection getFuncionPais()       Returns the current record's "FuncionPais" collection
  * @method Pais                setIdPais()            Sets the current record's "id_pais" value
  * @method Pais                setDescPais()          Sets the current record's "desc_pais" value
@@ -36,7 +36,7 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @method Pais                setOportunidadCmr()    Sets the current record's "OportunidadCmr" collection
  * @method Pais                setRegion()            Sets the current record's "Region" collection
  * @method Pais                setTienda()            Sets the current record's "Tienda" collection
- * @method Pais                setAppPais()           Sets the current record's "AppPais" collection
+ * @method Pais                setAplicacionPais()    Sets the current record's "AplicacionPais" collection
  * @method Pais                setFuncionPais()       Sets the current record's "FuncionPais" collection
  * 
  * @package    sodimac
@@ -100,7 +100,7 @@ abstract class BasePais extends sfDoctrineRecord
              'local' => 'id_pais',
              'foreign' => 'id_pais'));
 
-        $this->hasMany('AppPais', array(
+        $this->hasMany('AplicacionPais', array(
              'local' => 'id_pais',
              'foreign' => 'id_pais'));
 

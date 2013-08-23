@@ -1,14 +1,14 @@
 <?php
 
 /**
- * AppPais filter form base class.
+ * AplicacionPais filter form base class.
  *
  * @package    sodimac
  * @subpackage filter
  * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
  */
-abstract class BaseAppPaisFormFilter extends BaseFormFilterDoctrine
+abstract class BaseAplicacionPaisFormFilter extends BaseFormFilterDoctrine
 {
   public function setup()
   {
@@ -18,7 +18,7 @@ abstract class BaseAppPaisFormFilter extends BaseFormFilterDoctrine
     $this->setValidators(array(
     ));
 
-    $this->widgetSchema->setNameFormat('app_pais_filters[%s]');
+    $this->widgetSchema->setNameFormat('aplicacion_pais_filters[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
 
@@ -29,7 +29,7 @@ abstract class BaseAppPaisFormFilter extends BaseFormFilterDoctrine
 
   public function getModelName()
   {
-    return 'AppPais';
+    return 'AplicacionPais';
   }
 
   public function getFields()

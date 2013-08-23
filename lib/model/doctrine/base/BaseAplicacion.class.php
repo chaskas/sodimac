@@ -9,17 +9,17 @@ Doctrine_Manager::getInstance()->bindComponent('Aplicacion', 'doctrine');
  * 
  * @property integer $id
  * @property string $descripcion
- * @property Doctrine_Collection $AppPais
+ * @property Doctrine_Collection $AplicacionPais
  * @property Doctrine_Collection $Funcion
  * 
- * @method integer             getId()          Returns the current record's "id" value
- * @method string              getDescripcion() Returns the current record's "descripcion" value
- * @method Doctrine_Collection getAppPais()     Returns the current record's "AppPais" collection
- * @method Doctrine_Collection getFuncion()     Returns the current record's "Funcion" collection
- * @method Aplicacion          setId()          Sets the current record's "id" value
- * @method Aplicacion          setDescripcion() Sets the current record's "descripcion" value
- * @method Aplicacion          setAppPais()     Sets the current record's "AppPais" collection
- * @method Aplicacion          setFuncion()     Sets the current record's "Funcion" collection
+ * @method integer             getId()             Returns the current record's "id" value
+ * @method string              getDescripcion()    Returns the current record's "descripcion" value
+ * @method Doctrine_Collection getAplicacionPais() Returns the current record's "AplicacionPais" collection
+ * @method Doctrine_Collection getFuncion()        Returns the current record's "Funcion" collection
+ * @method Aplicacion          setId()             Sets the current record's "id" value
+ * @method Aplicacion          setDescripcion()    Sets the current record's "descripcion" value
+ * @method Aplicacion          setAplicacionPais() Sets the current record's "AplicacionPais" collection
+ * @method Aplicacion          setFuncion()        Sets the current record's "Funcion" collection
  * 
  * @package    sodimac
  * @subpackage model
@@ -52,7 +52,7 @@ abstract class BaseAplicacion extends sfDoctrineRecord
     public function setUp()
     {
         parent::setUp();
-        $this->hasMany('AppPais', array(
+        $this->hasMany('AplicacionPais', array(
              'local' => 'id',
              'foreign' => 'id_aplicacion'));
 

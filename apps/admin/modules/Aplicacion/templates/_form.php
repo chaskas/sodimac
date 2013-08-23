@@ -19,6 +19,20 @@
     </div>
   </div>
 
+  <div class="page-header">
+    <h5>Agregar País:</h5>
+  </div>
+
+  <?php foreach ($form['paises'] as $key => $pais): ?>
+  <div class="control-group">
+    <?php echo $pais['id_pais']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $pais['id_pais'] ?>
+      <?php echo $pais['id_pais']->renderError() ?>
+    </div>
+  </div>
+  <?php endforeach; ?>
+
   <div class="form-actions">
     <input type="submit" value="Guardar" class="btn btn-primary"/>
     
