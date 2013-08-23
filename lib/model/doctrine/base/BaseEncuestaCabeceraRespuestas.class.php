@@ -69,6 +69,7 @@ abstract class BaseEncuestaCabeceraRespuestas extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => true,
+             'notnull' => false,
              'autoincrement' => true,
              'length' => 4,
              ));
@@ -91,6 +92,8 @@ abstract class BaseEncuestaCabeceraRespuestas extends sfDoctrineRecord
              ));
         $this->hasColumn('id_tienda', 'integer', null, array(
              'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,

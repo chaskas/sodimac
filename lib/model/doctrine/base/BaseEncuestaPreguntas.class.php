@@ -51,6 +51,7 @@ abstract class BaseEncuestaPreguntas extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => true,
+             'notnull' => false,
              'autoincrement' => true,
              'length' => 4,
              ));
@@ -86,9 +87,9 @@ abstract class BaseEncuestaPreguntas extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
-             'default' => 'ACT',
              'notnull' => false,
              'autoincrement' => false,
+             'default' => 'ACT',
              'length' => 3,
              ));
         $this->hasColumn('id_pais', 'integer', 4, array(
