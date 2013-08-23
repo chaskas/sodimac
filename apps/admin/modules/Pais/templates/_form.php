@@ -35,6 +35,22 @@
     </div>
   </div>
 
+  <div class="control-group">
+    <?php echo $form['signo_moneda']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['signo_moneda'] ?>
+      <?php echo $form['signo_moneda']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <?php echo $form['con_decimal']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['con_decimal'] ?>
+      <?php echo $form['con_decimal']->renderError() ?>
+    </div>
+  </div>
+
   <div class="form-actions">
     <input type="submit" value="Guardar" class="btn btn-primary"/>
     

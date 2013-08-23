@@ -7,7 +7,7 @@ CREATE TABLE endpoint (id_endpoint INT AUTO_INCREMENT, cod_endpoint VARCHAR(10),
 CREATE TABLE funcion (id BIGINT AUTO_INCREMENT, id_aplicacion BIGINT NOT NULL, descripcion TEXT, INDEX id_aplicacion_idx (id_aplicacion), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE funcion_pais (id_funcion BIGINT, id_pais INT, UNIQUE INDEX funcion_pais_index_idx (id_funcion, id_pais), PRIMARY KEY(id_funcion, id_pais)) ENGINE = INNODB;
 CREATE TABLE oportunidad_cmr (id_opor_cmr INT AUTO_INCREMENT, sku VARCHAR(7), nombre_producto VARCHAR(200), precio_internet BIGINT, unidad_med_int VARCHAR(10), precio_cmr BIGINT, unidad_med_cmr VARCHAR(10), fecha_vig_des DATETIME, fecha_vig_has DATETIME, id_pais INT, INDEX id_pais_idx (id_pais), PRIMARY KEY(id_opor_cmr)) ENGINE = INNODB;
-CREATE TABLE pais (id_pais INT, desc_pais VARCHAR(20), sigla VARCHAR(4), PRIMARY KEY(id_pais)) ENGINE = INNODB;
+CREATE TABLE pais (id_pais INT, desc_pais VARCHAR(20), sigla VARCHAR(4), signo_moneda VARCHAR(5), con_decimal TINYINT(1), PRIMARY KEY(id_pais)) ENGINE = INNODB;
 CREATE TABLE region (id BIGINT AUTO_INCREMENT, id_region INT NOT NULL, desc_region VARCHAR(60), id_pais INT NOT NULL, UNIQUE INDEX region_index_idx (id_region, id_pais), INDEX id_pais_idx (id_pais), PRIMARY KEY(id)) ENGINE = INNODB;
 CREATE TABLE servicios_por_tienda (id_tienda BIGINT, id_servicio_tienda INT, UNIQUE INDEX servicios_por_tienda_index_idx (id_tienda, id_servicio_tienda), PRIMARY KEY(id_tienda, id_servicio_tienda)) ENGINE = INNODB;
 CREATE TABLE servicios_tienda (id_servicio_tienda INT AUTO_INCREMENT, desc_servicio VARCHAR(100), estado VARCHAR(3), PRIMARY KEY(id_servicio_tienda)) ENGINE = INNODB;

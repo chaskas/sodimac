@@ -182,47 +182,17 @@ Pais:
   connection: doctrine
   tableName: pais
   columns:
-    id_pais:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: false
-    desc_pais:
-      type: string(20)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    sigla:
-      type: string(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
+    id_pais:            { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: false }
+    desc_pais:          { type: string(20), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    sigla:              { type: string(4),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    signo_moneda:       { type: string(5),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    con_decimal:        { type: boolean,    fixed: false, unsigned: false, primary: false, autoincrement: false }
   relations:
-    EncuestaPreguntas:
-      local: id_pais
-      foreign: id_pais
-      type: many
-    Endpoint:
-      local: id_pais
-      foreign: id_pais
-      type: many
-    OportunidadCmr:
-      local: id_pais
-      foreign: id_pais
-      type: many
-    Region:
-      local: id_pais
-      foreign: id_pais
-      type: many
-    Tienda:
-      local: id_pais
-      foreign: id_pais
-      type: many
+    EncuestaPreguntas:  { local: id_pais, foreign: id_pais, type: many }
+    Endpoint:           { local: id_pais, foreign: id_pais, type: many }
+    OportunidadCmr:     { local: id_pais, foreign: id_pais, type: many }
+    Region:             { local: id_pais, foreign: id_pais, type: many }
+    Tienda:             { local: id_pais, foreign: id_pais, type: many }
 
 Region:
   connection: doctrine

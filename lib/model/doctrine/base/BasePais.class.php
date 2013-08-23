@@ -10,6 +10,8 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @property integer $id_pais
  * @property string $desc_pais
  * @property string $sigla
+ * @property string $signo_moneda
+ * @property boolean $con_decimal
  * @property Doctrine_Collection $EncuestaPreguntas
  * @property Doctrine_Collection $Endpoint
  * @property Doctrine_Collection $OportunidadCmr
@@ -21,6 +23,8 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @method integer             getIdPais()            Returns the current record's "id_pais" value
  * @method string              getDescPais()          Returns the current record's "desc_pais" value
  * @method string              getSigla()             Returns the current record's "sigla" value
+ * @method string              getSignoMoneda()       Returns the current record's "signo_moneda" value
+ * @method boolean             getConDecimal()        Returns the current record's "con_decimal" value
  * @method Doctrine_Collection getEncuestaPreguntas() Returns the current record's "EncuestaPreguntas" collection
  * @method Doctrine_Collection getEndpoint()          Returns the current record's "Endpoint" collection
  * @method Doctrine_Collection getOportunidadCmr()    Returns the current record's "OportunidadCmr" collection
@@ -31,6 +35,8 @@ Doctrine_Manager::getInstance()->bindComponent('Pais', 'doctrine');
  * @method Pais                setIdPais()            Sets the current record's "id_pais" value
  * @method Pais                setDescPais()          Sets the current record's "desc_pais" value
  * @method Pais                setSigla()             Sets the current record's "sigla" value
+ * @method Pais                setSignoMoneda()       Sets the current record's "signo_moneda" value
+ * @method Pais                setConDecimal()        Sets the current record's "con_decimal" value
  * @method Pais                setEncuestaPreguntas() Sets the current record's "EncuestaPreguntas" collection
  * @method Pais                setEndpoint()          Sets the current record's "Endpoint" collection
  * @method Pais                setOportunidadCmr()    Sets the current record's "OportunidadCmr" collection
@@ -74,6 +80,22 @@ abstract class BasePais extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => 4,
+             ));
+        $this->hasColumn('signo_moneda', 'string', 5, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 5,
+             ));
+        $this->hasColumn('con_decimal', 'boolean', null, array(
+             'type' => 'boolean',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'autoincrement' => false,
              ));
     }
 
