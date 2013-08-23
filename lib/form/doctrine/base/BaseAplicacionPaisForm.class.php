@@ -1,16 +1,16 @@
 <?php
 
 /**
- * AppPais form base class.
+ * AplicacionPais form base class.
  *
- * @method AppPais getObject() Returns the current form's model object
+ * @method AplicacionPais getObject() Returns the current form's model object
  *
  * @package    sodimac
  * @subpackage form
  * @author     Rodrigo Campos H. rodrigo <at> webdevel <dot> cl
  * @version    SVN: $Id: sfDoctrineFormGeneratedTemplate.php 29553 2010-05-20 14:33:00Z Kris.Wallsmith $
  */
-abstract class BaseAppPaisForm extends BaseFormDoctrine
+abstract class BaseAplicacionPaisForm extends BaseFormDoctrine
 {
   public function setup()
   {
@@ -25,10 +25,10 @@ abstract class BaseAppPaisForm extends BaseFormDoctrine
     ));
 
     $this->validatorSchema->setPostValidator(
-      new sfValidatorDoctrineUnique(array('model' => 'AppPais', 'column' => array('id_aplicacion', 'id_pais')))
+      new sfValidatorDoctrineUnique(array('model' => 'AplicacionPais', 'column' => array('id_aplicacion', 'id_pais')))
     );
 
-    $this->widgetSchema->setNameFormat('app_pais[%s]');
+    $this->widgetSchema->setNameFormat('aplicacion_pais[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
 
@@ -39,7 +39,7 @@ abstract class BaseAppPaisForm extends BaseFormDoctrine
 
   public function getModelName()
   {
-    return 'AppPais';
+    return 'AplicacionPais';
   }
 
 }

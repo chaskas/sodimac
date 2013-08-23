@@ -465,7 +465,7 @@ Aplicacion:
     id:           { type: integer,    fixed: false, unsigned: false, primary: true,  notnull: true, autoincrement: true }
     descripcion:  { type: string(50), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
 
-AppPais:
+AplicacionPais:
   connection: doctrine
   tableName: app_pais
   columns:
