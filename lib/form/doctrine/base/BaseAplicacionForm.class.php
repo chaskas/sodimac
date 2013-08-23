@@ -16,12 +16,12 @@ abstract class BaseAplicacionForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
-      'descripcion' => new sfWidgetFormInputText(),
+      'descripcion' => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'descripcion' => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'descripcion' => new sfValidatorString(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('aplicacion[%s]');

@@ -14,6 +14,6 @@ class Aplicacion extends BaseAplicacion
 {
 	public function __toString()
 	{
-		return $this->getDescripcion();
+		return $this->getDescripcion() != null ? $this->getDescripcion() : '';
 	}
 }

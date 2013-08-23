@@ -17,13 +17,13 @@ abstract class BaseFuncionForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'            => new sfWidgetFormInputHidden(),
       'id_aplicacion' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Aplicacion'), 'add_empty' => false)),
-      'descripcion'   => new sfWidgetFormInputText(),
+      'descripcion'   => new sfWidgetFormTextarea(),
     ));
 
     $this->setValidators(array(
       'id'            => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'id_aplicacion' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Aplicacion'))),
-      'descripcion'   => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'descripcion'   => new sfValidatorString(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('funcion[%s]');

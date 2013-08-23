@@ -19,10 +19,10 @@ class AplicacionPaisCollectionForm extends sfForm
  
     for ($i = 0; $i < $this->getOption('size', 1); $i++)
     {
-      $appPais = new AplicacionPais();
-      $appPais->aplicacion = $aplicacion;
+      $AplicacionPais = new AplicacionPais();
+      $AplicacionPais->aplicacion = $aplicacion;
  
-      $form = new AplicacionPaisForm($appPais);
+      $form = new AplicacionPaisForm($AplicacionPais);
  
       $this->embedForm($i, $form);
     }

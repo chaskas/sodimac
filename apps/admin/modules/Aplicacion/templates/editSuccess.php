@@ -11,3 +11,23 @@
 </div>
 
 <?php include_partial('form', array('form' => $form)) ?>
+
+<div class="page-header">
+    <h5>Paises actuales:</h5>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>País</th>
+      <th>Opciones</th>
+    </tr>
+  </thead>
+  <tbody>
+		<?php foreach($paises as $pais) : ?>
+		<tr>
+			<td class="center"><?php echo $pais->getPais() ?></td>
+			<td></td>
+		</tr>
+		<?php endforeach; ?>
+	</tbody>
+</table>

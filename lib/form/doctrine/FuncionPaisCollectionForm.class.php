@@ -19,10 +19,10 @@ class FuncionPaisCollectionForm extends sfForm
  
     for ($i = 0; $i < $this->getOption('size', 1); $i++)
     {
-      $funcionPais = new FuncionPais();
-      $funcionPais->funcion = $funcion;
+      $FuncionPais = new FuncionPais();
+      $FuncionPais->funcion = $funcion;
  
-      $form = new FuncionPaisForm($funcionPais);
+      $form = new FuncionPaisForm($FuncionPais);
  
       $this->embedForm($i, $form);
     }

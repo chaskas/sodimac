@@ -27,6 +27,5 @@ class ServiciosPorTiendaCollectionForm extends sfForm
       $this->embedForm($i, $form);
     }
 
-    //$this->mergePostValidator(new ServiciosPorTiendaValidatorSchema());
   }
 }

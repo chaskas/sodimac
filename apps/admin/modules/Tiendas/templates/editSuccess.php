@@ -14,7 +14,7 @@
 
 <div class="page-header">
     <h5>Servicios actuales:</h5>
-  </div>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>

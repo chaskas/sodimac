@@ -44,14 +44,13 @@ abstract class BaseFuncion extends sfDoctrineRecord
              'primary' => false,
              'notnull' => true,
              ));
-        $this->hasColumn('descripcion', 'string', 50, array(
+        $this->hasColumn('descripcion', 'string', null, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
-             'length' => 50,
              ));
     }
 

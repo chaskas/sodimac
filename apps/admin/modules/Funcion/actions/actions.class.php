@@ -37,6 +37,11 @@ class FuncionActions extends sfActions
   {
     $this->forward404Unless($funcion = Doctrine_Core::getTable('Funcion')->find(array($request->getParameter('id'))), sprintf('Object funcion does not exist (%s).', $request->getParameter('id')));
     $this->form = new FuncionForm($funcion);
+
+    $this->paises = Doctrine_Core::getTable('FuncionPais')
+      ->createQuery('a')
+      ->where('id_funcion = ?', $funcion->getId())
+      ->execute();
   }
 
   public function executeUpdate(sfWebRequest $request)
@@ -66,8 +71,9 @@ class FuncionActions extends sfActions
     if ($form->isValid())
     {
       $funcion = $form->save();
-
+      $this->getUser()->setFlash('success', 'se ha guardado correctamente.');
       $this->redirect('Funcion/edit?id='.$funcion->getId());
     }
+    $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
 }

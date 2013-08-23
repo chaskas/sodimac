@@ -12,7 +12,31 @@ class FuncionForm extends BaseFuncionForm
 {
   public function configure()
   {
+  	$form = new FuncionPaisCollectionForm(null, array(
+      'funcion' => $this->getObject(),
+      'size'    => 1
+    ));
+   
+    $this->embedForm('paises', $form);
+
   	$this->widgetSchema['id_aplicacion']->setLabel('Aplicación');
   	$this->widgetSchema['descripcion']->setLabel('Descripción');
+
+  }
+
+  public function saveEmbeddedForms($con = null, $forms = null)
+  {
+    if (null === $forms)
+    {
+      $paises = $this->getValue('paises');
+      $forms = $this->embeddedForms;
+      
+      if (!isset($paises[0]['id_pais']))
+      {
+        unset($forms['paises']);
+      }
+    }
+   
+    return parent::saveEmbeddedForms($con, $forms);
   }
 }
