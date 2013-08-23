@@ -96,6 +96,7 @@ abstract class BasePais extends sfDoctrineRecord
              'unsigned' => false,
              'primary' => false,
              'autoincrement' => false,
+             'default' => false,
              ));
     }
 

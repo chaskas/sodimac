@@ -186,7 +186,7 @@ Pais:
     desc_pais:          { type: string(20), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     sigla:              { type: string(4),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     signo_moneda:       { type: string(5),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
-    con_decimal:        { type: boolean,    fixed: false, unsigned: false, primary: false, autoincrement: false }
+    con_decimal:        { type: boolean,    fixed: false, unsigned: false, primary: false, autoincrement: false, default: false }
   relations:
     EncuestaPreguntas:  { local: id_pais, foreign: id_pais, type: many }
     Endpoint:           { local: id_pais, foreign: id_pais, type: many }
