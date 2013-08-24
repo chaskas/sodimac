@@ -19,7 +19,8 @@ class AplicacionForm extends BaseAplicacionForm
    
     $this->embedForm('paises', $form);
 
-  	$this->widgetSchema['descripcion']->setLabel('Descripción');
+    $this->widgetSchema['descripcion']->setLabel('Descripción');
+  	$this->widgetSchema['codigo']->setLabel('Código');
   }
 
   public function saveEmbeddedForms($con = null, $forms = null)

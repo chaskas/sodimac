@@ -75,22 +75,22 @@ api_get_regiones_pais:
     id: \d+
 
 api_get_paises_aplicacion:
-  url:     /api/get/aplicacion/:id/pais/:sf_format
+  url:     /api/get/aplicacion/:codigo/pais/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getPaisesByAplicacion }
   options: { model: AplicacionPais, type: list }
   requirements:
     sf_format: (?:xml|json)
-    id: \d+
+    codigo: \w+
 
 api_get_funciones_aplicacion_pais:
-  url:     /api/get/aplicacion/:id/pais/:idPais/funcion/:sf_format
+  url:     /api/get/aplicacion/:codigo/pais/:idPais/funcion/:sf_format
   class:   sfDoctrineRoute
   param:   { module: api, action: getFuncionesByAplicacionAndPais }
   options: { model: Funcion, type: list }
   requirements:
     sf_format: (?:xml|json)
-    id: \d+
+    codigo: \w+
     idPais: \d+
 
 

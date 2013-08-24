@@ -15,11 +15,13 @@ abstract class BaseFuncionFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'id_aplicacion' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Aplicacion'), 'add_empty' => true)),
       'descripcion'   => new sfWidgetFormFilterInput(),
+      'codigo'        => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
       'id_aplicacion' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Aplicacion'), 'column' => 'id')),
       'descripcion'   => new sfValidatorPass(array('required' => false)),
+      'codigo'        => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('funcion_filters[%s]');
@@ -42,6 +44,7 @@ abstract class BaseFuncionFormFilter extends BaseFormFilterDoctrine
       'id'            => 'Number',
       'id_aplicacion' => 'ForeignKey',
       'descripcion'   => 'Text',
+      'codigo'        => 'Text',
     );
   }
 }

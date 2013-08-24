@@ -16,13 +16,19 @@ abstract class BaseAplicacionForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'          => new sfWidgetFormInputHidden(),
-      'descripcion' => new sfWidgetFormTextarea(),
+      'descripcion' => new sfWidgetFormInputText(),
+      'codigo'      => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'descripcion' => new sfValidatorString(array('required' => false)),
+      'descripcion' => new sfValidatorString(array('max_length' => 50, 'required' => false)),
+      'codigo'      => new sfValidatorString(array('max_length' => 10, 'required' => false)),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Aplicacion', 'column' => array('codigo')))
+    );
 
     $this->widgetSchema->setNameFormat('aplicacion[%s]');
 

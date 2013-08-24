@@ -13,7 +13,8 @@
   <thead>
     <tr>
       <th>Id</th>
-      <th>Nombre</th>
+      <th>Código</th>
+      <th>Descripción</th>
       <th>Opciones</th>
     </tr>
   </thead>
@@ -21,6 +22,7 @@
     <?php foreach ($aplicaciones as $aplicacion): ?>
       <tr>
         <td class="center"><a href="<?php echo url_for('Aplicacion/edit?id='.$aplicacion->getId()) ?>"><?php echo $aplicacion->getId() ?></a></td>
+        <td class="center"><?php echo $aplicacion->getCodigo() ?></td>
         <td class="center"><?php echo $aplicacion->getDescripcion() ?></td>
         <td>
           <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>

@@ -20,6 +20,14 @@
   </div>
 
   <div class="control-group">
+    <?php echo $form['codigo']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['codigo'] ?>
+      <?php echo $form['codigo']->renderError() ?>
+    </div>
+  </div>
+  
+  <div class="control-group">
     <?php echo $form['descripcion']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form['descripcion'] ?>
@@ -27,6 +35,9 @@
     </div>
   </div>
 
+  <div class="page-header">
+    <h5>Agregar País:</h5>
+  </div>
   <?php foreach ($form['paises'] as $key => $pais): ?>
   <div class="control-group">
     <?php echo $pais['id_pais']->renderLabel(null, array('class'=>'control-label')) ?>

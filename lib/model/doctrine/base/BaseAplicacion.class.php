@@ -9,15 +9,18 @@ Doctrine_Manager::getInstance()->bindComponent('Aplicacion', 'doctrine');
  * 
  * @property integer $id
  * @property string $descripcion
+ * @property string $codigo
  * @property Doctrine_Collection $AplicacionPais
  * @property Doctrine_Collection $Funcion
  * 
  * @method integer             getId()             Returns the current record's "id" value
  * @method string              getDescripcion()    Returns the current record's "descripcion" value
+ * @method string              getCodigo()         Returns the current record's "codigo" value
  * @method Doctrine_Collection getAplicacionPais() Returns the current record's "AplicacionPais" collection
  * @method Doctrine_Collection getFuncion()        Returns the current record's "Funcion" collection
  * @method Aplicacion          setId()             Sets the current record's "id" value
  * @method Aplicacion          setDescripcion()    Sets the current record's "descripcion" value
+ * @method Aplicacion          setCodigo()         Sets the current record's "codigo" value
  * @method Aplicacion          setAplicacionPais() Sets the current record's "AplicacionPais" collection
  * @method Aplicacion          setFuncion()        Sets the current record's "Funcion" collection
  * 
@@ -38,13 +41,23 @@ abstract class BaseAplicacion extends sfDoctrineRecord
              'primary' => true,
              'autoincrement' => true,
              ));
-        $this->hasColumn('descripcion', 'string', null, array(
+        $this->hasColumn('descripcion', 'string', 50, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
+             'length' => 50,
+             ));
+        $this->hasColumn('codigo', 'string', 10, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'unique' => true,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 10,
              ));
     }
 

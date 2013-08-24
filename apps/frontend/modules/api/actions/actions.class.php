@@ -183,7 +183,14 @@ class apiActions extends sfActions
 
   public function executeGetPaisesByAplicacion(sfWebRequest $request)
   {
-    $this->paises = Doctrine_Core::getTable('AplicacionPais')->findByIdAplicacion($request->getParameter('id'));
+    $app = Doctrine_Core::getTable('Aplicacion')->findOneByCodigo($request->getParameter('codigo'));
+    
+    $this->paises = Array();
+
+    if($app != null)
+    {
+      $this->paises = Doctrine_Core::getTable('AplicacionPais')->findByIdAplicacion($app->getId());
+    }
   }
   public function executeGetRegiones(sfWebRequest $request)
   {
@@ -191,12 +198,21 @@ class apiActions extends sfActions
   }
   public function executeGetFuncionesByAplicacionAndPais(sfWebRequest $request)
   {
-    $this->funciones = Doctrine_Query::create()
-                              ->select('f.id, f.descripcion')
-                              ->from('Funcion f')
-                              ->leftJoin('f.FuncionPais p ON p.id_funcion = f.id')
-                              ->where('f.id_aplicacion = ?', $request->getParameter('id'))
-                              ->andWhere('p.id_pais = ?',$request->getParameter('idPais'))
-                              ->execute();
+
+    $app = Doctrine_Core::getTable('Aplicacion')->findOneByCodigo($request->getParameter('codigo'));
+
+    $this->funciones = Array();
+
+    if($app != null)
+    {
+      $this->funciones = Doctrine_Query::create()
+                                ->select('f.id, f.descripcion')
+                                ->from('Funcion f')
+                                ->leftJoin('f.FuncionPais p ON p.id_funcion = f.id')
+                                ->where('f.id_aplicacion = ?', $app->getId())
+                                ->andWhere('p.id_pais = ?',$request->getParameter('idPais'))
+                                ->execute();
+    }
+
   }
 }

@@ -407,7 +407,8 @@ Aplicacion:
   tableName: aplicacion
   columns:
     id:           { type: integer,    fixed: false, unsigned: false, primary: true,  notnull: true, autoincrement: true }
-    descripcion:  { type: string, fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    descripcion:  { type: string(50), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    codigo:       { type: string(10), fixed: false, unsigned: false, unique: true, notnull: false, autoincrement: false }
 
 AplicacionPais:
   connection: doctrine
@@ -429,9 +430,15 @@ Funcion:
   columns:
     id:             { type: integer, primary: true, notnull: true, autoincrement: true }
     id_aplicacion:  { type: integer, primary: false, notnull: true }
-    descripcion:    { type: string, fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    descripcion:    { type: string(50), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    codigo:         { type: string(10), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
     Aplicacion:     { local: id_aplicacion, foreign: id, type: one }
+  indexes:
+    funcion_index:
+      fields: [id_aplicacion,codigo]
+      primary: true
+      type: unique
 
 FuncionPais:
   connection: doctrine

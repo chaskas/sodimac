@@ -13,6 +13,7 @@
   <thead>
     <tr>
       <th>Id</th>
+      <th>Código</th>
       <th>Aplicación</th>
       <th>Descripción</th>
       <th>Opciones</th>
@@ -22,6 +23,7 @@
     <?php foreach ($funciones as $funcion): ?>
       <tr>
         <td class="center"><a href="<?php echo url_for('Funcion/edit?id='.$funcion->getId()) ?>"><?php echo $funcion->getId() ?></a></td>
+        <td class="center"><?php echo $funcion->getCodigo() ?></td>
         <td class="center"><?php echo $funcion->getAplicacion() ?></td>
         <td class="center"><?php echo $funcion->getDescripcion() ?></td>
         <td>

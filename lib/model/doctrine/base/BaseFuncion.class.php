@@ -10,17 +10,20 @@ Doctrine_Manager::getInstance()->bindComponent('Funcion', 'doctrine');
  * @property integer $id
  * @property integer $id_aplicacion
  * @property string $descripcion
+ * @property string $codigo
  * @property Aplicacion $Aplicacion
  * @property Doctrine_Collection $FuncionPais
  * 
  * @method integer             getId()            Returns the current record's "id" value
  * @method integer             getIdAplicacion()  Returns the current record's "id_aplicacion" value
  * @method string              getDescripcion()   Returns the current record's "descripcion" value
+ * @method string              getCodigo()        Returns the current record's "codigo" value
  * @method Aplicacion          getAplicacion()    Returns the current record's "Aplicacion" value
  * @method Doctrine_Collection getFuncionPais()   Returns the current record's "FuncionPais" collection
  * @method Funcion             setId()            Sets the current record's "id" value
  * @method Funcion             setIdAplicacion()  Sets the current record's "id_aplicacion" value
  * @method Funcion             setDescripcion()   Sets the current record's "descripcion" value
+ * @method Funcion             setCodigo()        Sets the current record's "codigo" value
  * @method Funcion             setAplicacion()    Sets the current record's "Aplicacion" value
  * @method Funcion             setFuncionPais()   Sets the current record's "FuncionPais" collection
  * 
@@ -44,13 +47,34 @@ abstract class BaseFuncion extends sfDoctrineRecord
              'primary' => false,
              'notnull' => true,
              ));
-        $this->hasColumn('descripcion', 'string', null, array(
+        $this->hasColumn('descripcion', 'string', 50, array(
              'type' => 'string',
              'fixed' => 0,
              'unsigned' => false,
              'primary' => false,
              'notnull' => false,
              'autoincrement' => false,
+             'length' => 50,
+             ));
+        $this->hasColumn('codigo', 'string', 10, array(
+             'type' => 'string',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 10,
+             ));
+
+
+        $this->index('funcion_index', array(
+             'fields' => 
+             array(
+              0 => 'id_aplicacion',
+              1 => 'codigo',
+             ),
+             'primary' => true,
+             'type' => 'unique',
              ));
     }
 

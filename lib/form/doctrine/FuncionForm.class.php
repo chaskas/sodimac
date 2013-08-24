@@ -21,7 +21,7 @@ class FuncionForm extends BaseFuncionForm
 
   	$this->widgetSchema['id_aplicacion']->setLabel('Aplicación');
   	$this->widgetSchema['descripcion']->setLabel('Descripción');
-
+    $this->widgetSchema['codigo']->setLabel('Código');
   }
 
   public function saveEmbeddedForms($con = null, $forms = null)

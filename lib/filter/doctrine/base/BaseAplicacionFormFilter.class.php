@@ -14,10 +14,12 @@ abstract class BaseAplicacionFormFilter extends BaseFormFilterDoctrine
   {
     $this->setWidgets(array(
       'descripcion' => new sfWidgetFormFilterInput(),
+      'codigo'      => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
       'descripcion' => new sfValidatorPass(array('required' => false)),
+      'codigo'      => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('aplicacion_filters[%s]');
@@ -39,6 +41,7 @@ abstract class BaseAplicacionFormFilter extends BaseFormFilterDoctrine
     return array(
       'id'          => 'Number',
       'descripcion' => 'Text',
+      'codigo'      => 'Text',
     );
   }
 }
