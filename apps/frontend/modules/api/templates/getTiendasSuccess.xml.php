@@ -11,7 +11,7 @@
 		<horario><?php echo $tienda->getHorario(); ?></horario>
 	  <id_tipo_tienda><?php echo $tienda->getIdTipoTienda(); ?></id_tipo_tienda>
 	  <id_pais><?php echo $tienda->getIdPais(); ?></id_pais>
-		<id_zona><?php echo $tienda->getIdRegion(); ?></id_zona>
+		<id_zona><?php echo $tienda->getRegion()->getIdRegion(); ?></id_zona>
 	  <gerente><?php echo $tienda->getGerente(); ?></gerente>
 		<busc_producto><?php echo $tienda->getBuscProducto(); ?></busc_producto>
 	</tienda>

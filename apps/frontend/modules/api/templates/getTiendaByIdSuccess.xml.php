@@ -7,7 +7,7 @@
 	<longitud><?php echo $tienda->getLongitud(); ?></longitud>
 	<telefono><?php echo $tienda->getTelefono(); ?></telefono>
 	<horario><?php echo $tienda->getHorario(); ?></horario>
-	<id_region><?php echo $tienda->getIdRegion(); ?></id_region>
+	<id_region><?php echo $tienda->getRegion()->getIdRegion(); ?></id_region>
   <id_tipo_tienda><?php echo $tienda->getIdTipoTienda(); ?></id_tipo_tienda>
   <id_pais><?php echo $tienda->getIdPais(); ?></id_pais>
   <gerente><?php echo $tienda->getGerente(); ?></gerente>

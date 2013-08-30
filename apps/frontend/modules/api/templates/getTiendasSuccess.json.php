@@ -11,7 +11,7 @@
 		"horario": "<?php echo utf8_decode($tienda->getHorario()) ?>",
 		"id_tipo_tienda": "<?php echo utf8_decode($tienda->getIdTipoTienda()) ?>",
 		"id_pais": "<?php echo utf8_decode($tienda->getIdPais()) ?>",
-		"id_zona": "<?php echo utf8_decode($tienda->getIdRegion()) ?>",
+		"id_zona": "<?php echo utf8_decode($tienda->getRegion()->getIdRegion()) ?>",
 		"gerente": "<?php echo utf8_decode($tienda->getGerente()) ?>",
 		"busc_producto": "<?php echo utf8_decode($tienda->getBuscProducto()) ?>"
 	}
