@@ -112,6 +112,7 @@ abstract class BaseEndpoint extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('Pais', array(
              'local' => 'id_pais',
-             'foreign' => 'id_pais'));
+             'foreign' => 'id_pais',
+             'onDelete' => 'SET NULL'));
     }
 }

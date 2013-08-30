@@ -181,7 +181,8 @@ abstract class BaseTienda extends sfDoctrineRecord
 
         $this->hasOne('Pais', array(
              'local' => 'id_pais',
-             'foreign' => 'id_pais'));
+             'foreign' => 'id_pais',
+             'onDelete' => 'SET NULL'));
 
         $this->hasOne('Region', array(
              'local' => 'id_region',

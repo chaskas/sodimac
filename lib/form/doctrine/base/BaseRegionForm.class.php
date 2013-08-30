@@ -18,14 +18,14 @@ abstract class BaseRegionForm extends BaseFormDoctrine
       'id'          => new sfWidgetFormInputHidden(),
       'id_region'   => new sfWidgetFormInputText(),
       'desc_region' => new sfWidgetFormInputText(),
-      'id_pais'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => false)),
+      'id_pais'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
     ));
 
     $this->setValidators(array(
       'id'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'id_region'   => new sfValidatorInteger(),
       'desc_region' => new sfValidatorString(array('max_length' => 60, 'required' => false)),
-      'id_pais'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'))),
+      'id_pais'     => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(

@@ -31,7 +31,7 @@ EncuestaPreguntas:
     id_pais:            { type: integer(4),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
     TipoPregunta:       { local: id_tipo_preg,  foreign: id_tipo_preg,  type: one }
-    Pais:               { local: id_pais,       foreign: id_pais,       type: one }
+    Pais:               { local: id_pais,       foreign: id_pais,       type: one, onDelete: SET NULL }
     EncuestaRespuestas: { local: id_enc_preg,   foreign: id_enc_preg,   type: many }
 
 EncuestaRespuestas:
@@ -103,6 +103,7 @@ Endpoint:
       local: id_pais
       foreign: id_pais
       type: one
+      onDelete: SET NULL
 OportunidadCmr:
   connection: doctrine
   tableName: oportunidad_cmr
@@ -182,7 +183,7 @@ Pais:
   connection: doctrine
   tableName: pais
   columns:
-    id_pais:            { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: false }
+    id_pais:            { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: false, notnull: true }
     desc_pais:          { type: string(20), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     sigla:              { type: string(4),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     signo_moneda:       { type: string(5),  fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
@@ -201,9 +202,9 @@ Region:
     id:           { type: integer,    fixed: false, unsigned: false, primary: true,  autoincrement: true }
     id_region:    { type: integer(4), fixed: false, unsigned: false, primary: false, autoincrement: false, notnull: true }
     desc_region:  { type: string(60), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
-    id_pais:      { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: true, autoincrement: false }
+    id_pais:      { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    Pais:         { local: id_pais, foreign: id_pais, type: one }
+    Pais:         { local: id_pais, foreign: id_pais, type: one, onDelete: SET NULL }
   indexes:
     region_index:
       fields: [id_region,id_pais]
@@ -348,6 +349,7 @@ Tienda:
       local: id_pais
       foreign: id_pais
       type: one
+      onDelete: SET NULL
     Region:
       local: id_region
       foreign: id
