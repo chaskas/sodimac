@@ -85,6 +85,15 @@ delete_servicio:
     sf_method: DELETE
     id_servicio_tienda: \d+
 
+delete_endpoint:
+  url: /admin/Endpoint/:id_endpoint/delete
+  class: sfDoctrineRoute
+  params: { module: Endpoint, action: delete }
+  options: { model: Endpoint, type: object }
+  requirements:
+    sf_method: DELETE
+    id_endpoint: \d+
+
 delete_aplicacion_pais:
   url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
   class: sfDoctrineRoute
