@@ -12,8 +12,8 @@
  */
 class TipoPregunta extends BaseTipoPregunta
 {
-	public function __toString()
-	{
-		return $this->getDescTipoPreg();
-	}
+  public function __toString()
+  {
+    return $this->getDescTipoPreg() != null ? $this->getDescTipoPreg() : '';
+  }
 }

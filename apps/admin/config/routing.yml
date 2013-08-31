@@ -21,6 +21,15 @@ delete_pregunta:
     sf_method: DELETE
     id_enc_preg: \d+
 
+delete_tipo_pregunta:
+  url: /admin/TipoPregunta/:id_tipo_preg/delete
+  class: sfDoctrineRoute
+  params: { module: TipoPregunta, action: delete }
+  options: { model: TipoPregunta, type: object }
+  requirements:
+    sf_method: DELETE
+    id_tipo_preg: \d+
+
 delete_aplicacion_pais:
   url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
   class: sfDoctrineRoute

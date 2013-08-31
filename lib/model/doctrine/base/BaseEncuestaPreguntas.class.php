@@ -108,7 +108,8 @@ abstract class BaseEncuestaPreguntas extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('TipoPregunta', array(
              'local' => 'id_tipo_preg',
-             'foreign' => 'id_tipo_preg'));
+             'foreign' => 'id_tipo_preg',
+             'onDelete' => 'SET NULL'));
 
         $this->hasOne('Pais', array(
              'local' => 'id_pais',

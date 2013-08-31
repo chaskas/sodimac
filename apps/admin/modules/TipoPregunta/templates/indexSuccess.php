@@ -20,13 +20,18 @@
   <tbody>
     <?php foreach ($tipos as $tipo): ?>
       <tr>
-        <td><a href="<?php echo url_for('TipoPregunta/edit?id_tipo_preg='.$tipo->getIdTipoPreg()) ?>"><?php echo $tipo->getIdTipoPreg() ?></a></td>
+        <td class="center"><a href="<?php echo url_for('TipoPregunta/edit?id_tipo_preg='.$tipo->getIdTipoPreg()) ?>"><?php echo $tipo->getIdTipoPreg() ?></a></td>
         <td><?php echo $tipo->getDescTipoPreg() ?></td>
-        <td>
-          <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.edit', :default => t("helpers.links.edit")),edit_station_path(station), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.destroy', :default => t("helpers.links.destroy")), station_path(station), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger' ?>
+        <td class="center">
+          <?php echo link_to(
+                        'Editar',
+                        'TipoPregunta/edit?id_tipo_preg='.$tipo->getIdTipoPreg(),
+                        array('class'=>'btn btn-mini')); ?>
+          <?php echo link_to(
+                        'Eliminar',
+                        'delete_tipo_pregunta',
+                        array('id_tipo_preg'=>$tipo->getIdTipoPreg()),
+                        array('method'=>'delete','confirm' => '¿Estás seguro?','class'=>'btn btn-danger btn-mini')); ?>
         </td>
       </tr>
     <?php endforeach; ?>

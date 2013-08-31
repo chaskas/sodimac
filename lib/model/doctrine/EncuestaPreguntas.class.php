@@ -14,7 +14,7 @@ class EncuestaPreguntas extends BaseEncuestaPreguntas
 {
 	public function __toString()
 	{
-		return $this->getDescPregunta();
+		return $this->getDescPregunta() != null ? $this->getDescPregunta() : '';
 	}
 
 	public function getEstadoImg()

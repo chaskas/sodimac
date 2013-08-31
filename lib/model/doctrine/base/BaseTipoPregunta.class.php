@@ -52,6 +52,7 @@ abstract class BaseTipoPregunta extends sfDoctrineRecord
         parent::setUp();
         $this->hasMany('EncuestaPreguntas', array(
              'local' => 'id_tipo_preg',
-             'foreign' => 'id_tipo_preg'));
+             'foreign' => 'id_tipo_preg',
+             'onDelete' => 'SET NULL'));
     }
 }

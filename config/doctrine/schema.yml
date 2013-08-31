@@ -30,7 +30,7 @@ EncuestaPreguntas:
     estado:             { type: string(3),    fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false, default: ACT }
     id_pais:            { type: integer(4),   fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    TipoPregunta:       { local: id_tipo_preg,  foreign: id_tipo_preg,  type: one }
+    TipoPregunta:       { local: id_tipo_preg,  foreign: id_tipo_preg,  type: one, onDelete: SET NULL }
     Pais:               { local: id_pais,       foreign: id_pais,       type: one, onDelete: SET NULL }
     EncuestaRespuestas: { local: id_enc_preg,   foreign: id_enc_preg,   type: many }
 
@@ -358,6 +358,7 @@ Tienda:
       local: id_tienda
       foreign: id_tienda
       type: many
+      
 TipoPregunta:
   connection: doctrine
   tableName: tipo_pregunta
@@ -380,6 +381,7 @@ TipoPregunta:
       local: id_tipo_preg
       foreign: id_tipo_preg
       type: many
+      onDelete: SET NULL
 
 TipoTienda:
   connection: doctrine

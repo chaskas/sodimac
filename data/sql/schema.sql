@@ -16,7 +16,7 @@ CREATE TABLE tipo_pregunta (id_tipo_preg INT AUTO_INCREMENT, desc_tipo_preg VARC
 CREATE TABLE tipo_tienda (id_tipo_tienda INT UNSIGNED AUTO_INCREMENT, desc_tipo_tienda VARCHAR(30), PRIMARY KEY(id_tipo_tienda)) ENGINE = INNODB;
 ALTER TABLE app_pais ADD CONSTRAINT app_pais_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE CASCADE;
 ALTER TABLE app_pais ADD CONSTRAINT app_pais_id_aplicacion_aplicacion_id FOREIGN KEY (id_aplicacion) REFERENCES aplicacion(id) ON DELETE CASCADE;
-ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_tipo_preg_tipo_pregunta_id_tipo_preg FOREIGN KEY (id_tipo_preg) REFERENCES tipo_pregunta(id_tipo_preg);
+ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_tipo_preg_tipo_pregunta_id_tipo_preg FOREIGN KEY (id_tipo_preg) REFERENCES tipo_pregunta(id_tipo_preg) ON DELETE SET NULL;
 ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE SET NULL;
 ALTER TABLE encuesta_respuestas ADD CONSTRAINT encuesta_respuestas_id_enc_preg_encuesta_preguntas_id_enc_preg FOREIGN KEY (id_enc_preg) REFERENCES encuesta_preguntas(id_enc_preg) ON DELETE CASCADE;
 ALTER TABLE encuesta_respuestas ADD CONSTRAINT eiei_1 FOREIGN KEY (id_enc_cab_resp) REFERENCES encuesta_cabecera_respuestas(id_enc_cab_resp) ON DELETE CASCADE;
