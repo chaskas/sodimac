@@ -30,6 +30,15 @@ delete_tipo_pregunta:
     sf_method: DELETE
     id_tipo_preg: \d+
 
+delete_cabecera_respuestas:
+  url: /admin/CabeceraRespuestas/:id_enc_cab_resp/delete
+  class: sfDoctrineRoute
+  params: { module: CabeceraRespuestas, action: delete }
+  options: { model: EncuestaCabeceraRespuestas, type: object }
+  requirements:
+    sf_method: DELETE
+    id_enc_cab_resp: \d+
+
 delete_aplicacion_pais:
   url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
   class: sfDoctrineRoute
