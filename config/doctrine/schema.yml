@@ -345,6 +345,7 @@ Tienda:
       local: id_tipo_tienda
       foreign: id_tipo_tienda
       type: one
+      onDelete: SET NULL
     Pais:
       local: id_pais
       foreign: id_pais
@@ -358,7 +359,7 @@ Tienda:
       local: id_tienda
       foreign: id_tienda
       type: many
-      
+
 TipoPregunta:
   connection: doctrine
   tableName: tipo_pregunta

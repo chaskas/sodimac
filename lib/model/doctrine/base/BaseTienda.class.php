@@ -177,7 +177,8 @@ abstract class BaseTienda extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('TipoTienda', array(
              'local' => 'id_tipo_tienda',
-             'foreign' => 'id_tipo_tienda'));
+             'foreign' => 'id_tipo_tienda',
+             'onDelete' => 'SET NULL'));
 
         $this->hasOne('Pais', array(
              'local' => 'id_pais',
