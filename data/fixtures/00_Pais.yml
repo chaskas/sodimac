@@ -3,15 +3,23 @@ Pais:
     id_pais: 51
     desc_pais: Perú
     sigla: PE
+    signo_moneda: S/.
+    con_decimal: true
   Pais_54:
     id_pais: 54
     desc_pais: Argentina
     sigla: AR
+    signo_moneda: $
+    con_decimal: false
   Pais_56:
     id_pais: 56
     desc_pais: Chile
     sigla: CL
+    signo_moneda: S/.
+    con_decimal: true
   Pais_57:
     id_pais: 57
     desc_pais: Colombia
     sigla: CO
+    signo_moneda: $
+    con_decimal: false

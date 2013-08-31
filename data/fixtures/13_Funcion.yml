@@ -1,0 +1,9 @@
+Funcion:
+  Funcion_1:
+    Aplicacion: Aplicacion_1
+    descripcion: 'Oportunidad Única CMR'
+    codigo: CMR
+  Funcion_2:
+    Aplicacion: Aplicacion_1
+    descripcion: 'Ficha de Productos'
+    codigo: FICHPRO

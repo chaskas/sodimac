@@ -7,3 +7,11 @@ EncuestaRespuestas:
     EncuestaPreguntas: EncuestaPreguntas_2
     EncuestaCabeceraRespuestas: EncuestaCabeceraRespuestas_1
     valor_resp: (null)
+  EncuestaRespuestas_3:
+    EncuestaPreguntas: EncuestaPreguntas_1
+    EncuestaCabeceraRespuestas: EncuestaCabeceraRespuestas_2
+    valor_resp: '8'
+  EncuestaRespuestas_4:
+    EncuestaPreguntas: EncuestaPreguntas_2
+    EncuestaCabeceraRespuestas: EncuestaCabeceraRespuestas_2
+    valor_resp: Gfdhjbvgh

@@ -13,3 +13,17 @@ EncuestaCabeceraRespuestas:
     edad: '37'
     sexo: M
     compra_para: ''
+  EncuestaCabeceraRespuestas_2:
+    nro_boleta: '466347'
+    fecha_compra: '2013-08-30 00:00:00'
+    id_tienda: '66'
+    rut: '1485366'
+    dv: '8'
+    nombre_completo: Luis
+    ciudad: san
+    telefono: ''
+    celular: '9656442'
+    email: lui@gmail.com
+    edad: null
+    sexo: ''
+    compra_para: ''
