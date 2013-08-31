@@ -113,6 +113,15 @@ delete_aplicacion_pais:
     idApp: \d+
     idPais: \d+
 
+delete_funcion:
+  url: /admin/Funcion/:id/delete
+  class: sfDoctrineRoute
+  params: { module: Funcion, action: delete }
+  options: { model: Funcion, type: object }
+  requirements:
+    sf_method: DELETE
+    id: \d+
+
 delete_funcion_pais:
   url: /admin/Funcion/:idFunc/delete/Pais/:idPais
   class: sfDoctrineRoute

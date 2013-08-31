@@ -26,11 +26,16 @@
         <td class="center"><?php echo $funcion->getCodigo() ?></td>
         <td class="center"><?php echo $funcion->getAplicacion() ?></td>
         <td class="center"><?php echo $funcion->getDescripcion() ?></td>
-        <td>
-          <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.edit', :default => t("helpers.links.edit")),edit_station_path(station), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.destroy', :default => t("helpers.links.destroy")), station_path(station), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger' ?>
+        <td class="center">
+          <?php echo link_to(
+                        'Editar',
+                        'Funcion/edit?id='.$funcion->getId(),
+                        array('class'=>'btn btn-mini')); ?>
+          <?php echo link_to(
+                        'Eliminar',
+                        'delete_funcion',
+                        array('id'=>$funcion->getId()),
+                        array('method'=>'delete','confirm' => '¿Estás seguro?','class'=>'btn btn-danger btn-mini')); ?>
         </td>
       </tr>
     <?php endforeach; ?>
