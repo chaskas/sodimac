@@ -26,7 +26,13 @@
 		<?php foreach($paises as $pais) : ?>
 		<tr>
 			<td class="center"><?php echo $pais->getPais() ?></td>
-			<td></td>
+			<td class="center">
+        <?php echo link_to(
+                      'Eliminar',
+                      'delete_funcion_pais',
+                      array('idFunc'=>$pais->getIdFuncion(),'idPais'=>$pais->getIdPais()),
+                      array('method'=>'delete','confirm' => '¿Estás seguro?','class'=>'btn btn-danger btn-mini')); ?>
+      </td>
 		</tr>
 		<?php endforeach; ?>
 	</tbody>

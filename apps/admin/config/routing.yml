@@ -1,6 +1,27 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+
+delete_aplicacion_pais:
+  url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
+  class: sfDoctrineRoute
+  params: { module: Aplicacion, action: deletePais }
+  options: { model: AplicacionPais, type: object }
+  requirements:
+    sf_method: DELETE
+    idApp: \d+
+    idPais: \d+
+
+delete_funcion_pais:
+  url: /admin/Funcion/:idFunc/delete/Pais/:idPais
+  class: sfDoctrineRoute
+  params: { module: Funcion, action: deletePais }
+  options: { model: FuncionPais, type: object }
+  requirements:
+    sf_method: DELETE
+    idFunc: \d+
+    idPais: \d+
+
 # default rules
 homepage:
   url:   /admin/

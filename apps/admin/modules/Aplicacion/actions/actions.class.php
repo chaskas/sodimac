@@ -76,4 +76,14 @@ class AplicacionActions extends sfActions
     }
     $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
+
+  public function executeDeletePais(sfWebRequest $request)
+  {
+    $request->checkCSRFProtection();
+
+    $this->forward404Unless($app_pais = Doctrine_Core::getTable('AplicacionPais')->find(array('id_aplicacion'=>$request->getParameter('idApp'),'id_pais'=>$request->getParameter('idPais'))), sprintf('Object app_pais does not exist (%s).', $request->getParameter('idApp')." ".$request->getParameter('idPais')));
+    $app_pais->delete();
+
+    $this->redirect('Aplicacion/edit?id='.$app_pais->getIdAplicacion());
+  }
 }
