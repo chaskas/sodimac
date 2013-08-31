@@ -31,11 +31,16 @@
         <td><?php echo $oportunidad_cmr->getPrecioCmr() ?></td>
         <td class="center"><?php echo $oportunidad_cmr->getFechaVigDesFormatted() ?></td>
         <td class="center"><?php echo $oportunidad_cmr->getFechaVigHasFormatted() ?></td>
-        <td>
-          <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.edit', :default => t("helpers.links.edit")),edit_station_path(station), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.destroy', :default => t("helpers.links.destroy")), station_path(station), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger' ?>
+        <td class="center">
+          <?php echo link_to(
+                        'Editar',
+                        'OportunidadCMR/edit?id_opor_cmr='.$oportunidad_cmr->getIdOporCmr(),
+                        array('class'=>'btn btn-mini')); ?>
+          <?php echo link_to(
+                        'Eliminar',
+                        'delete_oportunidad',
+                        array('id_opor_cmr'=>$oportunidad_cmr->getIdOporCmr()),
+                        array('method'=>'delete','confirm' => '¿Estás seguro?','class'=>'btn btn-danger btn-mini')); ?>
         </td>
       </tr>
     <?php endforeach; ?>

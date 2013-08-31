@@ -2,6 +2,15 @@
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
 
+delete_oportunidad:
+  url: /admin/OportunidadCMR/:id_opor_cmr/delete
+  class: sfDoctrineRoute
+  params: { module: OportunidadCMR, action: delete }
+  options: { model: OportunidadCmr, type: object }
+  requirements:
+    sf_method: DELETE
+    id_opor_cmr: \d+
+
 delete_aplicacion_pais:
   url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
   class: sfDoctrineRoute
