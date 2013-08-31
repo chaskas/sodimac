@@ -26,7 +26,13 @@
 		<?php foreach($servicios as $servicio) : ?>
 		<tr>
 			<td><?php echo $servicio->getServicios() ?></td>
-			<td></td>
+			<td class="center">
+        <?php echo link_to(
+                      'Eliminar',
+                      'delete_tienda_servicio',
+                      array('id'=>$servicio->getIdTienda(),'idServicio'=>$servicio->getIdServicioTienda()),
+                      array('method'=>'delete','confirm' => '¿Estás seguro?','class'=>'btn btn-danger btn-mini')); ?>
+      </td>
 		</tr>
 		<?php endforeach; ?>
 	</tbody>

@@ -76,4 +76,13 @@ class TiendasActions extends sfActions
     }
     $this->getUser()->setFlash('error', 'se ha producido algo extraño.');
   }
+  public function executeDeleteServicio(sfWebRequest $request)
+  {
+    $request->checkCSRFProtection();
+
+    $this->forward404Unless($tienda = Doctrine_Core::getTable('ServiciosPorTienda')->find(array('id_tienda'=>$request->getParameter('id'),'id_servicio_tienda'=>$request->getParameter('idServicio'))), sprintf('Object ServicioPorTienda does not exist (%s).', $request->getParameter('id')." ".$request->getParameter('idServicio')));
+    $tienda->delete();
+
+    $this->redirect('Tiendas/edit?id_tienda='.$tienda->getIdTienda());
+  }
 }

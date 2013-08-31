@@ -48,6 +48,25 @@ delete_respuestas:
     sf_method: DELETE
     id_enc_resp: \d+
 
+delete_tienda:
+  url: /admin/Tiendas/:id_tienda/delete
+  class: sfDoctrineRoute
+  params: { module: Tiendas, action: delete }
+  options: { model: Tienda, type: object }
+  requirements:
+    sf_method: DELETE
+    id_tienda: \d+
+
+delete_tienda_servicio:
+  url: /admin/Tiendas/:id/delete/Servicio/:idServicio
+  class: sfDoctrineRoute
+  params: { module: Tiendas, action: deleteServicio }
+  options: { model: ServiciosPorTienda, type: object }
+  requirements:
+    sf_method: DELETE
+    id: \d+
+    idServicio: \d+
+
 delete_aplicacion_pais:
   url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
   class: sfDoctrineRoute
