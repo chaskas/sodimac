@@ -25,7 +25,7 @@ ALTER TABLE funcion ADD CONSTRAINT funcion_id_aplicacion_aplicacion_id FOREIGN K
 ALTER TABLE funcion_pais ADD CONSTRAINT funcion_pais_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE CASCADE;
 ALTER TABLE funcion_pais ADD CONSTRAINT funcion_pais_id_funcion_funcion_id FOREIGN KEY (id_funcion) REFERENCES funcion(id) ON DELETE CASCADE;
 ALTER TABLE oportunidad_cmr ADD CONSTRAINT oportunidad_cmr_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
-ALTER TABLE region ADD CONSTRAINT region_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE SET NULL;
+ALTER TABLE region ADD CONSTRAINT region_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE CASCADE;
 ALTER TABLE servicios_por_tienda ADD CONSTRAINT sisi FOREIGN KEY (id_servicio_tienda) REFERENCES servicios_tienda(id_servicio_tienda) ON DELETE CASCADE;
 ALTER TABLE servicios_por_tienda ADD CONSTRAINT servicios_por_tienda_id_tienda_tienda_id_tienda FOREIGN KEY (id_tienda) REFERENCES tienda(id_tienda) ON DELETE CASCADE;
 ALTER TABLE tienda ADD CONSTRAINT tienda_id_tipo_tienda_tipo_tienda_id_tipo_tienda FOREIGN KEY (id_tipo_tienda) REFERENCES tipo_tienda(id_tipo_tienda) ON DELETE SET NULL;

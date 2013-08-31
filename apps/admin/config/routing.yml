@@ -141,6 +141,15 @@ delete_pais:
     sf_method: DELETE
     id_pais: \d+
 
+delete_region:
+  url: /admin/Region/:id/delete
+  class: sfDoctrineRoute
+  params: { module: Region, action: delete }
+  options: { model: Region, type: object }
+  requirements:
+    sf_method: DELETE
+    id: \d+
+
 # default rules
 homepage:
   url:   /admin/

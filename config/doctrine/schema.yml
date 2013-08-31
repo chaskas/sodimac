@@ -204,7 +204,7 @@ Region:
     desc_region:  { type: string(60), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     id_pais:      { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    Pais:         { local: id_pais, foreign: id_pais, type: one, onDelete: SET NULL }
+    Pais:         { local: id_pais, foreign: id_pais, type: one, onDelete: CASCADE }
   indexes:
     region_index:
       fields: [id_region,id_pais]
