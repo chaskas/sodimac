@@ -83,7 +83,8 @@ abstract class BaseFuncion extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('Aplicacion', array(
              'local' => 'id_aplicacion',
-             'foreign' => 'id'));
+             'foreign' => 'id',
+             'onDelete' => 'CASCADE'));
 
         $this->hasMany('FuncionPais', array(
              'local' => 'id',

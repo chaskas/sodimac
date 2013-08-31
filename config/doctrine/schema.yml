@@ -438,7 +438,7 @@ Funcion:
     descripcion:    { type: string(50), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     codigo:         { type: string(10), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    Aplicacion:     { local: id_aplicacion, foreign: id, type: one }
+    Aplicacion:     { local: id_aplicacion, foreign: id, type: one, onDelete: CASCADE }
   indexes:
     funcion_index:
       fields: [id_aplicacion,codigo]

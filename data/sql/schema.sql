@@ -21,7 +21,7 @@ ALTER TABLE encuesta_preguntas ADD CONSTRAINT encuesta_preguntas_id_pais_pais_id
 ALTER TABLE encuesta_respuestas ADD CONSTRAINT encuesta_respuestas_id_enc_preg_encuesta_preguntas_id_enc_preg FOREIGN KEY (id_enc_preg) REFERENCES encuesta_preguntas(id_enc_preg) ON DELETE CASCADE;
 ALTER TABLE encuesta_respuestas ADD CONSTRAINT eiei_1 FOREIGN KEY (id_enc_cab_resp) REFERENCES encuesta_cabecera_respuestas(id_enc_cab_resp) ON DELETE CASCADE;
 ALTER TABLE endpoint ADD CONSTRAINT endpoint_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE SET NULL;
-ALTER TABLE funcion ADD CONSTRAINT funcion_id_aplicacion_aplicacion_id FOREIGN KEY (id_aplicacion) REFERENCES aplicacion(id);
+ALTER TABLE funcion ADD CONSTRAINT funcion_id_aplicacion_aplicacion_id FOREIGN KEY (id_aplicacion) REFERENCES aplicacion(id) ON DELETE CASCADE;
 ALTER TABLE funcion_pais ADD CONSTRAINT funcion_pais_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais) ON DELETE CASCADE;
 ALTER TABLE funcion_pais ADD CONSTRAINT funcion_pais_id_funcion_funcion_id FOREIGN KEY (id_funcion) REFERENCES funcion(id) ON DELETE CASCADE;
 ALTER TABLE oportunidad_cmr ADD CONSTRAINT oportunidad_cmr_id_pais_pais_id_pais FOREIGN KEY (id_pais) REFERENCES pais(id_pais);
