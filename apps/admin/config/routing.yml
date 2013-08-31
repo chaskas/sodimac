@@ -76,6 +76,15 @@ delete_tipo_tienda:
     sf_method: DELETE
     id_tipo_tienda: \d+
 
+delete_servicio:
+  url: /admin/Servicios/:id_servicio_tienda/delete
+  class: sfDoctrineRoute
+  params: { module: Servicios, action: delete }
+  options: { model: ServiciosTienda, type: object }
+  requirements:
+    sf_method: DELETE
+    id_servicio_tienda: \d+
+
 delete_aplicacion_pais:
   url: /admin/Aplicacion/:idApp/delete/Pais/:idPais
   class: sfDoctrineRoute
