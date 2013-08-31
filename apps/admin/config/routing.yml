@@ -132,6 +132,15 @@ delete_funcion_pais:
     idFunc: \d+
     idPais: \d+
 
+delete_pais:
+  url: /admin/Pais/:id_pais/delete
+  class: sfDoctrineRoute
+  params: { module: Pais, action: delete }
+  options: { model: Pais, type: object }
+  requirements:
+    sf_method: DELETE
+    id_pais: \d+
+
 # default rules
 homepage:
   url:   /admin/

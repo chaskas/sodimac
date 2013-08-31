@@ -24,11 +24,16 @@
         <td class="center"><a href="<?php echo url_for('Pais/edit?id_pais='.$pais->getIdPais()) ?>"><?php echo $pais->getIdPais() ?></a></td>
         <td class="center"><?php echo $pais->getDescPais() ?></td>
         <td class="center"><?php echo $pais->getSigla() ?></td>
-        <td>
-          <?php //link_to 'play', status_play_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to 'stop', status_stop_path(station.id), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.edit', :default => t("helpers.links.edit")),edit_station_path(station), :class => 'btn btn-mini' ?>
-          <?php //link_to t('.destroy', :default => t("helpers.links.destroy")), station_path(station), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger' ?>
+        <td class="center">
+          <?php echo link_to(
+                        'Editar',
+                        'Pais/edit?id_pais='.$pais->getIdPais(),
+                        array('class'=>'btn btn-mini')); ?>
+          <?php echo link_to(
+                        'Eliminar',
+                        'delete_pais',
+                        array('id_pais'=>$pais->getIdPais()),
+                        array('method'=>'delete','confirm' => '¿Estás seguro?','class'=>'btn btn-danger btn-mini')); ?>
         </td>
       </tr>
     <?php endforeach; ?>
