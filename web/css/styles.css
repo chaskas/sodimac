@@ -40,3 +40,8 @@ width: 73px;
 .table th {
 	text-align: center; 
 }
+
+.desc {
+	width: 200px;
+	overflow: hidden;
+}

@@ -79,7 +79,8 @@ abstract class BaseEncuestaRespuestas extends sfDoctrineRecord
         parent::setUp();
         $this->hasOne('EncuestaPreguntas', array(
              'local' => 'id_enc_preg',
-             'foreign' => 'id_enc_preg'));
+             'foreign' => 'id_enc_preg',
+             'onDelete' => 'CASCADE'));
 
         $this->hasOne('EncuestaCabeceraRespuestas', array(
              'local' => 'id_enc_cab_resp',

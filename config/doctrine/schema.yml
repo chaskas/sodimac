@@ -43,7 +43,7 @@ EncuestaRespuestas:
     id_enc_cab_resp:  { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
     valor_resp:       { type: string(300), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
   relations:
-    EncuestaPreguntas:          { local: id_enc_preg,     foreign: id_enc_preg,     type: one }
+    EncuestaPreguntas:          { local: id_enc_preg,     foreign: id_enc_preg,     type: one, onDelete: CASCADE }
     EncuestaCabeceraRespuestas: { local: id_enc_cab_resp, foreign: id_enc_cab_resp, type: one, onDelete: CASCADE }
 
 Endpoint:
