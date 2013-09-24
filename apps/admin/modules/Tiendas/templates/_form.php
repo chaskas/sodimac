@@ -4,6 +4,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     $('#tienda_id_region').prop('disabled', 'disabled');
+    if($('#tienda_id_pais').val() != '')$("#tienda_id_region").removeAttr("disabled");
     $('#tienda_id_pais').change(function(){
       var idPais = $(this).val();
       if(idPais != '')
