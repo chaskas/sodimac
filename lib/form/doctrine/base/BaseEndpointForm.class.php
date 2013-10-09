@@ -22,6 +22,7 @@ abstract class BaseEndpointForm extends BaseFormDoctrine
       'puerto'        => new sfWidgetFormInputText(),
       'resto_url'     => new sfWidgetFormInputText(),
       'id_pais'       => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
+      'version'       => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
@@ -32,6 +33,7 @@ abstract class BaseEndpointForm extends BaseFormDoctrine
       'puerto'        => new sfValidatorInteger(array('required' => false)),
       'resto_url'     => new sfValidatorString(array('max_length' => 200, 'required' => false)),
       'id_pais'       => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'required' => false)),
+      'version'       => new sfValidatorInteger(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('endpoint[%s]');

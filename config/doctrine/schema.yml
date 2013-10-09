@@ -50,60 +50,17 @@ Endpoint:
   connection: doctrine
   tableName: endpoint
   columns:
-    id_endpoint:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: true
-      autoincrement: true
-    cod_endpoint:
-      type: string(10)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    desc_endpoint:
-      type: string(40)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    host:
-      type: string(30)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    puerto:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    resto_url:
-      type: string(200)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
-    id_pais:
-      type: integer(4)
-      fixed: false
-      unsigned: false
-      primary: false
-      notnull: false
-      autoincrement: false
+    id_endpoint:    { type: integer(4), fixed: false, unsigned: false, primary: true, autoincrement: true }
+    cod_endpoint:   { type: string(10), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    desc_endpoint:  { type: string(40), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    host:           { type: string(30), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    puerto:         { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    resto_url:      { type: string(200), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    id_pais:        { type: integer(4), fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false }
+    version:        { type: integer, fixed: false, unsigned: false, primary: false, notnull: false, autoincrement: false, default: 0 }
   relations:
-    Pais:
-      local: id_pais
-      foreign: id_pais
-      type: one
-      onDelete: SET NULL
+    Pais:           { local: id_pais, foreign: id_pais, type: one, onDelete: SET NULL }
+
 OportunidadCmr:
   connection: doctrine
   tableName: oportunidad_cmr

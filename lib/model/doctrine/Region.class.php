@@ -16,4 +16,32 @@ class Region extends BaseRegion
 	{
 		return $this->getDescRegion();
 	}
+
+  public function save(Doctrine_Connection $conn = null)
+  {
+
+      $endpoint = Doctrine_Core::getTable('Endpoint')->findOneByCodEndpoint('ZONAS');
+
+      if($endpoint != null)
+      {
+        $endpoint->setVersion($endpoint->getVersion() + 1);
+        $endpoint->save();
+      }
+
+    return parent::save($conn);
+  }
+  public function delete(Doctrine_Connection $conn = null)
+  {
+
+      $endpoint = Doctrine_Core::getTable('Endpoint')->findOneByCodEndpoint('ZONAS');
+
+      if($endpoint != null)
+      {
+        $endpoint->setVersion($endpoint->getVersion() + 1);
+        $endpoint->save();
+      }
+
+    return parent::delete($conn);
+  }
+
 }

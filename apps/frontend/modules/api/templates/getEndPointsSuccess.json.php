@@ -5,6 +5,7 @@
 		"id_endpoint": "<?php echo utf8_decode($endpoint->getIdEndpoint()); ?>",
 		"cod_endpoint": "<?php echo utf8_decode($endpoint->getCodEndpoint()); ?>",
 		"desc_endpoint": "<?php echo utf8_decode($endpoint->getDescEndpoint()); ?>",
+		"version": "<?php echo utf8_decode($endpoint->getVersion()); ?>",
 		"host": "<?php echo utf8_decode($endpoint->getHost()); ?>",
 		"puerto": "<?php echo utf8_decode($endpoint->getPuerto()); ?>",
 		"resto_url": "<?php echo utf8_decode($endpoint->getRestoUrl()); ?>",

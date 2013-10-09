@@ -27,6 +27,14 @@
   </div>
 
   <div class="control-group">
+    <?php echo $form['version']->renderLabel(null, array('class'=>'control-label')) ?>
+    <div class="controls">
+      <?php echo $form['version'] ?>
+      <?php echo $form['version']->renderError() ?>
+    </div>
+  </div>
+
+  <div class="control-group">
     <?php echo $form['host']->renderLabel(null, array('class'=>'control-label')) ?>
     <div class="controls">
       <?php echo $form['host'] ?>

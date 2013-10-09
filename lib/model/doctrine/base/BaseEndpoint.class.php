@@ -14,6 +14,7 @@ Doctrine_Manager::getInstance()->bindComponent('Endpoint', 'doctrine');
  * @property integer $puerto
  * @property string $resto_url
  * @property integer $id_pais
+ * @property integer $version
  * @property Pais $Pais
  * 
  * @method integer  getIdEndpoint()    Returns the current record's "id_endpoint" value
@@ -23,6 +24,7 @@ Doctrine_Manager::getInstance()->bindComponent('Endpoint', 'doctrine');
  * @method integer  getPuerto()        Returns the current record's "puerto" value
  * @method string   getRestoUrl()      Returns the current record's "resto_url" value
  * @method integer  getIdPais()        Returns the current record's "id_pais" value
+ * @method integer  getVersion()       Returns the current record's "version" value
  * @method Pais     getPais()          Returns the current record's "Pais" value
  * @method Endpoint setIdEndpoint()    Sets the current record's "id_endpoint" value
  * @method Endpoint setCodEndpoint()   Sets the current record's "cod_endpoint" value
@@ -31,6 +33,7 @@ Doctrine_Manager::getInstance()->bindComponent('Endpoint', 'doctrine');
  * @method Endpoint setPuerto()        Sets the current record's "puerto" value
  * @method Endpoint setRestoUrl()      Sets the current record's "resto_url" value
  * @method Endpoint setIdPais()        Sets the current record's "id_pais" value
+ * @method Endpoint setVersion()       Sets the current record's "version" value
  * @method Endpoint setPais()          Sets the current record's "Pais" value
  * 
  * @package    sodimac
@@ -104,6 +107,15 @@ abstract class BaseEndpoint extends sfDoctrineRecord
              'notnull' => false,
              'autoincrement' => false,
              'length' => 4,
+             ));
+        $this->hasColumn('version', 'integer', null, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'default' => 0,
              ));
     }
 

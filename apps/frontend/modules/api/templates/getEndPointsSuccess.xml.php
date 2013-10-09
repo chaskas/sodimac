@@ -4,7 +4,8 @@
   <endpoint>
 		<id_endpoint><?php echo $endpoint->getIdEndpoint() ?></id_endpoint>
 		<cod_endpoint><?php echo $endpoint->getCodEndpoint() ?></cod_endpoint>
-		<desc_endpoint><?php echo $endpoint->getDescEndpoint() ?></desc_endpoint>
+    <desc_endpoint><?php echo $endpoint->getDescEndpoint() ?></desc_endpoint>
+		<version><?php echo $endpoint->getVersion() ?></version>
 		<host><?php echo $endpoint->getHost() ?></host>
 		<puerto><?php echo $endpoint->getPuerto() ?></puerto>
 		<resto_url><?php echo $endpoint->getRestoUrl() ?></resto_url>

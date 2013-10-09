@@ -19,6 +19,7 @@ abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
       'puerto'        => new sfWidgetFormFilterInput(),
       'resto_url'     => new sfWidgetFormFilterInput(),
       'id_pais'       => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Pais'), 'add_empty' => true)),
+      'version'       => new sfWidgetFormFilterInput(),
     ));
 
     $this->setValidators(array(
@@ -28,6 +29,7 @@ abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
       'puerto'        => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'resto_url'     => new sfValidatorPass(array('required' => false)),
       'id_pais'       => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Pais'), 'column' => 'id_pais')),
+      'version'       => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
     ));
 
     $this->widgetSchema->setNameFormat('endpoint_filters[%s]');
@@ -54,6 +56,7 @@ abstract class BaseEndpointFormFilter extends BaseFormFilterDoctrine
       'puerto'        => 'Number',
       'resto_url'     => 'Text',
       'id_pais'       => 'ForeignKey',
+      'version'       => 'Number',
     );
   }
 }

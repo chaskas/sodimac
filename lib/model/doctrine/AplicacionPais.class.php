@@ -12,4 +12,30 @@
  */
 class AplicacionPais extends BaseAplicacionPais
 {
+  public function save(Doctrine_Connection $conn = null)
+  {
+
+      $endpoint = Doctrine_Core::getTable('Endpoint')->findOneByCodEndpoint('PAISAPP');
+
+      if($endpoint != null)
+      {
+        $endpoint->setVersion($endpoint->getVersion() + 1);
+        $endpoint->save();
+      }
+
+    return parent::save($conn);
+  }
+  public function delete(Doctrine_Connection $conn = null)
+  {
+
+      $endpoint = Doctrine_Core::getTable('Endpoint')->findOneByCodEndpoint('PAISAPP');
+
+      if($endpoint != null)
+      {
+        $endpoint->setVersion($endpoint->getVersion() + 1);
+        $endpoint->save();
+      }
+
+    return parent::delete($conn);
+  }
 }
