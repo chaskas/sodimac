@@ -66,21 +66,25 @@ class Sodimac
 
   public function getPrecioCMR()
   {
-    preg_match_all("(<div class=\"precio1\">(.*)</div>)siU", $this->response,$precioCMR);
+    preg_match_all("(<div style=\"\">\s*(.*)</div>)siU", $this->response,$precioCMR);
+
     $c = array(' ','.','$');
     $r = str_replace($c, '',$precioCMR[1][0]);
+
     return (int) $r;
   }
 
   public function getUnidadMedCMR()
   {
-    preg_match_all("(<div class=\"unidadVenta\">\s+(.*)</div>)siU", $this->response,$unidadMedCMR);
+    preg_match_all("/<div\s+class=\"unidadVenta\"\s*>\s*(.*)</", $this->response, $unidadMedCMR);
+
     return trim($unidadMedCMR[1][0]);
   }
 
   public function getPrecioInternet()
   {
-    preg_match_all("(<div class=\"precio2\">\s+Internet:&nbsp;(.*)</div>)siU", $this->response,$precioInternet);
+    preg_match_all("(<div style=\"\">\s*Internet:&nbsp;(.*)</div>)siU", $this->response,$precioInternet);
+
     $c = array(' ','.','$');
     $r = str_replace($c, '',$precioInternet[1][0]);
     return (int) $r;
@@ -88,7 +92,7 @@ class Sodimac
 
   public function getUnidadMedInt()
   {
-    preg_match_all("(<div class=\"unidadVenta2\">\s+(.*)</div>)siU", $this->response,$unidadMedInt);
+    preg_match_all("(<div class=\"unidadVenta2\">\s*(.*)</div>)siU", $this->response,$unidadMedInt);
     return trim($unidadMedInt[1][0]);
   }
 

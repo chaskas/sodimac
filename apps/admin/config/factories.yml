@@ -24,6 +24,9 @@ test:
       delivery_strategy: none
 
 dev:
+  logger:
+    param:
+      level: err
   mailer:
     param:
       delivery_strategy: none

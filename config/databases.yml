@@ -5,6 +5,6 @@ all:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=mant_app_sodimac
+      dsn:      mysql:host=127.0.0.1;dbname=mant_app_sodimac
       username: root
-      password: lagoranco1809
+      password: 
